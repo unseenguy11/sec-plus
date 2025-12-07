@@ -322,7 +322,7 @@ export default function QuizMode({ unitId }) {
                                     </Button>
                                 </motion.div>
                             ) : (
-                                <div className="h-full flex items-center justify-center text-slate-500 border border-white/5 rounded-xl bg-slate-900/20">
+                                <div className="h-full flex items-center justify-center text-slate-500 border border-white/5 rounded-xl bg-slate-900/20 mt-8 lg:mt-0">
                                     <span className="text-sm">Select an answer to continue</span>
                                 </div>
                             )}
