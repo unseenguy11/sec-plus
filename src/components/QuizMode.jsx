@@ -76,7 +76,22 @@ export default function QuizMode({ unitId }) {
     }
 
     const resetQuiz = (baseQuestions = questionsData[unitId], randomize = isRandomized) => {
-        let qs = [...baseQuestions]
+        // Deep copy and shuffle options for each question
+        let qs = baseQuestions.map(q => {
+            // Create array of objects with original index to track answer
+            const optionsWithIndex = q.options.map((opt, i) => ({ opt, originalIndex: i }))
+
+            // Shuffle the options
+            const shuffledOptionsWithIndex = shuffleArray(optionsWithIndex)
+
+            // Reconstruct question with shuffled options and updated answer index
+            return {
+                ...q,
+                options: shuffledOptionsWithIndex.map(o => o.opt),
+                answer: shuffledOptionsWithIndex.findIndex(o => o.originalIndex === q.answer)
+            }
+        })
+
         if (randomize) {
             qs = shuffleArray(qs)
         }
