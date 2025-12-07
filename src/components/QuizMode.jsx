@@ -184,7 +184,7 @@ export default function QuizMode({ unitId }) {
     const currentQ = questions[currentIndex]
 
     return (
-        <div className="h-[calc(100vh-8rem)] max-w-7xl mx-auto flex flex-col">
+        <div className="lg:h-[calc(100vh-8rem)] h-auto max-w-7xl mx-auto flex flex-col">
             {/* Top Bar: Progress & Controls */}
             <div className="flex-none mb-4 px-2">
                 <div className="flex items-center justify-between mb-2">
@@ -221,9 +221,9 @@ export default function QuizMode({ unitId }) {
             </div>
 
             {/* Main Content Area - Split View */}
-            <div className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-6 pb-2">
+            <div className="flex-1 lg:min-h-0 grid grid-cols-1 lg:grid-cols-12 gap-6 pb-2">
                 {/* Left Column: Question */}
-                <div className="lg:col-span-7 flex flex-col min-h-0">
+                <div className="lg:col-span-7 flex flex-col lg:min-h-0">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={currentIndex}
@@ -231,10 +231,10 @@ export default function QuizMode({ unitId }) {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
                             transition={{ duration: 0.2 }}
-                            className="h-full"
+                            className="lg:h-full"
                         >
-                            <Card className="h-full p-8 border-white/10 bg-slate-900/80 backdrop-blur-md flex flex-col justify-center overflow-y-auto custom-scrollbar">
-                                <h3 className="text-2xl md:text-3xl font-medium leading-relaxed text-slate-100">
+                            <Card className="lg:h-full h-auto p-6 md:p-8 border-white/10 bg-slate-900/80 backdrop-blur-md flex flex-col justify-center lg:overflow-y-auto custom-scrollbar">
+                                <h3 className="text-xl md:text-3xl font-medium leading-relaxed text-slate-100">
                                     {currentQ.q}
                                 </h3>
                             </Card>
@@ -243,8 +243,8 @@ export default function QuizMode({ unitId }) {
                 </div>
 
                 {/* Right Column: Options & Feedback */}
-                <div className="lg:col-span-5 flex flex-col min-h-0 gap-4">
-                    <div className="flex-1 overflow-y-auto custom-scrollbar pr-2 space-y-3">
+                <div className="lg:col-span-5 flex flex-col lg:min-h-0 gap-4">
+                    <div className="lg:flex-1 lg:overflow-y-auto custom-scrollbar pr-2 space-y-3">
                         {currentQ.options.map((option, idx) => {
                             let variant = "outline"
                             let extraClasses = "hover:border-cyan-500/50 hover:bg-slate-800"
