@@ -1,0 +1,3730 @@
+
+--- START unit-6 ---
+
+
+Video 1: malware  
+In this section of the course, 
+we're going to be covering malware. 
+So what exactly is malware? 
+Well, malware is a shorthand way 
+of talking about malicious software. 
+Malware is really any software that is designed 
+to infiltr  ate a computer system and possibly damage it 
+without the user's knowledge or consent. 
+When I think of malware, I like to think about it 
+as a broad category of software code that includes a lot 
+of bad things that are out there 
+on the internet that can harm our computers, 
+things like viruses, worms, Trojans, ransomware, spyware, 
+rootkits, spam, and much more. 
+But for the malware to infect your system, 
+it needs to be able to create a threat vector 
+and an attack vector. 
+Now, a threat vector is a specific method used 
+by an attacker to infiltr  ate a victim system. 
+Now, some examples 
+of threat vectors include unpatched software, 
+installing code using a USB thumb drive, 
+a phishing campaign where one of your users clicks 
+on a link to install some kind 
+of malware into your system and many other vulnerabilities 
+and exploits that can be taken advantage of. 
+Now, the second thing the attacker needs 
+in order to infiltr  ate your system is what's known 
+as an attack vector. 
+An attack vector is the means 
+by which the attacker is going to gain access 
+to that computer 
+in order to infect your system with malware. 
+Now, I know these two terms sound pretty similar 
+but there is a distinct difference between them. 
+When we talk about a threat vector, we are focused 
+on how the attacker plans to break into a given system. 
+But when we talk about the attack vector, we're talking 
+
+about both the way the attacker might get into your system 
+and how they're going to infect that system. 
+Now, let me provide you with a silly example 
+to hopefully clarify this concept a little bit. 
+Let's pretend for a moment that your house 
+is going to be our computer 
+and I have a cupcake and I want to represent that as malware 
+or malicious software, and I want to put that inside 
+of your house or inside of your computer. 
+Now, my job as the attacker is to get my cupcake 
+from my house over to your house 
+and onto your kitchen table. 
+If I can do that, we're going to say that I was successful 
+in my cupcake infiltr  ation attack in this scenario 
+and I've infected your house 
+with this malware or this cupcake. 
+So your job now 
+as a cybersecurity professional is to stop me 
+from getting that cupcake 
+onto your kitchen table or in the real world, 
+you want to stop me from infecting your system with malware. 
+Now, the threat vector that I might choose could be 
+to drive right up to your house 
+because maybe your house isn't inside of a gated community 
+with a security guard patrolling the streets. 
+So you have a very unhardened system that might make it easy 
+for me to infiltr  ate and get into your house. 
+Now, in this example, that unguarded neighborhood 
+would be considered our threat vector. 
+Now, I know I can drive right over to your house 
+but I still need to determine the attack vector 
+that I'm going to use to get inside the house 
+and that way I can put my cupcake, 
+this malware, onto your kitchen table. 
+Now, if I decide that I want to walk up to your front door, 
+pick your lock and enter your house to place the cupcake 
+on your kitchen table, that entire sequence 
+of actions from walking to the door, picking the lock 
+and entering the home would be considered my attack vector. 
+
+That's the difference 
+between the threat vector and the attack vector. 
+It's the vulnerabilities that could be exploited 
+and the way that they're actually going to be exploited. 
+Now, let's go back to the world of computers 
+for a moment. 
+Let's pretend that you have an older computer 
+that's running Windows 10 
+and you haven't bothered installing 
+or downloading the latest security patches 
+because you've just been busy and you haven't had time to. 
+Well, maybe it's been a really long time 
+since you've installed those patches, 
+that it's been three months or six months, or 12 months, 
+and now you have a computer 
+that is missing a critical security patch, 
+like the MS17-010 security patch 
+from Microsoft that came out all the way back in 2017 
+to patch the EternalBlue vulnerability. 
+Now, this unpatched vulnerability represents a threat vector 
+but I still don't have an attack vector quite yet. 
+Now, as an attacker, my goal is to infect as many systems 
+as possible using this vulnerability. 
+That way I can gain access to all of them. 
+So I'm going to sit here all day scanning the internet 
+and try to identify any unpatched computers that are online. 
+And once I do that, I can then attack that system 
+because that missing security patch is going to be vulnerable 
+for that system 
+and I already have a known exploit that I can plug 
+against your system to be able to break in because the file 
+and printer services that operate over the SMB Protocol 
+are vulnerable on your system 
+because you're missing that security patch. 
+Now, once I find this vulnerable computer, 
+I can run this exploit to gain access 
+to the vulnerable machine 
+and install some kind of malware on it. 
+This entire series of events I just talked about 
+
+can now be referred simply as my attack vector. 
+This attack vector is the exact same one 
+that was used widely by the WannaCry ransomware 
+to wreak havoc across the internet. 
+With the WannaCry ransomware, 
+the attackers ran automated scans all day 
+and all night to find as many unpatched Windows machines 
+running Windows 7, Windows 8, Windows 8.1, and Windows 10. 
+And when they found those systems 
+that were missing that patch, MS17-010 dash, 
+they ran an exploit against it 
+to gain administrative rights over that system. 
+Then they would encrypt the user's files 
+and display a message on the user's screen 
+saying your computer is locked, and if you want to access it, 
+you're going to pay us X amount 
+of Bitcoin for that decryption key. 
+So as we go through this section of the course, 
+we're going to be focused on the different types of malware, 
+the different infection vectors 
+and how to prevent malware from infecting your systems. 
+Our focus is solely going to be 
+on domain two inside of this section 
+and we'll be singularly focused on objective 2.4. 
+Now, objective 2.4 states that given a scenario, 
+you must be able to analyze indicators 
+of malicious activity, and then it goes on 
+to list all the different types 
+of malware attacks that you need to know for the exam. 
+First, we're going to be covering viruses. 
+A computer virus is a malicious software 
+that attaches itself to a clean file 
+and spreads throughout a computer system, 
+often corrupting or damaging the host files in the process. 
+Next, we'll discuss worms. 
+Now, worms are standalone pieces of malware 
+that replicate themself and spread to other computers 
+that often exploit software vulnerabilities 
+to propagate themselves across a network. 
+
+Then we'll talk about Trojans. 
+Trojans are malicious programs that disguise themself 
+as legitimate software, but when they're executed, 
+they grant the attackers unauthorized access 
+to the victim's system. 
+After that, we'll look at how easy it is 
+to create a virus to infect a system 
+and how an attack can be remotely controlled with a computer 
+by using a remote access Trojan known as a RAT. 
+Next, we're going to be looking at ransomware. 
+Now, ransomware is a type 
+of malware that encrypts the user's data 
+and holds it hostage until the ransom is paid 
+to the attacker for that decryption key. 
+After that, we'll talk 
+about the world of zombies and botnets. 
+Zombies are compromised computers 
+that are remotely controlled 
+by attackers and are often used 
+in coordination with other zombies to form a botnet. 
+A botnet is a network 
+of compromised computers that are controlled 
+by an attacker and are often used for distributed denial 
+of service attacks, spam distribution 
+or crypto mining operations. 
+Then we'll discuss rootkits. 
+And rootkits are malicious tools that hide their presence 
+and activities on a computer 
+and they often operate at the operating system 
+or below the operating system level to be able 
+to have ongoing privileged access to that system. 
+Next, we'll explore backdoors and logic bombs. 
+Backdoors are malicious means 
+of bypassing normal authentication processes 
+in order to gain unauthorized access 
+to a system which are often going to be implanted 
+by malware or during an attack by a threat actor. 
+Logic bombs, on the other hand, 
+are pieces of embedded code that's placed inside 
+
+of a legitimate program 
+and can be executing a malicious action 
+whenever a specific condition or trigger occurs. 
+Then we'll cover keyloggers. 
+Keyloggers are stealthy tools 
+or malware variants that record a user's keystrokes 
+and are often used to capture passwords 
+and other sensitive information on a victimized system. 
+After that, we'll discuss spyware and bloatware. 
+Spyware is software that secretly monitors 
+and gathers user information on a system or its activities 
+and then sends that data 
+to third parties without the user's knowledge or consent. 
+Bloatware, on the other hand, 
+refers to unnecessary or pre-installed software 
+on devices that are often going to be consuming 
+your system resources and space 
+without offering any value to you in return. 
+Next, we'll cover some malware attack techniques 
+and infection vectors. 
+Malware exploitation techniques involve methods 
+by which malware can infiltr  ate and infect a targeted system 
+and have been evolving from file-based tactics 
+to modern fir eless techniques that leave 
+behind minimal traces on an infected machine. 
+These advanced malwares are often going to use 
+multi-stage deployments 
+that leverage your own built-in system tools 
+and various obfuscation techniques to challenge us 
+as cybersecurity professionals 
+as we're attempting to detect 
+and counteract these different types of malware. 
+Then we'll explore various indications 
+of a successful malware attack. 
+And every cybersecurity professional needs 
+to be able to recognize the indications of malware attacks, 
+including account lockouts, concurrent session utilization, 
+blocked content, impossible travel, resource consumption, 
+resource inaccessibility, out-of-cycle logging, 
+
+missing logs, and documented attacks 
+in order to better secure your enterprise networks. 
+Now, finally , we're going to take a short quiz 
+to see what you learned in this section of the course 
+and review each of those quiz questions fully 
+to ensure you can explain why each answer was right. 
+So if you're ready, let's get started 
+with our coverage of malware in this section of the course. 
+ 
+Video 2: viruses 
+ 
+In this lesson, we're going to explore viruses. 
+Now, a computer virus is simply made up of malicious code 
+that's run on a machine without the user's knowledge 
+and this allows the code to infect the computer 
+whenever it's been run. 
+So what does this look like out in the real world? 
+Well, maybe you're going to download 
+a new video game from a website 
+and when you download that installation file inside of it, 
+there may have been some malicious code. 
+Now, whenever you run the program to install it, 
+you're actually allowing the code to be installed 
+on your machine, and that virus can now take hold. 
+At this point, the virus is going to want to reproduce 
+and spread across the network, 
+and it does this because you have taken 
+some kind of user action, 
+and in this case it was you installing the program 
+and allowing that code to be run so that the virus 
+can now start performing some malicious activities, 
+including replicating across your network, 
+deleting your critical files, 
+and using a valuable computing resources 
+within your systems. 
+Now, there are 10 different types of viruses 
+that you should be aware of, 
+including boot sector, macro program, multipartite, 
+encrypted, polymorphic, metamorphic, stealth, 
+
+armor, and hoax viruses. 
+Now, first, we have a boot sector virus. 
+A boot sector virus is one that is going to be stored 
+in the first sector of a hard disk or solid state device 
+and is then loaded into memory 
+whenever that can computer boots up. 
+These boot sector viruses 
+are actually very difficult to detect 
+because they're installed 
+before your operating system boots up 
+and so it's able to hide itself from anti-virus 
+that you may have installed inside your Windows, Linux, 
+or Mac computer. 
+To find and remove these types of viruses, 
+you do need to use an anti-virus 
+that specifically looks for boot sector viruses, 
+and these usually are going to be run 
+from a network anti-virus scanning engine 
+or from an anti-virus that can be loaded 
+from a Linux live boot disc. 
+Second, we have a macro virus. 
+Now, macros are a form of code 
+that allows a virus to be embedded inside another document 
+so that when that document is open by the user, 
+the virus will then be executed. 
+The most common examples of macros 
+are the ones that are found inside 
+of Microsoft Word documents, Microsoft Excel spreadsheets, 
+and Microsoft PowerPoint presentations. 
+By default, macros themself aren't actually malicious. 
+In fact, macros are commonly used 
+as a way for you to add specific functionality 
+to your different documents, spreadsheets, and presentations 
+without needing to create an entire program 
+or application to do it. 
+For example, I have a macro that I use 
+inside of Microsoft Excel 
+that allows me to do quicker calculations. 
+Now, in my case, that piece of code works properly 
+
+and is safe and secure to use, 
+but just because we have the ability to add these codes 
+to our office documents, 
+it also means that threat actors can add code 
+to those documents too, including malicious code 
+into these types of documents, spreadsheets and PowerPoints 
+and then try to trick a user into opening those documents 
+by using social engineering techniques. 
+Third, we have a program virus. 
+Now program viruses try to find executables 
+or application files to infect with their malicious code. 
+For example, if you accidentally opened a program virus 
+while browsing the internet, 
+it can try to install itself into one of your programs, 
+like Microsoft Word, 
+that's already installed on your computer. 
+This way, every time you open up the infected application, 
+in this case Microsoft Word, 
+it will then infect your computer 
+each and every time you open it up. 
+This is why program viruses target programs or applications 
+because that virus can reinfect the system time after time, 
+anytime the user opens that compromised application. 
+Fourth, we have a multipartite virus. 
+Now, a multipartite virus is a combination 
+of a boot sector type of virus and a program type of virus. 
+By using this combination, 
+the virus can actually place itself in the boot sector 
+and then get loaded up every time the computer boots, 
+just like a boot sector virus would. 
+Now, once it's loaded up at boot time, 
+it can then install itself within a program 
+where it can be run every time the computer starts up 
+because that program is always started 
+whenever the computer is booted up. 
+Now, this allows a multipartite virus 
+to maintain a persistence on your infected machine. 
+And this way, even if a cybersecurity professional 
+finds that program that's part of the virus 
+
+and removes it from the system and cleans it out, 
+they still may have missed the boot sector portion 
+of that virus. 
+And so the next time the user reboots 
+their computer into Windows, 
+that computer will get infected once more. 
+Fifth, we have an encrypted virus. 
+Now, an encrypted virus is designed to hide itself 
+from being detected 
+by encrypting its malicious code or payloads 
+To avoid detection by any anti-virus software. 
+Since the anti-virus providers are getting better and better 
+all the time at understanding how viruses work, 
+they actually can stop a lot of them a lot of the time 
+from infecting our systems. 
+But as the defenders get better, 
+the attackers also get more creative 
+in their infection methods. 
+And so encrypted viruses make it harder 
+for anti-virus providers to find these types of viruses 
+because the malicious code is scrambled into cipher text 
+and it's unreadable to both the user 
+and the anti-virus software. 
+Sixth, we have polymorphic viruses. 
+Now, a polymorphic virus is an advanced version 
+of an encrypted virus, 
+but instead of just encrypting the contents, 
+it's actually going to change the virus's code 
+each time it's executed by altering the decryption module 
+in order for it to evade detection. 
+Now, I know this sounds really complicated, 
+but what it's really trying to do here 
+is morph the way the code looks 
+so that it's signature-based anti-virus applications 
+are not going to be able to detect it as being malicious. 
+Seventh, we have a metamorphic virus. 
+Now, metamorphic viruses are able to write itself entirely 
+before it attempts to infect a given file. 
+Essentially, this is a more advanced version 
+
+of a polymorphic virus. 
+Eighth, we have stealth viruses. 
+Now, a stealth virus isn't necessarily a type of virus 
+as much as a technique that's used to prevent viruses 
+from being detected by anti-virus software. 
+Stealth viruses are using different techniques 
+to avoid detection by an anti-virus software, 
+including things like encrypting its contents, 
+modifying its payload, and other methods to avoid detection. 
+Ninth, we have armored viruses. 
+Now, armored viruses have a layer of protection 
+that confuse a program or a person 
+who's trying to analyze it. 
+This is yet another way that virus creators 
+are trying to add in protections for their virus' code 
+to increase their odds of being able to spread that virus 
+to other users without being detected 
+by your organization's security appliances 
+or their anti-virus scanners. 
+The 10th and final virus we have 
+is what's known as a a hoax. 
+Now, interestingly enough, a hoax technically isn't a virus, 
+but instead, it's a form of technical social engineering 
+that attempts to scare our end users 
+into taking some kind of undesirable action on their system. 
+For example, you may have seen a message 
+or a website that pops up and claims that it's a message 
+from the Microsoft Tech support team 
+and that your machine has been infected by a virus 
+or other type of malware, 
+then they'll give you a few steps to follow 
+to remove that infection. 
+Unfortunately though, 
+your computer was never actually infected in the first place 
+when you got that message, 
+but by following their actions, 
+you actually will download and infect your computer 
+with a virus. 
+And this is what we're talking about 
+
+when we talk about a virus hoax. 
+Usually, a virus hoax is going to be used 
+to make somebody think their computer is infected, 
+but really, they're just trying to trick you 
+into installing a virus on your system 
+or to get you to pay them money 
+to remove that supposed virus from your computer. 
+Either way though, you should remember that a hoax 
+isn't really a virus 
+and you don't have a virus infection on your system, 
+unless you actually follow the directions 
+provided by that message or the popup, 
+or you allow somebody else 
+who's supposedly from tech support 
+to remotely access your computer 
+to provide virus remediation. 
+Either way, this really is just a technical form 
+of social engineering where the attacker 
+is trying to trick you into giving them access 
+or installing malicious programs on their behalf. 
+So remember, a virus is simply made up of malicious code 
+that's being run on a machine without the user's knowledge. 
+This allows the code to infect the computer 
+whenever it's been run, 
+and there are 10 different types of viruses 
+that you need to be aware of, 
+including boot sector, macro, program, multipartite, 
+encrypted, polymorphic, metamorphic, stealth, armor, 
+and hoax viruses. 
+Now, some modern viruses actually will combine 
+multiple categories of these 
+to create really powerful viruses, 
+such as an encrypted, metamorphic, multipartite virus 
+that is really going to grab a hold of your system 
+and attempt to avoid detection by your security appliances 
+and anti-virus software. 
+So you should be aware of this as well. 
+ 
+Video 3: worm 
+
+In this lesson, 
+we're going to explore computer worms. 
+Now, a worm is a piece of malicious software, 
+much like a virus, 
+that can replicate itself without any user intervention. 
+Now, the key difference here between a virus and a worm 
+is that a virus requires a user to take some action 
+such as opening a file, 
+clicking on a malicious web link, 
+or connecting a mass storage device to your system. 
+But a worm, on the other hand, can actually replicate itself 
+and spread throughout your network 
+without a user's consent or their action. 
+Now, this occurs because a worm 
+will take advantage of vulnerabilities 
+in our operating systems and applications 
+if our organizations don't mitigate these vulnerabilities 
+by selecting the appropriate security controls 
+and performing appropriate security patching. 
+So if a worm can scan your network 
+and determine that one of your workstations 
+is missing a security patch, 
+that worm can take advantage of that vulnerability 
+and then use it to spread from victim to victim 
+across the network and across the world. 
+Now, worms are very dangerous for two different reasons. 
+First, they're dangerous because they can infect 
+your workstation and other computing assets, 
+but they're also really dangerous 
+because they can cause disruption 
+to your normal network traffic 
+because they're constantly trying to replicate 
+and spread themselves across the network. 
+This begins to consume not just our network resources 
+but also consumes compute power, processing power, 
+memory power, and network capacity, 
+which will slow down your system and your overall network. 
+If the replication is occurring too rapidly, for example, 
+this can actually cause a denial-of-service attack 
+
+against your network and its associated servers. 
+Now worms are best known for spreading far and wide 
+over the internet in a relatively short amount of time. 
+Even as far back as 2001, 
+there was a worm named Nimda 
+which is basically admin spelled backwards. 
+Now, Nimda was able to propagate against the entire internet 
+in just 22 minutes, which is really impressive, 
+especially because most internet connections back then 
+were extremely slow and relied upon dial-up modems. 
+Now, there's another major worm that we saw back in 2009 
+and this one was called Confick   er. 
+Now, Confick   er was probably one of the largest worms 
+that we've seen to date as cybersecurity professionals 
+because it was able to infect 
+between nine and 15 million machines. 
+This worm was going through and infecting 
+as many machines as it could find, 
+and all these machines 
+were missing a critical security patch 
+for the Windows operating system 
+specifically the Microsoft patch 
+known as 08-067. 
+Now, this security patch 
+was designed to solve a software vulnerability 
+inside the way Windows was doing file and printer sharing. 
+Confick   er would actively scan every resource 
+on an infected organization's internal network 
+as well as across the internet. 
+And whenever it found a machine 
+without that security patch installed, 
+it would then execute some malicious code 
+to take over that infected machine 
+and add it to a larger botnet 
+that the attacker could then use 
+for other malicious purposes. 
+Now, luckily, cybersecurity professionals 
+were able to shut down the attacker's botnet 
+before it was used for any malicious or nefarious purposes. 
+
+But Confick   er does show the true power 
+of how far and wide these worms can spread 
+especially when you're using an internet connected system. 
+So remember, a worm is a piece of malicious software 
+that can self replicate without any user interaction. 
+This is the key difference between a virus and a worm 
+because a virus requires some kind of user action 
+like opening a file, clicking on a malicious web link, 
+or connecting a malicious storage device to your system 
+to cause the system to get infected in the first place. 
+Worms, though, will simply continually search out 
+a new network connection 
+and scan any resources it finds 
+to try and exploit some kind of known vulnerability 
+in order to take over that machine and infect it 
+as well as infecting your network 
+ 
+Video 4: trojans 
+ 
+In this lesson, 
+we're going to take a look at Trojans. 
+Now, before we dive into this piece of malware, 
+let's look at history for a moment 
+and learn what a Trojan actually is. 
+Now, a couple of thousand years ago 
+Greece and the city of Troy were at war. 
+This lasted for about 10 years with no end in sight. 
+After a long siege, the Greeks started getting restless 
+and they decided they were going to try something different. 
+So they went out and constructed a large wooden horse 
+that they decided to give to the city of Troy 
+as a peace offering. 
+Now, unfortunately, for the citizens of Troy, 
+this seemingly harmless gift was actually filled 
+with Greek soldiers, 
+and once it was wheeled safely into the city, 
+the day turned to night 
+and the soldiers came out from within that Trojan horse. 
+This handful of soldiers then went over 
+
+to the walled city's gates, unlocked them and opened them, 
+and let the rest of the invading Greek army into the city 
+which rapidly laid waste to the entire city of Troy. 
+Now, this is where the term Trojan horse, 
+or as we call it in cybersecurity, a Trojan, gets its name. 
+Now, in cybersecurity 
+Trojans work quite similarly to the gift horse 
+delivered by the Greeks to the city of Troy. 
+Now, a Trojan is simply a piece of malicious software 
+that is disguised as a piece of harmless 
+or desirable software. 
+Basically, a Trojan claims it's going to perform 
+some kind of needed or desired function for you 
+and that Trojan will indeed perform that function, 
+but it also performs a malicious one 
+like installing a backdoor or virus 
+onto your system as well. 
+Now, when I was a kid back in the 1980s 
+there was this great new game that came out called Tetris 
+and everybody loved it. 
+Now, Tetris was, and still is, an extremely popular game 
+and everybody wanted to get a copy of it back in those days. 
+But back then, 
+we really didn't have the internet to download games, 
+and so instead, you may have received a flopp y disk 
+from your friend at school who had a copy of the game. 
+Now, this became a common practice, and back in those days, 
+people really weren't thinking about computer viruses 
+the way we do today. 
+Well, an attacker got this great idea 
+of embedding some malicious code 
+into the Tetris game and then passing out disks 
+with that infected version to lots of different people. 
+If you received one of those disks, 
+you might put it in your computer in order to run the game, 
+And when you did that, 
+the game would actually play just like you thought it would, 
+but what was actually happening 
+behind the scenes was it opened a connection 
+
+between your system and their system 
+so the attacker could gain remote access 
+and control over your system. 
+Now, what I just described is one of the earliest examples 
+of what we now refer to as a RAT, a Remote Access Trojan. 
+Now, a RAT is a type of Trojan 
+that's widely used by modern attackers 
+because it provides the attacker with remote control 
+of a victimized machine. 
+Now, let's go back to that Tetris example, 
+because young Jason found this to be a great way 
+to mess around with his online friends. 
+So I could go out and give a copy 
+of this infected version of Tetris over to my friends, 
+and when they started playing it, 
+a remote connection would be created from their machine 
+back to my machine. 
+Now, once that connection was established 
+I could do all sorts of things that I thought were hilarious 
+on my friend's system, like logging in as them 
+on their computer, opening and closing their CD drive, 
+playing music or alerts on their computer, 
+flipping their screen upside down 
+so that everything appeared backwards or upside down, 
+and all sorts of other weird things like that, 
+all while maintaining remote access and remote control 
+of my friends' computers by using this Trojan. 
+Now, in my case, this was being done for fun 
+against my friend's computers or later on in life, 
+as part of my network penetration test 
+that I was involved with over the years. 
+So remember, when you're dealing with a Trojan 
+you're dealing with a piece of malicious software 
+that's disguised as a piece of harmless 
+or desirable software. 
+Trojans are commonly used by attackers 
+to exploit a vulnerability in your workstation 
+and then conduct data exfiltr  ation 
+to steal your sensitive documents and create back doors 
+
+to create persistence in your system 
+and other malicious activities like that. 
+So, anytime you download a program from the internet, 
+you always need to be careful to check them for Trojans 
+by using a good anti-virus or anti-malware solution 
+prior to opening or installing any programs you download, 
+as well as making sure your systems are patched 
+against known vulnerabilities 
+in order to prevent your system 
+from falling victim to the attacks created by Trojans. 
+ 
+Video 5: viruses and trojans 
+ 
+In this lesson, 
+I want to perform a quick demonstration to 
+show you how easy it is to create 
+and use a virus and remote access Trojan. 
+Now, before we begin, it's important to note 
+that I'm using an older, legacy style machine 
+for this demonstration 
+because these are known vulnerable Windows 7 machines 
+that I'm using inside of my lab environment. 
+Now, this is a great operating system to use 
+for these types of security demonstrations, 
+because they are vulnerable 
+and there are no longer any new security patches 
+for Windows 7 systems in existence. 
+So if you're trying to replicate this demonstration 
+on a more modern workstation like Windows 11 or Windows 10, 
+it will usually be detected and blocked 
+by your modern antivirus software like Windows Defender. 
+But there are newer tools that are being developed 
+by threat actors, attackers, and penetration testers 
+all the time that you can use. 
+Now, I've had many students ask 
+where they can download a tool like JPS Virus Maker 
+that I'm going to be using in this demo 
+and you can find these things online. 
+Now, because I did not create this tool 
+
+and I don't own the copyright to it, 
+I am not able to provide you a direct download link 
+for this tool or tell you where you 
+can actually go and download it. 
+Making a virus is not considered a testable item 
+for your exams, but I wanted to provide 
+this quick demonstration so you can see 
+what kind of things a virus and a Trojan can do 
+once they've compromised your targeted system. 
+Now, if you move into the world 
+of penetration testing later on in your career, 
+you'll learn all about the different tools that we use 
+in modern networks to be able to create viruses 
+and Trojans to be able to break 
+into corporate networks as part 
+of your penetration testing assessments and engagements. 
+Alright, let's jump into the demonstration. 
+So I have two machines set up here. 
+I have one on the left, which will be my attacker 
+and one on the right, which will be my victim. 
+On the attacker's machine, 
+I'm running a program called Virus Maker 3.0, or JPS. 
+Here is basically a point and click options 
+of all the things that I can do 
+to that machine on the right. 
+For our example, I'm going to do one 
+that's easy to see, it's called Crazy Mouse. 
+So I'll go ahead and click that 
+and then I'm going to select what do I want it 
+to be called after installation. 
+We'll go ahead and call it the service host. 
+And what do we want the server name to be called? 
+The file name, and I'm going to go ahead 
+and call it Explorer.exe. 
+You could really choose whatever you want. 
+It just depends on how sneaky you're trying to be. 
+Now, the next thing I'm going to do is 
+I'm going to create that virus. 
+At this point that has been created 
+
+and saved to my downloads folder. 
+Now at this point, I need my victim to be able 
+to download this virus, and there's lots of ways 
+to do that based on your social engineering, 
+tying this virus into another program, 
+using a spear phishing campaign, 
+putting it as a rogue download, all sorts of things. 
+For this particular example though, 
+I'm just going to show you the effect 
+if the person was able to download it 
+and if they ran it. 
+So at this point the user's been tricked, 
+they've downloaded the file and now they run it 
+because they think it's a game or whatever else it is. 
+In this case, they think it's a picture. 
+If we go ahead and run that, see what happens. 
+And there you can see the mouse just starts 
+going jumping all over the screen 
+so that if I wanted to try to open something 
+like the trash can I can't because every time I click on it, 
+it jumps away someplace else. 
+That's the idea of this very simple virus. 
+It's just a nuisance, it's trying to cause 
+a problem for them. 
+Now, let me show you an example 
+of what a remote access Trojan or RAT looks like. 
+Now, on the left is my attacking machine 
+and on the right is my victim machine. 
+So I'm using a program called ProRat. 
+So the first thing I want to do is create a ProRat server. 
+I'm going to click on General Settings 
+and from here you can see the port 
+it's going to operate on: 5110, 
+which I can change to anything I want. 
+The server password in this case, 12345. 
+Again, not very secure, 
+but for our lab purposes it's just fine. 
+And then the victim's name if we have it. 
+From here we can give them error messages, 
+
+we can melt the server on install 
+which means once the Pro Rat has 
+been installed on the victim computer, 
+it will delete itself while still maintaining a connection. 
+We can kill the antivirus and the fir ewall on start, 
+we can disable Security Center 
+and all sorts of other things like that. 
+I'm going to go ahead and give a fake error message 
+here saying "You have been hacked." 
+Now, normally you wouldn't want to send a message 
+to your user showing that they've been hacked, 
+but I just want to show it to you for demonstration purposes. 
+Maybe you're doing this as a ransomware 
+and you've encrypted their files. 
+This is a way to send them a message saying 
+"You need to pay me if you want access to it." 
+And from there we'll just go down 
+and we can go ahead and hit Create Server. 
+From there, the server is going to be created for us. 
+Go ahead and hit OK. 
+So if we want to be a little trickier, 
+we're going to go ahead and bind it with a file. 
+So we're going to select a picture, 
+in this case, the desert. 
+Go ahead and hit Open on that 
+and then we're going to give it another server extension here. 
+We want to call it EXE, SCR, COM, PIF or BAT. 
+EXE will be just fine and for the icon, 
+what do we want this to look like? 
+Well, we want it to look like a photo, 
+so we're going to go ahead and make it a JPEG. 
+And then we can go ahead and hit Create the Server. 
+And this is going to be in our current directory, 
+so if I look back in my current directory 
+I now have the binded server with a JPEG icon. 
+And from here we can go ahead 
+and rename it and let's call it "Desert". 
+So now they think they're getting a photo of the desert. 
+At this point, again, we would use some form 
+
+of trickery or social engineering to get it to them 
+and once we do, it'll be on their desktop. 
+So at this point I've tricked the user 
+and they now have the file. 
+They're going to go ahead and open that file, 
+and when they run that file, 
+you're going to see the error message that we told it to have. 
+There's the picture and "You have been hacked." 
+Uh-oh, now what's going on? 
+Let's go ahead onto our target machine 
+and connect to that server that's now been installed. 
+Again, we're going to use our password 12345, 
+and at this point we now have access to that machine. 
+We can find out information about it. 
+In this case, if we go ahead and get the system information, 
+I know now the computer name is Bob Sales. 
+I know what kind of machine it is, 
+it's using English for its language, 
+System32 is its path, 
+I find out what kind of users it has, 
+I find out the date and time of the machine, 
+all of that information. 
+And if I close this on the right, 
+that'll move out of the way. 
+We can get all that information here 
+from our attacking machine about our victim machine. 
+We can also look at the last 25 websites they visited 
+and maybe that would be something that would be helpful 
+for us to be able to attack. 
+We can take screenshots and we can actually open it 
+and see what we're going to see. 
+So if I do a screenshot, I see what's on their screen. 
+So if they're on a website like Google here 
+which is not going to connect 
+'cause I'm in a live environment here 
+that's disconnected from the machine, 
+I'll go ahead and hit Snapshot and now I can see that. 
+If they had a webcam, I could view their webcam. 
+Again, I have lots of access to do whatever it is 
+
+we want to do on this machine. 
+I can send them messages if I want, 
+so I can do a message and say Test. 
+And it'll say, "I don't work for you anymore", 
+so we're going to go ahead and send that over there. 
+And there it is. 
+"I'm sorry, I don't work for you anymore." 
+And so you can see the power of a remote access tool, 
+and so this allows me to do all sorts of different stuff. 
+Again, I can take their files, 
+I can mess with their registry, 
+I can go through and look at all their files, 
+I can FTP over and grab their files, 
+I can chat over to them. 
+I can do some funny stuff. 
+Maybe it's my friend and I'm just trying 
+to show them that I have access to their machine. 
+For instance, I can hide their desktop icons, 
+and now you should be able to see that that is gone. 
+And I can show their icons and they're back. 
+I can make the mouse go crazy and then I can fix it. 
+I can flip their screen upside down and then I can fix it. 
+So you can do all sorts of different things 
+on this machine and take control and do whatever it is 
+that we want because we have that remote access to them. 
+I hope you found this demonstration insightful 
+as you started to see what kind of effects a virus 
+or a remote access Trojan can have on a victimized system 
+ 
+Video 6: ransomware 
+ 
+In this lesson, 
+we're going to discuss the world of ransomware. 
+Now, ransomware is the digital equivalent of kidnapping. 
+But instead of focusing on people, 
+we are focused on digital data and information assets. 
+Let's imagine for a moment 
+that somebody came over to your house today. 
+They grabbed your child when you weren't home, 
+
+and then they sent you a letter demanding $1 million 
+for your child's safe return. 
+This type of kidnapping is usually pretty successful 
+because the victim's family will usually pay up 
+to ensure the safe return of their child. 
+Now, with this in mind, 
+let's go back to the digital world 
+and talk about ransomware, 
+because ransomware is a type of malicious software 
+that's designed to block access to a computer system 
+or its data by encrypting it until a ransom is paid 
+over to the attacker. 
+Now, generally, ransomware will display a message 
+to the victim that demands payment 
+in exchange for a decryption key 
+which can decrypt your data files. 
+Some ransom amounts can be fairly low 
+like a few hundred dollars 
+if the attacker determines they have encrypted the files 
+of an individual user system. 
+But we've also seen demands in the multi-millions of dollars 
+for large organizations 
+that have become the victim of a ransomware attack. 
+To really understand the scale 
+and scope of this type of ransomware problem, 
+let's just take a look 
+at a relatively recent, high-profile incident, 
+known as a Colonial Pipeline attack of 2021. 
+Colonial Pipeline is a major US fuel company 
+that fell victim to a ransomware attack 
+that forced them to shut down their pipeline. 
+Now, that doesn't sound so bad on the surface. 
+But the problem here is 
+that the Colonial Pipeline actually carries 
+nearly half of the United States' fuel supply 
+on the East Coast. 
+Now, due to this ransomware attack 
+that took over their systems, 
+the company was unable to use their pipeline 
+
+for fiv e straight days. 
+This shutdown caused massive disruptions, 
+which led to fuel shortages, panic buying, 
+and a pretty large spike in gas prices. 
+The attackers, known as the DarkSide, 
+demanded and then received a ransom 
+of approximately $4.4 million in Bitcoin 
+to provide the decryption key for this attack. 
+While the payment facilitated 
+the recovery of some of the encrypted data, 
+the attackers repercussions really fell 
+across industries and households for weeks. 
+Luckily, during the Colonial Pipeline ransom attack, 
+nobody was seriously injured. 
+But that isn't always the case. 
+One of the most tragic real-world examples 
+of a ransomware attack actually occurred 
+at the University Hospital in Dusseldorf, Germany, 
+back in September of 2020. 
+Back then, the University Hospital, Dusseldorf, 
+suffered a ransomware attack which crippled their systems. 
+Because of the attack, 
+the hospital's computer systems were disrupted, 
+and they began to divert patients 
+who required emergency treatment to other hospitals 
+while the cybersecurity team was working 
+to regain access to their systems and to restore their data. 
+Now, among those patients who were being diverted was 
+a woman who is suffering from a life-threatening condition. 
+Due to the delay caused by rerouting her ambulance 
+to another hospital because of that ransomware attack, 
+this woman actually died 
+making this the first death 
+directly linked to a ransomware attack in a hospital. 
+Now, German authorities launched an investigation. 
+And if the attackers were caught, 
+they could have faced charges of manslaughter 
+in addition to cyber crime charges 
+because somebody died as a result of the attack. 
+
+The attackers claimed they did not intend 
+to target the University Hospital system, 
+but instead they were targeting 
+the Heinrich Heine University. 
+But they attacked the hospital by mistake. 
+When they learned about the mistake 
+and the severe consequences of their actions, 
+they provide the decryption key to the hospital 
+without demanding a future ransom. 
+This ransomware attack really does underscore 
+just how vulnerable critical infrastructure can be 
+to a ransomware attack 
+and the cascading consequences 
+that these ransomware attacks can have 
+on our society at large. 
+So now that we understand the gravity of ransomware, 
+how can we protect ourselves 
+and our organizations against it? 
+Personally, I recommend following 
+four security best practices 
+to prevent becoming the victim of a ransomware attack. 
+These are conducting regular backups, 
+installing regular software updates, 
+providing security awareness training to your end users, 
+and implementing multi-factor authentication 
+for your systems. 
+First, you should always conduct regular backups. 
+One of the most effective ways to mitigate 
+against the impact of a ransomware attack is 
+to regularly back up 
+all of your important data, files, and systems. 
+These backups should be stored both on physical devices 
+in your own on-premise data center, 
+as well as the second backup 
+conducted using cloud-based storage solutions 
+to ensure that they're not connected 
+to the main system that you're trying to protect. 
+For example, if you only have one external hard drive 
+connected to your system that serves as your backup, 
+
+this device will be encrypted by the ransomware 
+if your system is attacked as well. 
+But by having cloud-based storage 
+or an offsite disconnected storage solution available, 
+you're going to have a full copy of your data 
+if you need to restore those from backup 
+because of a ransomware attack. 
+Second, you should install software updates regularly. 
+By regularly updating all of your software, 
+especially your operating system and antivirus programs, 
+you can prevent an attacker 
+from being able to exploit vulnerabilities 
+and outdated software and operating systems. 
+For example, the WannaCry ransomware attacks 
+of 2017 were able to successfully move 
+around the globe pretty quickly 
+because so many systems were missing 
+a critical operating system patch for Windows 7, 
+Windows 8, and Windows 10-based systems, 
+which is known as MS17-010. 
+If the system simply had this patch installed, 
+it would've prevented the EternalBlue exploit 
+from being successfully run against those systems 
+as part of a future ransomware attack. 
+Third, we need to provide security awareness training 
+to our end users. 
+Now, many of the most successful ransomware attacks 
+were begun by an end user clicking on a link 
+in a simple phishing email. 
+Your users must always be skeptical of unsolicited emails, 
+especially with those 
+that have attachments or links in them, 
+because they're often used as a common attack vector 
+by malware, viruses, trojans, and ransomware. 
+Bottom line, if something looks suspicious, 
+your end users simply shouldn't click on it. 
+Fourth, your organization should also implement 
+multi-factor authentication. 
+Now, multi-factor authentication, known as MFA, 
+
+can be enabled on your authentication systems 
+to provide an extra layer of security, 
+which in turn makes it more difficult for attackers 
+to breach your user accounts, 
+install ransomware on your systems. 
+So what do you do if you find yourself 
+the victim of a ransomware attack? 
+Well, first, you should never pay the ransom. 
+While it may seem like the quickest way 
+to get out of the situation, 
+paying the ransom does not actually guarantee 
+that you'll ever get your data back. 
+Plus, paying the ransom does reward the attackers 
+and their criminal behavior. 
+It funds future attacks. 
+And it can get you added 
+as a person who pays up when they're attacked, 
+which then encourages other attackers 
+to try and compromise your systems a second time 
+in order to get a second payment from you. 
+Second, if you suspect ransomware has infected your machine, 
+you should immediately disconnect it from the network. 
+By isolating the affected machine from your network, 
+you can prevent the spread of ransomware 
+across the rest of your workstations and servers. 
+Third, you should notify the authorities. 
+Remember, a ransomware attack is considered a criminal event 
+and they should be reported like the crime they are. 
+Now reporting of ransomware attack can help authorities 
+track down and apprehend the attackers too, which is great. 
+But note, you should not make the decision 
+to report the attack to the authorities on your own. 
+If this happened inside your organization, 
+you need to consult 
+your organizational instant response processes 
+because some organizations prefer 
+to handle ransomware incidents internally 
+without involving external law enforcement. 
+And fourth, you should restore your data and systems 
+
+from known good backups. 
+If you're following the cybersecurity best practices 
+and have been backing up your data to an offsite 
+or offline environment, 
+you're going to find that you can quickly 
+and relatively easily restore your business operations 
+using those backups. 
+But you first need to ensure 
+that the ransomware is completely removed from your systems 
+before you restore your critical and sensitive data 
+back onto those systems. 
+Otherwise, they could get encrypted again. 
+So remember, ransomware is a type of malicious software 
+that's designed to block access to a computer system 
+or its data 
+by encrypting it until the ransom is paid to the attacker. 
+You can prevent the worst effects of ransomware 
+by conducting regular backups, 
+installing regular software updates, 
+providing security awareness training to your end users, 
+and implementing multi-factor authentication 
+in your IT systems. 
+If you do fall victim of a ransomware attack, 
+remember to never pay the ransom, 
+disconnect the infected system from the network, 
+notify the authorities if that's in alignment 
+with your organization's instant response policies, 
+and restore your data from known good backups 
+to get your business operations restored back to normal 
+as quickly as possible. 
+ 
+Video 7:  
+In this lesson, 
+we're going to explore botnets and zombies. 
+Now, a botnet is a network of compromised computers 
+or devices controlled remotely by malicious actors 
+and they're often used 
+for cyber attacks or other malicious activities. 
+A botnet is created by using other types of malware 
+
+to gain access to a system, victimize it, 
+and then add it to the botnet 
+so the attacker who controls the botnet 
+can use the processing, memory, storage, 
+or networking capabilities of your system 
+without your consent. 
+Now each botnet is made up of hundreds, thousands, 
+or even millions of compromised systems 
+which we call zombies. 
+Now, a zombie is simply the name 
+of a compromised computer or device 
+that is part of a botnet 
+and used to perform tasks using remote commands 
+from the attacker without the user's knowledge. 
+So what happens to your computer 
+if it becomes the victim of a botnet? 
+Well, let's pretend that your computer 
+picked up some kind of malware and that malware was designed 
+to change your computer into a zombie. 
+Your single workstation, 
+which is now considered to be a zombie, 
+is then added to the larger botnet 
+as part of a collection of compromised computers 
+under the control of a master node. 
+If your computer is now a zombie, 
+your system will now be under the control of the attacker 
+and that attacker can use a command and control node, 
+known as a C2 node, to control all the zombies 
+inside of their specific botnet. 
+Now, by sending commands to their C2 node, 
+the attacker can tell the zombies 
+to perform lots of different things, 
+including using zombies as pivot points 
+so they can get access to a new victim, 
+or if they're attacking a server, 
+they can actually access it through your computer 
+to make it look like you're the one doing the attack 
+or the hack instead of the actual attacker 
+who sent the command through their master C2 node. 
+
+Other attacks will try to create large botnets 
+so they can store illegal content 
+across a large number of devices. 
+For example, if somebody wants to host child pornography, 
+but they're afraid of getting caught with it, 
+they can store their illegal videos and photos 
+across hundreds or thousands of affected machines 
+inside of this botnet. 
+Another common use of botnets is use them to spam others 
+by sending out phishing campaigns and other malware 
+to their targets around the world. 
+But, by far, the most common use of a botnet 
+is to conduct a DDoS attack 
+which is known as a Distributed Denial of Service attack. 
+Now, a Distributed Denial of Service attack, 
+known as a DDoS, 
+will occur anytime you have a lot of machines 
+targeting a single victim 
+and then attacking them all at the same time. 
+Now, let's assume that I'm a threat actor, 
+and I have control over 100,000 machines 
+as part of my botnet. 
+If I wanted to take down your organization's website, 
+I can use my C2 node to order all 100,000 zombies 
+in my botnet to target your victimized server 
+and make requests to it repeatedly 
+until the amount of load is so much 
+that it forces your web server offline. 
+Essentially, your organization can't handle all the load 
+that I'm sending to it, 
+and so the web server will actually crash 
+and not be able to perform its function 
+for your legitimate users or customers. 
+Since around 2015 though, 
+many threat actors have begun to use botnets 
+to make money by using their zombies 
+to do processor intensive things like crypto mining 
+on their behalf too. 
+So if an attacker can get 10,000 or a 100,000 zombies 
+
+as part of their botnet, 
+they can command those zombies 
+to give you 20 to 25% of their available processing power 
+so they can continually mine cryptocurrency 
+in the background without your knowledge or consent. 
+Now, by doing this, they can have a lot of zombies 
+working in parallel to mine coins 
+that can be stored in the attacker's digital wallet 
+by redirecting the gain coins 
+through their command and control nodes. 
+Another use of botnets by attackers 
+is use this combined processing power 
+to break through different types of encryption schemes. 
+Here again, the attacker is trying to gather 
+as many zombies as possible 
+to add them to this distributed computational network 
+in order to use some of each 
+of the zombies' processing capabilities 
+to brute force different encryption schemas. 
+Now, to avoid detection, 
+attackers will usually not take up all 
+of your computing power 
+but instead they'll usually use 20 or 25% 
+of your available processing power, 
+so it takes you a little bit longer to detect that, 
+and that way you don't realize your machine 
+has been compromised. 
+After all, if I broke into your machine 
+and took over 90 to a 100% of your processing power, 
+your computer would fail to respond to your own requests, 
+and then you'll start looking for the cause of that, 
+which would, in this case, 
+find that you are now part of my botnet as a zombie. 
+And so most attackers aren't going to be greedy 
+and they're not going to try to use up all 90 to 100% 
+of your processing power, 
+and they'll stick with only 20 to 25% 
+across hundreds or thousands of zombies 
+to still have a great computational network 
+
+and tons of processing power at their disposal 
+for all the malicious or nefarious things they want to do, 
+like conducting Distributed Denial of Service attacks 
+or making money through crypto mining. 
+So remember, botnets and zombies 
+are used to create large networks of compromised machines. 
+A botnet is a network of compromised computers or devices 
+that are controlled remotely by a malicious actor 
+and they're often used for cyber attacks 
+or other malicious activities. 
+A zombie, on the other hand, 
+is the name of a single compromised computer or device 
+that's part of the botnet 
+and it's used to perform the task using remote commands 
+from the attacker without the user's knowledge. 
+These botnets are used 
+to create large distributed computing capabilities 
+that can be used by an attacker 
+to conduct a Distributed Denial of Service attack, 
+for crypto mining, or breaking encryption, 
+depending on the needs of that attacker 
+and the commands they send 
+through their command and control node. 
+ 
+Video 8: rootkits 
+ 
+In this lesson, 
+we're going to discuss rootkits. 
+Now, a rootkit is a specific type of software 
+that's designed to gain administrative-level control, 
+over a given computer system without being detected. 
+Now, this is a really important concept 
+because if somebody can install a rootkit on your system, 
+they can gain root 
+or administrative-level permissions over that system. 
+And this is the highest level of permissions 
+that somebody can have on a given computer system or server. 
+So, if you're using a Windows machine, for example, 
+the account with the highest level of permission, 
+
+is called the administrator account. 
+That administrator account allows the person 
+to install programs, delete programs, 
+open ports, shut ports, 
+and do pretty much whatever it is they want to do 
+on that given system. 
+If the victim is using Unix, Linux or a Mac OS computer, 
+this type of administrator account, 
+is actually called the root account. 
+Either way, getting administrative 
+or root account access is a wonderful thing 
+for an attacker or threat actor, 
+but it is a horrible thing for you 
+and the security of your system. 
+So now that you have an understanding of what a rootkit is, 
+and the type of permissions it's seeking to gain, 
+let's take a moment to learn how a rootkit actually works. 
+Now, if you look at a computer system, 
+it has several different rings of permission used 
+throughout the system. 
+The outermost ring is called ring three, 
+and this is where the user permissions are going to be used. 
+So if you're logged as a standard or regular user, 
+you're mostly going to be operating in ring three. 
+Now, each program can be run in different security rings, 
+moving from ring three at the outermost level, 
+all the way down to ring zero at the innermost 
+or highest permission level in the system. 
+When you're operating in ring zero, 
+we call this the kernel mode. 
+The kernel mode allows the system to control access 
+to things like the device drivers, your sound card, 
+your video display or monitor, and other things like that. 
+Kernel mode or ring zero is not something you're going to log 
+into the system as, but instead it is the most trusted 
+and powerful ring inside the operating systems design. 
+Now, if you log in as the administrator 
+or route user on a system, 
+you're going to have route permission, 
+
+and you'll be operating at ring one of the operating system. 
+Now, this is closer to ring zero than ring three was, 
+so it's easier to do more damage on the system 
+from ring one than it would be from ring three. 
+Now, when a root kit is installed, 
+it tries to gain the highest levels of permission possible. 
+So any malicious code it's going to execute, 
+we'll operate in ring one, or if they're lucky, 
+even as low as ring zero. 
+Remember, the closer the malicious code is 
+to ring zero or the kernel, 
+the more permissions it's going to have 
+and the more damage it can do on your system. 
+Now, when a rootkit is installed on a system, 
+it tries to move itself from ring one to ring zero, 
+so it can hide from other functions 
+of your operating system as well to avoid detection. 
+In fact, rootkits are able to perform malicious operations 
+on a target computer at any date they want 
+without the knowledge of the administrators or the users, 
+and even sometimes without the knowledge 
+of the operating system itself if they're properly coded. 
+Remember, a rootkit is designed to really dig 
+into your operating system deeply. 
+So your antivirus and anti-malware solutions, 
+have a really really hard time detecting them. 
+Now, one technique that's used by rootkits 
+to gain this deeper level of access is known 
+as a DLL injection. 
+Now, a DLL injection is a technique used 
+to run arbitrary code within the address space 
+of another process by forcing it 
+to load a dynamic-link library. 
+A dynamic-link library, also known as a DLL, 
+is simply a collection of code and data 
+that can be used by multiple programs simultaneously 
+to allow for code reuse and modularization 
+in software development. 
+And these DLLs are often provided 
+
+by default inside of the Windows operating system. 
+With a DLL injection, 
+the malicious code is going to be inserted 
+into a running process on a Windows machine 
+by taking advantage of those dynamic-link libraries 
+that are being loaded up at runtime. 
+This means that the Windows system, 
+doesn't even understand the fact 
+that it has a rootkit installed inside of one of those DLLs 
+that is then designed 
+to load every time you boot up a Windows machine. 
+This kind of DLL injection is going to work 
+by using what is known as a shim. 
+Now, a shim is simply a piece of software code 
+that's placed between two components, 
+and it intercepts the calls between those two components 
+and then it can redirect those calls. 
+So the rootkit will intercept the communications, 
+between the Windows operating system 
+and the dynamic-link library, 
+and then it redirects that call once it's embedded 
+into some kind of malicious code 
+that's being embedded inside of it. 
+Now, these rootkits are extremely powerful, 
+and they're also very difficult to detect 
+because the operating system is essentially blinded to them. 
+To detect them, the best way is to boot 
+from an external device 
+and then scan the internal hard disk drive 
+or solid state device 
+to ensure you can detect those rootkits, 
+using a good anti-malware scanning solution 
+from a live boot Linux distribution. 
+So remember, a rootkit is a piece of malicious software 
+that's designed to infiltr  ate a computer system 
+at the highest administrative permission level 
+while remaining undetected. 
+Rootkits aim to gain access 
+as close to ring zero as possible, 
+
+and they'll start out at ring three, 
+the user-level permission ring, 
+and work their way down all the way to ring zero, 
+the kernel mode permission ring, 
+where they can wreak the most havoc. 
+A rootkit's primary objective is 
+to seamlessly embedded itself into the operating system, 
+and this is often done 
+by exploiting the system's inherent trust 
+in the dynamic link library system or DLL system, 
+using a DLL injection, and the use of a shim technique. 
+Because of the deep rooted nature of a rootkit 
+and its ability to hide itself from the operating system, 
+traditional antivirus and anti-malware solutions, 
+will often fail to detect rootkits. 
+Therefore, the most effective method 
+for rootkit detection removal is going 
+to be to conduct an external system scan. 
+Remember, guarding yourself against rootkits, 
+does require continuous vigilance 
+and the implementation of robust security measures, 
+across your entire enterprise systems. 
+ 
+Video 9 : backdoors and logic bombs 
+ 
+In this lesson, we'll cover backdoors and logic bombs. 
+Now, a backdoor is originally placed 
+into computer programs to bypass the normal security 
+and authentication functions of those systems. 
+Now, if this sounds like a horrible idea to you, 
+you're right, 
+because it really is a horrible security practice. 
+So why were backdoors created 
+in some of our applications and programs? 
+Well, it's actually something 
+that goes all the way back to the 1980s 
+because manufacturers and programmers 
+were adding in these back doors 
+as a way to get back into their system 
+
+to do maintenance and repairs 
+without having to go through all the authentications 
+or going through the fir ewalls 
+and all the layers of security 
+that they normally would if they went through 
+the public facing portions of that application. 
+Now, back in the 1980s and 1990s 
+and even into the early 2000s, 
+backdoors were a commonplace thing 
+that was put into our applications by programmers. 
+But in modern networks, we consider this 
+to be a breach of secure coding best practices, 
+even though you'll still find some programmers 
+who add backdoors into their code. 
+So these days, most software will not have a backdoor 
+because they've been patched up 
+because we know how bad these things are for security 
+but there is still some things out there 
+that act like back doors. 
+Do you know what those might be? 
+Well, it's a Remote Access Trojan. 
+Now, a Remote Access Trojan can be placed by a threat actor 
+onto your computer to help them maintain 
+persistent access to your system. 
+So if an attacker is able to trick one of your users 
+into clicking on a sphere phishing link in an email, 
+they may be able to install some kind of malware 
+based on clicking that link, and now they have something 
+that can create a callback connection to their system. 
+This callback to the remote system 
+will then allow the attacker to connect to your system 
+while bypassing the system's default security posture. 
+And this allows a remote access Trojan 
+to basically act like a backdoor 
+in order to allow the attacker to gain access to your system 
+anytime they want. 
+Next, we need to talk about something 
+known as an Easter Egg. 
+Now, Easter Eggs are another insecure coding practice 
+
+that was used by programmers to provide a joke 
+or gag gift to their users. 
+Essentially, there would be different things 
+that would happen in different video games 
+or different pieces of software 
+when certain pieces of code were executed. 
+For example, several years ago, 
+Google added an Easter Egg into their search application 
+and you can actually still access it today. 
+If you want to try it out, 
+simply head over to google.com right now 
+and type in do a barrel roll into the search bar 
+and then press enter. 
+Then you'll see the whole webpage do a 360 degree rotation 
+as if it was doing a barrel roll inside of an airplane. 
+Now, this code has no real function 
+except to act as a joke or a gag 
+or a hidden secret inside of the search application. 
+And that is why this is considered to be an Easter Egg 
+because the Google programmers 
+decided to put this silly feature into the code 
+for the company's most widely used product, 
+the Google search bar. 
+Now in general, 
+you're going to find Easter Eggs are pretty harmless 
+but they do add additional code into the applications 
+which could create some additional vulnerabilities 
+that a threat actor could exploit. 
+Now, over the years, I have worked as a penetration tester 
+and I have found that Easter Eggs 
+generally have more vulnerabilities associated with them 
+than the rest of the application. 
+And the reason for this is that this type of code 
+that creates the Easter Egg is usually meant as a joke 
+and it's added right before a product 
+is going to be released. 
+And this means it doesn't always go through 
+the same rigorous forms of security testing 
+that the rest of the application did. 
+
+Now, you may be wondering 
+why am I talking about Easter Eggs inside of this video? 
+Well, it's because Easter Eggs 
+are closely linked to logic bombs. 
+Now, logic bombs is the next thing we're going to talk about. 
+And as I said, they're very similar to Easter Eggs 
+and many consider them to be an evolution 
+of earlier Easter Eggs 
+but they have a more malicious intent. 
+Logic bombs are a type of malicious code 
+that's inserted into a program and that malicious code 
+will only execute when certain conditions have been met. 
+For example, a disgruntled employee may insert a logic bomb 
+into the server's code so that the program 
+will query the company's active directory server 
+every single day at midnight. 
+If that disgruntled employee's account was terminated 
+because they got fir ed, then that malicious code 
+will perform some kind of bad action 
+like deleting all the files on the server 
+or transferring money from the corporate bank account 
+over to the employee's personal bank account 
+anytime they find that this account was deleted 
+by the system when they do their midnight checks. 
+Now, one of my favorite examples of a logic bomb 
+actually comes from the classic 1993 movie "Jurassic Park." 
+In the movie, the parks programmer Dennis Nerdy, 
+decides he's going to put a logic bomb into the computer system 
+that's operating the power grid 
+that is going to keep all the dinosaurs inside 
+their electrified enclosures. 
+His logic bomb is designed to shut down the power 
+for a few minutes so he can run in, 
+steal some dinosaur embryos, and then sell them to get rich. 
+Now everything begins to go according to his plan. 
+At the designated time, 
+the power is cut off to the enclosures 
+and Dennis is able to sneak out of the room, 
+go past all the alarms, 
+
+because there's no power to them anymore, 
+and get into the nursery 
+to steal some of those dinosaur embryos. 
+He thinks he's going to get off 
+and sell those embryos and become a millionaire. 
+Of course, it all goes bad for him 
+and the dinosaurs are running rampant in the park 
+because he turned off the electrical grid 
+and he ends up getting killed by one of those dinosaurs. 
+Now, that's not really the point here, 
+but instead I want to provide you with a classic example 
+of a logic bomb 'cause he set up some malicious code 
+to create an action at a certain time 
+and he had this malicious intent when he did it. 
+So remember, a backdoor is a covert method 
+of bypassing normal authentication or security controls 
+in a system that's often introduced 
+by the system's original designers or programmers. 
+An Easter Egg is going to be a hidden feature 
+or novelty within a program that's typically inserted 
+by the software developers as an inside joke, 
+and a logic bomb is the type of malicious code 
+that's inserted into a piece of software 
+that will then execute a harmful action 
+when specific conditions have been met. 
+In our modern applications, 
+we should never include back doors, 
+Easter Eggs or logic bombs 
+because they do go against our secure coding standards 
+and best practices. 
+So you want to make sure you're scanning 
+your customer developed applications 
+to ensure that none of these three things 
+are included in them if you want to ensure 
+that you have the most secure network for your organization. 
+ 
+Video 10: keylogger 
+ 
+In this lesson, 
+
+we're going to explore a malicious type of software 
+known as a keylogger. 
+Now, in the world of cybersecurity, 
+keyloggers hold a special place 
+because of their sheer stealth, 
+and potential to cause large-scale damage. 
+Keyloggers were originally developed 
+by system administrators to help them 
+troubleshoot technical problems. 
+But over the past few decades, 
+these tools have become weaponized by cyber criminals 
+who want to steal your sensitive information, 
+like usernames and passwords, 
+directly from the keystrokes of their unsuspecting victims. 
+So, what exactly is a keylogger? 
+Well, a keylogger, at its core, 
+is a piece of software or hardware 
+that records every single keystroke that is made 
+on a computer or mobile device. 
+This means that every letter that is typed in, 
+every password that is entered, 
+and every web search that's being conducted 
+will be captured and sent back to that threat actor 
+without your knowledge or consent. 
+Keyloggers are considered to be a simple, 
+yet effective mechanism that cyber criminals can use 
+to get direct access to your personal and financial data. 
+This can lead to potential identity theft, financial fraud, 
+and even corporate espionage in some cases. 
+Now, keyloggers can either be software-based 
+or hardware-based. 
+When you're dealing with a software-based keylogger, 
+these are malicious programs that get installed 
+on a victim's computer, 
+and they're often bundled with other software 
+or delivered through social engineering attacks, 
+like phishing and pretexting attacks. 
+These keyloggers can also evade antivirus detection, 
+especially if the attacker uses 
+
+sophisticated evasion techniques. 
+Now, once activated, 
+the keylogger can operate silently in the background 
+and capture every keystroke, and then transmit it back 
+to the remote server that's controlled by a threat actor. 
+Now, a hardware keylogger, on the other hand, 
+is a physical device 
+that needs to be plugged into a computer. 
+Usually these will resemble a USB thumb drive, 
+or they can be embedded within the keyboard cable itself. 
+These are considered physical devices, 
+and that means they're harder to deploy on a large scale. 
+But they can be very effective for use 
+in a more targeted attack, 
+especially since these hardware devices are immune 
+to software-based detection methods, 
+like anti-malware scans. 
+When a hardware keylogger is installed on a system, 
+the computer actually believes it's a regular keyboard, 
+and the system has no idea that it's being victimized 
+by the hardware keylogger. 
+Now, keyloggers present a lot of risk 
+to our systems and our privacy. 
+From a personal standpoint, 
+victims can have their usernames, passwords, 
+credit card numbers, and other sensitive information 
+stolen by these keyloggers, 
+which can then lead to unauthorized bank transactions, 
+unauthorized purchases, or full-scale identity theft. 
+Now, from a business or corporate perspective, 
+the stakes can be even higher though. 
+Employees who have unknowingly been infected with keyloggers 
+could give away their logging credentials, 
+the contents of their confidential emails, 
+the company's proprietary data, 
+or even the company's strategic plans 
+without even realizing it. 
+These security breaches could result in financial losses, 
+damage to the organization's reputation, 
+
+legal repercussions, 
+and a loss of their competitive advantage 
+in the marketplace. 
+Now, to protect your organization from keyloggers, 
+you should ensure you perform regular updates 
+and patches on your systems. 
+You should rely on quality antivirus 
+and anti-malware solutions. 
+You should conduct phishing awareness training 
+for all your end-users. 
+You should implement multifactor authentication systems. 
+You should encrypt keystrokes being sent to your systems, 
+and you should perform physical checks of your desktops, 
+laptops, or servers to see if a hardware-based keylogger 
+is being used. 
+First, you should always regularly update 
+and patch your systems. 
+By keeping your operating systems and software updated, 
+Your organization can ensure 
+that known vulnerabilities are not being excluded 
+by a keylogger. 
+Second, you should invest 
+in a quality antivirus or anti-malware solution. 
+By using comprehensive security software, 
+you'll be able to detect and quarantine 
+any keylogging software 
+that may be installed on your system. 
+It's always important to conduct regular antivirus 
+and anti-malware scans to detect any keyloggers 
+that may have accidentally been installed 
+since your last scan. 
+Third, you should conduct phishing awareness training 
+for your end-users. 
+Keyloggers are often distributed through phishing emails, 
+so it's really important that you train 
+all of your organization's users 
+on how to be cautious when they're downloading attachments, 
+or clicking links from unknown or untrusted senders. 
+Fourth, you should implement multifactor authentication, 
+
+also known as MFA. 
+Now, if multifactor authentication has been implemented 
+across your enterprise network, 
+this means that even if a keylogger was used 
+to capture your password, 
+the threat actor will still be unable to access the system 
+because they require an additional verification step, 
+such as an authenticator app code, a one-time text message, 
+or your fingerprint or facial scan to recognize you. 
+Fifth, you should encrypt keystrokes 
+being sent to your systems. 
+Some security software can protect your system 
+by implementing keystroke encryption 
+to scramble your typed information 
+before sending it over to the system. 
+This means that if the data was captured by a keylogger, 
+it's going to be scrambled up in ciphertext, 
+and it'll become unusable to a threat actor. 
+Sixth, and finally , you should conduct physical checks 
+to see if a hardware keylogger is being used. 
+This is especially important 
+when you're operating in a sensitive environment. 
+You should always regularly inspect your system's hardware 
+for unfamiliar devices that could contain 
+a hardware keylogger too. 
+So remember, a key logger is a malicious type of software 
+or hardware tool that can covertly record 
+the keystrokes being made on a computer or mobile device. 
+By understanding the risks 
+and adopting comprehensive protection measures, 
+both individuals and organizations can significantly reduce 
+their vulnerability to these malicious tools 
+that attempt to destroy the confidentiality of the data 
+that we're typing into our systems. 
+ 
+Video 11: spyware and bloatware 
+ 
+In this lesson, 
+we're going to discuss spyware and bloatware. 
+
+In our modern enterprise networks, 
+software plays a pivotal role in our daily operations, 
+but as software continues to evolve, 
+some threat actors and even legitimate organizations 
+have taken the opportunity 
+to install various types of unwanted 
+and potentially harmful software applications 
+on our devices. 
+First, let's take a look at spyware. 
+Spyware, as the name suggests, 
+is the type of malicious software that's designed to gather 
+and send information about a user 
+or organization without their knowledge. 
+This information can range from the user's browsing habits 
+and software utilization patterns 
+to more sensitive data, like passwords, credit card numbers 
+and other relevant personal details too. 
+Spyware can get installed on a system 
+in several different ways, 
+including being bundled with other software, 
+being installed through a malicious website 
+or be installed when a user clicks 
+on a deceptive pop-up advertisement. 
+Once installed, 
+the spyware will typically operate in the background 
+without the user's knowledge or consent. 
+Spyware can cause issues because it invades your privacy, 
+but it can also have other negative effects, 
+such as significantly slowing down 
+your system's performance. 
+It is continually using your system's resources 
+to monitor and transmit data back to the attacker 
+who's gathering information about you. 
+To help protect yourself against spyware, 
+you should only use reputable antivirus 
+and anti spyware tools that are regularly updated 
+to be able to detect and remove any potential threats. 
+Also, whenever you're downloading software, 
+you should only download it from trusted sources 
+
+and you should read through 
+the end user licensing agreement, known as the EULA, 
+to see if the company is collecting any of your personal 
+or private data without your knowledge. 
+Finally, you should make sure that your operating system 
+and other software applications are up to date 
+and patched with the latest security updates 
+to ensure that spyware cannot exploit 
+any known vulnerabilities that exist in your system. 
+Second, we have bloatware. 
+Now, bloatware is quite different from spyware, 
+but it can be just as frustrating 
+when it gets installed on your system. 
+Now, bloatware refers to any software 
+that comes pre-installed on your new computer or smartphone 
+that you, as the user, did not specifically request, 
+want or need. 
+Bloatware isn't really dangerous, 
+but it does take up precious resources on your devices, 
+including storage space 
+and using up your limited system RAM, 
+or Random Access Memory. 
+Typically, you're going to find that manufacturers 
+or vendors of a device will add this kind of bloatware 
+as part of their promotional partnership deals. 
+For example, if you bought a new Windows laptop 
+and it came with a 30 day free trial of Microsoft Office 365 
+and 90 day free trial of Norton Antivirus, 
+these are both considered to be bloatware 
+because you didn't ask for them to be installed, 
+and instead, 
+these companies paid the manufacturer your laptop 
+to pre-install these applications on that laptop, 
+so that you will hopefully purchase their paid version 
+of these applications. 
+And so this becomes a marketing technique 
+for these companies. 
+Other examples of bloatware 
+are things like unnecessary toolbars 
+
+or applications that can promote certain services 
+that may exist inside of your computer. 
+Now, in general, bloatware is not going to be malicious, 
+but as I said, it does waste your storage space, 
+slows down the performance of your devices 
+and introduces new security vulnerabilities 
+into your systems, 
+because all that extra code could have bugs in it, 
+and those bugs could be exploited by an attacker. 
+Remember, anytime you have a piece of software installed, 
+that is going to be one more potential threat vector 
+for the attacker to exploit 
+if you don't properly update that application. 
+Personally, I find the best practice 
+is to remove any extra software or applications 
+that you're not using on a daily basis 
+to help minimize the attack surface 
+of your devices and systems. 
+Now, to remove bloatware, you can either manually remove it, 
+or you can use bloatware removal tools, 
+or you can perform a clean operating system installation. 
+First, we have a manual removal process. 
+For Windows-based devices, 
+you can go to the programs 
+and feature section in the Control Panel 
+and uninstall any unwanted software you have. 
+If you're using a smartphone or tablet, 
+you can navigate to the app section in the settings 
+and uninstall or disable any unnecessary applications 
+from your device. 
+Second, we can use bloatware removal tools 
+to uninstall the unwanted applications. 
+There are several third party tools 
+available in the marketplace that can help identify 
+and remove bloatware more comprehensively 
+than you might be able to do on your own, 
+so they are something to think about or to consider. 
+Third, and my personal preference, 
+is to perform a clean operating system installation 
+
+whenever you buy a new device. 
+Instead of using the operating system 
+and the bloatware that came pre-installed on your device, 
+you can instead perform 
+what is known as a clean operating system installation, 
+which ensures you are only going to be starting out 
+with a software you need on your new system. 
+So remember, spyware and bloatware represents software 
+that isn't necessarily always malicious, 
+but it is considered to be unwanted. 
+Spyware is the type of malicious software designed to gather 
+and send information about a user 
+or organization without their knowledge or consent. 
+Bloatware, on the other hand, 
+refers to software that comes pre-installed on a new device, 
+computer, or smartphone, which the user did not request 
+and often doesn't need or doesn't want. 
+While spyware and bloatware do serve different purposes 
+and provide different threat levels against our systems, 
+it is important to be aware of the existence of both spyware 
+and bloatware in order to understand how to manage 
+or eliminate these risks to create a safer, 
+more efficient and more pleasant experience 
+for our end users when using our systems and devices. 
+ 
+Video 12: malware attack techniques 
+ 
+In this lesson, 
+we're going to explore malware exploitation techniques. 
+Now, a malware exploitation technique is a specific method 
+by which malware code penetrates 
+and infects a targeted system. 
+Historically, malware would modify an executable file 
+or assert a malicious macro into a document file 
+on a target storage device to ensure 
+that every time the file was open or run, 
+that malware would be activated 
+and ready to execute its malicious payload. 
+Other types of malware, like worms, are instead 
+
+going to focus on infecting the system's memory 
+to leverage a remote procedure call 
+over the organization's network to spread its malicious code 
+across the entire enterprise. 
+However, in modern enterprise networks, 
+we're now seeing an evolution by malware that's created 
+to utilize fileless malware technique instead. 
+This modern type of malware will also bypass detection 
+from signature-based security systems 
+like antivirus and anti-malware solutions 
+by directly executing the malicious code as a script 
+or as a small piece of shell code. 
+This fileless execution is going to be used to create a process 
+in the system memory without relying 
+on the local file system of that infected host. 
+And this kind of fileless malware will also become harder 
+to detect because it leaves behind very few traces 
+or indicators of compromise 
+in comparison to standard pieces of file-based malware. 
+Now, some of these fileless malwares 
+might temporarily write some data 
+to a directory on your system, 
+but they are designed to erase those artifacts 
+after it finishes executing. 
+So even these types are considered to be largely fileless 
+due to the limited amount 
+of evidence being left behind on the file system. 
+So how does this modern type of malware work? 
+Well, in general, most modern malware will use 
+a basic two-stage deployment model. 
+When a user accidentally clicks on a malicious link 
+or opens a malicious file, 
+the specific type of malware being installed is known 
+as a stage one dropper or a downloader. 
+This piece of malware is usually going to be created 
+as a lightweight shell code that can be executed 
+on a given system. 
+Now, you may have noticed, I just used three new terms 
+that you may not be familiar with, 
+
+so let me define those real quick. 
+These are droppers, downloaders, and shell codes. 
+Now, a dropper is a specific malware type designed 
+to initiate or run other malware forms 
+within a payload on an infected host. 
+Downloaders, on the other hand, retrieve additional tools 
+post the initial infection that's facilitated by a dropper. 
+Meanwhile, the shell code is a broader term 
+that encompasses lightweight code meant 
+to execute an exploit on a given target. 
+Now, the primary function of a stage one dropper 
+or downloader is to retrieve additional portions 
+of the malware code and trick the user into activating it. 
+Once the stage one dropper or downloader is activated, 
+it's going to then try to install a second stage downloader 
+that will download and install a remote access Trojan 
+to give the threat actor the ability to conduct command 
+and control over the victimized system. 
+Once this access is established 
+using a stage two downloader, 
+the threat actor can then focus 
+on consolidating their position on the system 
+by using remote access tools to identify 
+and infect other systems across the network. 
+As the attacker spreads their influence 
+across the enterprise, 
+they're looking to compromise high value targets 
+like servers or domain controllers 
+to give them an even stronger foothold into your network. 
+But even if these premium targets remain elusive 
+to the threat actor, they're still going to try to compromise 
+as many additional workstations as possible 
+to continually expand their permissions 
+and footprint across your network. 
+Now, once they've established a stronghold, 
+the threat actor will then transition 
+into the action on objectives phase of their attack. 
+During this phase, 
+the threat actor will execute their primary objectives 
+
+whether that's data exfiltr  ation, 
+file encryption as part of a ransomware attack, 
+or any other malicious activities 
+that might help them meet their core objectives. 
+Now, once stage one and stage two malware has been installed 
+and utilized, the final step 
+of their attack is to conduct concealment. 
+Concealment is going to be used to help threat actors prolong 
+their unauthorized access on your systems 
+by hiding their tracks, erasing log files 
+and hiding any evidence of their malicious activities 
+up to this point. 
+Now malware can be delivered 
+to a system using many different techniques 
+including code injection, masquerading, DLL injection 
+DLL sideloading and process hollowing 
+to deploy the threat actor's malicious code 
+into your system. 
+For example, 
+code injection is used to disguise the malicious code 
+by running it with the identification 
+of a legitimate process. 
+These various malware deployment methods can also 
+be combined with anti-forensic strategies like encryption, 
+compression and obfuscation to make it more challenging 
+for cyber defense professionals to detect 
+and analyze these malicious threats. 
+Now, in some of the more modern incident responses 
+that I've worked on, we've also seen a rise 
+in a sophisticated strategy known as living off the land, 
+and this has been adopted 
+by numerous advanced persistent threats 
+and criminal organizations in their attacks. 
+In living off the land, the threat actors are actually 
+going to try to exploit the standard system tools 
+to conduct their malicious activities and intrusions. 
+For example, PowerShell is a standard tool that's installed 
+by default on many Windows systems and servers. 
+PowerShell can be manipulated to conduct lots 
+
+of different types of malicious activities, though. 
+Since these tools are installed by default 
+in the operating system, it means that it's really easy 
+for an attacker to obscure their malicious activities 
+by making the detection of those activities more difficult 
+by relying on internal PowerShell commands 
+as opposed to downloading additional malicious code. 
+As a cybersecurity professional, it is really important 
+that you're aware of these types of techniques 
+to ensure your system is well protected against them. 
+ 
+Video 13: indications of malware attacks: 
+ 
+In this lesson, we're going to look at 
+some of the indications of malware attacks. 
+Now, your understanding of the various indicators 
+of malware attacks is going to be essential 
+as you progress in your career 
+as a cybersecurity professional. 
+By recognizing the signs of a malware attack early on, 
+you can better mitigate the damage 
+that these attacks may cause to your systems. 
+Now, there are nine common indicators 
+of malware attacks that you should be aware of, 
+including account lockouts, 
+concurrent session utilization, blocked content, 
+impossible travel, resource consumption, 
+resource inaccessibility, out-of-cycle logging, 
+missing logs, and published or documented attacks. 
+Let's take a quick look at each 
+of these different types of indications. 
+First, we have account lockouts. 
+Now, malware, especially those designed 
+for credential theft or brute force attacks, 
+will trigger multiple failed login attempts 
+that could result in a user's account being locked out. 
+These lockouts aren't merely an inconvenience though, 
+they're a bright red flag that somebody 
+is trying to break into your network. 
+
+If you suddenly see a lot of your users 
+cannot access their accounts anymore 
+despite not entering an incorrect password, 
+or if there's an unusual surge in locked accounts 
+across your enterprise network, 
+this could be a good indication 
+of a malware attack that's underway. 
+Second, we have concurrent session utilization. 
+Now, our users should typically only have 
+one active session at any given time inside of our network. 
+If you notice that a single user account 
+has multiple simultaneous or concurrent sessions open, 
+especially from various geographic locations, 
+this should really be a cause for concern and suspicion. 
+Seeing concurrent session utilization 
+may be a good indication that some kind of malware 
+has hijacked the user's account 
+is now using it for their own malicious activities. 
+Third, we have blocked content. 
+Modern cybersecurity tools are usually going to be equipped 
+with the ability to block known malicious content 
+such as certain types of files or links. 
+If there's a sudden increase in 
+the amount of blocked content alerts 
+you're seeing from your security tools, 
+this is a strong indication that a malware infection 
+may have successfully penetrated your system. 
+Fourth, we have impossible travel. 
+Now, impossible travel refers to a scenario 
+where a user's account is accessed from two 
+or more geographically separated locations 
+in an impossibly short period of time. 
+For example, I just logged into my system 
+from Orlando, Florida about 10 minutes ago. 
+Now, if you see right now, that I'm trying 
+to log in from New York City, 
+this would be considered impossible travel 
+because it takes more than 10 minutes 
+to fly from Orlando to New York. 
+
+It takes about three hours. 
+Usually, if we see impossible travel, 
+this is an indication that a user's account 
+has been compromised, and it's often due 
+to some kind of malicious activity, 
+or as an aftermath of a successful malware attack 
+that was able to harvest your user's credentials 
+like their username and password. 
+Fifth, we have resource consumption. 
+Now, many forms of malware, especially Cryptominers, 
+botnets, and worms, can consume a significant amount 
+of system resources once you've been infected by them. 
+If you're observing any unusual spikes in CPU, memory, 
+or network bandwidth utilization 
+that can't be linked back to a legitimate task, 
+that could be an indication 
+that you're the victim of a malware attack. 
+High resource consumption can also lead to system slowdowns 
+that make it very noticeable and impactful 
+that you have a malware injection occurring. 
+Sixth, we have resource inaccessibility. 
+Now, ransomware is a form of malware 
+that encrypts user files 
+to make them inaccessible to the user. 
+If you have a large number of files or critical systems 
+that are suddenly inaccessible to you, 
+Or if users receive messages demanding payment 
+to decrypt their data, this is a pretty clear sign 
+of a ransomware based malware attack. 
+Seventh, we have out-of-cycle logging. 
+Now, logs are crucial for understanding 
+our systems and their various activities. 
+If you're noticing that your logs 
+are being generated at odd hours, 
+or during times when no legitimate activities 
+should have been taking place, 
+such as in the middle of the night 
+when no employees are actively working, 
+this could be an indication 
+
+that you're the victim of a malware attack. 
+This kind of out-of-cycle logging could reveal 
+that unauthorized data transfers or system modifications 
+are being conducted by an attacker. 
+So it's important to review your logs regularly 
+to detect these types of infections. 
+Eighth, we have missing logs. 
+Now, missing logs can be a very alarming sign for us 
+as cybersecurity professionals. 
+Often, we're going to see that a threat actor 
+or attacker will delete your system logs 
+in order to hide their own tracks 
+after successfully breaching your system. 
+So, if you're conducting a log review 
+as a cybersecurity analyst, and you see 
+there's a large gap in your logs, 
+or if the logs have been cleared out completely 
+without any authorized reason, 
+this could be a good indication 
+that you are the victim of some kind of 
+malicious activity or malware attack. 
+And this means somebody is trying to cover their tracks. 
+Ninth and finally , we have published and documented attacks. 
+Now, this one is pretty obvious, 
+but if a cybersecurity researcher or reporter 
+publishes a report that shows that 
+your organization's network has been infected 
+as part of a botnet or other malware based attack, 
+this will serve as your notice that you've been attacked. 
+Now, hopefully your organization has 
+well-trained cybersecurity professionals 
+who will know that you've been 
+the victim of a malware infection 
+before you read about it on the cover of the New York Times. 
+But if you don't, this is the final way 
+that you will know that you are the victim 
+of a malware attack because it's sitting there 
+right on the front page of the newspaper. 
+So remember, you must first recognize 
+
+the indications of malware attacks 
+if you have any hope of responding against them. 
+While some indications are pretty overt 
+and in your face like a ransom demand from ransomware, 
+or an article being published 
+on the front page of the New York Times, 
+others can be much more subtle, 
+and require a more in-depth and careful observation. 
+Like unusual resource consumption 
+or unexpected account lockouts. 
+By regularly monitoring your system's health, 
+user activities, and logs, you're going to be 
+in a much stronger position to promptly detect 
+and respond to any malware threats 
+that may occur against your systems. 
+ 
+--- END unit-6 ---
+
+
+--- START unit-7 ---
+
+
+Unit 7 data protection 
+ 
+Video 1 Data Protection (OBJ 1.4, 3.3, 4.2, 4.4, & 5.1) 
+ 
+In this section of the course 
+we're going to go over data protection. 
+Now, data protection is a critical aspect 
+of information security, 
+and it's the process of safeguarding 
+important information from corruption, 
+compromise, or loss. 
+Data protection really does include a broad range 
+of practices, technologies, strategies, and concepts 
+that are designed to ensure the confidentiality, integrity, 
+and availability of your data. 
+Now, as the world becomes increasingly digital, 
+the importance of data protection has skyrocketed 
+and has become a central concern 
+for individuals, businesses, and governments alike. 
+In this section of the course, 
+we're going to be diving into the details 
+of data protection to explore its significance, 
+the challenges it presents, 
+and the strategies employed to maintain the security 
+of our most valuable digital assets. 
+So as we go through this section of the course, 
+we're going to be going over a lot of different objectives, 
+including ones from Domain 1, Domain 3, 
+Domain 4, and Domain 5, 
+which includes objective 1.4, 3.3, 4.2, 4.4, and 5.1. 
+Now, objective 1.4 states that you must be able to explain 
+the importance of using 
+appropriate cryptographic solutions. 
+Objective 3.3 states that you must be able to compare 
+and contrast concepts and strategies to protect data. 
+Objective 4.2 states that you must be able to explain 
+the security implications of proper hardware, 
+software, and data asset management. 
+Objective, 4.4 states that you must be able to explain 
+
+security alerting and monitoring concepts and tools. 
+And objective 5.1 states that you must be able to summarize 
+elements of effective security governance. 
+So, as we move through this section 
+we'll start off by going over 
+the different data classifications 
+that you need to know about, 
+including sensitive data, confidential data, public data, 
+restricted data, private data, and critical data. 
+After that, we'll discuss data ownership 
+and the different roles that exist to make sure 
+data is well protected and maintained 
+throughout its lifetime. 
+And some of these roles are things like the data owner, 
+the data controller, the data processor, 
+the data custodian, and the data steward. 
+Then we'll talk about data states. 
+And these data states include data at rest, 
+data in transit, data in use, and how we can protect data 
+in each of those states using methods like disc encryption 
+and communication tunneling. 
+Next up, we'll discuss some different data types, 
+including regulated data, trade secrets, 
+intellectual property, legal information, 
+financial information, and human 
+and non-human readable data. 
+Then we're going to be going over data sovereignty, 
+and data sovereignty refers to a concept 
+where information is subject to the laws 
+and governance structures within the nation 
+where it's collected. 
+This means that data collected in a particular country 
+must follow the laws of that country, 
+including how it's managed, stored, and processed. 
+After that, we're going to discuss securing data 
+and the different methods that can be used 
+to make sure your data is protected 
+including geographic restrictions, 
+encryption, hashing, masking, 
+
+tokenization, ossification, segmentation 
+and permission restriction. 
+Next step, we'll be covering data loss prevention. 
+Now, data loss prevention or DLP 
+is a strategy for ensuring 
+the sensitive or critical information 
+doesn't leave your organization 
+either intentionally or unintentionally. 
+This is achieved through various tools and processes 
+that are designed to detect 
+potential data breaches or exfiltr  ation techniques. 
+Finally, we'll take a short quiz 
+to see what you learned during this section of the course 
+and review each of those quiz questions fully 
+to ensure you can explain why each answer was right. 
+So, if you're ready, 
+let's hop on in to data protection 
+in this section of the course. 
+ 
+ 
+Video 2 Data Classifications (OBJ 3.3) 
+ 
+In this lesson, we are going to talk 
+a bit more in depth about the concept 
+of data classifications. 
+We are going to formally define them 
+to ensure that you're ready for any questions you get 
+about data classifications on the exam. 
+Data classification is based on the value 
+to the organization and the sensitivity of the information 
+if it's going to be disclosed. 
+The person that decides that level 
+of data classification is the data owner. 
+Now, what exactly would we consider 
+sensitive data or information? 
+Well, sensitive data is any information that can result 
+in the loss of security or loss of advantage to a company, 
+especially if it's accessed by unauthorized persons. 
+Now, basically, 
+
+this is the data that we need to be protecting. 
+Anything that is sensitive, 
+we want to make sure that there's protection around it, 
+but we can protect everything equally, 
+and that's why we have to classify data 
+into several different categories, 
+and those that are higher classification are going to need 
+more protections and more resources spent against them. 
+Those that are in lower categories, 
+we're going to spend less on in terms of protection, 
+time, and resources. 
+Now, organizations need to be careful to establish 
+proper policies to identify how data should be classified, 
+because one of the trends I've seen a lot 
+of people do is overclassifying data. 
+If you are overclassifying your data, 
+this is going to lead you 
+to having to protect everything at a really high level, 
+which means you are going to spend a lot more money, 
+a lot more time, and a lot more resources 
+to protect the data. 
+This includes additional personnel, 
+additional access controls, and other technical solutions 
+that you are going to have to buy and deploy. 
+So by classifying the data properly, 
+it can then be separated into different levels of protection 
+based on those classifications. 
+There are two different classification schemes 
+that are normally used by organizations, 
+and the way you choose yours is based 
+on whether you're a commercial business 
+or a governmental organization. 
+So if you're a commercial business like we are, 
+you're going to use one 
+of four common classification levels, 
+and these go from lowest to highest 
+as public, sensitive, private, and confidential. 
+Public data would have no impact 
+on your company if it's released, 
+
+and usually this is information that is posted 
+on an open source environment 
+such as your website or other platforms. 
+For example, this course is public data 
+that is part of our organizational data. 
+We've released it to the public. 
+Anyone who pays for it can get access to the material. 
+Then we have sensitive data. 
+Sensitive data might have a minimal impact if released, 
+such as your organization's financial data, or in my case, 
+maybe the next course that I'm working on. 
+I wouldn't want to get it out there 
+before I release the course, 
+because I don't want my competitors to see it 
+and copy my material. 
+Next, we have private data. 
+Private data would contain things 
+like personal records, salary information, 
+any other data that is used only within the organization. 
+For example, you don't need to know what the revenue is 
+for our company, or how much our employees make, 
+or what their social security numbers are. 
+All of that is private data that we use internally, 
+but none of our customers or anybody 
+outside the organization needs to have access to it. 
+Remember, private data is information 
+that relates to an individual entity. 
+Next, we have confidential data. 
+This is going to contain items such as trade secrets, 
+intellectual property or IP, source code, 
+and other types of things that are seriously going to affect 
+the business if disclosed. 
+It can only be viewed by approved personnel, 
+and possibly third parties under an NDA. 
+So if you think about CompTIA, 
+one of the things that's confidential is the test questions. 
+They don't want all of those test questions running 
+around the internet where you can download them, 
+find the answers, and then go in 
+
+and take the exams just by memorizing the test, right? 
+That is against their policies, 
+therefore, they protect the data as confidential data. 
+Finally, we have critical data. 
+This information is too valuable 
+to allow any risk if it's captured. 
+Viewing is severely restricted. 
+This can be credit card numbers, for example, 
+where access is severely limited 
+to a few trusted individuals. 
+Now, if you work in a military or government sector, 
+you're going to have fiv e different classification levels 
+going from lowest to highest. 
+These are probably what you hear inside movies all the time, 
+things like unclassified, sensitive but classified, 
+confidential, secret, top secret. 
+The lowest classification is unclassified, 
+and unclassified data generally can be released 
+to the public, either just in general, 
+or under the Freedom of Information Act. 
+So there's actually a law in the United States 
+that the public has a right to know information 
+about their government, and if you submit 
+a Freedom of Information Act request to one 
+of the government organizations, they have to find 
+all of the unclassified data that matches those terms 
+that you've asked for, and then provide it back to you. 
+The next category is called sensitive 
+but unclassified data, and this includes things 
+like medical records, personal files, 
+and other items that won't hurt national security 
+if released, but would impact those 
+whose data is being used inside of it. 
+So for example, if you look at the military, 
+they have a lot of soldiers, sailors, and airmen. 
+If I took one of their medical records 
+that has their birthday, their social security number, 
+and medical information about them, 
+that would be considered sensitive but unclassified. 
+
+If it gets out that private Timmy had a strep infection 
+last week, that would affect Timmy maybe, 
+but it's not going to affect the military at large. 
+The next one we have is confidential. 
+Confidential data includes data such as trade secrets, 
+other information that can seriously affect the government 
+if unauthorized disclosure were to happen 
+Then we get into secret data, 
+and secret data is going to include things 
+like military deployment plans, defensive postures, 
+and other information that could seriously damage 
+national security if disclosure was to happen. 
+Now, when I talked about confidential data, 
+it would seriously affect us. 
+Now, if I talk about secret data, 
+it could seriously damage us. 
+Finally, we have the highest classification, 
+which is known as top secret. 
+Top secret data might include the blueprints 
+for a weapon system or other information 
+that would gravely damage national security 
+if it was known to those who were not authorized 
+for this level of information. 
+So you can see 
+that these classifications get more and more serious, 
+and they would have bigger and bigger effects to us, 
+and so we're willing to spend more money and more time 
+to protect the higher levels of classification. 
+Protecting data takes up a lot of resources, 
+as I've already mentioned, and therefore, 
+it's really important for you to understand the lifecycle 
+of the data as you collect it, retain it, 
+and eventually dispose of it. 
+Now, what I mean by that is that 
+data should not be stored forever. 
+Your organization needs to have policies 
+that are going to dictate how the data is being stored, 
+when the data is going to be stored, 
+and for how long it is going to be stored, and then finally , 
+
+how are you going to destroy it when you are done with it. 
+For example, let's say I was going to have a course 
+that's going to happen next week, and you sign up 
+to attend the course, and you give me your information 
+like your credit card number, your name, 
+your address, your email, things like that. 
+How should I keep that in my system? 
+Should I keep it just until you come and show up 
+for the course, or should I keep it for the next six months, 
+maybe a year, maybe fiv e years, 
+maybe 20 years, maybe forever? 
+Well, that's going to depend on the organizational needs. 
+All of this should be defined in your policies, 
+and they should clearly be documenting 
+what your organizational needs are, 
+how long you need to keep this data, 
+and what the lifecycle is going to look like. 
+Also, you need to ensure that you're following 
+the local, state, and government laws 
+and regulations for data retention time requirements, 
+because depending on the type of organization you are, 
+you may have legal requirements that may say 
+that you need to contain certain types of data 
+for certain periods of time. 
+ 
+ 
+Video 3 Data Ownership (OBJ 4.2 & 5.1) 
+ 
+In this lesson, 
+we are going to talk about data ownership 
+and some of the things that are important inside of it. 
+Now, when we talk about data ownership, 
+this is the process of identifying the person responsible 
+for the confidentiality, integrity, availability, 
+and privacy of the information assets. 
+Now, you might think that the data owner 
+is the person who created the file 
+but that's not what we're talking about. 
+In an enterprise environment, 
+
+there are different roles that fall 
+under this idea of data ownership. 
+These include things like the data owner themselves, 
+the data controller, the data processor, the data custodian, 
+the data steward, and the data privacy officer  . 
+Let's take a look at each of these. 
+First, we have our data owner. 
+This is going to be a senior executive role 
+and they have the ultimate responsibility 
+for maintaining the confidentiality, integrity, 
+and availability of the information asset. 
+So, what is the real role here as the data owner? 
+It's not the person who created the file, 
+it's the senior executive. 
+And this data owner is going to be responsible 
+for labeling the asset, 
+ensuring that it's protected with the appropriate controls. 
+So the data owner is going to say this type of information 
+when we're dealing with it. 
+Let's say, the balance sheets for the corporation, 
+they should be protected as financial information. 
+So, anybody who creates it will now follow my rules 
+and label as financial information 
+and we're going to protect financial information 
+by doing X, Y, and Z, whatever those controls are. 
+Next, the data controller. 
+The entity that holds the responsibility 
+for deciding the purposes 
+and methods of data storage, collection, and usage, 
+and for guaranteeing the legality 
+of these processes is known as the data controller. 
+The data controller holds the ultimate accountability 
+for any breaches of privacy, 
+cannot delegate this responsibility to another party. 
+Next, the data processor. 
+The data processor is a group or individual hired 
+by the data controller to help with tasks like collecting, 
+storing, or analyzing the data. 
+They work under the direction of the data controller 
+
+and follow their instructions for data collecting 
+or processing. 
+Now, the data steward 
+is a role that's focused on the quality 
+of the data and the associated metadata. 
+The data steward is going to be somebody 
+who is working for the data owner. 
+They're going to be involved with making sure 
+that the data is appropriately labeled and classified. 
+So, we said that all financial data 
+should be labeled as financial data, 
+and it should be taken care of this way. 
+That's going to be the role of the data steward 
+to make sure that actually happens. 
+Now, as we go down further, we get to our data custodian. 
+That is the role that is responsible 
+for handling the management of the system 
+which data assets are stored. 
+So, who might be a data custodian? 
+Well, a system administrator. 
+These are the people responsible 
+for enforcing the access control, the encryption, 
+and the backup recovery measures that protect this data 
+based on the requirements set forth by the data owner. 
+And so, you can see how all of this goes upward as you go. 
+Then we have our privacy officer  . 
+Now, this is a role that is responsible 
+for the oversight of any kind of privacy related data. 
+Things like PII, SPI, or PHI, 
+any of those things that are managed by the company 
+fall under the realm of the privacy officer  . 
+This is the person who's going to really be on the hook 
+if you have a data breach, 
+because normally, when you have a data breach, 
+what people are concerned about 
+is the privacy of user data that has been expelled, 
+and so, that is going to be what they're focused on. 
+They have to make sure that we are complying 
+with legal and regulatory frameworks 
+
+and make sure that we have the right purpose, 
+limitations, and consent. 
+We're doing data minimization, 
+data sovereignty, data retention, 
+all the stuff we've been talking about in this section 
+falls under the privacy officer  . 
+Now, the real question is who should own the data? 
+Now, in a lot of organizations, 
+they try to make the CIO or the IT department 
+in charge of all the information and be the data owners, 
+but that is the wrong answer because, 
+as the IT personnel, we don't know much about the data, 
+we know about the systems. 
+We should be the data custodians. 
+Instead, the data owners should be somebody 
+from the business side. 
+People who are creating this information. 
+Each data owner can actually be specified 
+inside their own department. 
+So, for instance, you might have the accountant department 
+have their leader be the data owner, 
+and they would have a data owner over their information, 
+because if I, as the IT person, 
+am looking at some accounting data, 
+I don't know it well enough to be able to classify it 
+at the right level. 
+So, this is one of those things 
+that I think is really important 
+is that IT people should not be the data owners, 
+and the data owners should really be the people 
+who know more about the data 
+based on the context of the company. 
+So, if your company is a software development company, 
+then the software design department 
+should probably be the data owner. 
+If you're an accountant firm, 
+it should be the financial department or the CFO, 
+somebody who knows about the data 
+who can make the right decisions 
+
+as far as labeling and classification. 
+That is who your data owner should be. 
+ 
+ 
+Video 4 Data States (OBJ 3.3) 
+ 
+Data states. 
+Understanding the different states of data is crucial. 
+Each state represents a different phase 
+of the data lifecycle, 
+and requires specific security measures 
+to protect against potential threats. 
+In this lesson, 
+we are going to discuss the three data states. 
+Data at rest, data in transit, and data in use, 
+and the ways you can protect your data 
+in each of those states. 
+First, data at rest. 
+Data at rest refers to any data stored in databases, 
+file systems, or other storage systems. 
+This data is not actively moving 
+through the network or processes. 
+It's like the information stored on a computer's hard drive 
+or a company servers. 
+Given its static nature, 
+data at rest is a prime target for threat actors. 
+Therefore, it's essential to employ robust security measures 
+such as encryption. 
+Encryption converts readable data into coded data, 
+and ensures that even if unauthorized users access the data, 
+they cannot understand it without the decryption key. 
+There are several types of encryption methods 
+used for data at rest. 
+These are full disk encryption, partition encryption, 
+file encryption, volume encryption, database encryption, 
+and record encryption. 
+Full disk encryption. 
+This method encrypts the entire hard drive. 
+When the system is off, the data is encrypted. 
+
+When the system is on, and the user is logged in, 
+the data is then decrypted. 
+This can be achieved through the OS, third party software, 
+or the disc device itself. 
+Next, partition encryption. 
+This method only encrypts specific partitions 
+of a hard drive, leaving other partitions un-encrypted. 
+For example, you can encrypt the D drive on your workstation 
+because it includes sensitive work information 
+that you do not want other people 
+using your workstation to access. 
+Next, file encryption. 
+This method encrypts individual files. 
+It's often used when specific files need to be secured. 
+For example, encrypting a file on your workstation 
+that includes the secret codes to your GTA cheats. 
+Then volume encryption. 
+This method encrypts a set of selected files or directories. 
+Like the previous examples, 
+you can select and encrypt multiple files and directories 
+when opting for volume or folder level encryption. 
+Next up, database encryption. 
+This method encrypts data stored in the database. 
+It can be done at the column, row, or table level. 
+Finally, record encryption. 
+This method encrypts specific fields 
+within a database record. 
+This could be beneficial when multiple users 
+are accessing the same database, 
+but not all of them have the same access and view rights, 
+and so some records would be encrypted from those users. 
+Next up, data in transit. 
+Data in transit, also known as data in motion, 
+refers to data actively being moved 
+from one location to another, 
+such as across the Internet or through a private network. 
+This data is vulnerable to interception during its journey. 
+To secure data in transit, 
+transport or communication encryption methods are used. 
+
+These include SSL and TLS, VPNs and IPSec. 
+SSL or the Secure Socket Layer, 
+and TLS or the Transport Layer Security 
+are cryptographic protocols designed 
+to provide secure communication over computer network. 
+They are widely used in web browsing, 
+email, and other data transfers. 
+VPNs or virtual private networks are technologies 
+that create secure connections over a less secure network, 
+such as the Internet. 
+It ensures that data sent and received 
+is encrypted and secured from prying eyes. 
+Finally, IPSec or the Internet Protocol Security. 
+This protocol suite is used 
+to secure the internet protocol communications 
+by authenticating and encrypting each IP packet 
+in a data stream. 
+Finally, data in use. 
+Data in use refers to the data 
+in the process of being created, retrieved, 
+updated, or deleted. 
+In other words, it's data that's actively being processed. 
+While this state is often overlooked, 
+it's just as vulnerable to threats as the other states. 
+Securing data in use is challenging 
+because the data must be decrypted to be processed. 
+Techniques such as encryption at the application level, 
+access controls, and secure enclaves, 
+where data can be processed 
+in a protected isolated environment are commonly used. 
+Also, some mechanisms like the Intel software guard 
+are able to encrypt data as it exists in memory 
+so that an untrusted process cannot decode the information. 
+So remember, there are three data states out there. 
+Data at rest, data in transit, and data in use. 
+Data at rest can be protected by using encryption 
+and implementing ACLs. 
+Data in use can be protected 
+through the use of access controls. 
+
+Data in transit can be protected 
+through the use of communication tunneling protocols 
+and data in use can be protected 
+by using encryption at the application level. 
+Understanding the different states of data 
+and the appropriate security measures for each 
+is fundamental to comprehensive data protection. 
+By implementing robust security measures at each state, 
+organizations can significantly reduce 
+the risk of data breaches and ensure the integrity 
+and confidentiality of their data. 
+ 
+ 
+Video 5 Data Types (OBJ 3.3 & 1.4) 
+ 
+Data types. 
+In the digital age, data is the lifeblood of organizations. 
+It drives decision making, fuels innovation, 
+and provides insights into business operations. 
+However, not all data is created equal. 
+Different types of data 
+require varying levels of protection 
+and are subject to different regulations. 
+In this lesson, we're going to explore several data types, 
+including regulated data such as PII and PHI, 
+trade secrets, intellectual property, 
+legal information, financial information, 
+and human-readable versus non-human readable data. 
+First, regulated data. 
+Regulated data is information that is controlled by laws, 
+regulations, or industry standards. 
+This includes data 
+such as personal identification information, 
+health records, and credit card information. 
+Organizations that handle regulated data 
+must comply with specific security and privacy requirements 
+such as the General Data Protection Regulation 
+in the European Union, 
+or the Health Insurance Portability and Accountability Act, 
+
+HIPAA in the United States. 
+Now, PII refers to any information 
+that can be used to identify an individual. 
+Examples include names, 
+social security numbers, and addresses. 
+PII is often targeted by cyber criminals 
+and its protection is mandated by several privacy laws. 
+PHI on the other hand is any information 
+about health status, provision of healthcare, 
+or payment for healthcare 
+that can be linked to a specific individual. 
+This includes any part of a patient's medical record 
+or payment history. 
+PHI is protected under the Health Insurance Portability 
+and Accountability Act or HIPAA in the United States. 
+Next up, trade secrets. 
+Trade secrets are a type 
+of confidential business information 
+that provides a company with a competitive edge. 
+This can include manufacturing processes, 
+marketing strategies, proprietary software, 
+and customer lists. 
+Trade secrets are protected by law, 
+and unauthorized disclosure 
+can result in severe legal penalties. 
+For example, here at Dion Training, 
+we have a specific way that we make our courses. 
+It is the reason why our courses are so popular 
+and so many students around the world swear by them. 
+That is considered our trade secret. 
+Next up, intellectual property. 
+Intellectual property or IP 
+refers to the creations of the mind, 
+such as inventions, literary and artistic works, 
+designs, and symbols. 
+This data is protected by laws like patents, 
+copyrights, and trademarks 
+to encourage innovation and creativity. 
+Unauthorized use of intellectual property 
+
+can lead to legal action. 
+Going back to the Dion Trading example, 
+any of our courses here is considered IP. 
+You cannot just download the videos 
+and post them on your website as your own. 
+Next up, legal information includes any data 
+related to legal proceedings, contracts, 
+or regulatory compliance. 
+This data type is sensitive 
+and requires high levels of protection 
+to maintain client confidentiality 
+and comply with legal professional privilege. 
+Next on the list is financial information. 
+Financial information includes data 
+related to organization's financial transactions, 
+such as sales records, invoices, 
+tax documents, and bank statements. 
+This data is often targeted by cyber criminals 
+for fraud or identity theft purposes. 
+Therefore, it is crucial to protect financial information 
+with robust security measures. 
+Financial information is usually subject to regulations 
+like the PCI DSS 
+which is the Payment Card Industry Data Security Standard. 
+Finally, human and non-human readable data. 
+Human-readable data is the information 
+that can be understood directly by humans 
+without the need for a machine or software. 
+Examples include text documents and spreadsheets. 
+On the other hand, non-human readable data 
+is information that requires a machine 
+or a software to interpret. 
+This includes binary code or machine language. 
+While non-human readable data 
+can be more challenging to interpret and manipulate, 
+it still needs to be protected 
+as it can contain sensitive information. 
+In conclusion, understanding the different types of data 
+and their associated security requirements 
+
+is crucial for any organization. 
+By classifying data correctly 
+and applying appropriate security measures, 
+organizations can protect their valuable data assets, 
+comply with regulations, and maintain the reputation 
+and trust with customers and partners. 
+ 
+ 
+Video 6 Data Sovereignty (OBJ 3.3) 
+ 
+Data sovereignty. 
+In today's cloud-dominant world, 
+data sovereignty has emerged 
+as a critical aspect of data governance. 
+Data sovereignty refers to the concept 
+that digital information is subject to the laws 
+of the country in which it is located. 
+As data flows across borders, understanding and complying 
+with the varying data protection regulations 
+can be a complex task for organizations. 
+In this lesson, we're going to explore 
+the concept of data sovereignty 
+and the geographical considerations that come into play. 
+Data sovereignty is based on the principle 
+that information is subject to the laws of the nation 
+within which it is collected or processed. 
+This means that a company must manage, 
+store, and process the data according 
+to the laws of that particular country. 
+The concept has gained popularity 
+with the emergence of cloud computing, 
+where data is often stored in data centers located 
+in different parts of the world. 
+For example, GDPR protections are extended 
+to any EU citizen while they're within the EU, 
+or EEA, or the European economic area borders. 
+Once they are out of the regions of the European Union, 
+they're no longer protected by GDPR. 
+Next up, geographical considerations. 
+
+The geographical location of data storage and processing 
+can have significant implications for businesses. 
+Different countries have different laws 
+and regulations concerning data protection, 
+privacy, and cross-border data transfers. 
+For instance, 
+the European Union's General Data Protection Regulation, 
+or GDPR as we previously mentioned, 
+has stringent rules for data protection 
+and grants individuals strong rights 
+over their personal data. 
+Any organization dealing with data of EU citizens, 
+regardless of its location, 
+must comply with these regulations. 
+Non-compliance can result in hefty fines. 
+On the other hand, countries like China and Russia 
+has strict data sovereignty laws 
+that require companies to store and process data 
+within their national borders. 
+These laws can pose challenges 
+for multinational companies that operate 
+in multiple jurisdictions and use cloud services 
+for data storage and processing. 
+Understanding where your data resides 
+and where it's processed is crucial, 
+this includes knowing the physical locations 
+of your data centers and the flow of data across borders. 
+You need to ensure that information 
+is not illegally transferred 
+from a particular privacy jurisdiction without consent. 
+Another scenario that you should be aware of 
+is that sometimes employees might need access 
+from multiple geographical locations, 
+which cloud-based services can sometimes restrict. 
+In conclusion, data sovereignty 
+and its geographical considerations present 
+a complex challenge 
+for organizations operating in the digital age. 
+However, with careful planning, legal advice 
+
+and strategic use of technology, 
+organizations can navigate this landscape successfully, 
+ensuring compliance 
+and protecting their valuable data assets. 
+ 
+ 
+Video 7 Securing Data (OBJ 3.3) 
+ 
+Securing Data. 
+In today's digital age, 
+data security is a top priority for organizations worldwide. 
+As threats continue to evolve, so too must the strategies 
+and techniques used to safeguard valuable data. 
+In this lesson, we're going to jump into the various methods 
+used to secure data, including geographic restrictions, 
+encryptions, hashing, masking, 
+tokenization, obfuscation, segmentation, 
+and permission restrictions. 
+First, geographic restrictions. 
+Geographic restrictions, also known as geofencing, 
+involve setting up virtual boundaries 
+to restrict data access based on the geographic location. 
+This method can help organizations comply 
+with data sovereignty laws 
+and prevent unauthorized access from high-risk locations. 
+For example, if all my employees 
+are located within the Americas, 
+I can simply ban any login requests originating 
+from Asia or Africa 
+as my users can never be logging in from those locations. 
+Second, encryption. 
+Encryption is a fundamental data security method 
+that transforms readable data, plaintext, 
+into unreadable data or ciphertext 
+using an algorithm and an encryption key. 
+Only those with the corresponding decryption key 
+can revert the data back to its original form. 
+Encryption is crucial for protecting data at rest 
+and data in transit. 
+
+Third, hashing. 
+Hashing is a technique that converts data 
+into a fix ed size of numerical 
+or alphanumeric characters, known as the hash value. 
+Unlike encryption, hashing is a one-way function. 
+Once data is hashed, it cannot be reversed or decrypted. 
+Hashing is often used to store sensitive data 
+like passwords, and it's also used 
+to check the integrity of files. 
+Next up, masking. 
+Data masking involves replacing some 
+or all of the data in a field with a placeholder, such as X, 
+to conceal the original content. 
+It can be done partially to keep some metadata for analysis. 
+For instance, in a phone number 
+the area code might be kept, 
+but the rest of the number is replaced. 
+Data masking can also maintain 
+the original format of the field. 
+Once data is masked, it's a one-way process 
+so it can't be reversed, 
+making it a method of de-identification. 
+Next up, tokenization. 
+Tokenization replaces sensitive data 
+with non-sensitive substitutes, known as tokens. 
+The original data is stored securely in a separate database 
+with a token serving as a reference to the original data. 
+Tokenization is commonly used in payment processing systems 
+to protect credit card information. 
+Next up, obfuscation. 
+Obfuscation involves making data unclear or unintelligible, 
+making it difficult for unauthorized users to understand. 
+This can involve various techniques, such as encryption, 
+data masking, and the use of pseudonyms. 
+Next up, segmentation. 
+Segmentation involves dividing a network 
+into separate segments, each with its own security controls. 
+This means that even if a cyber criminal gains access 
+to one segment, they cannot move laterally 
+
+to other parts of the network. 
+This limits the potential damage of a breach. 
+Finally, permission restrictions. 
+Permission restrictions involve defining who has access 
+to specific data and what they can do with it. 
+This is often managed through access control list 
+or role-based access control, often known as RBAC, 
+by limiting access to only those who need it. 
+Organizations can significantly reduce the risk 
+of internal data breaches. 
+So in conclusion, securing data 
+is a tedious but rewarding process 
+that requires a combination of techniques, 
+tailored to an organization's specific needs 
+and the nature of the data they handle. 
+By implementing a robust mix of geographic restrictions, 
+encryption, hashing, masking, 
+tokenization, obfuscation, segmentation, 
+and permission restrictions, 
+organizations can protect their valuable data assets 
+from both internal and external threats. 
+ 
+ 
+Video 8 Data Loss Prevention (DLP) (OBJ 4.4) 
+ 
+Data loss prevention. 
+Data loss prevention is set up to monitor the data 
+of a system while it's in use, in transit, or at rest. 
+It does this in order to detect any attempts 
+to steal the data. 
+Let's think about when we had data 
+stored 20 or 30 years ago, 
+where did they store most of it? 
+Well, most businesses stored it, 
+print it off and in a filing cabinet. 
+And if someone wanted to get that, 
+they'd have to break into your offices, 
+open the filing cabinet 
+and physically take the files. 
+
+This limited the amount 
+of information that somebody could steal from you 
+because they really could only steal 
+what they could carry with them. 
+Then we started allowing people to work remotely 
+and a lot of the data was stored on laptops. 
+If you happen to stop for a lunch 
+and you left your laptop sitting in your car, 
+somebody could have broken 
+into your car and stolen your laptop, 
+and they now have access to all the data that was on it. 
+The next evolution in data theft occurred when 
+we started using external hard drives. 
+These started being used all throughout our offices. 
+These hard drives could hold large amounts of data. 
+We could plug it into the network 
+through our laptop, 
+and download a ton of information and data. 
+Then could walk out of the building with it, 
+but these were kind of large and easy to detect. 
+Next, we started seeing thumb drives that hold just as much 
+as these external hard drives, 
+carrying billions of documents out the front door 
+without no one knowing it 
+because they're so small and fit right into your pocket. 
+But wait, we don't even need to do that nowadays 
+because we have things like Dropbox 
+and Google Drive where we get terabytes 
+of storage available to you hooked up to the network, 
+and I could sit there and upload everything your company has 
+and get access to it anywhere in the world. 
+This is a huge problem for businesses because our data 
+and our intellectual property is what the currency 
+of business is these days. 
+To protect it, we have to use data loss prevention systems. 
+These systems come as either software or hardware solutions. 
+The first data loss prevention system we're going to talk 
+about is an endpoint DLP system. 
+An endpoint system is usually a piece of software 
+
+that is installed on a workstation or a laptop. 
+It's going to monitor the data that's in use 
+on the computer. 
+If someone tries to do a file transfer, 
+it'll either stop the file transfer 
+or alert the admin of the occurrence 
+based on certain rules and policies, 
+very much like an IDS or IPS would, 
+but focused on data. 
+DLPs can be set to detection mode or prevention mode. 
+The next one we have is a network DLP system. 
+This is a piece of software hardware that is a solution 
+placed at the perimeter of your network. 
+A sole function in life is to check all of the data going 
+into and out of your network with a special focus 
+on things going out of the network. 
+They want to detect data in transit 
+that shouldn't be leaving the building. 
+The third type we have is called storage DLP. 
+This is a software that is installed on a server 
+in the data centers 
+and inspects the data while it's addressed 
+on the server. 
+This is usually 
+because they've encrypted it or watermarked it, 
+and we want to make sure that nobody is accessing the data 
+at times that they shouldn't be. 
+For example, if someone starts downloading large amounts 
+of data at two in the morning, 
+that's probably against your policy 
+and the DLP could catch it. 
+The fourth type of DLP is a cloud-based DLP system. 
+These systems are usually offered 
+as a software as a service solution, 
+and that's a part of your cloud service and storage needs. 
+They're going to protect your data when it's stored inside 
+of those cloud services. 
+For example, our company uses Google Drive 
+and we have data loss prevention 
+
+as part of a cloud service offered by Google. 
+So in summary, 
+these data loss prevention solutions are made to be accurate 
+in a way that they stop data from leaving your network. 
+They're going to go through and look at data at rest, 
+data in use, and data in transit to ensure 
+that it's following the policies you've 
+set up as a security admin 
+so you could protect the assets of your company. 
+ 
+ 
+Video 9 Configuring a DLP (OBJ 4.5) 
+ 
+In this lesson, 
+I'm going to show you how to configure a DLP. 
+For this demonstration 
+we're going to be using the Google Suite 
+which is known as Google Workspace 
+to be able to configure a DLP for Google Drive, Google Chat, 
+as well as Google Mail, which is Gmail. 
+Now if you're using Office 365, it's a very similar process 
+and I don't want you to worry too much 
+about the exact specifics of what I'm doing 
+but really focus on the concepts and how DLP works 
+and is configured using the Setup Wizards. 
+Now, from within Google Workspace, 
+you're going to go to your admin panel, 
+which is located at admin.google.com. 
+This feature and functionality does not work 
+on free Google accounts. 
+This only works if you have a paid subscription to Google 
+for their Google Workspace product 
+at the enterprise or educational level. 
+Now, the first thing we're going to do 
+is we're going to configure it to be able to protect our chat 
+and our Google Drive from having data loss happening 
+by configuring a DLP solution there. 
+To find that, we're simply going to go 
+under security on the left menu bar 
+
+and then we're going to hit the down arrow. 
+We're going to click on access and data control 
+and then we're going to go down to data protection. 
+Once you click on data protection 
+the data protection screen will load. 
+From here, you can get information about your drive 
+as well as your chats that are being blocked or not blocked 
+based on the existing DLP solution. 
+So you could see here, 
+by default Google already has a DLP solution in place 
+and it's looking for things like email addresses 
+phone numbers, gender identity, 
+and other things like that. 
+You can notice here that we have 17.5% 
+of our Drive files marked as being sensitive 
+and being shared externally by their data type 
+based on October 6th when we had the scan run last 
+of all of our files, which has over 300,000 files. 
+As you can see here, 
+email addresses are by far the most common thing 
+that are being flagged here in DLP 
+because a lot of our stuff 
+uses email addresses as an example 
+like support@diontraining.com on some of our slides 
+and things like that that we use in our classes. 
+Now underneath this, 
+you're going to see that we have different rules 
+that are recommended for your organization. 
+In this case, they're saying we should prevent 
+sharing global email addresses 
+and we can review that recommended rule 
+and implement it if we wanted to. 
+So for example, if I go over here 
+and click on the "Review Recommended Rule," 
+it will bring up the template for it, 
+which is already configured 
+and it's telling me, "Hey, this is already set up. 
+"All you have to do is accept it or you can edit this rule." 
+And what we're looking for here 
+
+is anything that looks like an email address 
+that's being sent outside of our organization. 
+And for here we have the alerts disabled, 
+Google Drive will give you a warning 
+if you try to share something 
+that contains this type of data, 
+and we consider this to be a low sensitivity. 
+Now, in our case, 
+it is not a rule we have activated yet 
+and if I wanted to set it to active, 
+which is set up right here, 
+I would simply click on the create button 
+to put this rule into effect. 
+Now, for our purposes, 
+we are not worried about email addresses being sent out 
+as part of our Google Drive files 
+because again we use email addresses 
+in almost everything we do 
+and most of them are examples or dummy email addresses 
+like test@test.com or support@diontraining.com 
+which is one that we use a lot in our training materials. 
+Let's go back and look at how we can configure our own rules 
+for something more specific that we might want to protect. 
+So from this screen, we're going to scroll down 
+and you can see that we have "Manage Rules." 
+We're going to click on that 
+and this will allow us to set up our data protection rules. 
+Right now you can see we have none available 
+in our domain or in our account. 
+So we want to add a rule 
+to be able to create something to protect. 
+So I'm going to go ahead and click on add a rule 
+and I'm going to create a new rule. 
+Now, when I create this new rule 
+I'm going to give it a name 
+and I'm going to call this "Block SSNs" 
+because I want to block Social Security numbers. 
+The description here is going to be 
+"Configure DLP to prevent SSNs 
+
+"from being shared in chat or Google Drive files. " 
+All right? 
+That way when we see a long list 
+of hundreds of different DLP rules 
+we know what this rule is designed to do, 
+then you're going to choose your scope. 
+Your scope is who in the organization does this apply to? 
+By default, it's going to apply to everyone, 
+but there may be certain things you want to set up 
+for only certain groups of people. 
+For example, I could set up a rule that says 
+that none of my instructors can email out anything 
+that looks like an exam question 
+because we don't want our instructors 
+taking our exam database and posting it online 
+or in an open file like inside of Google Drive. 
+So that might be a place where we only want 
+a certain thing to be held under certain people, 
+or we can create rules that have to do with finances 
+and only our accounting department has those applied to them 
+because in my courses I could talk about the fact 
+that there is a credit card number 
+or an amount of money, like $15, 
+but on the accounting side 
+we don't want those details getting out. 
+And so these are the kind of things you can do 
+when you want to have a smaller area. 
+But for something like blocking Social Security numbers, 
+it's probably a good idea 
+to block all Social Security numbers 
+because nobody should be sending those things around. 
+So I'm going to use all in "Dion Training," 
+then we're going to click on continue. 
+And here we're going to say what is this going to apply to, 
+which applications? 
+Now from here, you can do it in two main places. 
+One is Google Chat, 
+and this is for the messages you send 
+as well as the files you upload. 
+
+And the other one is Google Drive 
+for any files that are being added to Google Drive. 
+In our case, we want both of these 
+to be able to be checked to make sure 
+that we're not sending out Social Security numbers. 
+You'll notice when I click "file uploaded" under Google Chat 
+it is going to use OCR or optical character recognition 
+to also check any photographs that you upload 
+because those could contain information too 
+like a picture of your Social Security card. 
+Next, we'll hit continue. 
+And then here we're going to add our conditions. 
+What kind of data do we want this rule 
+to actually look for? 
+Now, what am I going to scan? 
+Is it all content or just certain content? 
+In our case, I want everything to be scanned. 
+And what am I scanning for? 
+Well, you can use matching predefined data types. 
+You can create a text string, 
+you can create a match for a regular expression 
+or you can match words from a word list. 
+So for example, maybe I'm working 
+on a top secret project called "Operation Neptune" 
+and I want to make sure that never gets out of my organization. 
+Well, I can set up a rule here 
+that matches the words from a list 
+or contains a text string of "Operation Neptune" 
+and if I see those words, I will block that message. 
+Now, in our case 
+we're trying to block Social Security numbers 
+and that is one of the predefined data types. 
+So I'm just going to select that. 
+As you go through this list, 
+they are in alphabetical order 
+based on predefined data types for different countries. 
+So I'm in the United States, 
+so I'm going to scroll all the way down to the U.S. 
+and under the U.S. I'm going to find the one 
+
+that says Social Security number. 
+Notice there's a lot of other things in here 
+like state names, taxpayer identifications, 
+passports different ID numbers, 
+like the German ID number or the Australian ID number, 
+your driver's license, your phone numbers, 
+your addresses, all that kind of stuff. 
+But for us, we worry about the Social Security numbers 
+so we're going to go ahead and click on that. 
+Then we're going to assign a likely threshold. 
+Where do we want actions to start happening 
+whether those are logging, whether those are alerting, 
+whether that is notifying the user that they're doing it 
+or is it blocking it all together? 
+Regardless of what action we're going to take, 
+we first have to define 
+when is the likely threshold going to apply. 
+Now, if you set it to something like very low 
+you are going to get a ton of false positives 
+and lots of things are going to be blocked 
+that shouldn't be blocked. 
+So I wouldn't recommend doing that. 
+Generally, if it's something 
+like a Social Security number or a phone number, 
+I will set it to high or very high. 
+Some people will go down as far as medium, 
+but for me, I like to set it at least at high. 
+Otherwise, you're going to have a lot of false positives 
+and a lot of work for you to look through. 
+And then you're going to look 
+at the minimum number of unique matches 
+and the minimum match count. 
+And both of these cases, 
+one is set as the default value, 
+so I'm going to go ahead and leave that there. 
+Now we have this set up 
+to search for US-based Social Security numbers. 
+If we have a high or very high likelihood of a match 
+we will then take some action. 
+
+So we can tick on continue. 
+We'll now define what action that is 
+and we're going to do this for each of those two applications. 
+First, we have Google Chat. 
+If somebody types in a Social Security number 
+in Google Chat, what do we want to happen? 
+Do we want to warn the user? 
+Do we want to block the message or do we want to audit? 
+Which means we're just going to log that thing 
+and tell our system administrators about it. 
+Again, 
+depending on what you're trying to accomplish with DLP 
+you want to make a decision based on what you're going to do. 
+In our case, I want to block the message 
+'cause I don't want people 
+sending Social Security numbers over chat. 
+And so we'll just go ahead and hit block message. 
+Now, from here 
+you'll select all the things it's going to apply to. 
+Does it apply to internal or external conversations, 
+spaces, chats, or one-on-one chats 
+and things like that? 
+And in addition to that, 
+you can also give a message to your user 
+if they're being warned or blocked. 
+So in my case, I'm going to use a custom message 
+that says "Your message may contain sensitive content like," 
+I'm going to put "a Social Security number 
+"that shouldn't be shared 
+"based on your organization's policies. 
+"Edit as needed, check your admin if it doesn't seem right." 
+Okay? 
+And then we also are going to set this up for Google Drive. 
+And here if I have a file 
+with something that looks like a Social Security number, 
+do I want to block external sharing? 
+Warn on external sharing 
+or disable download, print and copying 
+for commenters and viewers? 
+
+In our case, I'm going to go ahead and block external sharing 
+because I don't want any files with Social Security numbers 
+being sent outside of our organization. 
+And then we have alerting. 
+When the event matches this rule criteria 
+the event is going to be reported in the security dashboard 
+and the alert center if applicable. 
+What level of events should it be reported under? 
+If this rule fir es, is this considered a low event 
+or is this considered a medium or a high event? 
+Well, because we're talking about data getting out 
+and this isn't the most critical of data 
+we probably want to have this set as something like a medium. 
+But again, this is a risk-based decision 
+that your organization will come to. 
+And then in addition to that, 
+you can also send to the alert center 
+by sending additional detailed analysis 
+so your system administrators are able to go ahead 
+and take care of this issue. 
+And in addition to that, you can also email them 
+but we're not going to do that 
+because we're going to let our cybersecurity workforce 
+take care of going through all those alerts 
+and taking care of those themself. 
+And then we'll hit continue. 
+And from here you see all the details 
+of what we just configured 
+and then we're going to go all the way to the bottom 
+and then we will set it to be active. 
+Now this rule is in effect, 
+and if somebody tries to upload a file 
+with a Social Security number 
+or tries to send a Social Security number over Google Chat, 
+it will be blocked and it will then take the actions 
+that we specified in this rule. 
+Now the second thing we need to set up is one for Gmail. 
+Gmail is located in a separate place 
+but it's still underneath this admin dashboard. 
+
+To access it, 
+we're going to go on the left side under admin, 
+we're going to click on apps, 
+and then we're going to go to Google Workspace 
+and then we're going to click on Gmail 
+which is located about halfway down. 
+Once you're there, you're going to go down 
+and scroll on the right-hand side 
+all the way down to "Compliance." 
+And under "Compliance," you will find our DLP features. 
+Now from here, we have this turned on for everyone 
+and right now you can see the email and chat auto deletion 
+is currently not set. 
+Optical character recognition is turned on, 
+comprehensive mail storage is turned on. 
+And then we have other things as we go down. 
+Now, as we go down towards the bottom, 
+we are going to be able to see 
+that there's one called content compliance 
+and that is what they call DLP inside of Gmail. 
+So what we're going to do is hit "Configure" 
+and from here we're going to say what is required? 
+What are we going to call this? 
+So we're going to say 
+this is "Blocking SSNs being sent by email." 
+And then we're going to say, what is it going to affect? 
+Well, I just said we're sending it. 
+So we're going to set this as an outbound rule. 
+If somebody wants to send me 
+an inbound Social Security number, we'll accept it 
+but we're not going to be responsible for sending those out. 
+Then we're going to add an expression 
+that describes the content we want to search for. 
+And again, there are all of these preset things 
+that we can use. 
+We can use a simple content match, 
+an advanced content match 
+a metadata match or predefined content. 
+In our case, we're going to use predefined content. 
+
+And it already selected United States Social Security number 
+for me by default, 
+probably because that is what we just used 
+in the other rule. 
+So it's guessing that's probably what I want. 
+And then you'll see it also has a confidence threshold here 
+and we could set that again 
+from high, medium, low, et cetera. 
+I personally liked it to have a high threshold. 
+So I'm going to set that there 
+and then I'm going to hit save. 
+Now from here, I can scroll down 
+and we can see if any of the expressions above match. 
+What action do we want to have? 
+Do we want to modify the message? 
+Do we want to route it? 
+Do we want to mark it as spam? 
+Do we want to deliver it to somebody else? 
+Do we want to encrypt it? 
+All sorts of different options that we can choose. 
+And if you go here 
+you can also reject the message, 
+quarantine the message, et cetera. 
+So in this case, we might quarantine the message 
+anytime we find a Social Security number 
+and then we can notify the sender 
+when the mail is quarantined 
+so they know, hey, we have not sent this email out 
+because it's in quarantine 
+and they know that the other person they sent it to 
+is not going to get that message. 
+And then we can hit save. 
+And from here we now have a new rule 
+that's been applied here in content compliance. 
+That's it. 
+Now at this point, we have two rules set up. 
+We have one that's set up for our chat and our Google Drive 
+to help prevent something sensitive 
+like a Social Security number from being sent. 
+
+And we've also set the same thing inside of Gmail. 
+Now, the last thing I want to bring up 
+is this thing called the "data loss prevention" demo 
+that Google gives you access to inside of your account. 
+In here you actually could see 
+a sample email message up top. 
+Notice we have the welcome text 
+and it's all this information. 
+At the bottom, we have what they call the "Findings." 
+So using this sample, we can see on line fiv e, 
+for example strings like this one 
+produce a phone number finding. 
+"Please call me. 
+"My phone number is 5552530000." 
+If you look down below 
+the first finding is a very likely high 
+and the string was 5552530000. 
+So this says, "Yes, this was a phone number 
+"we believe it's a phone number." 
+And looking at this, 
+we believe it's a phone number too. 
+As we go through the rest of this, 
+you'll see that it's parsing the information 
+to find any kind of information that it thinks is there 
+like email addresses, credit card numbers, 
+domain names and things like that. 
+And as we scroll through here, 
+you'll probably see a couple of those, 
+like the email address, right here, 
+like the credit card number, right here, 
+like the National Provider Identity, right here. 
+And you'll see that's down here as well 
+with these highly likely 
+as either a U.S. driver's license 
+or a healthcare ID. 
+And you have all the kind of information as you go through. 
+Now, if I go in here and I add something, 
+for example, and I say something like, 
+"This is my Social Security number," 
+
+and I put something like 432-12-1234, 
+you'll now see, down below, 
+the second finding is a U.S. Social Security number 
+and is very likely high. 
+And it thinks that that is a Social Security number 
+because it takes the Social Security number format 
+of three digits, then two digits, then four digits. 
+Now, if I take out the words "Social Security" 
+in front of the number, 
+you're going to notice that the one at the bottom 
+is no longer going to recognize this as a high likelihood 
+of being a Social Security number. 
+And here you'll see 
+that Social Security dropped off our "Findings." 
+But if I go a little bit further down, 
+you'll see it will show up again down here, 
+but now it's unlikely and low. 
+Why is that? 
+Well, because it's just a nine digit number 
+separated by some dashes, 
+and they don't know if it's something 
+like an identification number 
+a Social Security number, 
+an employee ID or anything else. 
+It's just a number at this point. 
+Now, if I take away the word number 
+and I type in SSN, 
+again, you'll notice that the Social Security number 
+is going to pop right back up as very likely. 
+Now, the other thing I've noticed in this 
+is if you play with some numbers like 123-45-6789, 
+this is still showing up as a Social Security number 
+because it's in that format and has the word SSN. 
+But again, if I take this away, 
+"my identification number," 
+now, you'll see it's going to go away from that 
+and it's going to look like something else. 
+And now it's a possible medium for Social Security 
+instead of a low or a high, 
+
+based on what it's seeing. 
+So this is a great way 
+to play with your data loss prevention tool 
+and see what will and what will not get caught 
+based on this system. 
+For example, if I type something like "jason@diontraining 
+and don't put the ".com," 
+it's probably not going to realize 
+that that is actually an email, 
+and it doesn't. 
+Instead of being an email 
+they think it is my person's name 
+but my name is not jason@diontraining, 
+it's Jason Dion. 
+And so that's the way that this DLP stuff works. 
+It's scanning it, it's looking at context, 
+it's looking at what you've chosen 
+and it's figuring out what should be blocked 
+or what should not be blocked 
+based on the rules you set up 
+in your data loss prevention system. 
+ 
+--- END unit-7 ---
+
