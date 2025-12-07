@@ -45,7 +45,7 @@ export const newUnits = {
             "options": [
                 "The first sector of a storage device before the OS loads",
                 "Only .exe files",
-                "Only cloud storage",
+                "Files stored exclusively within cloud-based storage containers",
                 "Browser cookies"
             ],
             "answer": 0
@@ -1987,7 +1987,7 @@ export const newUnits = {
             "options": [
                 "Regulated industries (e.g., banking, healthcare)",
                 "Freelancers",
-                "Hobby websites",
+                "Personal blogs and non-commercial informational websites",
                 "Personal blogs"
             ],
             "answer": 0,
@@ -2041,7 +2041,7 @@ export const newUnits = {
             "q": "Which document outlines how to handle a data breach?",
             "options": [
                 "Incident Response Plan",
-                "AUP",
+                "Acceptable Use Policy document",
                 "SLA",
                 "NDA"
             ],
@@ -2639,7 +2639,7 @@ export const newUnits = {
             "q": "What is the first phase of a typical penetration test?",
             "options": [
                 "Reconnaissance / Information Gathering",
-                "Exploitation",
+                "Active Exploitation of identified vulnerabilities",
                 "Reporting",
                 "Cleanup"
             ],
@@ -2993,7 +2993,7 @@ export const newUnits = {
             "q": "What is a 'Single Point of Failure' (SPOF)?",
             "options": [
                 "A part of a system that, if it fails, stops the entire system",
-                "A failed hard drive",
+                "A redundant component designed to take over in case of primary failure",
                 "A single user",
                 "A software bug"
             ],
@@ -3292,7 +3292,7 @@ export const newUnits = {
                 "Automatically switching to a redundant system upon failure",
                 "Giving up",
                 "Shutting down",
-                "Manual restart"
+                "Manually rebooting the primary server to restore service availability"
             ],
             "answer": 0,
             "explanation": "Failover ensures continuity without human intervention."
@@ -3302,7 +3302,7 @@ export const newUnits = {
             "options": [
                 "Restoring operations to the primary system after it is fixed",
                 "Failing again",
-                "Backing up data",
+                "Archiving historical data to a secondary storage location for compliance",
                 "Retreating"
             ],
             "answer": 0,
@@ -3313,7 +3313,7 @@ export const newUnits = {
             "options": [
                 "Discussion-based simulation of emergency scenarios",
                 "Physical drill",
-                "Testing furniture",
+                "Physical testing of office equipment durability and resilience",
                 "Eating lunch"
             ],
             "answer": 0,
@@ -3436,7 +3436,7 @@ export const newUnits = {
             "options": [
                 "Software that creates and runs virtual machines",
                 "A super monitor",
-                "A fast processor",
+                "A high-speed central processing unit optimized for gaming",
                 "A network switch"
             ],
             "answer": 0,
@@ -3481,7 +3481,7 @@ export const newUnits = {
                 "An attack where code breaks out of a VM to interact with the hypervisor",
                 "Deleting a VM",
                 "Moving a VM",
-                "Backing up a VM"
+                "A routine process of creating snapshots for virtual machine recovery"
             ],
             "answer": 0,
             "explanation": "Escape allows an attacker to compromise the host."
@@ -3514,7 +3514,7 @@ export const newUnits = {
                 "Structuring an app as a collection of small, autonomous services",
                 "Tiny computers",
                 "Microchips",
-                "Small internet plans"
+                "A monolithic application architecture where all components are tightly coupled"
             ],
             "answer": 0,
             "explanation": "Microservices decouple monolithic apps."
@@ -3578,7 +3578,7 @@ export const newUnits = {
             "q": "What is an 'Embedded System'?",
             "options": [
                 "A computer system with a dedicated function within a larger system",
-                "A laptop",
+                "A general-purpose personal computer designed for multiple tasks",
                 "A server",
                 "A cloud"
             ],
@@ -3589,7 +3589,7 @@ export const newUnits = {
             "q": "What is 'Fog Computing'?",
             "options": [
                 "Decentralized computing infrastructure between the cloud and data source",
-                "Computing in the mist",
+                "A centralized cloud architecture managing all data processing remotely",
                 "Cloud computing",
                 "Mainframe computing"
             ],
@@ -3600,7 +3600,7 @@ export const newUnits = {
             "q": "What is 'Edge Computing'?",
             "options": [
                 "Processing data near the edge of the network where it is generated",
-                "Computing on a cliff",
+                "Offloading all data processing tasks to a distant centralized data center",
                 "High-tech computing",
                 "Slow computing"
             ],
@@ -3611,7 +3611,7 @@ export const newUnits = {
             "q": "What is a 'Thin Client'?",
             "options": [
                 "A lightweight computer that relies on a server for processing",
-                "A skinny user",
+                "A standalone workstation with high-performance local processing capabilities",
                 "A tablet",
                 "A smartphone"
             ],
@@ -3622,7 +3622,7 @@ export const newUnits = {
             "q": "What is a 'Thick Client'?",
             "options": [
                 "A fully functional computer that processes locally",
-                "A heavy laptop",
+                "A lightweight terminal dependent on a central server for all computations",
                 "A server",
                 "A mainframe"
             ],
@@ -3701,7 +3701,7 @@ export const newUnits = {
                 "Data is subject to the laws of the country where it is located",
                 "Data is king",
                 "Data is free",
-                "Data is encrypted"
+                "Data is cryptographically secured using advanced encryption standards"
             ],
             "answer": 0,
             "explanation": "Location matters for legal jurisdiction (GDPR, etc.)."
@@ -3711,7 +3711,7 @@ export const newUnits = {
             "options": [
                 "Data from a previous process remaining in memory/storage",
                 "Recycling paper",
-                "Reusing passwords",
+                "Recycling old passwords across multiple different user accounts",
                 "Reusing code"
             ],
             "answer": 0,
