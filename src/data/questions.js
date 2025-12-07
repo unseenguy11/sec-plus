@@ -44,56 +44,556 @@ export const questionsData = {
         { q: 'Data Masking is a technique primarily used for?', options: ['Integrity', 'Availability', 'Confidentiality', 'Non-repudiation'], answer: 2, explanation: 'Masking hides sensitive data (like credit card numbers) from unauthorized view.' }
     ],
     "unit-3": [
-        { q: 'Data exfiltration is best defined as _______.', options: ['Unauthorized transfer of data out of a system', 'Encrypting data at rest', 'Valid backup restoration', 'The lawful collection of telemetry'], answer: 0, explanation: 'Data exfiltration = unauthorized removal of data from a system.' },
-        { q: 'Which is a common destination for stolen PII after exfiltration?', options: ['Public university archives', 'Dark web marketplaces', 'Government FOIA portals', 'Corporate transparency reports'], answer: 1, explanation: 'PII is often sold on dark web marketplaces.' },
-        { q: 'Blackmail in cyber contexts typically leverages _______.', options: ['Untraceable cryptocurrencies for payment', 'IPv6 multicast only', 'TLS 1.3 handshake failures', 'Hardware TPMs for escrow'], answer: 0, explanation: 'Attackers often demand crypto payments during blackmail/extortion.' },
-        { q: 'Service disruption is commonly achieved via _______.', options: ['DDoS attacks', 'Checksum comparison', 'Key stretching', 'RBAC policy'], answer: 0, explanation: 'DDoS overwhelms services to make them unavailable.' },
-        { q: 'Hacktivism motivation primarily relates to _______.', options: ['Ideological or political causes', 'Quarterly earnings', 'Bug bounty points', 'Regulatory compliance'], answer: 0, explanation: 'Hacktivists act to promote social/political causes.' },
-        { q: 'Ethical hackers/pen testers are motivated to _______.', options: ['Improve security by finding vulnerabilities', 'Deface sites for notoriety', 'Steal funds for profit', 'Spread misinformation'], answer: 0, explanation: 'Authorized testing seeks to improve defenses.' },
-        { q: 'Revenge-motivated attacks are most associated with _______.', options: ['Insider threats', 'Botnet herders', 'Content delivery networks', 'PKI root CAs'], answer: 0, explanation: 'Disgruntled insiders often act out of revenge.' },
-        { q: 'Espionage as a motivation most often maps to _______.', options: ['Nation-state or competitor intelligence gathering', 'Routine patch management', 'Spam filtering', 'Open-source licensing'], answer: 0, explanation: 'Cyber espionage aims to gather sensitive intel.' },
-        { q: 'Nation-state “war” motivations emphasize _______.', options: ['Geopolitical objectives', 'Retail loyalty programs', 'SEO rankings', 'Printer ink savings'], answer: 0, explanation: 'Nation-states pursue strategic geopolitical goals.' },
-        { q: 'Internal vs external actors differ primarily by _______.', options: ['Their relationship to the target organization', 'Their preferred programming language', 'Use of IPv4 vs IPv6', 'Whether they own a data center'], answer: 0, explanation: 'Internal actors have legitimate organizational access; externals do not.' },
-        { q: 'Resources and funding affect a threat actor’s _______.', options: ['Scale and sophistication of attacks', 'Operating system theme', 'Time zone', 'Screen resolution'], answer: 0, explanation: 'More resources → larger, more sophisticated campaigns.' },
-        { q: 'Script kiddies typically use _______.', options: ['Pre-made tools with little understanding', 'Only zero-days they developed', 'Hardware implants exclusively', 'Quantum cryptanalysis'], answer: 0, explanation: 'They rely on existing scripts/exploits without deep expertise.' },
-        { q: 'Highly resourced, stealthy, long-term intrusions characterize _______.', options: ['APTs', 'Spam lists', 'Bug trackers', 'Pen test scopes'], answer: 0, explanation: 'Advanced Persistent Threats maintain undetected presence for long periods.' },
-        { q: 'Hacktivists most often target organizations they view as _______.', options: ['Acting unethically or against their cause', 'Best at cybersecurity', 'Outside their geography only', 'Low bandwidth only targets'], answer: 0, explanation: 'Targets are chosen based on ideological opposition.' },
-        { q: 'Organized cybercrime groups primarily seek _______.', options: ['Financial gain', 'Election oversight', 'Open research access', 'Standards compliance'], answer: 0, explanation: 'Their core driver is profit (ransomware, fraud, etc.).' },
-        { q: 'Nation-state actors may conduct false flag attacks to _______.', options: ['Misattribute the source of an operation', 'Increase CPU clock speeds', 'Reduce DNS TTL values', 'Aid lawful intercept'], answer: 0, explanation: 'False flags try to blame another actor/group.' },
-        { q: 'Insider threats are potent because they _______.', options: ['Have legitimate access and internal knowledge', 'Always use zero-days', 'Never make mistakes', 'Only attack from home'], answer: 0, explanation: 'Legitimate credentials + process knowledge ⇒ higher potential damage.' },
-        { q: 'Shadow IT is best described as _______.', options: ['Unapproved IT systems/services used without explicit approval', 'External pen-test firms', 'Open-source software in CI/CD', 'Vendor-supported SaaS'], answer: 0, explanation: 'Shadow IT runs outside sanctioned IT governance.' },
-        { q: 'A common driver for shadow IT is _______.', options: ['Security processes that are overly complex or slow', 'Abundance of GPUs', 'Availability of IPv6', 'Excess office space'], answer: 0, explanation: 'Overly rigid processes lead users to bypass IT.' },
-        { q: 'Which example is shadow IT?', options: ['Using personal cloud storage for work files without approval', 'Patching servers during a maintenance window', 'FIPS-validated encryption', 'Documented MDM onboarding'], answer: 0, explanation: 'Unapproved cloud storage for org data = shadow IT.' },
-        { q: 'Threat vector refers to the _______.', options: ['Means/pathway used to carry out an attack', 'Sum of all vulnerabilities', 'Legal framework for privacy', 'Asset inventory'], answer: 0, explanation: 'Vector = pathway into the system (HOW).' },
-        { q: 'Attack surface refers to the _______.', options: ['Sum of potential entry/exit points', 'Exact phishing email subject', 'Only external IPs', 'CSP vendor SLAs'], answer: 0, explanation: 'Attack surface = WHERE attacks could occur.' },
-        { q: 'Which increases an organization’s attack surface?', options: ['Enabling instant messaging company-wide', 'Removing unused services', 'Network segmentation', 'Patching to latest baseline'], answer: 0, explanation: 'More comms channels ⇒ more entry points.' },
-        { q: 'Message-based vectors frequently involve _______.', options: ['Phishing via email/SMS/IM', 'Fiber tapping only', 'Firmware reflashing only', 'Only physical lock-picking'], answer: 0, explanation: 'Messages are a common phish/malware delivery route.' },
-        { q: 'Image-based vectors often leverage _______.', options: ['Steganography or image-embedded code', 'Only plaintext attachments', 'SMBv1 shares', 'Rootkit drivers exclusively'], answer: 0, explanation: 'Malicious code can be hidden within images.' },
-        { q: 'File-based vectors commonly deliver _______.', options: ['Malware disguised as legitimate files', 'Thermal telemetry', 'NTP offsets', 'Certificate pinning'], answer: 0, explanation: 'Malicious docs/installers masquerade as legit content.' },
-        { q: 'Vishing is _______.', options: ['Voice-call social engineering', 'Video injection', 'VPN tunneling', 'Virtualization escape'], answer: 0, explanation: 'Vishing uses phone calls to elicit secrets or actions.' },
-        { q: 'A typical “baiting” technique uses _______.', options: ['Malware-infected USB drives left for targets to find', 'TLS mutual auth', 'Randomized MAC addresses for privacy', 'Full disk encryption'], answer: 0, explanation: 'Infected removable media tempt users to plug them in.' },
-        { q: 'Evil twin attacks relate to _______.', options: ['Rogue Wi‑Fi APs mimicking legitimate networks', 'ARP table aging', 'RA Guard on switches', 'UEFI Secure Boot'], answer: 0, explanation: 'Fake APs capture traffic/credentials.' },
-        { q: 'BlueBorne exploits target _______.', options: ['Bluetooth vulnerabilities', 'Only SMTP relays', 'L2TP tunnels', 'RAID controllers'], answer: 0, explanation: 'BlueBorne abuses Bluetooth stacks.' },
-        { q: 'A honeypot is _______.', options: ['A decoy system to attract attackers and study TTPs', 'A production backup server', 'A DLP policy engine', 'An IDS signature set'], answer: 0, explanation: 'Honeypots lure attackers to observe techniques.' },
-        { q: 'A honeynet differs from a honeypot by _______.', options: ['Emulating an entire network of decoy systems', 'Only running on mobile', 'Requiring air-gaps', 'Being cloud-only'], answer: 0, explanation: 'Honeynet = multiple coordinated decoys.' },
-        { q: 'A honeyfile typically includes _______.', options: ['Fake sensitive content with identifiers/watermarks', 'Firmware flashing tools', 'CA root certs', 'Physical key locks'], answer: 0, explanation: 'Honeyfiles alert on access and may be watermarked.' },
-        { q: 'A honeytoken is _______.', options: ['Monitored fake data/credential with no legitimate use', 'A FIDO2 hardware key', 'A TLS session ticket', 'A TPM NV index'], answer: 0, explanation: 'Any access to it is suspicious by definition.' },
-        { q: 'Bogus DNS entries are used to _______.', options: ['Mislead and trap attackers while generating alerts', 'Accelerate CDN caching', 'Force OCSP stapling', 'Enable DHCP snooping'], answer: 0, explanation: 'They waste attacker effort and signal probing.' },
-        { q: 'Decoy directories primarily _______.', options: ['Divert intruders and trigger alerts on access', 'Improve backup throughput', 'Lower MTTR automatically', 'Enforce MFA'], answer: 0, explanation: 'They distract and instrument attacker actions.' },
-        { q: 'Dynamic page generation can _______.', options: ['Confuse scrapers/bots with ever-changing content', 'Disable TLS', 'Break PKI by default', 'Replace WAFs entirely'], answer: 0, explanation: 'A tactic to slow/obscure automated collection.' },
-        { q: 'Port triggering helps by _______.', options: ['Keeping services closed until specific outbound patterns occur', 'Auto-rotating secrets hourly', 'Performing code signing', 'Enforcing SELinux'], answer: 0, explanation: 'Services remain hidden unless legitimately triggered.' },
-        { q: 'Spoofing fake telemetry during scans _______.', options: ['Misleads attackers about OS/services to waste exploits', 'Prevents TLS renegotiation', 'Optimizes BGP pathing', 'Hardens ECC curves'], answer: 0, explanation: 'False data frustrates recon and exploit selection.' },
-        { q: 'FIN7 and Carbanak are known for _______.', options: ['Organized cybercrime operations with advanced phishing/malware', 'Open-source defensive platforms', 'Academic-only research', 'Nation-state election monitoring'], answer: 0, explanation: 'Both exemplify organized, profit-driven cybercrime.' },
-        { q: 'Stuxnet is a classic example of _______.', options: ['Nation-state malware targeting industrial control systems', 'Generic adware', 'Spam botnet sinkholing', 'TLS downgrade attack'], answer: 0, explanation: 'It targeted Iranian nuclear centrifuges via ICS/air-gap bridging.' },
-        { q: 'An APT maintaining access for months undetected is focusing on _______.', options: ['Persistence and stealth for espionage/sabotage', 'Immediate ransom payout', 'SEO ranking boosts', 'License compliance'], answer: 0, explanation: 'Long dwell time supports espionage and staged objectives.' },
-        { q: 'The 2020 Twitter incident highlighted _______.', options: ['Risks from insiders assisting external attackers', 'TLS certificate revocation', 'Only firmware attacks', 'Quantum key distribution'], answer: 0, explanation: 'External attacker collab with insiders led to high‑profile account access.' },
-        { q: 'Reducing attack surface commonly involves _______.', options: ['Removing unnecessary services and standardizing builds', 'Adding random browser extensions', 'Relying on default passwords', 'Using shared admin accounts'], answer: 0, explanation: 'Hardening and standardization shrink exposure.' },
-        { q: 'Which BEST counters shadow IT data leakage?', options: ['Approved cloud storage with DLP and training', 'Disable all internet access always', 'Only verbal reminders', 'Allow unrestricted USB use'], answer: 0, explanation: 'Provide sanctioned alternatives + policy + DLP.' },
-        { q: 'Which statement about insider threats is MOST accurate?', options: ['They may be intentional or unintentional (careless).', 'They always require admin rights.', 'They are less dangerous than outsiders.', 'They are only possible in small companies.'], answer: 0, explanation: 'Mistakes by well-meaning staff also create incidents.' },
-        { q: 'A false flag operation aims to _______.', options: ['Cause investigators to blame another actor', 'Increase entropy in keys', 'Lower latency to CDNs', 'Improve IDS recall'], answer: 0, explanation: 'Core purpose is misattribution.' },
-        { q: 'BlueSmack is a _______.', options: ['Bluetooth-based DoS attack', 'VoIP SIP fuzzing tool', 'PDF macro payload', 'Browser XSS filter'], answer: 0, explanation: 'BlueSmack floods Bluetooth logical link control.' },
-        { q: 'Evil twin defenses include _______.', options: ['Wireless IDS/WIPS and user training', 'Overclocking CPUs', 'Wider channel bonding only', 'Disabling DHCP globally'], answer: 0, explanation: 'WIDS/WIPS + awareness help detect/avoid rogue APs.' },
-        { q: 'Which example BEST illustrates vishing?', options: ['Caller posing as a bank demanding SSN for “verification”', 'HTML email with tracking pixel', 'Drive-by download via banner ad', 'DNS cache poisoning'], answer: 0, explanation: 'Voice-call social engineering for secrets.' }
+        {
+            "q": "Data exfiltration is best defined as _______.",
+            "options": [
+                "Encrypting data at rest",
+                "Valid backup restoration",
+                "Unauthorized transfer of data out of a system",
+                "The lawful collection of telemetry"
+            ],
+            "answer": 2,
+            "explanation": "Data exfiltration = unauthorized removal of data from a system."
+        },
+        {
+            "q": "Which is a common destination for stolen PII after exfiltration?",
+            "options": [
+                "Public university archives",
+                "Dark web marketplaces",
+                "Corporate transparency reports",
+                "Government FOIA portals"
+            ],
+            "answer": 1,
+            "explanation": "PII is often sold on dark web marketplaces."
+        },
+        {
+            "q": "Blackmail in cyber contexts typically leverages _______.",
+            "options": [
+                "TLS 1.3 handshake failures",
+                "Untraceable cryptocurrencies for payment",
+                "IPv6 multicast only",
+                "Hardware TPMs for escrow"
+            ],
+            "answer": 1,
+            "explanation": "Attackers often demand crypto payments during blackmail/extortion."
+        },
+        {
+            "q": "Service disruption is commonly achieved via _______.",
+            "options": [
+                "Key stretching",
+                "DDoS attacks",
+                "RBAC policy",
+                "Checksum comparison"
+            ],
+            "answer": 1,
+            "explanation": "DDoS overwhelms services to make them unavailable."
+        },
+        {
+            "q": "Hacktivism motivation primarily relates to _______.",
+            "options": [
+                "Regulatory compliance",
+                "Ideological or political causes",
+                "Quarterly earnings",
+                "Bug bounty points"
+            ],
+            "answer": 1,
+            "explanation": "Hacktivists act to promote social/political causes."
+        },
+        {
+            "q": "Ethical hackers/pen testers are motivated to _______.",
+            "options": [
+                "Steal funds for profit",
+                "Deface sites for notoriety",
+                "Improve security by finding vulnerabilities",
+                "Spread misinformation"
+            ],
+            "answer": 2,
+            "explanation": "Authorized testing seeks to improve defenses."
+        },
+        {
+            "q": "Revenge-motivated attacks are most associated with _______.",
+            "options": [
+                "Content delivery networks",
+                "Insider threats",
+                "Botnet herders",
+                "PKI root CAs"
+            ],
+            "answer": 1,
+            "explanation": "Disgruntled insiders often act out of revenge."
+        },
+        {
+            "q": "Espionage as a motivation most often maps to _______.",
+            "options": [
+                "Open-source licensing",
+                "Routine patch management",
+                "Spam filtering",
+                "Nation-state or competitor intelligence gathering"
+            ],
+            "answer": 3,
+            "explanation": "Cyber espionage aims to gather sensitive intel."
+        },
+        {
+            "q": "Nation-state “war” motivations emphasize _______.",
+            "options": [
+                "Retail loyalty programs",
+                "SEO rankings",
+                "Geopolitical objectives",
+                "Printer ink savings"
+            ],
+            "answer": 2,
+            "explanation": "Nation-states pursue strategic geopolitical goals."
+        },
+        {
+            "q": "Internal vs external actors differ primarily by _______.",
+            "options": [
+                "Their relationship to the target organization",
+                "Their preferred programming language",
+                "Use of IPv4 vs IPv6",
+                "Whether they own a data center"
+            ],
+            "answer": 0,
+            "explanation": "Internal actors have legitimate organizational access; externals do not."
+        },
+        {
+            "q": "Resources and funding affect a threat actor’s _______.",
+            "options": [
+                "Time zone",
+                "Scale and sophistication of attacks",
+                "Operating system theme",
+                "Screen resolution"
+            ],
+            "answer": 1,
+            "explanation": "More resources → larger, more sophisticated campaigns."
+        },
+        {
+            "q": "Script kiddies typically use _______.",
+            "options": [
+                "Only zero-days they developed",
+                "Pre-made tools with little understanding",
+                "Quantum cryptanalysis",
+                "Hardware implants exclusively"
+            ],
+            "answer": 1,
+            "explanation": "They rely on existing scripts/exploits without deep expertise."
+        },
+        {
+            "q": "Highly resourced, stealthy, long-term intrusions characterize _______.",
+            "options": [
+                "Spam lists",
+                "Pen test scopes",
+                "APTs",
+                "Bug trackers"
+            ],
+            "answer": 2,
+            "explanation": "Advanced Persistent Threats maintain undetected presence for long periods."
+        },
+        {
+            "q": "Hacktivists most often target organizations they view as _______.",
+            "options": [
+                "Best at cybersecurity",
+                "Low bandwidth only targets",
+                "Outside their geography only",
+                "Acting unethically or against their cause"
+            ],
+            "answer": 3,
+            "explanation": "Targets are chosen based on ideological opposition."
+        },
+        {
+            "q": "Organized cybercrime groups primarily seek _______.",
+            "options": [
+                "Standards compliance",
+                "Financial gain",
+                "Open research access",
+                "Election oversight"
+            ],
+            "answer": 1,
+            "explanation": "Their core driver is profit (ransomware, fraud, etc.)."
+        },
+        {
+            "q": "Nation-state actors may conduct false flag attacks to _______.",
+            "options": [
+                "Aid lawful intercept",
+                "Misattribute the source of an operation",
+                "Increase CPU clock speeds",
+                "Reduce DNS TTL values"
+            ],
+            "answer": 1,
+            "explanation": "False flags try to blame another actor/group."
+        },
+        {
+            "q": "Insider threats are potent because they _______.",
+            "options": [
+                "Only attack from home",
+                "Always use zero-days",
+                "Never make mistakes",
+                "Have legitimate access and internal knowledge"
+            ],
+            "answer": 3,
+            "explanation": "Legitimate credentials + process knowledge ⇒ higher potential damage."
+        },
+        {
+            "q": "Shadow IT is best described as _______.",
+            "options": [
+                "Vendor-supported SaaS",
+                "Unapproved IT systems/services used without explicit approval",
+                "Open-source software in CI/CD",
+                "External pen-test firms"
+            ],
+            "answer": 1,
+            "explanation": "Shadow IT runs outside sanctioned IT governance."
+        },
+        {
+            "q": "A common driver for shadow IT is _______.",
+            "options": [
+                "Abundance of GPUs",
+                "Availability of IPv6",
+                "Security processes that are overly complex or slow",
+                "Excess office space"
+            ],
+            "answer": 2,
+            "explanation": "Overly rigid processes lead users to bypass IT."
+        },
+        {
+            "q": "Which example is shadow IT?",
+            "options": [
+                "FIPS-validated encryption",
+                "Patching servers during a maintenance window",
+                "Using personal cloud storage for work files without approval",
+                "Documented MDM onboarding"
+            ],
+            "answer": 2,
+            "explanation": "Unapproved cloud storage for org data = shadow IT."
+        },
+        {
+            "q": "Threat vector refers to the _______.",
+            "options": [
+                "Means/pathway used to carry out an attack",
+                "Legal framework for privacy",
+                "Asset inventory",
+                "Sum of all vulnerabilities"
+            ],
+            "answer": 0,
+            "explanation": "Vector = pathway into the system (HOW)."
+        },
+        {
+            "q": "Attack surface refers to the _______.",
+            "options": [
+                "Sum of potential entry/exit points",
+                "Only external IPs",
+                "CSP vendor SLAs",
+                "Exact phishing email subject"
+            ],
+            "answer": 0,
+            "explanation": "Attack surface = WHERE attacks could occur."
+        },
+        {
+            "q": "Which increases an organization’s attack surface?",
+            "options": [
+                "Enabling instant messaging company-wide",
+                "Patching to latest baseline",
+                "Network segmentation",
+                "Removing unused services"
+            ],
+            "answer": 0,
+            "explanation": "More comms channels ⇒ more entry points."
+        },
+        {
+            "q": "Message-based vectors frequently involve _______.",
+            "options": [
+                "Fiber tapping only",
+                "Firmware reflashing only",
+                "Only physical lock-picking",
+                "Phishing via email/SMS/IM"
+            ],
+            "answer": 3,
+            "explanation": "Messages are a common phish/malware delivery route."
+        },
+        {
+            "q": "Image-based vectors often leverage _______.",
+            "options": [
+                "Rootkit drivers exclusively",
+                "Only plaintext attachments",
+                "Steganography or image-embedded code",
+                "SMBv1 shares"
+            ],
+            "answer": 2,
+            "explanation": "Malicious code can be hidden within images."
+        },
+        {
+            "q": "File-based vectors commonly deliver _______.",
+            "options": [
+                "Malware disguised as legitimate files",
+                "NTP offsets",
+                "Certificate pinning",
+                "Thermal telemetry"
+            ],
+            "answer": 0,
+            "explanation": "Malicious docs/installers masquerade as legit content."
+        },
+        {
+            "q": "Vishing is _______.",
+            "options": [
+                "Virtualization escape",
+                "VPN tunneling",
+                "Voice-call social engineering",
+                "Video injection"
+            ],
+            "answer": 2,
+            "explanation": "Vishing uses phone calls to elicit secrets or actions."
+        },
+        {
+            "q": "A typical “baiting” technique uses _______.",
+            "options": [
+                "Randomized MAC addresses for privacy",
+                "Malware-infected USB drives left for targets to find",
+                "TLS mutual auth",
+                "Full disk encryption"
+            ],
+            "answer": 1,
+            "explanation": "Infected removable media tempt users to plug them in."
+        },
+        {
+            "q": "Evil twin attacks relate to _______.",
+            "options": [
+                "ARP table aging",
+                "Rogue Wi‑Fi APs mimicking legitimate networks",
+                "RA Guard on switches",
+                "UEFI Secure Boot"
+            ],
+            "answer": 1,
+            "explanation": "Fake APs capture traffic/credentials."
+        },
+        {
+            "q": "BlueBorne exploits target _______.",
+            "options": [
+                "Bluetooth vulnerabilities",
+                "L2TP tunnels",
+                "RAID controllers",
+                "Only SMTP relays"
+            ],
+            "answer": 0,
+            "explanation": "BlueBorne abuses Bluetooth stacks."
+        },
+        {
+            "q": "A honeypot is _______.",
+            "options": [
+                "An IDS signature set",
+                "A DLP policy engine",
+                "A production backup server",
+                "A decoy system to attract attackers and study TTPs"
+            ],
+            "answer": 3,
+            "explanation": "Honeypots lure attackers to observe techniques."
+        },
+        {
+            "q": "A honeynet differs from a honeypot by _______.",
+            "options": [
+                "Emulating an entire network of decoy systems",
+                "Only running on mobile",
+                "Requiring air-gaps",
+                "Being cloud-only"
+            ],
+            "answer": 0,
+            "explanation": "Honeynet = multiple coordinated decoys."
+        },
+        {
+            "q": "A honeyfile typically includes _______.",
+            "options": [
+                "Physical key locks",
+                "Firmware flashing tools",
+                "Fake sensitive content with identifiers/watermarks",
+                "CA root certs"
+            ],
+            "answer": 2,
+            "explanation": "Honeyfiles alert on access and may be watermarked."
+        },
+        {
+            "q": "A honeytoken is _______.",
+            "options": [
+                "A TPM NV index",
+                "A TLS session ticket",
+                "A FIDO2 hardware key",
+                "Monitored fake data/credential with no legitimate use"
+            ],
+            "answer": 3,
+            "explanation": "Any access to it is suspicious by definition."
+        },
+        {
+            "q": "Bogus DNS entries are used to _______.",
+            "options": [
+                "Accelerate CDN caching",
+                "Mislead and trap attackers while generating alerts",
+                "Force OCSP stapling",
+                "Enable DHCP snooping"
+            ],
+            "answer": 1,
+            "explanation": "They waste attacker effort and signal probing."
+        },
+        {
+            "q": "Decoy directories primarily _______.",
+            "options": [
+                "Lower MTTR automatically",
+                "Divert intruders and trigger alerts on access",
+                "Improve backup throughput",
+                "Enforce MFA"
+            ],
+            "answer": 1,
+            "explanation": "They distract and instrument attacker actions."
+        },
+        {
+            "q": "Dynamic page generation can _______.",
+            "options": [
+                "Confuse scrapers/bots with ever-changing content",
+                "Break PKI by default",
+                "Disable TLS",
+                "Replace WAFs entirely"
+            ],
+            "answer": 0,
+            "explanation": "A tactic to slow/obscure automated collection."
+        },
+        {
+            "q": "Port triggering helps by _______.",
+            "options": [
+                "Auto-rotating secrets hourly",
+                "Keeping services closed until specific outbound patterns occur",
+                "Performing code signing",
+                "Enforcing SELinux"
+            ],
+            "answer": 1,
+            "explanation": "Services remain hidden unless legitimately triggered."
+        },
+        {
+            "q": "Spoofing fake telemetry during scans _______.",
+            "options": [
+                "Hardens ECC curves",
+                "Prevents TLS renegotiation",
+                "Optimizes BGP pathing",
+                "Misleads attackers about OS/services to waste exploits"
+            ],
+            "answer": 3,
+            "explanation": "False data frustrates recon and exploit selection."
+        },
+        {
+            "q": "FIN7 and Carbanak are known for _______.",
+            "options": [
+                "Open-source defensive platforms",
+                "Academic-only research",
+                "Organized cybercrime operations with advanced phishing/malware",
+                "Nation-state election monitoring"
+            ],
+            "answer": 2,
+            "explanation": "Both exemplify organized, profit-driven cybercrime."
+        },
+        {
+            "q": "Stuxnet is a classic example of _______.",
+            "options": [
+                "TLS downgrade attack",
+                "Generic adware",
+                "Spam botnet sinkholing",
+                "Nation-state malware targeting industrial control systems"
+            ],
+            "answer": 3,
+            "explanation": "It targeted Iranian nuclear centrifuges via ICS/air-gap bridging."
+        },
+        {
+            "q": "An APT maintaining access for months undetected is focusing on _______.",
+            "options": [
+                "Persistence and stealth for espionage/sabotage",
+                "License compliance",
+                "Immediate ransom payout",
+                "SEO ranking boosts"
+            ],
+            "answer": 0,
+            "explanation": "Long dwell time supports espionage and staged objectives."
+        },
+        {
+            "q": "The 2020 Twitter incident highlighted _______.",
+            "options": [
+                "Risks from insiders assisting external attackers",
+                "Quantum key distribution",
+                "Only firmware attacks",
+                "TLS certificate revocation"
+            ],
+            "answer": 0,
+            "explanation": "External attacker collab with insiders led to high‑profile account access."
+        },
+        {
+            "q": "Reducing attack surface commonly involves _______.",
+            "options": [
+                "Relying on default passwords",
+                "Adding random browser extensions",
+                "Removing unnecessary services and standardizing builds",
+                "Using shared admin accounts"
+            ],
+            "answer": 2,
+            "explanation": "Hardening and standardization shrink exposure."
+        },
+        {
+            "q": "Which BEST counters shadow IT data leakage?",
+            "options": [
+                "Disable all internet access always",
+                "Only verbal reminders",
+                "Approved cloud storage with DLP and training",
+                "Allow unrestricted USB use"
+            ],
+            "answer": 2,
+            "explanation": "Provide sanctioned alternatives + policy + DLP."
+        },
+        {
+            "q": "Which statement about insider threats is MOST accurate?",
+            "options": [
+                "They are less dangerous than outsiders.",
+                "They always require admin rights.",
+                "They may be intentional or unintentional (careless).",
+                "They are only possible in small companies."
+            ],
+            "answer": 2,
+            "explanation": "Mistakes by well-meaning staff also create incidents."
+        },
+        {
+            "q": "A false flag operation aims to _______.",
+            "options": [
+                "Lower latency to CDNs",
+                "Cause investigators to blame another actor",
+                "Increase entropy in keys",
+                "Improve IDS recall"
+            ],
+            "answer": 1,
+            "explanation": "Core purpose is misattribution."
+        },
+        {
+            "q": "BlueSmack is a _______.",
+            "options": [
+                "VoIP SIP fuzzing tool",
+                "Browser XSS filter",
+                "Bluetooth-based DoS attack",
+                "PDF macro payload"
+            ],
+            "answer": 2,
+            "explanation": "BlueSmack floods Bluetooth logical link control."
+        },
+        {
+            "q": "Evil twin defenses include _______.",
+            "options": [
+                "Wider channel bonding only",
+                "Disabling DHCP globally",
+                "Overclocking CPUs",
+                "Wireless IDS/WIPS and user training"
+            ],
+            "answer": 3,
+            "explanation": "WIDS/WIPS + awareness help detect/avoid rogue APs."
+        },
+        {
+            "q": "Which example BEST illustrates vishing?",
+            "options": [
+                "Drive-by download via banner ad",
+                "DNS cache poisoning",
+                "Caller posing as a bank demanding SSN for “verification”",
+                "HTML email with tracking pixel"
+            ],
+            "answer": 2,
+            "explanation": "Voice-call social engineering for secrets."
+        }
     ],
     "unit-4": [
         { q: 'What is the main purpose of fencing in physical security?', options: ['To deter and delay intruders', 'To improve building aesthetics', 'To mark company property for zoning compliance', 'To redirect vehicle traffic'], answer: 0, explanation: 'Fencing acts as a visual and physical barrier to delay intruders and define boundaries.' },
