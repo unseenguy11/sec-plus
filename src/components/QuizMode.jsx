@@ -289,9 +289,9 @@ export default function QuizMode({ unitId }) {
                     </div>
 
                     {/* Feedback Area (Fixed at bottom of right col) */}
-                    <div className="flex-none min-h-[140px]">
+                    <div className={cn("flex-none transition-all duration-300 ease-in-out", selectedOption !== null ? "min-h-[140px]" : "min-h-0")}>
                         <AnimatePresence mode="wait">
-                            {selectedOption !== null ? (
+                            {selectedOption !== null && (
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -321,10 +321,6 @@ export default function QuizMode({ unitId }) {
                                         <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </motion.div>
-                            ) : (
-                                <div className="h-full flex items-center justify-center text-slate-500 border border-white/5 rounded-xl bg-slate-900/20 mt-8 lg:mt-0">
-                                    <span className="text-sm">Select an answer to continue</span>
-                                </div>
                             )}
                         </AnimatePresence>
                     </div>
