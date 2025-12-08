@@ -44,7 +44,7 @@ export const newUnits = {
             "q": "A boot sector virus infects:",
             "options": [
                 "The first sector of a storage device before the OS loads",
-                "Only .exe files",
+                "Executable files that are specifically designed to run on Windows operating systems",
                 "Files stored exclusively within cloud-based storage containers",
                 "Browser cookies"
             ],
@@ -105,7 +105,7 @@ export const newUnits = {
             "options": [
                 "Using multiple propagation methods (email, network shares, web servers)",
                 "Encrypting all user files",
-                "Only infecting Linux systems",
+                "Malware designed specifically to target and infect the Linux operating system",
                 "Being entirely harmless"
             ],
             "answer": 0
@@ -566,7 +566,7 @@ export const newUnits = {
             "q": "Trade secrets include:",
             "options": [
                 "Proprietary business methods that give competitive advantage",
-                "Public financial filings",
+                "Documents and reports that are publicly available and disclose financial status",
                 "All open-source code",
                 "Government-issued IDs"
             ],
@@ -686,7 +686,7 @@ export const newUnits = {
             "q": "DLP is designed to prevent:",
             "options": [
                 "Sensitive data from leaving the organization unintentionally or maliciously",
-                "System updates from installing",
+                "Preventing automatic operating system updates from installing without user permission",
                 "Users from downloading emails",
                 "Servers from encrypting data"
             ],
@@ -1502,7 +1502,7 @@ export const newUnits = {
                 "A holistic strategy across hardware, software, and services",
                 "A single annual audit",
                 "Only financial analysis",
-                "Physical inspection only"
+                "Relying solely on visual physical inspection of hardware components"
             ],
             "answer": 0,
             "explanation": "All layers must be evaluated."
@@ -2984,7 +2984,7 @@ export const newUnits = {
                 "Connecting multiple computers to work as a single system",
                 "Grouping files in folders",
                 "Organizing cables",
-                "A type of virus"
+                "A malicious software program that replicates itself to spread to other computers"
             ],
             "answer": 0,
             "explanation": "Clusters work together for HA and fault tolerance."
@@ -3988,7 +3988,7 @@ export const newUnits = {
             "options": [
                 "A physical hole in the server room",
                 "A DNS server that redirects malicious traffic to a non-existent or controlled address",
-                "A type of malware",
+                "A malicious software program designed to disrupt, damage, or gain unauthorized access",
                 "A backup location"
             ],
             "answer": 1,
@@ -4708,7 +4708,7 @@ export const newUnits = {
                 "A competition between hackers",
                 "A vulnerability where the outcome depends on the timing or order of events",
                 "A fast network connection",
-                "A type of virus"
+                "A malicious software program that replicates itself to spread to other computers"
             ],
             "answer": 1,
             "explanation": "Race conditions (like TOCTOU) occur when a system attempts to perform two or more operations at the same time, leading to unexpected behavior."
@@ -8494,7 +8494,7 @@ export const newUnits = {
         {
             "q": "What is 'Rsyslog'?",
             "options": [
-                "A type of virus",
+                "A malicious software program that replicates itself to spread to other computers",
                 "An enhanced version of the syslog protocol/daemon for Linux",
                 "A router command",
                 "A Windows log format"
@@ -8630,7 +8630,7 @@ export const newUnits = {
             "options": [
                 "A type of physical lock",
                 "A document tracking the chronological history of evidence handling (who collected it, who held it, etc.)",
-                "A network protocol",
+                "A set of rules governing the exchange of data between devices on a network",
                 "A backup strategy"
             ],
             "answer": 1,
@@ -8796,7 +8796,7 @@ export const newUnits = {
                 "A list of users",
                 "A database storing configuration settings for the OS and applications",
                 "A folder for documents",
-                "A type of virus"
+                "A malicious software program that replicates itself to spread to other computers"
             ],
             "answer": 1,
             "explanation": "The Windows Registry contains a wealth of forensic information, including user activity, installed software, and connected devices (like USBs)."
@@ -9292,7 +9292,7 @@ export const newUnits = {
             "options": [
                 "Looking over someone's shoulder to steal information",
                 "Surfing the web at work",
-                "A type of malware",
+                "A malicious software program designed to disrupt, damage, or gain unauthorized access",
                 "A Wi-Fi attack"
             ],
             "answer": 0,
@@ -9315,7 +9315,7 @@ export const newUnits = {
                 "Driving too close to another car",
                 "Following an authorized person into a secure area",
                 "A type of firewall rule",
-                "A network protocol"
+                "A set of rules governing the exchange of data between devices on a network"
             ],
             "answer": 1,
             "explanation": "Tailgating is following an authorized person into a secure area without authorization."
@@ -9402,7 +9402,7 @@ export const newUnits = {
             "options": [
                 "A marketing strategy",
                 "Coordinated effort to shift public opinion or perception",
-                "A type of malware",
+                "A malicious software program designed to disrupt, damage, or gain unauthorized access",
                 "A software update"
             ],
             "answer": 1,
@@ -9776,7 +9776,7 @@ export const newUnits = {
         {
             "q": "What is 'Git'?",
             "options": [
-                "A type of virus",
+                "A malicious software program that replicates itself to spread to other computers",
                 "A distributed version control system",
                 "A programming language",
                 "A web server"
@@ -9845,7 +9845,7 @@ export const newUnits = {
                 "Painting servers blue and green",
                 "A deployment technique that reduces downtime and risk by running two identical production environments",
                 "Deploying to the ocean and forest",
-                "A type of malware"
+                "A malicious software program designed to disrupt, damage, or gain unauthorized access"
             ],
             "answer": 1,
             "explanation": "Blue-green deployment uses two identical environments (Blue and Green) to reduce downtime and risk."
@@ -9968,7 +9968,7 @@ export const newUnits = {
                 "Building bridges",
                 "Manipulating individuals into breaking security procedures",
                 "Programming social networks",
-                "A type of malware"
+                "A malicious software program designed to disrupt, damage, or gain unauthorized access"
             ],
             "answer": 1,
             "explanation": "Social engineering involves manipulating people into divulging confidential information or performing actions."
@@ -9990,7 +9990,7 @@ export const newUnits = {
                 "Driving too close",
                 "Following an authorized person into a secure area without authorization",
                 "A type of party",
-                "A network protocol"
+                "A set of rules governing the exchange of data between devices on a network"
             ],
             "answer": 1,
             "explanation": "Tailgating involves following an authorized person into a secure area to bypass access controls."
@@ -10020,7 +10020,7 @@ export const newUnits = {
         {
             "q": "What is a 'baiting' attack?",
             "options": [
-                "Fishing for food",
+                "Using physical media like USB drives to trick users into installing malware",
                 "Leaving infected media (like USB drives) for victims to find",
                 "Sending emails",
                 "Calling victims"
@@ -10033,7 +10033,7 @@ export const newUnits = {
             "options": [
                 "A sport",
                 "Fraudulent emails attempting to trick users into revealing sensitive info",
-                "A type of virus",
+                "A malicious software program that replicates itself to spread to other computers",
                 "A network scan"
             ],
             "answer": 1,
@@ -10088,7 +10088,7 @@ export const newUnits = {
             "options": [
                 "Poisoning water",
                 "Compromising a website frequently visited by a target group",
-                "Flooding a server",
+                "Overwhelming a target server with excessive network traffic to cause a denial of service",
                 "A physical trap"
             ],
             "answer": 1,
@@ -10100,7 +10100,7 @@ export const newUnits = {
                 "A suggestion",
                 "A deliberate system of principles and rules to guide decisions",
                 "A law",
-                "A software setting"
+                "A configuration option within a software application that controls its behavior"
             ],
             "answer": 1,
             "explanation": "A policy is a set of principles and rules that guide decisions and achieve rational outcomes."
@@ -10110,7 +10110,7 @@ export const newUnits = {
             "options": [
                 "A book about employees",
                 "A comprehensive guide on procedures, guidelines, and best practices",
-                "A list of phone numbers",
+                "A directory containing contact information for all employees within the organization",
                 "A training video"
             ],
             "answer": 1,
@@ -10122,7 +10122,7 @@ export const newUnits = {
                 "To look professional",
                 "To prevent sensitive information from being left exposed",
                 "To save paper",
-                "To make cleaning easier"
+                "To facilitate the daily cleaning and maintenance of office workspaces"
             ],
             "answer": 1,
             "explanation": "A clean desk policy ensures that sensitive information is not left exposed and vulnerable to theft or prying eyes."
@@ -10218,7 +10218,7 @@ export const newUnits = {
         {
             "q": "What is 'gamification' in training?",
             "options": [
-                "Playing video games at work",
+                "Engaging in recreational video gaming activities during working hours",
                 "Applying game-design elements to non-game contexts (like training)",
                 "Gambling",
                 "Making fun of security"
@@ -10229,7 +10229,7 @@ export const newUnits = {
         {
             "q": "What is 'simulated phishing'?",
             "options": [
-                "Sending real phishing emails",
+                "Distributing actual malicious emails to test the organization's security defenses",
                 "Sending fake phishing emails to test employee awareness",
                 "Fishing in a simulator",
                 "A type of video game"
@@ -10251,7 +10251,7 @@ export const newUnits = {
         {
             "q": "What is 'data classification'?",
             "options": [
-                "Sorting data alphabetically",
+                "Organizing data files in alphabetical order for easier retrieval",
                 "Categorizing data based on its sensitivity and importance",
                 "Deleting old data",
                 "Backing up data"
@@ -10275,7 +10275,7 @@ export const newUnits = {
             "options": [
                 "Working in separate rooms",
                 "Dividing critical tasks among multiple people to prevent fraud",
-                "Separating work and personal life",
+                "Maintaining a distinct boundary between professional responsibilities and personal activities",
                 "A type of firewall"
             ],
             "answer": 1,
@@ -10284,7 +10284,7 @@ export const newUnits = {
         {
             "q": "What is a 'clean desk policy'?",
             "options": [
-                "Cleaning your desk daily",
+                "Performing a daily cleaning routine to organize your physical workspace",
                 "Ensuring sensitive documents are not left on desks",
                 "Using only white desks",
                 "Not eating at your desk"
@@ -10298,7 +10298,7 @@ export const newUnits = {
                 "Following someone through a secure door",
                 "Driving too close",
                 "A party",
-                "A network protocol"
+                "A set of rules governing the exchange of data between devices on a network"
             ],
             "answer": 0,
             "explanation": "Tailgating is following an authorized person into a secure area."
@@ -10309,7 +10309,7 @@ export const newUnits = {
                 "Carrying someone",
                 "Similar to tailgating, but the authorized person knowingly allows the unauthorized person to follow",
                 "A network attack",
-                "A type of malware"
+                "A malicious software program designed to disrupt, damage, or gain unauthorized access"
             ],
             "answer": 1,
             "explanation": "Piggybacking is often used interchangeably with tailgating, but implies the authorized person is complicit."
@@ -10317,7 +10317,7 @@ export const newUnits = {
         {
             "q": "What is 'dumpster diving'?",
             "options": [
-                "Looking for food",
+                "Searching through refuse containers for discarded food items",
                 "Searching trash for information",
                 "A sport",
                 "Recycling"
