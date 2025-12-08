@@ -6,7 +6,7 @@ export const newUnits = {
                 "Software designed to infiltrate, damage, or compromise a system without consent",
                 "Any old software",
                 "Any encrypted application",
-                "Software that updates hardware drivers"
+                "Software specifically designed to update hardware drivers"
             ],
             "answer": 0
         },
@@ -14,7 +14,7 @@ export const newUnits = {
             "q": "A threat vector is best defined as:",
             "options": [
                 "The specific method an attacker uses to infiltrate a system",
-                "A vulnerability scanner",
+                "A software tool used to scan for system vulnerabilities",
                 "A backup path",
                 "A network routing rule"
             ],
@@ -25,7 +25,7 @@ export const newUnits = {
             "options": [
                 "How an attacker both gains access AND infects a system",
                 "A recovery mechanism",
-                "A file extension type",
+                "A specific file type used exclusively for system configuration",
                 "A sandbox environment"
             ],
             "answer": 0
@@ -75,7 +75,7 @@ export const newUnits = {
             "options": [
                 "Rewrites its entire codebase before each infection",
                 "Only infects macros",
-                "Requires admin credentials",
+                "Requiring administrative credentials to execute",
                 "Cannot modify itself"
             ],
             "answer": 0
@@ -164,7 +164,7 @@ export const newUnits = {
             "q": "A botnet consists of:",
             "options": [
                 "Compromised devices controlled remotely",
-                "Only Linux servers",
+                "A network consisting exclusively of compromised Linux servers",
                 "Encrypted backups",
                 "Cloud VMs only"
             ],
@@ -174,7 +174,7 @@ export const newUnits = {
             "q": "A 'zombie' refers to:",
             "options": [
                 "A single infected machine inside a botnet",
-                "A restored backup",
+                "A backup system that has been successfully restored to operation",
                 "A BIOS exploit",
                 "A failed patch"
             ],
@@ -235,7 +235,7 @@ export const newUnits = {
             "options": [
                 "Record keystrokes to steal credentials",
                 "Scan networks",
-                "Encrypt all user files",
+                "Encrypting all user files to demand a ransom payment",
                 "Update device drivers"
             ],
             "answer": 0
@@ -256,7 +256,7 @@ export const newUnits = {
                 "Monitor user activity and transmit data secretly",
                 "Encrypt files for payment",
                 "Repair registry errors",
-                "Accelerate GPU performance"
+                "Software designed to accelerate GPU performance"
             ],
             "answer": 0
         },
@@ -284,7 +284,7 @@ export const newUnits = {
             "q": "A dropper is best described as:",
             "options": [
                 "A small loader that retrieves and installs secondary payloads",
-                "A type of BIOS malware",
+                "Malware specifically designed to infect the system BIOS",
                 "A spoofed email domain",
                 "A DDoS agent"
             ],
@@ -338,7 +338,7 @@ export const newUnits = {
                 "Safeguard important information from corruption, compromise, or loss",
                 "Increase system performance",
                 "Reduce storage costs",
-                "Improve wireless communication"
+                "Enhancing the speed and reliability of wireless network communications"
             ],
             "answer": 0
         },
@@ -428,7 +428,7 @@ export const newUnits = {
                 "Storing unnecessary data increases risk and liability",
                 "It speeds up Wi-Fi",
                 "It improves user training",
-                "It prevents hardware overheating"
+                "Preventing hardware overheating by removing old data"
             ],
             "answer": 0
         },
@@ -447,7 +447,7 @@ export const newUnits = {
             "options": [
                 "Deciding purpose and method of data collection and usage",
                 "Backing up all server files",
-                "Encrypting all mobile devices",
+                "Mandating encryption for all mobile devices",
                 "Monitoring firewall activity"
             ],
             "answer": 0
@@ -486,7 +486,7 @@ export const newUnits = {
             "q": "The privacy officer oversees:",
             "options": [
                 "Compliance with privacy laws (PII, PHI, SPI)",
-                "All application development",
+                "Overseeing all software application development projects",
                 "Sales forecasting",
                 "Employee training schedules"
             ],
@@ -547,7 +547,7 @@ export const newUnits = {
             "options": [
                 "Information that can identify an individual",
                 "All financial records",
-                "Encrypted backups only",
+                "Storing data exclusively in encrypted backup archives",
                 "Employee schedules"
             ],
             "answer": 0
@@ -577,7 +577,7 @@ export const newUnits = {
             "options": [
                 "Patents, copyrights, trademarks",
                 "Firewall rules",
-                "Hashing algorithms",
+                "Cryptographic hashing algorithms used for data integrity",
                 "VPN tunnels"
             ],
             "answer": 0
@@ -596,8 +596,8 @@ export const newUnits = {
             "q": "Human-readable data refers to:",
             "options": [
                 "Data easily interpreted by humans (text, docs)",
-                "Binary machine code only",
-                "Encrypted ciphertext",
+                "Data consisting exclusively of binary machine code",
+                "Converting data into unreadable encrypted ciphertext",
                 "Tokenized values"
             ],
             "answer": 0
@@ -618,7 +618,7 @@ export const newUnits = {
                 "Different countries impose different storage & privacy requirements",
                 "It improves computer speed",
                 "It prevents malware infection",
-                "It standardizes network routing"
+                "It enforces a global standard for all network routing protocols"
             ],
             "answer": 0
         },
@@ -646,7 +646,7 @@ export const newUnits = {
             "q": "Masking replaces sensitive data with:",
             "options": [
                 "Placeholder characters (e.g., X)",
-                "Encrypted ciphertext",
+                "Converting data into unreadable encrypted ciphertext",
                 "Compression blocks",
                 "Checksum values"
             ],
@@ -667,7 +667,7 @@ export const newUnits = {
             "options": [
                 "Lateral movement across network segments",
                 "Password reuse",
-                "Wireless interference",
+                "Reducing interference in wireless network signals",
                 "CPU overheating"
             ],
             "answer": 0
@@ -904,7 +904,7 @@ export const newUnits = {
                 "List certificates that should no longer be trusted",
                 "Store private keys",
                 "Encrypt emails",
-                "Generate session keys"
+                "Automatically generating temporary session keys for secure communication"
             ],
             "answer": 0,
             "explanation": "CRLs contain revoked or compromised certificates."
@@ -914,7 +914,7 @@ export const newUnits = {
             "options": [
                 "Real-time certificate status checks",
                 "Long-term archival",
-                "Symmetric key exchange",
+                "Facilitating secure symmetric key exchange protocols",
                 "DNS redundancy"
             ],
             "answer": 0,
@@ -925,7 +925,7 @@ export const newUnits = {
             "options": [
                 "Third-party trust validation",
                 "A public key",
-                "A subject field",
+                "A valid subject field identifying the owner",
                 "Hashing"
             ],
             "answer": 0,
@@ -937,7 +937,7 @@ export const newUnits = {
                 "A trusted third party can recover encryption keys",
                 "Anyone may decrypt data",
                 "Keys never expire",
-                "Keys rotate automatically"
+                "Cryptographic keys rotating automatically on a schedule"
             ],
             "answer": 0,
             "explanation": "Escrow protects against lost keys blocking business operations."
@@ -948,7 +948,7 @@ export const newUnits = {
                 "Make weak passwords harder to brute force",
                 "Shorten keys",
                 "Invalidate salts",
-                "Encrypt certificates"
+                "Encrypting digital certificates for secure transmission"
             ],
             "answer": 0,
             "explanation": "Stretching increases computation cost per guess."
@@ -959,7 +959,7 @@ export const newUnits = {
                 "Prevent identical hashed passwords from matching",
                 "Encrypt public keys",
                 "Increase bandwidth",
-                "Replace encryption algorithms"
+                "Replacing outdated encryption algorithms with newer standards"
             ],
             "answer": 0,
             "explanation": "Salts ensure unique hashes even for identical passwords."
@@ -1014,7 +1014,7 @@ export const newUnits = {
                 "Confidentiality, integrity, and authentication",
                 "Hashing only",
                 "Compression only",
-                "Physical security"
+                "Implementing physical security measures like locks and cameras"
             ],
             "answer": 0,
             "explanation": "TLS secures data-in-transit with multiple protections."
@@ -1146,7 +1146,7 @@ export const newUnits = {
             "q": "Quantitative risk uses _______.",
             "options": [
                 "Numerical values for likelihood and impact",
-                "Colors and categories only",
+                "Using only qualitative colors and categories to assess risk",
                 "Only expert opinion",
                 "Compliance documents"
             ],
@@ -1224,7 +1224,7 @@ export const newUnits = {
             "options": [
                 "Identified risks, owners, scores, and treatments",
                 "All malware signatures",
-                "Only compliance failures",
+                "Tracking only major regulatory compliance failures",
                 "Vendor billing cycles"
             ],
             "answer": 0,
@@ -1236,7 +1236,7 @@ export const newUnits = {
                 "Managing and making decisions about the assigned risk",
                 "Performing penetration tests",
                 "Writing all policy documents",
-                "Creating every change request"
+                "Personally creating every single change request"
             ],
             "answer": 0,
             "explanation": "Risk owners must accept, mitigate, transfer, or avoid risks."
@@ -1267,7 +1267,7 @@ export const newUnits = {
             "q": "A Key Risk Indicator (KRI) is _______.",
             "options": [
                 "A metric that signals increasing or emerging risk",
-                "A vulnerability score",
+                "A numerical score representing the severity of a vulnerability",
                 "A firewall rule",
                 "A legal requirement"
             ],
@@ -1333,7 +1333,7 @@ export const newUnits = {
             "q": "A threat vector refers to _______.",
             "options": [
                 "The path a threat takes to exploit a vulnerability",
-                "The probability a system fails",
+                "The statistical probability that a system component will fail",
                 "Backup retention timeline",
                 "Maximum recovery cost"
             ],
@@ -1399,7 +1399,7 @@ export const newUnits = {
             "q": "Reporting risk to leadership should include _______.",
             "options": [
                 "Risk severity, likelihood, business impact, and recommended action",
-                "Only technical vulnerabilities",
+                "Focusing exclusively on technical software vulnerabilities",
                 "All event logs in raw format",
                 "Firewall rule sets"
             ],
@@ -1423,7 +1423,7 @@ export const newUnits = {
             "q": "Which of the following is an example of a third-party risk?",
             "options": [
                 "A service provider lacking strong security protocols",
-                "A user forgetting their password",
+                "A user forgetting their password and requiring a reset",
                 "A firewall rule misconfiguration",
                 "A disconnected printer"
             ],
@@ -1434,7 +1434,7 @@ export const newUnits = {
             "q": "Third-party risks can affect _______.",
             "options": [
                 "Integrity, confidentiality, and business continuity",
-                "Only financial statements",
+                "Focusing exclusively on the accuracy of financial statements",
                 "Only physical facilities",
                 "Only internal HR systems"
             ],
@@ -1446,7 +1446,7 @@ export const newUnits = {
             "options": [
                 "Components or software from external providers introduce vulnerabilities",
                 "A laptop battery dies",
-                "A user travels internationally",
+                "An employee traveling internationally for business conferences",
                 "An internal policy changes"
             ],
             "answer": 0,
@@ -1522,7 +1522,7 @@ export const newUnits = {
             "q": "Chip washing refers to _______.",
             "options": [
                 "Repackaging counterfeit or malicious chips inside legitimate hardware",
-                "Cleaning hardware before shipment",
+                "Physically cleaning hardware components before shipment",
                 "Resetting device firmware",
                 "Encrypting chip contents"
             ],
@@ -1533,7 +1533,7 @@ export const newUnits = {
             "q": "The SolarWinds attack was significant because attackers _______.",
             "options": [
                 "Compromised the software update system to infect many organizations",
-                "Targeted a single government system",
+                "Targeted a single isolated government computer system",
                 "Used only physical tampering",
                 "Disabled all cloud providers"
             ],
@@ -1566,7 +1566,7 @@ export const newUnits = {
             "q": "A vendor assessment evaluates _______.",
             "options": [
                 "Security, reliability, and performance of external entities",
-                "Internal employee morale",
+                "Evaluating the internal morale and satisfaction of employees",
                 "Physical office layout",
                 "Printer utilization"
             ],
@@ -1590,7 +1590,7 @@ export const newUnits = {
                 "Evaluate vendor processes and security compliance",
                 "Modify vendor payroll",
                 "Rewrite vendor software",
-                "Set vendor hiring policies"
+                "Dictate the internal hiring policies of the vendor"
             ],
             "answer": 0,
             "explanation": "This is crucial for transparency and verification."
@@ -1601,7 +1601,7 @@ export const newUnits = {
                 "Self-assessment of their adherence to security standards",
                 "Government inspection",
                 "Mandatory restructuring",
-                "Removal from the supply chain"
+                "Immediate removal of the vendor from the supply chain"
             ],
             "answer": 0,
             "explanation": "Internal audits show ongoing vendor diligence."
@@ -1621,7 +1621,7 @@ export const newUnits = {
             "q": "Supply chain analysis during vendor assessment examines _______.",
             "options": [
                 "The vendor's entire upstream and downstream supplier integrity",
-                "Only their marketing department",
+                "Evaluating only the effectiveness of their marketing department",
                 "Only their sales volume",
                 "The color of their website"
             ],
@@ -1632,7 +1632,7 @@ export const newUnits = {
             "q": "Vendor due diligence is performed to _______.",
             "options": [
                 "Evaluate operational history, financial stability, and security posture",
-                "Decide which vendor has the best branding",
+                "Deciding which vendor has the most appealing corporate branding",
                 "Replace internal employees",
                 "Compare holiday schedules"
             ],
@@ -1655,7 +1655,7 @@ export const newUnits = {
             "options": [
                 "Compare vendor security capabilities and compliance",
                 "Set employee salaries",
-                "Define internal project scope",
+                "Defining the internal scope and objectives of the project",
                 "Create marketing emails"
             ],
             "answer": 0,
@@ -1665,7 +1665,7 @@ export const newUnits = {
             "q": "Rules of engagement define _______.",
             "options": [
                 "Guidelines for how the organization and vendor will interact",
-                "The penalties for employee tardiness",
+                "Defining the specific penalties for employee tardiness",
                 "Wireless network speeds",
                 "Implementation details of SSL"
             ],
@@ -1687,7 +1687,7 @@ export const newUnits = {
             "q": "Performance reviews during vendor monitoring evaluate _______.",
             "options": [
                 "Vendor deliverables against agreed-upon standards",
-                "Employee vacation requests",
+                "Reviewing internal employee vacation requests",
                 "Only financial invoices",
                 "Internal team satisfaction"
             ],
@@ -1731,7 +1731,7 @@ export const newUnits = {
             "q": "A Master Service Agreement (MSA) provides _______.",
             "options": [
                 "General terms for long-term engagements across multiple projects",
-                "One-time project instructions only",
+                "Specific instructions for a single one-time project",
                 "Encryption requirements only",
                 "Employee onboarding documents"
             ],
@@ -1742,7 +1742,7 @@ export const newUnits = {
             "q": "A Statement of Work (SOW) defines _______.",
             "options": [
                 "Specific project details such as deliverables and timelines",
-                "Long-term vendor partnership terms",
+                "Establishing long-term strategic partnership terms with the vendor",
                 "All global supply chain policies",
                 "High-level memoranda only"
             ],
@@ -1755,7 +1755,7 @@ export const newUnits = {
                 "Shared responsibilities, profit mechanisms, and decision structures",
                 "Vendor marketing policies",
                 "Internal HR objectives",
-                "Data encryption algorithms"
+                "Technical specifications for data encryption algorithms"
             ],
             "answer": 0,
             "explanation": "BPAs govern joint partnerships for mutual benefit."
@@ -1766,7 +1766,7 @@ export const newUnits = {
             "q": "Governance primarily refers to _______.",
             "options": [
                 "The strategic framework aligning IT with business objectives",
-                "Adhering to laws and regulations",
+                "Strictly adhering to all applicable laws and regulations",
                 "Installing firewalls",
                 "Monitoring network traffic"
             ],
@@ -1778,7 +1778,7 @@ export const newUnits = {
             "options": [
                 "Adherence to laws, regulations, and standards",
                 "Managing IT resources",
-                "Setting strategic direction",
+                "Setting the long-term strategic direction of the organization",
                 "Risk assessment"
             ],
             "answer": 0,
@@ -1810,7 +1810,7 @@ export const newUnits = {
             "q": "A Business Continuity Policy focuses on _______.",
             "options": [
                 "Maintaining critical operations during disruptions",
-                "Preventing all cyber attacks",
+                "Successfully preventing every single attempted cyber attack",
                 "Hiring new employees",
                 "Software development"
             ],
@@ -1854,7 +1854,7 @@ export const newUnits = {
             "q": "Mandatory Access Control (MAC) uses _______ to determine access.",
             "options": [
                 "Labels and clearance levels",
-                "User discretion",
+                "The discretion of the individual user",
                 "Job roles",
                 "Physical keys"
             ],
@@ -1866,7 +1866,7 @@ export const newUnits = {
             "options": [
                 "Step-by-step instructions for specific tasks",
                 "High-level goals",
-                "Legal requirements",
+                "Mandatory legal requirements imposed by government regulations",
                 "Automated scripts"
             ],
             "answer": 0,
@@ -1876,7 +1876,7 @@ export const newUnits = {
             "q": "Onboarding procedures ensure _______.",
             "options": [
                 "New employees are integrated securely and efficiently",
-                "Employees are fired legally",
+                "Ensuring employees are terminated according to legal standards",
                 "Servers are rebooted",
                 "Software is patched"
             ],
@@ -1888,7 +1888,7 @@ export const newUnits = {
             "options": [
                 "Guide responses to specific incidents",
                 "Write code",
-                "Manage payroll",
+                "Managing employee payroll and compensation systems",
                 "Design logos"
             ],
             "answer": 0,
@@ -1953,7 +1953,7 @@ export const newUnits = {
             "q": "Due care refers to _______.",
             "options": [
                 "Taking action to mitigate risks",
-                "Identifying risks",
+                "Merely identifying potential risks without action",
                 "Reporting risks",
                 "Accepting risks"
             ],
@@ -1965,7 +1965,7 @@ export const newUnits = {
             "options": [
                 "A formal declaration of compliance",
                 "A software patch",
-                "A type of firewall",
+                "A network security device that filters incoming traffic",
                 "A password reset"
             ],
             "answer": 0,
@@ -1998,7 +1998,7 @@ export const newUnits = {
             "options": [
                 "Loss of customer trust and stock value",
                 "Lower taxes",
-                "Cheaper insurance",
+                "Obtaining significantly lower premiums for business insurance",
                 "Fewer regulations"
             ],
             "answer": 0,
@@ -2052,7 +2052,7 @@ export const newUnits = {
             "q": "Separation of duties prevents _______.",
             "options": [
                 "One person having total control",
-                "Collaboration",
+                "Encouraging open collaboration among all team members",
                 "Efficiency",
                 "Audits"
             ],
@@ -2074,7 +2074,7 @@ export const newUnits = {
             "q": "A firewall rule review is part of _______.",
             "options": [
                 "Change management/Technical review",
-                "HR onboarding",
+                "The human resources onboarding process for new employees",
                 "Legal defense",
                 "Marketing"
             ],
@@ -2119,7 +2119,7 @@ export const newUnits = {
             "options": [
                 "Credit card data security",
                 "Healthcare",
-                "Power grids",
+                "Regulations governing the security of national power grids",
                 "Aviation"
             ],
             "answer": 0,
@@ -2142,7 +2142,7 @@ export const newUnits = {
                 "Subjective judgment (High/Med/Low)",
                 "Dollar values",
                 "Complex math",
-                "Exact probabilities"
+                "Calculating exact statistical probabilities"
             ],
             "answer": 0,
             "explanation": "Qualitative uses descriptive scales."
@@ -2153,7 +2153,7 @@ export const newUnits = {
                 "Numerical data and financial values",
                 "Opinions",
                 "Colors",
-                "Gut feelings"
+                "Relying on intuition and gut feelings for decision making"
             ],
             "answer": 0,
             "explanation": "Quantitative uses hard numbers (ALE, SLE)."
@@ -2176,7 +2176,7 @@ export const newUnits = {
             "options": [
                 "Tracking assets throughout their lifecycle",
                 "Buying stocks",
-                "Managing employees only",
+                "Managing only the employees within the organization",
                 "Cleaning the office"
             ],
             "answer": 0,
@@ -2187,7 +2187,7 @@ export const newUnits = {
             "options": [
                 "Inventory/Enumeration",
                 "Disposal",
-                "Maintenance",
+                "Performing routine system maintenance",
                 "Upgrading"
             ],
             "answer": 0,
@@ -2208,7 +2208,7 @@ export const newUnits = {
             "q": "A Purchase Order (PO) is _______.",
             "options": [
                 "A formal document authorizing a purchase",
-                "A credit card receipt",
+                "A receipt generated from a credit card transaction",
                 "A verbal promise",
                 "A shipping label"
             ],
@@ -2254,7 +2254,7 @@ export const newUnits = {
                 "Lack of control over device security",
                 "High cost of devices",
                 "Standardization",
-                "Employee satisfaction"
+                "Increasing overall employee satisfaction and productivity"
             ],
             "answer": 0,
             "explanation": "Personal devices are harder to secure/manage."
@@ -2362,7 +2362,7 @@ export const newUnits = {
             "q": "Who typically approves significant changes?",
             "options": [
                 "Change Advisory Board (CAB)",
-                "The developer",
+                "The individual developer who wrote the code",
                 "The end user",
                 "The intern"
             ],
@@ -2395,7 +2395,7 @@ export const newUnits = {
             "q": "Impact Analysis assesses _______.",
             "options": [
                 "Potential consequences of a change",
-                "The cost of hardware",
+                "Calculating the total financial cost of new hardware",
                 "Employee performance",
                 "Network speed"
             ],
@@ -2406,7 +2406,7 @@ export const newUnits = {
             "q": "Scheduled Maintenance Windows are used to _______.",
             "options": [
                 "Perform changes during low-impact times",
-                "Save electricity",
+                "Reduce electrical consumption during peak operating hours",
                 "Hold meetings",
                 "Train staff"
             ],
@@ -2417,7 +2417,7 @@ export const newUnits = {
             "q": "Standard Operating Procedures (SOPs) ensure _______.",
             "options": [
                 "Consistency and efficiency",
-                "Creativity",
+                "Encouraging individual creativity and improvisation",
                 "Randomness",
                 "Complexity"
             ],
@@ -2428,7 +2428,7 @@ export const newUnits = {
             "q": "An \"Allow List\" (Whitelisting) specifies _______.",
             "options": [
                 "Permitted entities/software",
-                "Blocked entities",
+                "A list of entities that are explicitly blocked from access",
                 "Failed logins",
                 "Deleted files"
             ],
@@ -2439,7 +2439,7 @@ export const newUnits = {
             "q": "Dependencies in change management refer to _______.",
             "options": [
                 "Interconnected systems relying on each other",
-                "Employee reliance",
+                "The reliance of the organization on key employees",
                 "Software versions",
                 "Power cords"
             ],
@@ -2451,7 +2451,7 @@ export const newUnits = {
             "options": [
                 "Older systems still in use",
                 "New apps",
-                "Mobile apps",
+                "Modern mobile applications designed for smartphones",
                 "Cloud apps"
             ],
             "answer": 0,
@@ -2505,7 +2505,7 @@ export const newUnits = {
             "q": "Enumeration in asset management involves _______.",
             "options": [
                 "Identifying and counting assets",
-                "Calculating value",
+                "Calculating the monetary value of assets",
                 "Assigning owners",
                 "Retiring assets"
             ],
@@ -2516,7 +2516,7 @@ export const newUnits = {
             "q": "Which is a \"Technical Implication\" of a change?",
             "options": [
                 "Service restarts/downtime",
-                "Budget approval",
+                "Obtaining necessary financial budget approval",
                 "Policy writing",
                 "Hiring staff"
             ],
@@ -2563,7 +2563,7 @@ export const newUnits = {
             "options": [
                 "To evaluate effectiveness of controls and compliance with internal policies",
                 "To provide an unbiased public report",
-                "To certify financial statements for the SEC",
+                "To certify the accuracy of financial statements for SEC reporting",
                 "To penalize non-compliant employees"
             ],
             "answer": 0,
@@ -2597,7 +2597,7 @@ export const newUnits = {
                 "A simulated cyber attack to identify exploitable vulnerabilities",
                 "A passive review of log files",
                 "A theoretical risk analysis",
-                "A physical security inspection only"
+                "Conducting a physical security inspection only"
             ],
             "answer": 0,
             "explanation": "Pen testing involves actively simulating attacks to find and prove vulnerabilities."
@@ -2629,7 +2629,7 @@ export const newUnits = {
             "options": [
                 "Testing with partial knowledge, such as user credentials or network diagrams",
                 "Testing with zero knowledge",
-                "Testing with complete administrator access",
+                "Testing with full administrative access to all systems",
                 "Testing only wireless networks"
             ],
             "answer": 0,
@@ -2651,7 +2651,7 @@ export const newUnits = {
             "options": [
                 "Gathering information without directly interacting with the target systems",
                 "Scanning ports on the target server",
-                "Attempting to login with default passwords",
+                "Actively attempting to login using default administrative passwords",
                 "Sending phishing emails"
             ],
             "answer": 0,
@@ -2672,7 +2672,7 @@ export const newUnits = {
             "q": "What is 'pivoting' in a penetration test?",
             "options": [
                 "Using a compromised system to attack other systems in the network",
-                "Switching from Windows to Linux",
+                "Migrating the entire server infrastructure from Windows to Linux",
                 "Changing the scope of the audit",
                 "Rotating log files"
             ],
@@ -2706,7 +2706,7 @@ export const newUnits = {
             "options": [
                 "To act as adversaries and simulate attacks",
                 "To defend the network",
-                "To referee the exercise",
+                "To act as impartial referees for the exercise",
                 "To manage the budget"
             ],
             "answer": 0,
@@ -2717,7 +2717,7 @@ export const newUnits = {
             "options": [
                 "A collaborative effort between Red and Blue teams to improve defenses",
                 "A team of external auditors",
-                "The management team overseeing the test",
+                "The executive management team overseeing the test",
                 "A team dedicated to physical security"
             ],
             "answer": 0,
@@ -2749,7 +2749,7 @@ export const newUnits = {
             "q": "What is the purpose of an 'Attestation of Findings'?",
             "options": [
                 "To formally declare the results of an audit or assessment",
-                "To arrest cybercriminals",
+                "To provide legal evidence for the arrest of cybercriminals",
                 "To configure a firewall",
                 "To encrypt a hard drive"
             ],
@@ -2771,7 +2771,7 @@ export const newUnits = {
             "q": "What is the main difference between a vulnerability scan and a penetration test?",
             "options": [
                 "A scan identifies potential flaws; a pen test exploits them to prove risk",
-                "A scan is manual; a pen test is automated",
+                "A vulnerability scan is manual, while a pen test is automated",
                 "A scan is more expensive",
                 "A pen test is only for hardware"
             ],
@@ -2782,7 +2782,7 @@ export const newUnits = {
             "q": "What is 'War Driving'?",
             "options": [
                 "Searching for Wi-Fi networks by moving around an area",
-                "Attacking a server with a tank",
+                "Physically attacking a server room with a tank",
                 "Simulating a military conflict",
                 "Driving a car remotely"
             ],
@@ -2805,7 +2805,7 @@ export const newUnits = {
             "options": [
                 "Removing tools, scripts, and temporary accounts created during the test",
                 "Formatting the hard drive",
-                "Publishing the results on the dark web",
+                "Publishing the sensitive results on the dark web",
                 "Installing ransomware"
             ],
             "answer": 0,
@@ -2817,7 +2817,7 @@ export const newUnits = {
                 "A reward offered to individuals for finding and reporting bugs",
                 "A penalty for writing bad code",
                 "A software for tracking insects",
-                "A government grant for pest control"
+                "Applying for a government grant for agricultural pest control"
             ],
             "answer": 0,
             "explanation": "Bug bounties incentivize ethical hackers to report vulnerabilities."
@@ -2849,7 +2849,7 @@ export const newUnits = {
             "options": [
                 "Identifying a vulnerability that does not actually exist",
                 "Missing a real vulnerability",
-                "Correctly identifying a safe file",
+                "Correctly identifying a safe file as non-malicious",
                 "Crashing the system"
             ],
             "answer": 0,
@@ -2859,7 +2859,7 @@ export const newUnits = {
             "q": "Which creates a 'false negative' in a vulnerability scan?",
             "options": [
                 "Failing to detect a vulnerability that actually exists",
-                "Detecting a non-existent bug",
+                "Incorrectly identifying a non-existent software bug",
                 "Scanning the wrong IP",
                 "A successful login"
             ],
@@ -2881,7 +2881,7 @@ export const newUnits = {
             "q": "What is 'non-credentialed scanning'?",
             "options": [
                 "Scanning from the perspective of an outsider without access",
-                "Scanning with admin rights",
+                "Performing a vulnerability scan with full administrative privileges",
                 "Scanning the dark web",
                 "Scanning physical badges"
             ],
@@ -2893,7 +2893,7 @@ export const newUnits = {
             "options": [
                 "It may disrupt services or crash systems",
                 "It is too slow",
-                "It provides too much data",
+                "Generating an excessive amount of data for analysis",
                 "It is illegal"
             ],
             "answer": 0,
@@ -2905,7 +2905,7 @@ export const newUnits = {
                 "Manipulating people into divulging confidential information",
                 "Building social networks",
                 "Programming robots",
-                "Designing user interfaces"
+                "Creating user-friendly interfaces for software applications"
             ],
             "answer": 0,
             "explanation": "It targets the human element of security."
@@ -2937,7 +2937,7 @@ export const newUnits = {
             "options": [
                 "Practicing incident response roles in a low-stress, discussion-based environment",
                 "Testing backup generators",
-                "Physically fighting attackers",
+                "Engaging in physical combat training against attackers",
                 "Installing new servers"
             ],
             "answer": 0,
@@ -2949,7 +2949,7 @@ export const newUnits = {
             "q": "What is 'Cyber Resilience'?",
             "options": [
                 "The ability to continuously deliver intended outcomes despite adverse cyber events",
-                "Preventing all cyber attacks",
+                "Successfully preventing every single attempted cyber attack",
                 "Using only analog technology",
                 "Having a strong firewall"
             ],
@@ -2972,7 +2972,7 @@ export const newUnits = {
             "options": [
                 "Distributing workloads across multiple computing resources",
                 "Weighing servers",
-                "Balancing the budget",
+                "Managing the organization's financial budget and expenses",
                 "Limiting user access"
             ],
             "answer": 0,
@@ -3072,7 +3072,7 @@ export const newUnits = {
                 "To provide long-term power during extended outages",
                 "To charge phones",
                 "To cool the server room",
-                "To filter internet traffic"
+                "To filter malicious internet traffic at the gateway"
             ],
             "answer": 0,
             "explanation": "Generators kick in when the UPS battery runs low during long outages."
@@ -3149,7 +3149,7 @@ export const newUnits = {
                 "Recovery Time Objective (max tolerable downtime)",
                 "Real Time Operations",
                 "Recovery Testing Option",
-                "Remote Task Organization"
+                "Remote Task Organization and management protocols"
             ],
             "answer": 0,
             "explanation": "RTO is the target time to restore service after a disaster."
@@ -3158,7 +3158,7 @@ export const newUnits = {
             "q": "What is 'RPO'?",
             "options": [
                 "Recovery Point Objective (max tolerable data loss)",
-                "Real Point Operations",
+                "Real-time Point of Operations management strategy",
                 "Remote Power On",
                 "Rapid Process Output"
             ],
@@ -3171,7 +3171,7 @@ export const newUnits = {
                 "A fully operational offsite facility ready to take over immediately",
                 "A site with heating",
                 "A site with only power and cooling",
-                "A site that takes weeks to activate"
+                "A recovery site that requires weeks to become operational"
             ],
             "answer": 0,
             "explanation": "Hot sites have real-time data and equipment ready to go."
@@ -3182,7 +3182,7 @@ export const newUnits = {
                 "An empty facility with power/cooling but no equipment",
                 "A site in the arctic",
                 "A fully equipped site",
-                "A site with pre-installed servers"
+                "A recovery site equipped with pre-installed servers"
             ],
             "answer": 0,
             "explanation": "Cold sites are cheap but take the longest to activate (bring your own gear)."
@@ -3192,7 +3192,7 @@ export const newUnits = {
             "options": [
                 "A facility with equipment but requires data restoration",
                 "A site with heating",
-                "A fully mirrored site",
+                "A fully redundant site with real-time data mirroring",
                 "An empty room"
             ],
             "answer": 0,
@@ -3202,7 +3202,7 @@ export const newUnits = {
             "q": "What is 'Geographic Dispersion'?",
             "options": [
                 "Distributing assets across different physical locations",
-                "Hiding servers in caves",
+                "Concealing critical servers within underground cave systems",
                 "Using GPS",
                 "Mapping the network"
             ],
@@ -3214,7 +3214,7 @@ export const newUnits = {
             "options": [
                 "Ensuring resources (people, tech) meet future demand",
                 "Planning a party",
-                "Measuring hard drive weight",
+                "Physically measuring the weight of hard drive components",
                 "Counting cables"
             ],
             "answer": 0,
@@ -3237,7 +3237,7 @@ export const newUnits = {
                 "Physically isolating a system from unsecured networks (internet)",
                 "Cooling a server with air",
                 "Using Wi-Fi",
-                "Leaving space between racks"
+                "Ensuring adequate physical spacing between server racks for airflow"
             ],
             "answer": 0,
             "explanation": "Air gapping prevents network-based attacks."
@@ -3247,7 +3247,7 @@ export const newUnits = {
             "options": [
                 "An enclosure that blocks electromagnetic fields",
                 "A zoo for hackers",
-                "A type of firewall",
+                "A network security device that filters incoming traffic",
                 "A cooling system"
             ],
             "answer": 0,
@@ -3259,7 +3259,7 @@ export const newUnits = {
                 "Using different technologies/vendors to avoid common mode failures",
                 "Hiring different people",
                 "Using many colors",
-                "Using one brand for everything"
+                "Standardizing on a single vendor brand for all infrastructure"
             ],
             "answer": 0,
             "explanation": "Vendor diversity prevents a single bug from taking down everything."
@@ -3269,7 +3269,7 @@ export const newUnits = {
             "options": [
                 "Desktops revert to a clean state after user logoff",
                 "Data is saved forever",
-                "Users keep their settings",
+                "Users retaining their personal settings across sessions",
                 "Desktops never turn off"
             ],
             "answer": 0,
@@ -3281,7 +3281,7 @@ export const newUnits = {
                 "To identify critical functions and the impact of their disruption",
                 "To analyze competitors",
                 "To audit finances",
-                "To plan a marketing campaign"
+                "To develop a comprehensive marketing strategy for new products"
             ],
             "answer": 0,
             "explanation": "BIA determines what is most important to keep the business running."
@@ -3324,7 +3324,7 @@ export const newUnits = {
             "options": [
                 "A review of an incident/exercise to identify lessons learned",
                 "A weather report",
-                "A financial statement",
+                "A detailed financial statement reporting quarterly earnings",
                 "A disciplinary form"
             ],
             "answer": 0,
@@ -3338,7 +3338,7 @@ export const newUnits = {
                 "The design and structure of an organization's security environment",
                 "Building secure fences",
                 "Designing secure chips",
-                "Writing secure code only"
+                "Focusing solely on writing secure application code"
             ],
             "answer": 0,
             "explanation": "It encompasses hardware, software, processes, and people."
@@ -3347,7 +3347,7 @@ export const newUnits = {
             "q": "What is 'Cloud Computing'?",
             "options": [
                 "Delivering computing services over the internet",
-                "Computing in an airplane",
+                "Performing computing tasks while traveling on an airplane",
                 "Using weather data",
                 "Wireless networking"
             ],
@@ -3370,7 +3370,7 @@ export const newUnits = {
             "options": [
                 "A combination of on-premise, private, and public cloud services",
                 "A cloud that rains",
-                "A mix of Windows and Linux",
+                "A heterogeneous environment mixing Windows and Linux operating systems",
                 "A cloud for hybrid cars"
             ],
             "answer": 0,
@@ -3457,7 +3457,7 @@ export const newUnits = {
             "q": "What is a 'Type 2 Hypervisor'?",
             "options": [
                 "Hosted hypervisor running on top of an OS",
-                "Bare-metal hypervisor",
+                "A bare-metal hypervisor running directly on hardware",
                 "A hardware hypervisor",
                 "A container"
             ],
@@ -3470,7 +3470,7 @@ export const newUnits = {
                 "Uncontrolled creation of VMs without oversight",
                 "VMs getting viruses",
                 "VMs running slowly",
-                "VMs moving to the cloud"
+                "Migrating virtual machines to public cloud infrastructure"
             ],
             "answer": 0,
             "explanation": "Sprawl wastes resources and creates security blind spots."
@@ -3490,7 +3490,7 @@ export const newUnits = {
             "q": "What is 'Containerization'?",
             "options": [
                 "Encapsulating an app and its dependencies in a lightweight container",
-                "Putting servers in boxes",
+                "Physically placing server hardware into shipping boxes",
                 "Shipping code",
                 "Zipping files"
             ],
@@ -3501,7 +3501,7 @@ export const newUnits = {
             "q": "What is 'Serverless Computing'?",
             "options": [
                 "Cloud provider manages allocation of machine resources dynamically",
-                "Computing without computers",
+                "Performing computations without the use of any physical hardware",
                 "Using only mobile devices",
                 "Peer-to-peer networking"
             ],
@@ -3524,7 +3524,7 @@ export const newUnits = {
             "options": [
                 "Managing infrastructure through code/definition files",
                 "Writing code on a server",
-                "Building servers with code",
+                "Manually building servers using custom scripts and code",
                 "Coding in the basement"
             ],
             "answer": 0,
@@ -3677,7 +3677,7 @@ export const newUnits = {
             "q": "What is 'Vendor Lock-in'?",
             "options": [
                 "Dependency on a single vendor making it hard to switch",
-                "Locking the vendor out",
+                "Physically preventing a vendor from entering the premises",
                 "Securing the vendor",
                 "Signing a contract"
             ],
@@ -3689,7 +3689,7 @@ export const newUnits = {
             "options": [
                 "Use of IT systems without approval",
                 "Dark mode",
-                "IT working at night",
+                "IT staff working during night shifts",
                 "Hacking"
             ],
             "answer": 0,
@@ -4120,7 +4120,7 @@ export const newUnits = {
             "options": [
                 "A sweet snack",
                 "A decoy system designed to attract and monitor attackers",
-                "A type of firewall",
+                "A network security device that filters incoming traffic",
                 "A password manager"
             ],
             "answer": 1,
@@ -6232,7 +6232,7 @@ export const newUnits = {
                 "A new file format",
                 "A security platform that integrates data from endpoints, networks, and cloud to provide a holistic view of threats",
                 "An external hard drive",
-                "A type of firewall"
+                "A network security device that filters incoming traffic"
             ],
             "answer": 1,
             "explanation": "XDR extends EDR by correlating data across multiple security layers (endpoint, network, cloud, email) for better threat detection."
@@ -7215,7 +7215,7 @@ export const newUnits = {
                 "Injecting traffic into the network",
                 "Listening to network traffic without altering it (e.g., using a tap or span port)",
                 "Ignoring the network",
-                "Turning off the monitor"
+                "Turning off the computer monitor when leaving the desk"
             ],
             "answer": 1,
             "explanation": "Passive monitoring (sniffing) observes traffic copies without interfering with the flow."
@@ -7437,7 +7437,7 @@ export const newUnits = {
                 "Being lonely",
                 "Disconnecting a system from the network to stop communication",
                 "Deleting the OS",
-                "Turning off the monitor"
+                "Turning off the computer monitor when leaving the desk"
             ],
             "answer": 1,
             "explanation": "Isolation (or air-gapping) ensures the compromised host cannot send data out or spread malware."
@@ -7911,7 +7911,7 @@ export const newUnits = {
             "options": [
                 "They are the same thing",
                 "A scan identifies potential weaknesses; a pen test attempts to exploit them to prove the risk",
-                "A scan is manual; a pen test is automated",
+                "A vulnerability scan is manual, while a pen test is automated",
                 "A scan is more expensive than a pen test"
             ],
             "answer": 1,
@@ -8243,7 +8243,7 @@ export const newUnits = {
             "options": [
                 "A monitor made of glass",
                 "A unified interface that presents data from multiple sources in one view",
-                "A type of firewall",
+                "A network security device that filters incoming traffic",
                 "A physical security barrier"
             ],
             "answer": 1,
@@ -9414,7 +9414,7 @@ export const newUnits = {
                 "Warfare using hybrid cars",
                 "Combining conventional warfare with cyber and influence operations",
                 "Using two types of firewalls",
-                "A mix of Windows and Linux"
+                "A heterogeneous environment mixing Windows and Linux operating systems"
             ],
             "answer": 1,
             "explanation": "Hybrid warfare combines conventional military force with other means like cyberattacks and influence campaigns."
@@ -9668,7 +9668,7 @@ export const newUnits = {
             "options": [
                 "Money owed to tech companies",
                 "The implied cost of additional rework caused by choosing an easy solution now instead of a better one",
-                "The cost of hardware",
+                "Calculating the total financial cost of new hardware",
                 "A loan for software development"
             ],
             "answer": 1,
@@ -9957,7 +9957,7 @@ export const newUnits = {
                 "A person who manages passwords",
                 "A tool that stores and manages passwords securely",
                 "A complex password",
-                "A type of firewall"
+                "A network security device that filters incoming traffic"
             ],
             "answer": 1,
             "explanation": "A password manager is a tool that creates, stores, and manages passwords for various online accounts."
@@ -10276,7 +10276,7 @@ export const newUnits = {
                 "Working in separate rooms",
                 "Dividing critical tasks among multiple people to prevent fraud",
                 "Maintaining a distinct boundary between professional responsibilities and personal activities",
-                "A type of firewall"
+                "A network security device that filters incoming traffic"
             ],
             "answer": 1,
             "explanation": "Separation of duties ensures that no single person has complete control over a critical process."
