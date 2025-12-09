@@ -26,7 +26,7 @@ function SimpleSwitch({ checked, onCheckedChange }) {
     )
 }
 
-export default function QuizMode({ unitId }) {
+export default function QuizMode({ unitId, customQuestions, onComplete }) {
     const [questions, setQuestions] = useState([])
     const [currentIndex, setCurrentIndex] = useState(0)
     const [selectedOption, setSelectedOption] = useState(null)
@@ -39,16 +39,18 @@ export default function QuizMode({ unitId }) {
     const [isReviewMode, setIsReviewMode] = useState(false)
 
     useEffect(() => {
-        if (unitId && questionsData[unitId]) {
+        if (customQuestions && customQuestions.length > 0) {
+            resetQuiz(customQuestions, false)
+        } else if (unitId && questionsData[unitId]) {
             resetQuiz(questionsData[unitId], false)
         }
-    }, [unitId])
+    }, [unitId, customQuestions])
 
     useEffect(() => {
-        if (showResult && !isReviewMode && questions.length > 0) {
+        if (showResult && !isReviewMode && questions.length > 0 && !customQuestions) {
             saveProgress(unitId, score, questions.length)
         }
-    }, [showResult, isReviewMode, unitId, score, questions.length])
+    }, [showResult, isReviewMode, unitId, score, questions.length, customQuestions])
 
     useEffect(() => {
         if (isTimed && timeLeft > 0 && !showResult) {
@@ -163,7 +165,7 @@ export default function QuizMode({ unitId }) {
                             )}
                             <h2 className="text-4xl font-bold mb-2 text-white">Quiz Complete!</h2>
                             <p className="text-slate-400 text-lg">
-                                {isReviewMode ? 'Review Session' : `Unit: ${unitId}`}
+                                {customQuestions ? 'Recurring Review Session' : (isReviewMode ? 'Review Session' : `Unit: ${unitId}`)}
                             </p>
                         </div>
 
@@ -181,12 +183,17 @@ export default function QuizMode({ unitId }) {
                         </div>
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Button onClick={() => resetQuiz(questionsData[unitId], isRandomized)} size="lg" className="w-full sm:w-auto">
+                            <Button onClick={() => resetQuiz(customQuestions || questionsData[unitId], isRandomized)} size="lg" className="w-full sm:w-auto">
                                 <RefreshCw className="mr-2 h-5 w-5" /> Restart Quiz
                             </Button>
                             {missedQuestions.length > 0 && !isReviewMode && (
                                 <Button onClick={startReview} variant="outline" size="lg" className="w-full sm:w-auto">
                                     Review Missed ({missedQuestions.length})
+                                </Button>
+                            )}
+                            {customQuestions && onComplete && (
+                                <Button onClick={onComplete} variant="secondary" size="lg" className="w-full sm:w-auto">
+                                    Exit Review
                                 </Button>
                             )}
                         </div>
@@ -206,7 +213,7 @@ export default function QuizMode({ unitId }) {
                     <div className="flex items-center gap-4">
                         <div className="flex items-center gap-2">
                             <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Random</span>
-                            <SimpleSwitch checked={isRandomized} onCheckedChange={(c) => { setIsRandomized(c); resetQuiz(questionsData[unitId], c); }} />
+                            <SimpleSwitch checked={isRandomized} onCheckedChange={(c) => { setIsRandomized(c); resetQuiz(customQuestions || questionsData[unitId], c); }} />
                         </div>
                         <div className="flex items-center gap-2">
                             <span className="text-xs font-medium text-slate-400 uppercase tracking-wider">Timer</span>

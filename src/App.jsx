@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeft, ShieldCheck, BookOpen, Gamepad2 } from 'lucide-react'
+import { ArrowLeft, ShieldCheck, BookOpen, Gamepad2, Keyboard, Shuffle } from 'lucide-react'
 import UnitSelector from './components/UnitSelector'
 import QuizMode from './components/QuizMode'
 import GameMode from './components/GameMode'
+import ReviewSetup from './components/ReviewSetup'
+import WrittenMode from './components/WrittenMode'
+import MixMode from './components/MixMode'
 import { Button } from './components/ui/button'
 
 export default function App() {
     const [selectedUnit, setSelectedUnit] = useState(null)
-    const [mode, setMode] = useState('quiz') // 'quiz' or 'game'
+    const [mode, setMode] = useState('quiz') // 'quiz', 'game', 'review-setup', 'review-game'
+    const [reviewQuestions, setReviewQuestions] = useState([])
 
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500/30">
@@ -31,7 +35,7 @@ export default function App() {
                             </div>
                         )}
                         <h1 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">
-                            {selectedUnit ? (mode === 'quiz' ? 'Quiz Session' : 'Speed Match') : 'Security+ Master'}
+                            {selectedUnit ? (mode === 'quiz' ? 'Quiz Session' : mode === 'written' ? 'Written Challenge' : mode === 'mix' ? 'Mix Challenge' : 'Speed Match') : 'Security+ Master'}
                         </h1>
                     </div>
 
@@ -51,6 +55,27 @@ export default function App() {
                                 <Gamepad2 size={16} />
                                 Game
                             </button>
+                            <button
+                                onClick={() => setMode('review-setup')}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${mode.startsWith('review') ? 'bg-cyan-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'}`}
+                            >
+                                <ShieldCheck size={16} />
+                                Review
+                            </button>
+                            <button
+                                onClick={() => setMode('written')}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${mode === 'written' ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'}`}
+                            >
+                                <Keyboard size={16} />
+                                Written
+                            </button>
+                            <button
+                                onClick={() => setMode('mix')}
+                                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-all ${mode === 'mix' ? 'bg-indigo-600 text-white shadow-sm' : 'text-slate-400 hover:text-slate-200'}`}
+                            >
+                                <Shuffle size={16} />
+                                Mix
+                            </button>
                         </div>
                     )}
                 </div>
@@ -59,7 +84,34 @@ export default function App() {
             {/* Main Content */}
             <main className="p-6">
                 <AnimatePresence mode="wait">
-                    {selectedUnit ? (
+                    {mode === 'review-setup' ? (
+                        <motion.div
+                            key="review-setup"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                        >
+                            <ReviewSetup
+                                onStart={(questions) => {
+                                    setReviewQuestions(questions)
+                                    setMode('review-game')
+                                }}
+                                onCancel={() => setMode('quiz')}
+                            />
+                        </motion.div>
+                    ) : mode === 'review-game' ? (
+                        <motion.div
+                            key="review-game"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                        >
+                            <QuizMode
+                                customQuestions={reviewQuestions}
+                                onComplete={() => setMode('review-setup')}
+                            />
+                        </motion.div>
+                    ) : selectedUnit ? (
                         <motion.div
                             key="mode"
                             initial={{ opacity: 0, y: 20 }}
@@ -68,6 +120,10 @@ export default function App() {
                         >
                             {mode === 'quiz' ? (
                                 <QuizMode unitId={selectedUnit} />
+                            ) : mode === 'written' ? (
+                                <WrittenMode unitId={selectedUnit} />
+                            ) : mode === 'mix' ? (
+                                <MixMode unitId={selectedUnit} />
                             ) : (
                                 <GameMode unitId={selectedUnit} />
                             )}

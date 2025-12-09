@@ -1,0 +1,454 @@
+[
+  {
+    "unit": "unit-14",
+    "index": 0,
+    "question": "What is 'Cyber Resilience'?",
+    "correct": "The ability to continuously deliver intended outcomes despite adverse cyber events",
+    "longestDistractor": "Preventing all cyber attacks",
+    "ratio": "2.93",
+    "diff": 54
+  },
+  {
+    "unit": "unit-11",
+    "index": 35,
+    "question": "Quantitative risk assessment relies on _______.",
+    "correct": "Numerical data and financial values",
+    "longestDistractor": "Gut feelings",
+    "ratio": "2.92",
+    "diff": 23
+  },
+  {
+    "unit": "unit-14",
+    "index": 2,
+    "question": "What is 'Load Balancing'?",
+    "correct": "Distributing workloads across multiple computing resources",
+    "longestDistractor": "Balancing the budget",
+    "ratio": "2.90",
+    "diff": 38
+  },
+  {
+    "unit": "unit-14",
+    "index": 34,
+    "question": "What is 'After Action Report' (AAR)?",
+    "correct": "A review of an incident/exercise to identify lessons learned",
+    "longestDistractor": "A financial statement",
+    "ratio": "2.86",
+    "diff": 39
+  },
+  {
+    "unit": "unit-15",
+    "index": 14,
+    "question": "What is 'Containerization'?",
+    "correct": "Encapsulating an app and its dependencies in a lightweight container",
+    "longestDistractor": "Putting servers in boxes",
+    "ratio": "2.83",
+    "diff": 44
+  },
+  {
+    "unit": "unit-6",
+    "index": 28,
+    "question": "A dropper is best described as:",
+    "correct": "A small loader that retrieves and installs secondary payloads",
+    "longestDistractor": "A type of BIOS malware",
+    "ratio": "2.77",
+    "diff": 39
+  },
+  {
+    "unit": "unit-5",
+    "index": 36,
+    "question": "Baiting commonly involves _______.",
+    "correct": "Malicious USB media left for victims to plug in",
+    "longestDistractor": "Cold‑boot attacks",
+    "ratio": "2.76",
+    "diff": 30
+  },
+  {
+    "unit": "unit-13",
+    "index": 34,
+    "question": "What is the primary benefit of a 'tabletop exercise'?",
+    "correct": "Practicing incident response roles in a low-stress, discussion-based environment",
+    "longestDistractor": "Physically fighting attackers",
+    "ratio": "2.76",
+    "diff": 51
+  },
+  {
+    "unit": "unit-15",
+    "index": 0,
+    "question": "What is 'Security Architecture'?",
+    "correct": "The design and structure of an organization's security environment",
+    "longestDistractor": "Writing secure code only",
+    "ratio": "2.75",
+    "diff": 42
+  },
+  {
+    "unit": "unit-8",
+    "index": 24,
+    "question": "TLS provides _______.",
+    "correct": "Confidentiality, integrity, and authentication",
+    "longestDistractor": "Physical security",
+    "ratio": "2.71",
+    "diff": 29
+  },
+  {
+    "unit": "unit-5",
+    "index": 7,
+    "question": "Ransomware threatening data loss unless paid relies on _______.",
+    "correct": "Fear (often with authority pretext)",
+    "longestDistractor": "Scarcity only",
+    "ratio": "2.69",
+    "diff": 22
+  },
+  {
+    "unit": "unit-11",
+    "index": 11,
+    "question": "A playbook is used to _______.",
+    "correct": "Guide responses to specific incidents",
+    "longestDistractor": "Manage payroll",
+    "ratio": "2.64",
+    "diff": 23
+  },
+  {
+    "unit": "unit-11",
+    "index": 28,
+    "question": "A firewall rule review is part of _______.",
+    "correct": "Change management/Technical review",
+    "longestDistractor": "HR onboarding",
+    "ratio": "2.62",
+    "diff": 21
+  },
+  {
+    "unit": "unit-14",
+    "index": 22,
+    "question": "What is a 'Warm Site'?",
+    "correct": "A facility with equipment but requires data restoration",
+    "longestDistractor": "A fully mirrored site",
+    "ratio": "2.62",
+    "diff": 34
+  },
+  {
+    "unit": "unit-14",
+    "index": 27,
+    "question": "What is a 'Faraday Cage'?",
+    "correct": "An enclosure that blocks electromagnetic fields",
+    "longestDistractor": "A type of firewall",
+    "ratio": "2.61",
+    "diff": 29
+  },
+  {
+    "unit": "unit-12",
+    "index": 22,
+    "question": "Standard Operating Procedures (SOPs) ensure _______.",
+    "correct": "Consistency and efficiency",
+    "longestDistractor": "Creativity",
+    "ratio": "2.60",
+    "diff": 16
+  },
+  {
+    "unit": "unit-12",
+    "index": 24,
+    "question": "Dependencies in change management refer to _______.",
+    "correct": "Interconnected systems relying on each other",
+    "longestDistractor": "Employee reliance",
+    "ratio": "2.59",
+    "diff": 27
+  },
+  {
+    "unit": "unit-10",
+    "index": 31,
+    "question": "A Business Partnership Agreement (BPA) outlines _______.",
+    "correct": "Shared responsibilities, profit mechanisms, and decision structures",
+    "longestDistractor": "Data encryption algorithms",
+    "ratio": "2.58",
+    "diff": 41
+  },
+  {
+    "unit": "unit-5",
+    "index": 24,
+    "question": "Identity fraud vs identity theft: which is MOST accurate?",
+    "correct": "Fraud may use pieces of identity for transactions; theft attempts to fully assume identity",
+    "longestDistractor": "Theft always uses credit cards only",
+    "ratio": "2.57",
+    "diff": 55
+  },
+  {
+    "unit": "unit-6",
+    "index": 1,
+    "question": "A threat vector is best defined as:",
+    "correct": "The specific method an attacker uses to infiltrate a system",
+    "longestDistractor": "A vulnerability scanner",
+    "ratio": "2.57",
+    "diff": 36
+  },
+  {
+    "unit": "unit-6",
+    "index": 2,
+    "question": "An attack vector refers to:",
+    "correct": "How an attacker both gains access AND infects a system",
+    "longestDistractor": "A file extension type",
+    "ratio": "2.57",
+    "diff": 33
+  },
+  {
+    "unit": "unit-6",
+    "index": 10,
+    "question": "The Nimda worm was notable for:",
+    "correct": "Using multiple propagation methods (email, network shares, web servers)",
+    "longestDistractor": "Only infecting Linux systems",
+    "ratio": "2.54",
+    "diff": 43
+  },
+  {
+    "unit": "unit-7",
+    "index": 23,
+    "question": "Trade secrets include:",
+    "correct": "Proprietary business methods that give competitive advantage",
+    "longestDistractor": "Public financial filings",
+    "ratio": "2.50",
+    "diff": 36
+  },
+  {
+    "unit": "unit-7",
+    "index": 35,
+    "question": "DLP is designed to prevent:",
+    "correct": "Sensitive data from leaving the organization unintentionally or maliciously",
+    "longestDistractor": "System updates from installing",
+    "ratio": "2.50",
+    "diff": 45
+  },
+  {
+    "unit": "unit-10",
+    "index": 8,
+    "question": "Supply chain risk should be approached with _______.",
+    "correct": "A holistic strategy across hardware, software, and services",
+    "longestDistractor": "Physical inspection only",
+    "ratio": "2.46",
+    "diff": 35
+  },
+  {
+    "unit": "unit-10",
+    "index": 14,
+    "question": "A vendor assessment evaluates _______.",
+    "correct": "Security, reliability, and performance of external entities",
+    "longestDistractor": "Internal employee morale",
+    "ratio": "2.46",
+    "diff": 35
+  },
+  {
+    "unit": "unit-15",
+    "index": 31,
+    "question": "What is 'Vendor Lock-in'?",
+    "correct": "Dependency on a single vendor making it hard to switch",
+    "longestDistractor": "Locking the vendor out",
+    "ratio": "2.45",
+    "diff": 32
+  },
+  {
+    "unit": "unit-11",
+    "index": 9,
+    "question": "Procedures are best described as _______.",
+    "correct": "Step-by-step instructions for specific tasks",
+    "longestDistractor": "Legal requirements",
+    "ratio": "2.44",
+    "diff": 26
+  },
+  {
+    "unit": "unit-12",
+    "index": 21,
+    "question": "Scheduled Maintenance Windows are used to _______.",
+    "correct": "Perform changes during low-impact times",
+    "longestDistractor": "Save electricity",
+    "ratio": "2.44",
+    "diff": 23
+  },
+  {
+    "unit": "unit-15",
+    "index": 15,
+    "question": "What is 'Serverless Computing'?",
+    "correct": "Cloud provider manages allocation of machine resources dynamically",
+    "longestDistractor": "Computing without computers",
+    "ratio": "2.44",
+    "diff": 39
+  },
+  {
+    "unit": "unit-15",
+    "index": 3,
+    "question": "What is a 'Hybrid Cloud'?",
+    "correct": "A combination of on-premise, private, and public cloud services",
+    "longestDistractor": "A mix of Windows and Linux",
+    "ratio": "2.42",
+    "diff": 37
+  },
+  {
+    "unit": "unit-6",
+    "index": 17,
+    "question": "A 'zombie' refers to:",
+    "correct": "A single infected machine inside a botnet",
+    "longestDistractor": "A restored backup",
+    "ratio": "2.41",
+    "diff": 24
+  },
+  {
+    "unit": "unit-5",
+    "index": 42,
+    "question": "A receptionist asked for a printer’s IP during a toner call should _______.",
+    "correct": "Refuse and route the request through policy/support channels",
+    "longestDistractor": "Email it to any requester",
+    "ratio": "2.40",
+    "diff": 35
+  },
+  {
+    "unit": "unit-10",
+    "index": 3,
+    "question": "Supply chain risk arises when _______.",
+    "correct": "Components or software from external providers introduce vulnerabilities",
+    "longestDistractor": "A user travels internationally",
+    "ratio": "2.40",
+    "diff": 42
+  },
+  {
+    "unit": "unit-14",
+    "index": 23,
+    "question": "What is 'Geographic Dispersion'?",
+    "correct": "Distributing assets across different physical locations",
+    "longestDistractor": "Hiding servers in caves",
+    "ratio": "2.39",
+    "diff": 32
+  },
+  {
+    "unit": "unit-8",
+    "index": 14,
+    "question": "A CRL (Certificate Revocation List) is used to _______.",
+    "correct": "List certificates that should no longer be trusted",
+    "longestDistractor": "Generate session keys",
+    "ratio": "2.38",
+    "diff": 29
+  },
+  {
+    "unit": "unit-11",
+    "index": 26,
+    "question": "Separation of duties prevents _______.",
+    "correct": "One person having total control",
+    "longestDistractor": "Collaboration",
+    "ratio": "2.38",
+    "diff": 18
+  },
+  {
+    "unit": "unit-13",
+    "index": 17,
+    "question": "What is the purpose of an 'Attestation of Findings'?",
+    "correct": "To formally declare the results of an audit or assessment",
+    "longestDistractor": "To arrest cybercriminals",
+    "ratio": "2.38",
+    "diff": 33
+  },
+  {
+    "unit": "unit-14",
+    "index": 19,
+    "question": "What is 'RPO'?",
+    "correct": "Recovery Point Objective (max tolerable data loss)",
+    "longestDistractor": "Real Point Operations",
+    "ratio": "2.38",
+    "diff": 29
+  },
+  {
+    "unit": "unit-14",
+    "index": 26,
+    "question": "What is 'Air Gapping'?",
+    "correct": "Physically isolating a system from unsecured networks (internet)",
+    "longestDistractor": "Leaving space between racks",
+    "ratio": "2.37",
+    "diff": 37
+  },
+  {
+    "unit": "unit-12",
+    "index": 25,
+    "question": "Legacy applications are _______.",
+    "correct": "Older systems still in use",
+    "longestDistractor": "Mobile apps",
+    "ratio": "2.36",
+    "diff": 15
+  },
+  {
+    "unit": "unit-13",
+    "index": 31,
+    "question": "What is 'social engineering' in the context of assessments?",
+    "correct": "Manipulating people into divulging confidential information",
+    "longestDistractor": "Designing user interfaces",
+    "ratio": "2.36",
+    "diff": 34
+  },
+  {
+    "unit": "unit-9",
+    "index": 16,
+    "question": "A Key Risk Indicator (KRI) is _______.",
+    "correct": "A metric that signals increasing or emerging risk",
+    "longestDistractor": "A vulnerability score",
+    "ratio": "2.33",
+    "diff": 28
+  },
+  {
+    "unit": "unit-14",
+    "index": 30,
+    "question": "What is the purpose of a 'Business Impact Analysis' (BIA)?",
+    "correct": "To identify critical functions and the impact of their disruption",
+    "longestDistractor": "To plan a marketing campaign",
+    "ratio": "2.32",
+    "diff": 37
+  },
+  {
+    "unit": "unit-7",
+    "index": 0,
+    "question": "What is the primary goal of data protection?",
+    "correct": "Safeguard important information from corruption, compromise, or loss",
+    "longestDistractor": "Improve wireless communication",
+    "ratio": "2.27",
+    "diff": 38
+  },
+  {
+    "unit": "unit-11",
+    "index": 32,
+    "question": "PCI-DSS governs _______.",
+    "correct": "Credit card data security",
+    "longestDistractor": "Power grids",
+    "ratio": "2.27",
+    "diff": 14
+  },
+  {
+    "unit": "unit-13",
+    "index": 29,
+    "question": "What is 'non-credentialed scanning'?",
+    "correct": "Scanning from the perspective of an outsider without access",
+    "longestDistractor": "Scanning with admin rights",
+    "ratio": "2.27",
+    "diff": 33
+  },
+  {
+    "unit": "unit-11",
+    "index": 21,
+    "question": "Reputational damage from a breach can lead to _______.",
+    "correct": "Loss of customer trust and stock value",
+    "longestDistractor": "Cheaper insurance",
+    "ratio": "2.24",
+    "diff": 21
+  },
+  {
+    "unit": "unit-14",
+    "index": 3,
+    "question": "What is 'Clustering'?",
+    "correct": "Connecting multiple computers to work as a single system",
+    "longestDistractor": "Grouping files in folders",
+    "ratio": "2.24",
+    "diff": 31
+  },
+  {
+    "unit": "unit-5",
+    "index": 23,
+    "question": "A company’s anti‑phishing program should include _______.",
+    "correct": "Ongoing training + simulated campaigns + remedial training",
+    "longestDistractor": "Blocking all external mail",
+    "ratio": "2.23",
+    "diff": 32
+  }
+]
+Total flagged: 200
+Showing top 50 worst offenders
