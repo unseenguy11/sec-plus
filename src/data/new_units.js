@@ -4186,10 +4186,10 @@ export const newUnits = {
         {
             "q": "What is the primary benefit of Multi-Factor Authentication (MFA)?",
             "options": [
-                "It is faster than single-factor",
-                "It requires less user interaction",
+                "It is faster and easier for users than single-factor authentication",
+                "It requires less user interaction and setup compared to passwords",
                 "It provides a layered defense, making it harder for attackers to compromise an account",
-                "It eliminates the need for passwords"
+                "It completely eliminates the need for any kind of password complexity"
             ],
             "answer": 2,
             "explanation": "MFA requires two or more different types of factors, significantly increasing security."
@@ -4208,10 +4208,10 @@ export const newUnits = {
         {
             "q": "What is 'Single Sign-On' (SSO)?",
             "options": [
-                "Using the same password for everything",
+                "Using the same password for every single application and website",
                 "A service that allows a user to log in once and access multiple applications",
-                "Logging in with only one factor",
-                "A password manager"
+                "Logging in with only one single authentication factor like a password",
+                "A password manager that automatically fills in credentials"
             ],
             "answer": 1,
             "explanation": "SSO allows users to authenticate once and gain access to multiple systems without re-authenticating."
@@ -4219,10 +4219,10 @@ export const newUnits = {
         {
             "q": "What is the concept of 'Least Privilege'?",
             "options": [
-                "Giving users the maximum access possible",
+                "Giving users the maximum access possible to ensure they are never blocked",
                 "Giving users only the permissions necessary to perform their job functions",
-                "Giving all users administrator access",
-                "Restricting access based on time of day"
+                "Giving all users administrator access to simplify management",
+                "Restricting access based solely on the time of day and location"
             ],
             "answer": 1,
             "explanation": "Least Privilege ensures users have the minimum necessary rights to do their work, reducing the attack surface."
@@ -4241,10 +4241,10 @@ export const newUnits = {
         {
             "q": "What is a 'False Acceptance Rate' (FAR) in biometrics?",
             "options": [
-                "The rate at which legitimate users are denied access",
+                "The rate at which legitimate users are incorrectly denied access by the system",
                 "The rate at which unauthorized users are incorrectly granted access",
-                "The speed of the scanner",
-                "The cost of the system"
+                "The speed at which the biometric scanner processes the user data",
+                "The total financial cost of implementing the biometric system"
             ],
             "answer": 1,
             "explanation": "FAR measures how often a biometric system incorrectly identifies an unauthorized user as a valid user (Type II error)."
@@ -4252,10 +4252,10 @@ export const newUnits = {
         {
             "q": "What is 'Provisioning' in the context of IAM?",
             "options": [
-                "Buying new hardware",
+                "The process of purchasing and installing new hardware for users",
                 "The process of creating and managing user accounts and access rights",
-                "Deleting user accounts",
-                "Monitoring user activity"
+                "The process of deleting user accounts when they leave the company",
+                "The process of continuously monitoring user activity for security"
             ],
             "answer": 1,
             "explanation": "Provisioning involves setting up user accounts and assigning appropriate permissions when they join or change roles."
@@ -4274,10 +4274,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'Just-in-Time' (JIT) access?",
             "options": [
-                "To grant permanent admin rights",
+                "To grant permanent administrative rights to all users for efficiency",
                 "To grant privileges only for the specific time they are needed",
-                "To speed up login times",
-                "To bypass authentication"
+                "To significantly speed up the login and authentication times",
+                "To completely bypass authentication for trusted users"
             ],
             "answer": 1,
             "explanation": "JIT access minimizes risk by granting elevated permissions only when required and revoking them immediately after."
@@ -4296,10 +4296,10 @@ export const newUnits = {
         {
             "q": "What is 'Credential Stuffing'?",
             "options": [
-                "Creating strong passwords",
+                "Creating complex, strong passwords that are hard to guess",
                 "Automated injection of breached username/password pairs into login forms",
-                "Storing passwords in a text file",
-                "Sharing passwords with coworkers"
+                "Storing passwords in a plain text file on a shared drive",
+                "Sharing passwords with coworkers to ensure business continuity"
             ],
             "answer": 1,
             "explanation": "Credential stuffing exploits password reuse by trying credentials stolen from one breach on other sites."
@@ -4319,9 +4319,9 @@ export const newUnits = {
             "q": "What is the function of a 'Password Manager'?",
             "options": [
                 "To generate and store complex, unique passwords for each site",
-                "To reset forgotten passwords",
-                "To share passwords publicly",
-                "To bypass MFA"
+                "To automatically reset passwords that have been forgotten by the user",
+                "To publicly share passwords with team members for collaboration",
+                "To allow users to bypass Multi-Factor Authentication requirements"
             ],
             "answer": 0,
             "explanation": "Password managers allow users to use strong, unique passwords for every account without having to memorize them."
@@ -4329,10 +4329,10 @@ export const newUnits = {
         {
             "q": "What is 'OAuth' used for?",
             "options": [
-                "Encrypting hard drives",
+                "Encrypting hard drives to protect data at rest",
                 "Delegated authorization (allowing an app to access resources on your behalf)",
-                "Biometric scanning",
-                "Firewall rules"
+                "Biometric scanning for high-security authentication",
+                "Configuring firewall rules to block traffic"
             ],
             "answer": 1,
             "explanation": "OAuth is an open standard for access delegation, commonly used for 'Log in with Google/Facebook'."
@@ -4363,9 +4363,9 @@ export const newUnits = {
             "q": "What is 'Role-Based Access Control' (RBAC)?",
             "options": [
                 "Access is based on the user's job function or group membership",
-                "Access is decided by the owner of the object",
-                "Access is based on time of day",
-                "Access is based on security labels"
+                "Access is decided solely by the owner of the object/resource",
+                "Access is restricted based on the time of day and location",
+                "Access is determined by comparing security labels and clearance"
             ],
             "answer": 0,
             "explanation": "RBAC assigns permissions to roles (e.g., Manager, HR), and users are assigned to those roles."
@@ -4373,10 +4373,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'Salting' passwords?",
             "options": [
-                "To make them taste better",
+                "To make the password easier to remember for the user",
                 "To add random data to the password before hashing to defend against rainbow table attacks",
-                "To encrypt them with a public key",
-                "To compress them"
+                "To encrypt the password with a public key for transmission",
+                "To compress the password so it takes up less storage space"
             ],
             "answer": 1,
             "explanation": "Salting ensures that the same password results in a different hash, preventing the use of pre-computed rainbow tables."
@@ -4395,10 +4395,10 @@ export const newUnits = {
         {
             "q": "What is a 'TOTP' (Time-based One-Time Password)?",
             "options": [
-                "A password that never expires",
+                "A password that never expires and can be used indefinitely",
                 "A temporary code generated based on the current time, often used in MFA apps",
-                "A password sent via mail",
-                "A biometric factor"
+                "A password sent via physical mail to the user's address",
+                "A biometric factor used for continuous authentication"
             ],
             "answer": 1,
             "explanation": "TOTP algorithms (like Google Authenticator) generate a code that is valid for a short window (e.g., 30 seconds)."
@@ -4407,9 +4407,9 @@ export const newUnits = {
             "q": "What is 'Identity Proofing'?",
             "options": [
                 "Verifying a user's identity before issuing credentials (e.g., checking ID)",
-                "Logging in",
-                "Resetting a password",
-                "Deleting an account"
+                "The process of logging into an application with credentials",
+                "The process of resetting a forgotten password via email",
+                "The process of deleting an account after departure"
             ],
             "answer": 0,
             "explanation": "Identity proofing is the initial validation of a person's identity (e.g., showing a passport) before giving them an account."
@@ -4428,10 +4428,10 @@ export const newUnits = {
         {
             "q": "What is 'Privileged Access Management' (PAM)?",
             "options": [
-                "Managing regular user accounts",
+                "Managing regular user accounts and their daily permissions",
                 "Securing and monitoring accounts with elevated permissions (admin accounts)",
-                "Managing printer access",
-                "Managing physical keys"
+                "Managing access to physical resources like printers",
+                "Managing physical keys for building access"
             ],
             "answer": 1,
             "explanation": "PAM focuses on protecting accounts that have critical access to systems, often using vaults and session recording."
@@ -4439,10 +4439,10 @@ export const newUnits = {
         {
             "q": "What is a 'Rainbow Table'?",
             "options": [
-                "A colorful spreadsheet",
+                "A visual representation of network traffic colors",
                 "A pre-computed table of hash values used to crack passwords",
-                "A list of usernames",
-                "A firewall rule"
+                "A list of all valid usernames on the system",
+                "A complex firewall rule blocking multiple ports"
             ],
             "answer": 1,
             "explanation": "Rainbow tables allow attackers to reverse hashes quickly by looking them up in a pre-generated list."
@@ -4450,10 +4450,10 @@ export const newUnits = {
         {
             "q": "What is 'Attribute-Based Access Control' (ABAC)?",
             "options": [
-                "Access based on roles only",
+                "Access based solely on the user's role within the organization",
                 "Access based on complex policies combining user, resource, and environment attributes",
-                "Access based on owner discretion",
-                "Access based on labels"
+                "Access based on the discretion of the data owner",
+                "Access based on security labels and clearance levels"
             ],
             "answer": 1,
             "explanation": "ABAC is a fine-grained model that uses attributes (e.g., user department, time of day, file sensitivity) to make decisions."
@@ -4461,10 +4461,10 @@ export const newUnits = {
         {
             "q": "What is 'Deprovisioning'?",
             "options": [
-                "Creating accounts",
+                "The process of creating new user accounts and assigning rights",
                 "Revoking access and disabling accounts when a user leaves or changes roles",
-                "Upgrading software",
-                "Backing up data"
+                "The process of upgrading software on user devices",
+                "The process of backing up server data to the cloud"
             ],
             "answer": 1,
             "explanation": "Deprovisioning ensures that former employees or users no longer have access to organizational resources."
@@ -4483,10 +4483,10 @@ export const newUnits = {
         {
             "q": "What is 'Passkey' authentication?",
             "options": [
-                "A physical key",
+                "A physical key used to unlock a server room door",
                 "A passwordless standard using public key cryptography and device biometrics",
-                "A very long password",
-                "A shared secret"
+                "A very long and complex password that is hard to guess",
+                "A shared secret used between two systems for connection"
             ],
             "answer": 1,
             "explanation": "Passkeys replace passwords with cryptographic key pairs, authenticated via the user's device (e.g., FaceID)."
@@ -4494,10 +4494,10 @@ export const newUnits = {
         {
             "q": "What is a 'Dictionary Attack'?",
             "options": [
-                "Throwing a book at the server",
+                "Attempting to physically break into the server room",
                 "Trying words from a predefined list (dictionary) to guess a password",
-                "Guessing random characters",
-                "Stealing the database"
+                "Guessing random characters without any pattern",
+                "Stealing the entire database of hashed passwords"
             ],
             "answer": 1,
             "explanation": "Dictionary attacks use lists of common words and passwords, which is faster than pure brute-force."
@@ -4505,10 +4505,10 @@ export const newUnits = {
         {
             "q": "What is 'Federated Identity'?",
             "options": [
-                "A government ID",
+                "A government-issued identification card",
                 "Linking a user's identity across multiple distinct security domains",
-                "Using different usernames for every site",
-                "An anonymous account"
+                "Using different usernames and passwords for every site",
+                "An anonymous account that cannot be traced"
             ],
             "answer": 1,
             "explanation": "Federation allows a user to use their credentials from one organization (IdP) to access services in another (SP)."
@@ -4528,9 +4528,9 @@ export const newUnits = {
             "q": "What is 'Password Spraying'?",
             "options": [
                 "Trying one common password against many different accounts",
-                "Trying many passwords against one account",
-                "Writing passwords on a whiteboard",
-                "Emailing passwords to everyone"
+                "Trying many different passwords against a single account (Brute-force)",
+                "Writing passwords on a whiteboard for easy access",
+                "Emailing passwords to all employees in the company"
             ],
             "answer": 0,
             "explanation": "Password spraying avoids account lockouts by trying a single common password (e.g., 'Password123') across many users."
@@ -4538,10 +4538,10 @@ export const newUnits = {
         {
             "q": "What is 'Geofencing'?",
             "options": [
-                "Building a physical fence",
+                "Building a physical fence around the data center",
                 "Creating a virtual perimeter to trigger alerts or controls based on location",
-                "Blocking all internet traffic",
-                "Locking devices in a safe"
+                "Blocking all internet traffic from outside the country",
+                "Locking mobile devices in a secure safe overnight"
             ],
             "answer": 1,
             "explanation": "Geofencing uses GPS or RFID to define geographical boundaries for access control or device management."
@@ -4550,9 +4550,9 @@ export const newUnits = {
             "q": "What is the 'False Rejection Rate' (FRR)?",
             "options": [
                 "The rate at which legitimate users are incorrectly denied access",
-                "The rate at which attackers get in",
-                "The failure rate of the hardware",
-                "The cost of the scanner"
+                "The rate at which unauthorized attackers successfully gain access",
+                "The rate of hardware failure for the biometric scanner",
+                "The total installation cost of the biometric scanner"
             ],
             "answer": 0,
             "explanation": "FRR (Type I error) measures how often the system fails to recognize an authorized user, causing inconvenience."
@@ -4560,10 +4560,10 @@ export const newUnits = {
         {
             "q": "What is 'OpenID Connect' (OIDC)?",
             "options": [
-                "A VPN protocol",
+                "A secure VPN protocol for remote access",
                 "An identity layer built on top of OAuth 2.0",
-                "A database standard",
-                "A firewall type"
+                "A standard for database encryption",
+                "A type of firewall packet inspection"
             ],
             "answer": 1,
             "explanation": "OIDC provides authentication on top of OAuth 2.0's authorization, allowing clients to verify the identity of the user."
@@ -4582,10 +4582,10 @@ export const newUnits = {
         {
             "q": "What is 'Implicit Deny'?",
             "options": [
-                "Everything is allowed unless forbidden",
+                "Everything is allowed unless it is specifically forbidden",
                 "Everything is denied unless explicitly allowed",
-                "Only admins are denied",
-                "Only guests are denied"
+                "Only administrators are denied access to sensitive data",
+                "Only guest users are denied access to the network"
             ],
             "answer": 1,
             "explanation": "Implicit deny is a fundamental security principle where access is blocked by default if no rule explicitly permits it."
@@ -4593,10 +4593,10 @@ export const newUnits = {
         {
             "q": "What is 'Continuous Authentication'?",
             "options": [
-                "Logging in once a year",
+                "Logging in once at the start of the year",
                 "Constantly verifying the user's identity throughout the session (e.g., via behavioral biometrics)",
-                "Asking for a password every minute",
-                "Never logging out"
+                "Asking for a password re-entry every single minute",
+                "Never logging out and keeping the session active indefinitely"
             ],
             "answer": 1,
             "explanation": "Continuous authentication monitors user behavior to ensure the person using the device is still the authenticated user."
