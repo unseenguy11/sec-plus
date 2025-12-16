@@ -4606,10 +4606,10 @@ export const newUnits = {
         {
             "q": "What is a 'Zero-Day' vulnerability?",
             "options": [
-                "A vulnerability that has been known for zero days",
+                "A vulnerability that has been known to the vendor for exactly zero days",
                 "A vulnerability discovered by attackers before the vendor has a patch",
-                "A vulnerability that causes zero damage",
-                "A vulnerability that is fixed immediately"
+                "A vulnerability that causes zero damage to the infected system",
+                "A vulnerability that is automatically fixed immediately upon detection"
             ],
             "answer": 1,
             "explanation": "Zero-day vulnerabilities are exploited before the developer is aware or has released a fix."
@@ -4617,10 +4617,10 @@ export const newUnits = {
         {
             "q": "What type of attack involves injecting malicious SQL commands into a database query?",
             "options": [
-                "Cross-Site Scripting (XSS)",
-                "SQL Injection (SQLi)",
-                "Buffer Overflow",
-                "Man-in-the-Middle"
+                "Cross-Site Scripting (XSS) attack on the frontend",
+                "SQL Injection (SQLi) attack targeting the database layer",
+                "Buffer Overflow causing memory corruption issues",
+                "Man-in-the-Middle (MitM) interception of data"
             ],
             "answer": 1,
             "explanation": "SQL Injection exploits unsanitized user input to manipulate backend database queries."
@@ -4628,10 +4628,10 @@ export const newUnits = {
         {
             "q": "What is 'Bluejacking'?",
             "options": [
-                "Stealing data via Bluetooth",
+                "Stealing personal data directly via a Bluetooth connection",
                 "Sending unsolicited messages to a Bluetooth-enabled device",
-                "Taking control of a Bluetooth device",
-                "Crashing a Bluetooth device"
+                "Taking full remote control of a Bluetooth device",
+                "Causing a Bluetooth device to crash or reboot"
             ],
             "answer": 1,
             "explanation": "Bluejacking is a relatively harmless prank where unsolicited messages are sent to nearby Bluetooth devices."
@@ -4639,10 +4639,10 @@ export const newUnits = {
         {
             "q": "Which attack involves an attacker intercepting and possibly altering communication between two parties?",
             "options": [
-                "On-Path Attack (Man-in-the-Middle)",
-                "DoS Attack",
-                "Phishing",
-                "Ransomware"
+                "On-Path Attack (Man-in-the-Middle) intercepting traffic",
+                "DoS Attack flooding the network with traffic",
+                "Phishing attempt to steal user credentials",
+                "Ransomware encrypting files for payment"
             ],
             "answer": 0,
             "explanation": "An On-Path attack (formerly MITM) occurs when an attacker sits between two communicating parties to eavesdrop or manipulate data."
@@ -4650,10 +4650,10 @@ export const newUnits = {
         {
             "q": "What is 'Bluesnarfing'?",
             "options": [
-                "Sending messages via Bluetooth",
+                "Sending harmless unsolicited messages via Bluetooth",
                 "Unauthorized access to a device via Bluetooth to steal data (contacts, messages)",
-                "Crashing a device via Bluetooth",
-                "Pairing with a headset"
+                "Causing a device to crash via Bluetooth signal",
+                "Pairing with a headset without permission"
             ],
             "answer": 1,
             "explanation": "Bluesnarfing is the theft of information from a wireless device through a Bluetooth connection."
@@ -4661,10 +4661,10 @@ export const newUnits = {
         {
             "q": "What is a 'Buffer Overflow'?",
             "options": [
-                "When a hard drive is full",
+                "When a hard drive is completely full of data",
                 "When a program writes more data to a memory buffer than it can hold, overwriting adjacent memory",
-                "When network traffic is too high",
-                "When a printer runs out of paper"
+                "When network traffic is too high for the bandwidth",
+                "When a printer runs out of paper during a print job"
             ],
             "answer": 1,
             "explanation": "Buffer overflows can cause crashes or allow attackers to execute arbitrary code."
@@ -4673,9 +4673,9 @@ export const newUnits = {
             "q": "What is 'Cross-Site Scripting' (XSS)?",
             "options": [
                 "Injecting malicious scripts into trusted websites viewed by other users",
-                "Attacking the database directly",
-                "Guessing passwords",
-                "Encrypting files"
+                "Attacking the backend database directly with SQL queries",
+                "Guessing user passwords using a brute-force script",
+                "Encrypting user files and demanding a ransom"
             ],
             "answer": 0,
             "explanation": "XSS allows attackers to execute scripts in the victim's browser, often to steal cookies or session tokens."
@@ -4683,10 +4683,10 @@ export const newUnits = {
         {
             "q": "What is 'Sideloading' on a mobile device?",
             "options": [
-                "Charging the device from the side",
+                "Charging the device using a side-mounted port",
                 "Installing applications from unofficial sources (bypassing the app store)",
-                "Transferring files to a PC",
-                "Rotating the screen"
+                "Transferring files to a PC using a USB cable",
+                "Rotating the screen orientation manually"
             ],
             "answer": 1,
             "explanation": "Sideloading bypasses official app store security checks, increasing the risk of installing malware."
@@ -4694,10 +4694,10 @@ export const newUnits = {
         {
             "q": "What is 'Jailbreaking' (iOS) or 'Rooting' (Android)?",
             "options": [
-                "Breaking the screen",
+                "Breaking the device screen accidentally",
                 "Removing manufacturer restrictions to gain elevated privileges",
-                "Locking the device remotely",
-                "Encrypting the storage"
+                "Locking the device remotely to prevent theft",
+                "Encrypting the internal storage for privacy"
             ],
             "answer": 1,
             "explanation": "Jailbreaking/Rooting gives the user full control (root access) but compromises the device's security model."
@@ -4705,10 +4705,10 @@ export const newUnits = {
         {
             "q": "What is a 'Race Condition'?",
             "options": [
-                "A competition between hackers",
+                "A competition between hackers to exploit a system",
                 "A vulnerability where the outcome depends on the timing or order of events",
-                "A fast network connection",
-                "A malicious software program that replicates itself to spread to other computers"
+                "A fast network connection causing data errors",
+                "A malicious software program that replicates itself rapidly"
             ],
             "answer": 1,
             "explanation": "Race conditions (like TOCTOU) occur when a system attempts to perform two or more operations at the same time, leading to unexpected behavior."
@@ -4716,10 +4716,10 @@ export const newUnits = {
         {
             "q": "What is 'Cross-Site Request Forgery' (CSRF/XSRF)?",
             "options": [
-                "Stealing cookies",
+                "Stealing browser cookies for session hijacking",
                 "Tricking a user into performing an unwanted action on a site where they are authenticated",
-                "Crashing a server",
-                "Fake login page"
+                "Causing a server to crash by sending too many requests",
+                "Creating a fake login page to steal credentials"
             ],
             "answer": 1,
             "explanation": "CSRF exploits the trust a site has in a user's browser, forcing them to execute actions (like changing a password) without their consent."
@@ -4727,10 +4727,10 @@ export const newUnits = {
         {
             "q": "What is 'Blueborne'?",
             "options": [
-                "A Bluetooth headset brand",
+                "A popular brand of Bluetooth headsets",
                 "A set of airborne Bluetooth vulnerabilities that can spread malware without pairing",
-                "A blue screen error",
-                "A water-based attack"
+                "A common blue screen error on Windows",
+                "A physical attack involving water damage"
             ],
             "answer": 1,
             "explanation": "Blueborne is a critical vector that allows attackers to take control of devices via Bluetooth without user interaction."
@@ -4738,10 +4738,10 @@ export const newUnits = {
         {
             "q": "What is 'Firmware'?",
             "options": [
-                "Soft clothing",
+                "Soft clothing worn by IT professionals",
                 "Permanent software programmed into a read-only memory",
-                "A temporary file",
-                "A virus"
+                "A temporary file created during installation",
+                "A computer virus that infects hardware"
             ],
             "answer": 1,
             "explanation": "Firmware provides low-level control for a device's specific hardware."
@@ -4749,10 +4749,10 @@ export const newUnits = {
         {
             "q": "What is the risk of 'End of Life' (EOL) systems?",
             "options": [
-                "They are too fast",
+                "They operate too quickly for users to follow",
                 "They no longer receive security updates or support from the vendor",
-                "They use too much power",
-                "They are too expensive"
+                "They consume excessive amounts of electrical power",
+                "They are too expensive to maintain annually"
             ],
             "answer": 1,
             "explanation": "EOL systems are vulnerable because new exploits will not be patched by the manufacturer."
@@ -4761,9 +4761,9 @@ export const newUnits = {
             "q": "What is 'XML Injection'?",
             "options": [
                 "Injecting malicious XML content to interfere with an application's logic",
-                "Injecting SQL code",
-                "Injecting HTML code",
-                "Injecting binary code"
+                "Injecting malicious SQL commands into a database",
+                "Injecting HTML code into a webpage's source",
+                "Injecting binary code into an executable file"
             ],
             "answer": 0,
             "explanation": "XML injection targets XML parsers, potentially leading to data exposure or denial of service."
@@ -4771,10 +4771,10 @@ export const newUnits = {
         {
             "q": "What is 'Bluebugging'?",
             "options": [
-                "A software bug",
+                "A minor software bug in the Bluetooth stack",
                 "Taking full control of a device via Bluetooth to make calls or send messages",
-                "Listening to music",
-                "Blocking Bluetooth"
+                "Listening to music via a Bluetooth headset",
+                "Blocking all incoming Bluetooth connections"
             ],
             "answer": 1,
             "explanation": "Bluebugging is a more severe attack than Bluejacking/Bluesnarfing, allowing full device control."
@@ -4782,10 +4782,10 @@ export const newUnits = {
         {
             "q": "What is a 'Logic Bomb'?",
             "options": [
-                "A physical explosive",
+                "A physical explosive device planted in a server room",
                 "Malicious code set to execute when specific conditions are met (e.g., a date or event)",
-                "A logical puzzle",
-                "A failed login attempt"
+                "A complex logical puzzle used for authentication",
+                "A failed login attempt that locks an account"
             ],
             "answer": 1,
             "explanation": "Logic bombs lie dormant until a trigger (like a specific time or an employee being fired) activates them."
@@ -4793,10 +4793,10 @@ export const newUnits = {
         {
             "q": "What is 'Driver Shimming'?",
             "options": [
-                "Fixing a car",
+                "Repairing a damaged car engine part",
                 "Inserting malicious code between the OS and a driver to intercept or manipulate data",
-                "Updating drivers",
-                "Deleting drivers"
+                "Updating device drivers to the latest version",
+                "Deleting old or unused device drivers"
             ],
             "answer": 1,
             "explanation": "Shimming involves creating a compatibility layer that can be exploited to run malicious code."
@@ -4804,10 +4804,10 @@ export const newUnits = {
         {
             "q": "What is 'Refactoring' in the context of malware?",
             "options": [
-                "Cleaning up code",
+                "Cleaning up legacy code to make it readable",
                 "Modifying the internal structure of malware code to evade signature-based detection",
-                "Deleting the code",
-                "Compressing the code"
+                "Deleting the source code entirely",
+                "Compressing the code to save disk space"
             ],
             "answer": 1,
             "explanation": "Refactoring changes the code's appearance (signature) without changing its function, helping it bypass antivirus."
@@ -4815,10 +4815,10 @@ export const newUnits = {
         {
             "q": "What is 'Integer Overflow'?",
             "options": [
-                "Too many numbers",
+                "Having too many numbers in a database",
                 "When an arithmetic operation attempts to create a numeric value that is too large to be represented",
-                "A database error",
-                "A network error"
+                "A database connection error occurring unexpectedly",
+                "A network packet error causing data loss"
             ],
             "answer": 1,
             "explanation": "Integer overflows can lead to unexpected behavior or vulnerabilities if the wrapped-around value is used in memory allocation."
@@ -4826,10 +4826,10 @@ export const newUnits = {
         {
             "q": "What is 'Pointer/Object Dereference' vulnerability?",
             "options": [
-                "Pointing at the screen",
+                "Physically pointing at the computer screen",
                 "When a program attempts to access memory using a NULL or invalid pointer",
-                "Deleting a file",
-                "Renaming a file"
+                "Deleting a critical system file by mistake",
+                "Renaming a file to hide it"
             ],
             "answer": 1,
             "explanation": "Dereferencing a null or invalid pointer can cause a crash (DoS) or potentially allow code execution."
@@ -4837,10 +4837,10 @@ export const newUnits = {
         {
             "q": "What is 'Directory Traversal'?",
             "options": [
-                "Walking through a building",
+                "Walking through a physical building plan",
                 "Manipulating file paths (e.g., ../../) to access files outside the intended directory",
-                "Listing files",
-                "Creating folders"
+                "Listing files in the current directory",
+                "Creating new folders on the server"
             ],
             "answer": 1,
             "explanation": "Directory traversal allows attackers to access restricted files on the server by stepping out of the web root."
@@ -4848,10 +4848,10 @@ export const newUnits = {
         {
             "q": "What is 'Resource Exhaustion'?",
             "options": [
-                "Running out of coffee",
+                "Running out of coffee in the break room",
                 "Depleting system resources (CPU, memory, disk) to cause a Denial of Service",
-                "Deleting resources",
-                "Upgrading resources"
+                "Deleting unused resources from the system",
+                "Upgrading system resources to improve performance"
             ],
             "answer": 1,
             "explanation": "Resource exhaustion attacks aim to make a system unavailable by consuming all available resources."
@@ -4859,10 +4859,10 @@ export const newUnits = {
         {
             "q": "What is 'Memory Leak'?",
             "options": [
-                "Forgetting things",
+                "Forgetting where files are stored",
                 "When a program fails to release memory it no longer needs, eventually consuming all available RAM",
-                "Downloading RAM",
-                "A hardware failure"
+                "Downloading more RAM from the internet",
+                "A hardware failure in the memory module"
             ],
             "answer": 1,
             "explanation": "Memory leaks can lead to resource exhaustion and system crashes over time."
@@ -4870,10 +4870,10 @@ export const newUnits = {
         {
             "q": "What is 'DLL Injection'?",
             "options": [
-                "Injecting a vaccine",
+                "Injecting a vaccine into a patient",
                 "Forcing a process to load a malicious Dynamic Link Library (DLL)",
-                "Deleting a DLL",
-                "Renaming a DLL"
+                "Deleting a DLL file from System32",
+                "Renaming a DLL file to hide it"
             ],
             "answer": 1,
             "explanation": "DLL injection allows attackers to run their code within the address space of another process."
@@ -4882,9 +4882,9 @@ export const newUnits = {
             "q": "What is 'Time of Check to Time of Use' (TOCTOU)?",
             "options": [
                 "A race condition where the state of a resource changes between checking it and using it",
-                "A clock error",
-                "A scheduling conflict",
-                "A timeout error"
+                "A clock synchronization error",
+                "A scheduling conflict between processes",
+                "A network timeout error connection"
             ],
             "answer": 0,
             "explanation": "TOCTOU is a specific type of race condition where security controls are bypassed by changing the resource after it's checked but before it's used."
@@ -4892,10 +4892,10 @@ export const newUnits = {
         {
             "q": "What is 'Pass-the-Hash'?",
             "options": [
-                "Passing a joint",
+                "Passing a physical object to another person",
                 "An attack where an attacker uses a captured password hash to authenticate without knowing the plaintext password",
-                "Sharing passwords",
-                "Hashing a file"
+                "Sharing passwords securely via email",
+                "Hashing a file to verify integrity"
             ],
             "answer": 1,
             "explanation": "Pass-the-hash exploits authentication protocols (like NTLM) that accept the hash directly."
@@ -4903,10 +4903,10 @@ export const newUnits = {
         {
             "q": "What is 'Clickjacking'?",
             "options": [
-                "Stealing a mouse",
+                "Stealing a computer mouse",
                 "Tricking a user into clicking on something different from what they perceive (using transparent layers)",
-                "Double clicking",
-                "Right clicking"
+                "Double clicking a file accidentally",
+                "Right clicking to open a context menu"
             ],
             "answer": 1,
             "explanation": "Clickjacking uses invisible iframes to hijack user clicks for malicious actions."
@@ -4914,10 +4914,10 @@ export const newUnits = {
         {
             "q": "What is 'Session Hijacking'?",
             "options": [
-                "Stealing a meeting room",
+                "Stealing a physical meeting room",
                 "Taking over a user's active session by stealing their session ID/token",
-                "Logging out a user",
-                "Creating a new session"
+                "Logging out a user remotely",
+                "Creating a new login session"
             ],
             "answer": 1,
             "explanation": "Session hijacking allows an attacker to impersonate a user after they have authenticated."
@@ -4925,10 +4925,10 @@ export const newUnits = {
         {
             "q": "What is 'URL Encoding' abuse?",
             "options": [
-                "Writing long URLs",
+                "Writing extremely long URLs manually",
                 "Using percent-encoding (e.g., %20) to bypass filters or obfuscate malicious payloads",
-                "Shortening URLs",
-                "Clicking links"
+                "Shortening URLs for social media sharing",
+                "Clicking suspicious links in emails"
             ],
             "answer": 1,
             "explanation": "Attackers use URL encoding to hide malicious characters from security filters."
@@ -4936,10 +4936,10 @@ export const newUnits = {
         {
             "q": "What is 'Replay Attack'?",
             "options": [
-                "Watching a video again",
+                "Watching a video clip again",
                 "Capturing and retransmitting valid data (like authentication tokens) to gain unauthorized access",
-                "Playing a game",
-                "Backing up data"
+                "Playing a multiplayer game online",
+                "Backing up data to a secure server"
             ],
             "answer": 1,
             "explanation": "Replay attacks use valid credentials captured from the network to impersonate the user."
@@ -4947,10 +4947,10 @@ export const newUnits = {
         {
             "q": "What is 'SSL Stripping'?",
             "options": [
-                "Removing clothes",
+                "Removing a piece of clothing",
                 "Downgrading a connection from HTTPS to HTTP to intercept traffic",
-                "Updating SSL certificates",
-                "Encrypting data"
+                "Updating SSL certificates on a server",
+                "Encrypting data transmission with SSL"
             ],
             "answer": 1,
             "explanation": "SSL stripping forces a victim's browser to communicate in cleartext (HTTP) instead of encrypted (HTTPS)."
@@ -4958,10 +4958,10 @@ export const newUnits = {
         {
             "q": "What is 'Typosquatting'?",
             "options": [
-                "Sitting incorrectly",
+                "Sitting incorrectly at a desk",
                 "Registering domains similar to popular ones (e.g., goggle.com) to catch users who make typing errors",
-                "Typing fast",
-                "Breaking a keyboard"
+                "Typing very fast on a keyboard",
+                "Breaking a keyboard by typing too hard"
             ],
             "answer": 1,
             "explanation": "Typosquatting (URL hijacking) relies on user mistakes to serve malware or phishing sites."
@@ -4969,10 +4969,10 @@ export const newUnits = {
         {
             "q": "What is 'Domain Hijacking'?",
             "options": [
-                "Stealing a server",
+                "Stealing a physical server machine",
                 "Unauthorized changing of a domain's registration information to take control of it",
-                "Buying a domain",
-                "Selling a domain"
+                "Buying a domain name legally",
+                "Selling a domain name for profit"
             ],
             "answer": 1,
             "explanation": "Domain hijacking involves taking control of the domain name itself, often by compromising the registrar account."
@@ -4980,10 +4980,10 @@ export const newUnits = {
         {
             "q": "What is 'ARP Poisoning'?",
             "options": [
-                "Poisoning food",
+                "Poisoning food in the cafeteria",
                 "Sending fake ARP messages to link the attacker's MAC address with a legitimate IP address",
-                "Blocking ARP",
-                "Updating ARP tables"
+                "Blocking ARP packets at the firewall",
+                "Updating ARP tables with correct data"
             ],
             "answer": 1,
             "explanation": "ARP poisoning allows an attacker to intercept traffic on a local network (LAN) by redirecting it to their machine."
@@ -4992,9 +4992,9 @@ export const newUnits = {
             "q": "What is 'DNS Poisoning'?",
             "options": [
                 "Corrupting the DNS cache to redirect users to malicious websites",
-                "Deleting DNS records",
-                "Speeding up DNS",
-                "Encrypting DNS"
+                "Deleting DNS records from the server",
+                "Speeding up DNS resolution times",
+                "Encrypting DNS queries for privacy"
             ],
             "answer": 0,
             "explanation": "DNS poisoning (or cache poisoning) inserts fake DNS entries, sending users to attacker-controlled sites."
