@@ -5932,10 +5932,10 @@ export const newUnits = {
         {
             "q": "What is the primary purpose of a 'site survey' in wireless security?",
             "options": [
-                "To check the internet speed",
+                "To check the internet speed and ensure it meets the ISP's advertised download and upload rates",
                 "To determine the optimal placement of access points for coverage and minimize signal leakage",
-                "To find the cheapest internet provider",
-                "To install wired connections"
+                "To find the cheapest internet provider available in the specific geographic region",
+                "To install wired connections and structured cabling throughout the new office building"
             ],
             "answer": 1,
             "explanation": "A site survey analyzes the radio frequency environment to ensure good coverage while minimizing signal bleed outside the desired area."
@@ -5954,10 +5954,10 @@ export const newUnits = {
         {
             "q": "What is 'SAE' in the context of WPA3?",
             "options": [
-                "Secure Access Encryption",
+                "Secure Access Encryption Protocol using AES-256 for maximum data protection",
                 "Simultaneous Authentication of Equals",
-                "System Admin Entry",
-                "Standard Advanced Encryption"
+                "System Admin Entry Point for managing wireless controllers remotely",
+                "Standard Advanced Encryption Standard for legacy device support"
             ],
             "answer": 1,
             "explanation": "Simultaneous Authentication of Equals (SAE) replaces the Pre-Shared Key (PSK) exchange, preventing offline dictionary attacks."
@@ -5965,10 +5965,10 @@ export const newUnits = {
         {
             "q": "Which EAP method uses a 'tunnel' to protect the authentication process?",
             "options": [
-                "EAP-MD5",
-                "PEAP",
-                "LEAP",
-                "EAP-GTC"
+                "EAP-MD5 (Message Digest 5) which provides strong mutual authentication",
+                "PEAP (Protected Extensible Authentication Protocol)",
+                "LEAP (Lightweight Extensible Authentication Protocol) designed by Cisco",
+                "EAP-GTC (Generic Token Card) for hardware token integration"
             ],
             "answer": 1,
             "explanation": "PEAP (Protected EAP) encapsulates the EAP conversation within a TLS tunnel to secure the authentication credentials."
@@ -5976,10 +5976,10 @@ export const newUnits = {
         {
             "q": "What is the function of a RADIUS server in an 802.1x implementation?",
             "options": [
-                "To act as the wireless access point",
+                "To act as the wireless access point and broadcast the SSID to clients",
                 "To provide centralized authentication, authorization, and accounting (AAA)",
-                "To encrypt the Wi-Fi traffic",
-                "To assign IP addresses"
+                "To encrypt all Wi-Fi traffic using WPA3 standards for security",
+                "To automatically assign IP addresses to all connected clients via DHCP"
             ],
             "answer": 1,
             "explanation": "RADIUS is the backend authentication server that verifies user credentials sent by the authenticator (access point)."
@@ -5987,10 +5987,10 @@ export const newUnits = {
         {
             "q": "What is 'input validation' designed to prevent?",
             "options": [
-                "Slow network speeds",
+                "Slow network speeds caused by high latency and packet loss on the WAN",
                 "Injection attacks (SQL, XSS, Command Injection)",
-                "Phishing emails",
-                "Hardware failure"
+                "Phishing emails sent to employees requesting sensitive credentials",
+                "Hardware failure resulting from overheating or power surges"
             ],
             "answer": 1,
             "explanation": "Input validation ensures that data entered by users meets expected formats, preventing malicious code from being processed."
@@ -5998,10 +5998,10 @@ export const newUnits = {
         {
             "q": "Which type of code analysis is performed on the source code *without* executing the program?",
             "options": [
-                "Dynamic Analysis (DAST)",
-                "Static Analysis (SAST)",
-                "Fuzzing",
-                "Stress Testing"
+                "Dynamic Application Security Testing (DAST) which runs against a live application",
+                "Static Application Security Testing (SAST)",
+                "Fuzzing the application input fields with random data streams",
+                "Stress Testing the server infrastructure under high load conditions"
             ],
             "answer": 1,
             "explanation": "Static Application Security Testing (SAST) analyzes the source code at rest to find vulnerabilities before the code is run."
@@ -6009,10 +6009,10 @@ export const newUnits = {
         {
             "q": "What is 'fuzzing'?",
             "options": [
-                "Cleaning the code",
+                "Cleaning the source code to remove comments and reduce file size for deployment",
                 "Sending random, malformed, or unexpected data to an application to cause it to crash or behave unexpectedly",
-                "Optimizing database queries",
-                "Encrypting the source code"
+                "Optimizing database queries to improve response time and reduce server load",
+                "Encrypting the source code to prevent reverse engineering by competitors"
             ],
             "answer": 1,
             "explanation": "Fuzzing is a dynamic testing technique that inputs invalid data to find bugs, crashes, and potential vulnerabilities."
@@ -6020,10 +6020,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'code signing'?",
             "options": [
-                "To make the code run faster",
+                "To make the code execute faster by optimizing the compilation process",
                 "To verify the author's identity and ensure the code has not been tampered with",
-                "To encrypt the code so it cannot be read",
-                "To compress the code size"
+                "To encrypt the source code so it cannot be read or reverse engineered",
+                "To compress the executable file size to save storage space on the disk"
             ],
             "answer": 1,
             "explanation": "Code signing uses a digital signature to prove who wrote the software and that it hasn't been altered since signing."
@@ -6031,10 +6031,10 @@ export const newUnits = {
         {
             "q": "What is 'sandboxing'?",
             "options": [
-                "Playing in the sand",
+                "A child's play area filled with sand for recreational purposes",
                 "Isolating a program in a restricted environment to prevent it from harming the host system",
-                "Cleaning up memory leaks",
-                "Backing up data to the cloud"
+                "Cleaning up memory leaks to improve system performance and stability",
+                "Backing up critical data to a secure cloud storage provider automatically"
             ],
             "answer": 1,
             "explanation": "Sandboxing runs untrusted code in an isolated environment with limited resources and permissions to contain potential threats."
@@ -6076,9 +6076,9 @@ export const newUnits = {
             "q": "What is 'DNS filtering'?",
             "options": [
                 "Blocking access to websites by preventing their domain names from resolving to IP addresses",
-                "Encrypting DNS queries",
-                "Speeding up DNS resolution",
-                "Hosting a DNS server"
+                "Encrypting all DNS queries to prevent eavesdropping by ISPs",
+                "Speeding up DNS resolution times by caching records locally",
+                "Hosting a primary DNS server for an internal network domain"
             ],
             "answer": 0,
             "explanation": "DNS filtering blocks malicious or unwanted sites at the DNS lookup phase, preventing the browser from even finding the server's IP."
@@ -6097,10 +6097,10 @@ export const newUnits = {
         {
             "q": "What does SPF (Sender Policy Framework) use to validate email senders?",
             "options": [
-                "Digital signatures",
-                "A list of authorized IP addresses published in DNS records",
-                "User passwords",
-                "Encryption keys"
+                "Digital signatures generated by the private key of the sending domain",
+                "A list of authorized IP addresses published in DNS TXT records",
+                "User passwords that are hashed and salted for security",
+                "Encryption keys exchanged during the TLS handshake process"
             ],
             "answer": 1,
             "explanation": "SPF uses DNS TXT records to list the IP addresses that are authorized to send email on behalf of a domain."
@@ -6109,9 +6109,9 @@ export const newUnits = {
             "q": "What is 'DMARC'?",
             "options": [
                 "A protocol that unifies SPF and DKIM and provides instructions on how to handle failed emails",
-                "A new email client",
-                "A spam filter",
-                "An encryption standard"
+                "A new email client designed for enhanced user productivity",
+                "A spam filter that uses machine learning to detect phishing",
+                "An encryption standard for securing email bodies and attachments"
             ],
             "answer": 0,
             "explanation": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) uses SPF and DKIM results to determine if a message is legitimate and tells the receiver what to do (reject, quarantine) if it fails."
@@ -6119,10 +6119,10 @@ export const newUnits = {
         {
             "q": "What is the primary function of an 'Email Gateway'?",
             "options": [
-                "To store emails",
+                "To store emails indefinitely for compliance and legal discovery purposes",
                 "To act as a checkpoint for incoming/outgoing email, filtering spam, malware, and enforcing policy",
-                "To write emails",
-                "To host the email server"
+                "To provide a user interface for composing and reading emails",
+                "To host the backend email server databases and storage"
             ],
             "answer": 1,
             "explanation": "Secure Email Gateways (SEGs) sit at the network edge to filter traffic, block threats, and enforce DLP policies before email reaches the user."
@@ -6130,10 +6130,10 @@ export const newUnits = {
         {
             "q": "What is 'EDR' (Endpoint Detection and Response)?",
             "options": [
-                "A simple antivirus",
+                "A simple antivirus program that relies solely on signature-based detection",
                 "A solution that continuously monitors endpoint activity to detect, investigate, and respond to advanced threats",
-                "A firewall",
-                "A backup tool"
+                "A firewall appliance that filters network traffic at the perimeter",
+                "A backup tool for creating daily images of the system drive"
             ],
             "answer": 1,
             "explanation": "EDR goes beyond antivirus by recording endpoint behavior to detect complex attacks and provide tools for incident response."
@@ -6141,10 +6141,10 @@ export const newUnits = {
         {
             "q": "What is 'UBA' (User Behavior Analytics)?",
             "options": [
-                "Tracking employee attendance",
+                "Tracking employee attendance and work hours for payroll purposes",
                 "Using machine learning to establish a baseline of normal user activity and detect anomalies",
-                "Monitoring internet usage for billing",
-                "A user manual"
+                "Monitoring internet bandwidth usage for billing and capacity planning",
+                "A comprehensive user manual for training new employees"
             ],
             "answer": 1,
             "explanation": "UBA (or UEBA) builds a profile of normal behavior for users and entities, flagging deviations (e.g., logging in at 3 AM) as potential threats."
@@ -6218,10 +6218,10 @@ export const newUnits = {
         {
             "q": "What is 'File Integrity Monitoring' (FIM)?",
             "options": [
-                "Checking if a file can be opened",
+                "Checking if a file can be opened by the associated application without errors",
                 "Monitoring critical files for unauthorized changes by comparing current hashes to a known baseline",
-                "Backing up files",
-                "Scanning for viruses"
+                "Backing up all files to a secondary storage location every night",
+                "Scanning the entire file system for known virus signatures daily"
             ],
             "answer": 1,
             "explanation": "FIM detects unauthorized modifications to system files by verifying their cryptographic hashes against a trusted baseline."
@@ -6229,10 +6229,10 @@ export const newUnits = {
         {
             "q": "What is 'XDR' (Extended Detection and Response)?",
             "options": [
-                "A new file format",
+                "A new high-definition file format for storing medical images",
                 "A security platform that integrates data from endpoints, networks, and cloud to provide a holistic view of threats",
-                "An external hard drive",
-                "A network security device that filters incoming traffic"
+                "An external hard drive used for offline backups and cold storage",
+                "A dedicated network security device that filters incoming traffic based on IP reputation"
             ],
             "answer": 1,
             "explanation": "XDR extends EDR by correlating data across multiple security layers (endpoint, network, cloud, email) for better threat detection."
@@ -6251,10 +6251,10 @@ export const newUnits = {
         {
             "q": "What is a 'heat map' in wireless site surveys?",
             "options": [
-                "A map of the server room temperature",
-                "A visual representation of wireless signal strength and coverage",
-                "A map of fire exits",
-                "A diagram of network cables"
+                "A map showing the temperature distribution in the server room",
+                "A visual representation of wireless signal strength and coverage overlayed on a floor plan",
+                "A map indicating the location of all fire exits and emergency equipment",
+                "A diagram showing the routing of all network cables in the building"
             ],
             "answer": 1,
             "explanation": "A heat map visualizes RF coverage, helping admins identify dead zones and areas of signal bleed."
@@ -6263,9 +6263,9 @@ export const newUnits = {
             "q": "What is 'EAP-TLS'?",
             "options": [
                 "Extensible Authentication Protocol using Transport Layer Security; requires certificates on both client and server",
-                "Easy Access Protocol",
-                "Encryption for Apps",
-                "Email Access Protocol"
+                "Easy Access Protocol for simplified guest network connectivity",
+                "Encryption for Apps to secure data at rest on mobile devices",
+                "Email Access Protocol for retrieving messages from a remote server"
             ],
             "answer": 0,
             "explanation": "EAP-TLS is considered one of the most secure EAP methods because it requires mutual authentication using digital certificates."
@@ -6328,10 +6328,10 @@ export const newUnits = {
         {
             "q": "What is a 'sinkhole' in DNS security?",
             "options": [
-                "A physical hole in the ground",
+                "A physical hole in the ground caused by water erosion",
                 "Redirecting malicious DNS traffic to a non-existent or controlled IP address to prevent connection to C2 servers",
-                "A slow network connection",
-                "A backup server"
+                "A slow network connection caused by high latency",
+                "A backup server that takes over when the primary fails"
             ],
             "answer": 1,
             "explanation": "DNS sinkholing redirects requests for known malicious domains to a safe IP, effectively blocking the connection."
@@ -7722,7 +7722,7 @@ export const newUnits = {
         {
             "q": "When analyzing vulnerabilities, what does the 'Exposure Factor' (EF) represent?",
             "options": [
-                "The percentage of an asset likely to be damaged by a realized risk",
+                "The percentage of an asset's value likely to be damaged by a realized risk",
                 "The total monetary value of the asset at risk",
                 "The probability of a threat exploiting a vulnerability",
                 "The amount of time a system remains vulnerable before patching"
@@ -7733,10 +7733,10 @@ export const newUnits = {
         {
             "q": "Which of the following best describes 'Risk Tolerance'?",
             "options": [
-                "The maximum amount of money an organization can lose before bankruptcy",
+                "The maximum financial loss an organization can sustain before facing bankruptcy",
                 "The level of risk an organization is willing to accept in pursuit of its objectives",
                 "The process of transferring risk to an insurance provider",
-                "The elimination of all identified risks in a system"
+                "The complete elimination of all identified risks in a system"
             ],
             "answer": 1,
             "explanation": "Risk tolerance refers to the level of risk that an organization is willing to accept or retain in order to achieve its business goals."
@@ -7744,10 +7744,10 @@ export const newUnits = {
         {
             "q": "In the context of vulnerability scanning, what is a 'False Positive'?",
             "options": [
-                "The scanner fails to identify a vulnerability that actually exists",
+                "The scanner fails to identify a vulnerability that actually exists on the target",
                 "The scanner correctly identifies a vulnerability that exists",
                 "The scanner identifies a vulnerability that does not actually exist",
-                "The scanner correctly identifies that a system is secure"
+                "The scanner correctly identifies that a system is secure and patch-compliant"
             ],
             "answer": 2,
             "explanation": "A false positive occurs when a vulnerability scanner reports a vulnerability that is not actually present on the system."
@@ -7755,10 +7755,10 @@ export const newUnits = {
         {
             "q": "What is the main advantage of performing a 'Credentialed Scan' over a 'Non-Credentialed Scan'?",
             "options": [
-                "It is faster and consumes less network bandwidth",
-                "It simulates an external attacker with no prior knowledge",
+                "It is faster and consumes significantly less network bandwidth during the scan process",
+                "It simulates an external attacker with no prior knowledge of the internal network",
                 "It allows the scanner to log in and check for internal vulnerabilities and misconfigurations",
-                "It prevents the scanner from being detected by intrusion detection systems"
+                "It prevents the scanner from being detected by intrusion detection systems (IDS)"
             ],
             "answer": 2,
             "explanation": "A credentialed scan uses a valid username and password to log into the target system, allowing it to see internal vulnerabilities, missing patches, and configuration issues that an external (non-credentialed) scan would miss."
@@ -8164,10 +8164,10 @@ export const newUnits = {
         {
             "q": "What does 'SIEM' stand for?",
             "options": [
-                "System Integrity and Event Monitoring",
+                "System Integrity and Event Monitoring Protocol",
                 "Security Information and Event Management",
-                "Secure Internet Email Mechanism",
-                "Server Infrastructure and Error Management"
+                "Secure Internet Email Mechanism for Anti-Phishing",
+                "Server Infrastructure and Error Management Console"
             ],
             "answer": 1,
             "explanation": "SIEM stands for Security Information and Event Management, a solution that aggregates and analyzes log data from various sources."
@@ -8175,10 +8175,10 @@ export const newUnits = {
         {
             "q": "Which of the following is a key function of a SIEM?",
             "options": [
-                "To route network traffic",
-                "To block viruses on a single endpoint",
+                "To efficiently route network traffic between subnets",
+                "To block viruses on a single endpoint workstation",
                 "To correlate logs from multiple disparate sources to detect patterns",
-                "To encrypt hard drives"
+                "To encrypt hard drives and protect data at rest"
             ],
             "answer": 2,
             "explanation": "A core function of a SIEM is correlation—taking logs from firewalls, servers, and IDSs to identify complex attack patterns that wouldn't be visible in isolation."
@@ -8186,10 +8186,10 @@ export const newUnits = {
         {
             "q": "In the context of SIEM, what is 'Time Synchronization' critical for?",
             "options": [
-                "Ensuring the UI looks nice",
+                "Ensuring the user interface remains responsive under load",
                 "Accurately correlating events across different servers and time zones",
-                "Speeding up the network",
-                "Saving disk space"
+                "Speeding up the network transmission rates",
+                "Saving disk space by compressing logs"
             ],
             "answer": 1,
             "explanation": "If logs from different devices have different timestamps for the same event, the SIEM cannot correctly correlate them to reconstruct the sequence of an attack. NTP is used to solve this."
@@ -8197,10 +8197,10 @@ export const newUnits = {
         {
             "q": "What is 'WORM' storage in the context of log management?",
             "options": [
-                "Write Once, Read Many",
-                "Write Often, Read Maybe",
-                "Web Object Resource Management",
-                "Wireless Operations Risk Module"
+                "Write Once, Read Many (Immutable storage)",
+                "Write Often, Read Maybe (Temporary storage)",
+                "Web Object Resource Management Protocol",
+                "Wireless Operations Risk Module for WiFi security"
             ],
             "answer": 0,
             "explanation": "WORM (Write Once, Read Many) storage ensures that once logs are written, they cannot be modified or deleted, preserving the integrity of the evidence."
@@ -8241,10 +8241,10 @@ export const newUnits = {
         {
             "q": "What is the 'Single Pane of Glass' concept?",
             "options": [
-                "A monitor made of glass",
+                "A high-definition monitor made of tempered glass",
                 "A unified interface that presents data from multiple sources in one view",
-                "A network security device that filters incoming traffic",
-                "A physical security barrier"
+                "A network security device that filters incoming traffic based on IP reputation",
+                "A physical security barrier installed at data center entrances"
             ],
             "answer": 1,
             "explanation": "A Single Pane of Glass refers to a management console that integrates information from many different tools and systems into a unified dashboard."
@@ -8584,10 +8584,10 @@ export const newUnits = {
         {
             "q": "What is the primary goal of 'Incident Response'?",
             "options": [
-                "To punish the attacker",
+                "To punish the attacker by launching a counter-offensive strike",
                 "To restore normal operations as quickly as possible while minimizing impact",
-                "To delete all logs",
-                "To buy new hardware"
+                "To delete all logs to prevent the attacker from seeing what was monitored",
+                "To buy new hardware to replace the possibly infected systems immediately"
             ],
             "answer": 1,
             "explanation": "The main objective of incident response is to handle the situation in a way that limits damage and reduces recovery time and costs."
@@ -8651,9 +8651,9 @@ export const newUnits = {
             "q": "What is the purpose of a 'Write Blocker' in digital forensics?",
             "options": [
                 "To prevent data from being written to the evidence drive during acquisition",
-                "To block emails",
-                "To stop malware from spreading",
-                "To encrypt the drive"
+                "To block email traffic from entering the network during an incident",
+                "To stop malware from spreading by blocking write access to the registry",
+                "To encrypt the drive contents before analysis begins to ensure privacy"
             ],
             "answer": 0,
             "explanation": "A write blocker is a hardware or software tool that prevents any data from being written to the source drive, ensuring the evidence remains unaltered."
@@ -8694,10 +8694,10 @@ export const newUnits = {
         {
             "q": "What is 'Disk Imaging'?",
             "options": [
-                "Taking a photo of the hard drive",
+                "Taking a high-resolution photo of the hard drive label for chain of custody",
                 "Creating a bit-for-bit copy of a storage device",
-                "Formatting the disk",
-                "Defragmenting the disk"
+                "Formatting the disk to prepare it for a fresh operating system install",
+                "Defragmenting the disk to improve read/write performance during analysis"
             ],
             "answer": 1,
             "explanation": "Disk imaging creates an exact, bit-by-bit replica of the drive, including deleted files and unallocated space, which is crucial for forensic analysis."
@@ -8749,10 +8749,10 @@ export const newUnits = {
         {
             "q": "What is 'Slack Space'?",
             "options": [
-                "Time off for employees",
+                "Time off allocated for employees to recover from incident response fatigue",
                 "The unused space between the end of a file and the end of the disk cluster",
-                "The space on a desk",
-                "A chat application"
+                "The physical space available on a desk for organizing forensic equipment",
+                "A secure chat application used by the incident response team"
             ],
             "answer": 1,
             "explanation": "File slack is the wasted space at the end of a cluster. It can contain data from previous files (residual data) and is a goldmine for forensic analysts."
@@ -9040,7 +9040,7 @@ export const newUnits = {
                 "Security Incident and Event Management",
                 "System Information and Event Monitoring",
                 "Security Information and Event Management",
-                "Secure Integrated Event Module"
+                "Secure Integrated Event Module for firewall logs"
             ],
             "answer": 2,
             "explanation": "SIEM stands for Security Information and Event Management."
@@ -9059,10 +9059,10 @@ export const newUnits = {
         {
             "q": "What is the primary purpose of NetFlow?",
             "options": [
-                "Full packet capture",
+                "Full packet capture of every single packet traversing the network interface",
                 "Summarizing network traffic flow",
-                "Blocking malicious traffic",
-                "Decrypting SSL traffic"
+                "Blocking malicious traffic at the network edge based on signatures",
+                "Decrypting SSL traffic to inspect the encrypted payload for malware"
             ],
             "answer": 1,
             "explanation": "NetFlow collects metadata about IP network traffic as it flows into or out of an interface, summarizing it."
@@ -9082,9 +9082,9 @@ export const newUnits = {
             "q": "What does 'metadata' refer to?",
             "options": [
                 "Data about data",
-                "Encrypted data",
-                "Deleted data",
-                "Raw packet data"
+                "Encrypted data storage",
+                "Deleted data recovery",
+                "Raw packet data payloads"
             ],
             "answer": 0,
             "explanation": "Metadata is data that describes other data, such as file size, creation date, or sender."
@@ -9103,10 +9103,10 @@ export const newUnits = {
         {
             "q": "What is a 'false positive' in vulnerability scanning?",
             "options": [
-                "A vulnerability that exists but is not detected",
+                "A vulnerability that exists on the target but is not detected by the scanner",
                 "A vulnerability that is detected but does not exist",
-                "A vulnerability that is correctly identified",
-                "A vulnerability that is automatically patched"
+                "A vulnerability that is correctly identified and confirmed by manual verification",
+                "A vulnerability that is automatically patched by the scanning tool upon detection"
             ],
             "answer": 1,
             "explanation": "A false positive occurs when a scanner reports a vulnerability that does not actually exist on the system."
@@ -9147,10 +9147,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of a 'playbook' in incident response?",
             "options": [
-                "A list of employee phone numbers",
+                "A list of key employee phone numbers and emergency contacts",
                 "A checklist of actions to detect and respond to incidents",
-                "A manual for configuring firewalls",
-                "A log of past incidents"
+                "A manual detailing the steps for configuring firewall rulesets",
+                "A comprehensive log of past incidents used for statistical analysis"
             ],
             "answer": 1,
             "explanation": "A playbook is a checklist of actions to perform to detect and respond to specific incidents."
@@ -9169,10 +9169,10 @@ export const newUnits = {
         {
             "q": "What does 'single pane of glass' refer to?",
             "options": [
-                "A transparent monitor",
+                "A transparent monitor overlay used for presentations",
                 "A unified dashboard for viewing all security data",
-                "A type of firewall rule",
-                "A physical security barrier"
+                "A type of firewall rule allowing all traffic",
+                "A physical security barrier made of reinforced glass"
             ],
             "answer": 1,
             "explanation": "Single pane of glass refers to a unified dashboard that allows analysts to see data from multiple systems in one view."
@@ -9469,9 +9469,9 @@ export const newUnits = {
             "q": "What is the primary difference between automation and orchestration?",
             "options": [
                 "Automation is for single tasks; orchestration coordinates multiple tasks",
-                "Automation is manual; orchestration is automatic",
-                "Automation uses AI; orchestration uses scripts",
-                "There is no difference"
+                "Automation is a manual process requiring human intervention; orchestration is fully automatic",
+                "Automation uses Artificial Intelligence to make decisions; orchestration uses simple scripts",
+                "There is no difference between the two terms in a DevOps context"
             ],
             "answer": 0,
             "explanation": "Automation focuses on individual tasks, while orchestration coordinates multiple automated tasks into a workflow."
@@ -9501,10 +9501,10 @@ export const newUnits = {
         {
             "q": "What is a 'runbook'?",
             "options": [
-                "A physical book of codes",
-                "An automated version of a playbook",
-                "A log of running processes",
-                "A training manual"
+                "A physical book of codes used for authenticating users via phone",
+                "An automated version of a playbook, often with defined interaction points",
+                "A log of all currently running processes on a server",
+                "A training manual for new employees joining the security team"
             ],
             "answer": 1,
             "explanation": "A runbook is an automated version of a playbook, often with defined interaction points."
@@ -9545,10 +9545,10 @@ export const newUnits = {
         {
             "q": "What is 'resource provisioning'?",
             "options": [
-                "Allocating physical and digital resources like workstations and licenses",
-                "Recycling old hardware",
-                "Hiring new staff",
-                "Scheduling meetings"
+                "Allocating physical and digital resources like workstations and licenses to users",
+                "Recycling old hardware to reduce e-waste and save money",
+                "Hiring new staff members to expand the IT support team",
+                "Scheduling recurring meetings for project updates"
             ],
             "answer": 0,
             "explanation": "Resource provisioning ensures timely allocation of resources like workstations and software."
@@ -9578,10 +9578,10 @@ export const newUnits = {
         {
             "q": "What does CI/CD stand for?",
             "options": [
-                "Continuous Integration / Continuous Deployment",
-                "Computer Integration / Computer Design",
-                "Code Integration / Code Delivery",
-                "Cyber Intelligence / Cyber Defense"
+                "Continuous Integration / Continuous Deployment (or Delivery)",
+                "Computer Integration / Computer Design and Engineering",
+                "Code Integration / Code Delivery System",
+                "Cyber Intelligence / Cyber Defense Strategy"
             ],
             "answer": 0,
             "explanation": "CI/CD stands for Continuous Integration and Continuous Deployment (or Delivery)."
@@ -9611,10 +9611,10 @@ export const newUnits = {
         {
             "q": "What is an API?",
             "options": [
-                "Automated Program Instruction",
+                "Automated Program Instruction Set",
                 "Application Programming Interface",
-                "Advanced Protocol Integration",
-                "Apple Program Installer"
+                "Advanced Protocol Integration Standard",
+                "Apple Program Installer Utility"
             ],
             "answer": 1,
             "explanation": "API stands for Application Programming Interface."
@@ -9666,10 +9666,10 @@ export const newUnits = {
         {
             "q": "What is 'technical debt'?",
             "options": [
-                "Money owed to tech companies",
+                "Money owed to external technology vendors and consultants",
                 "The implied cost of additional rework caused by choosing an easy solution now instead of a better one",
-                "Calculating the total financial cost of new hardware",
-                "A loan for software development"
+                "Calculating the total financial cost of acquiring new hardware",
+                "A loan taken from a bank to fund software development projects"
             ],
             "answer": 1,
             "explanation": "Technical debt refers to the future cost of reworking a solution that was implemented quickly but sub-optimally."
@@ -9910,10 +9910,10 @@ export const newUnits = {
         {
             "q": "What is the primary goal of security awareness training?",
             "options": [
-                "To teach employees how to hack",
+                "To teach employees offensive hacking techniques to attack competitors",
                 "To equip individuals with knowledge to recognize and respond to threats",
-                "To punish employees who make mistakes",
-                "To reduce the IT budget"
+                "To punish employees who make security mistakes with salary deductions",
+                "To reduce the IT budget by replacing expensive security software with manual checks"
             ],
             "answer": 1,
             "explanation": "The goal is to equip individuals with the skills and knowledge to recognize and respond to security threats."
@@ -9921,10 +9921,10 @@ export const newUnits = {
         {
             "q": "What is an 'insider threat'?",
             "options": [
-                "A threat from a competitor",
+                "A threat originating from a direct competitor in the market",
                 "A security risk originating from within the organization (employees, contractors)",
-                "A virus inside a computer",
-                "A threat from a foreign country"
+                "A virus hidden inside a system file",
+                "A threat originating from a foreign government or nation-state"
             ],
             "answer": 1,
             "explanation": "Insider threats come from individuals within the organization, such as employees or business partners."
@@ -9976,10 +9976,10 @@ export const newUnits = {
         {
             "q": "What is 'shoulder surfing'?",
             "options": [
-                "Looking over someone's shoulder to steal information",
-                "Surfing the web at work",
-                "A type of physical exercise",
-                "A network attack"
+                "Looking over someone's shoulder to steal information displayed on their screen",
+                "Surfing the web at work for non-business related content",
+                "A type of physical exercise to improve posture",
+                "A network attack involving packet sniffing"
             ],
             "answer": 0,
             "explanation": "Shoulder surfing is looking over someone's shoulder to see sensitive information on their screen or keypad."
@@ -10119,9 +10119,9 @@ export const newUnits = {
         {
             "q": "Why should you have a 'clean desk policy'?",
             "options": [
-                "To look professional",
-                "To prevent sensitive information from being left exposed",
-                "To save paper",
+                "To ensure the office looks professional for visiting clients",
+                "To prevent sensitive information from being left exposed on physical documents or storage media",
+                "To save paper and reduce environmental impact",
                 "To facilitate the daily cleaning and maintenance of office workspaces"
             ],
             "answer": 1,
