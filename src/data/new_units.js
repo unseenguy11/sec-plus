@@ -5411,10 +5411,10 @@ export const newUnits = {
         {
             "q": "Which attack relies on a user clicking a link that executes an unwanted action on a web application where they are currently authenticated?",
             "options": [
-                "XSS",
+                "XSS (Cross-Site Scripting)",
                 "CSRF (Cross-Site Request Forgery)",
-                "SQL Injection",
-                "Buffer Overflow"
+                "SQLi (SQL Injection)",
+                "BO (Buffer Overflow)"
             ],
             "answer": 1,
             "explanation": "CSRF tricks a user's browser into sending a request to a site where they are authenticated, performing an action without their consent."
@@ -5524,7 +5524,7 @@ export const newUnits = {
             "q": "Which tool is commonly used in Windows environments to enforce security settings across multiple computers?",
             "options": [
                 "Task Manager",
-                "Group Policy Objects (GPO)",
+                "Group Policy Objects",
                 "Disk Cleanup",
                 "Registry Editor"
             ],
@@ -5545,10 +5545,10 @@ export const newUnits = {
         {
             "q": "Which Windows feature allows administrators to control which applications are allowed to run based on rules?",
             "options": [
-                "BitLocker",
+                "BitLocker Drive Encryption",
                 "AppLocker",
-                "Windows Defender",
-                "User Account Control (UAC)"
+                "Windows Defender Antivirus",
+                "User Account Control"
             ],
             "answer": 1,
             "explanation": "AppLocker is a Windows feature that allows administrators to create rules (allow/deny) for which executables, scripts, and installers can run."
@@ -5589,10 +5589,10 @@ export const newUnits = {
         {
             "q": "What is 'SELinux'?",
             "options": [
-                "A Linux distribution for hacking",
+                "A specialized Linux distribution designed specifically for ethical hacking and penetration testing",
                 "A kernel module that provides Mandatory Access Control (MAC) for Linux",
-                "A text editor for Linux",
-                "A firewall for Linux"
+                "A standard text editor included with most Linux distributions for modifying configuration files",
+                "A network firewall solution used to filter incoming and outgoing traffic"
             ],
             "answer": 1,
             "explanation": "Security-Enhanced Linux (SELinux) implements Mandatory Access Control (MAC) to restrict what processes and users can do, enhancing security."
