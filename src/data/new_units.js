@@ -8406,10 +8406,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'XCCDF' in SCAP?",
             "options": [
-                "To define security checklists and benchmarks",
-                "To list vulnerabilities",
-                "To name platforms",
-                "To score vulnerabilities"
+                "To define a standardized enumeration of known software platform identifiers",
+                "To list all known software vulnerabilities in a centralized database",
+                "To provide a scoring system for prioritizing vulnerability remediation",
+                "To define security checklists and benchmarks"
             ],
             "answer": 0,
             "explanation": "XCCDF (Extensible Configuration Checklist Description Format) is used to create security checklists and benchmarks for automated assessment."
@@ -8417,10 +8417,10 @@ export const newUnits = {
         {
             "q": "What is a 'NAC' (Network Access Control) system used for?",
             "options": [
-                "To speed up the internet",
-                "To control which devices can connect to the network based on their health/policy status",
-                "To block all traffic",
-                "To act as a firewall"
+                "To increase network throughput by optimizing packet routing algorithms",
+                "To automatically block all incoming traffic from unknown IP addresses",
+                "To function as a stateful firewall for internal network segmentation",
+                "To control which devices can connect to the network based on their health/policy status"
             ],
             "answer": 1,
             "explanation": "NAC systems enforce policies (like 'must have antivirus installed') before allowing a device to connect to the network."
@@ -8429,9 +8429,9 @@ export const newUnits = {
             "q": "What is 'Port Mirroring' or 'SPAN' used for?",
             "options": [
                 "To copy network traffic from one port to another for analysis (e.g., by an IDS)",
-                "To block ports",
-                "To double the network speed",
-                "To connect two switches"
+                "To physically block specific ports to prevent unauthorized access",
+                "To aggregate bandwidth from multiple links to double network speed",
+                "To daisy-chain two switches together to expand port capacity"
             ],
             "answer": 0,
             "explanation": "Port mirroring copies all traffic passing through a switch port to another port where a sensor (like an IDS or sniffer) is attached to analyze it."
@@ -8439,10 +8439,10 @@ export const newUnits = {
         {
             "q": "What is the role of a 'Sensor' in a monitoring system?",
             "options": [
-                "To store the data",
-                "To collect data (packets, logs) from the network or host",
-                "To display the dashboard",
-                "To make decisions"
+                "To act as a centralized database for long-term log storage",
+                "To render the graphical user interface for the security dashboard",
+                "To autonomously make policy decisions and blocking actions",
+                "To collect data (packets, logs) from the network or host"
             ],
             "answer": 1,
             "explanation": "Sensors are the components that sit on the network or host to gather the raw data (packets, logs) and send it to the analysis engine."
@@ -8450,10 +8450,10 @@ export const newUnits = {
         {
             "q": "Why is 'Alert Fatigue' a problem?",
             "options": [
-                "The alerts are too loud",
-                "Analysts become desensitized to frequent false alarms and might miss real threats",
-                "The system runs out of memory",
-                "The alerts are too slow"
+                "The audible volume of alerts in the SOC becomes a health hazard",
+                "The SIEM system crashes due to running out of memory from log volume",
+                "The alerting mechanism is too slow to catch real-time attacks",
+                "Analysts become desensitized to frequent false alarms and might miss real threats"
             ],
             "answer": 1,
             "explanation": "If a system generates too many low-fidelity alerts (false positives), analysts stop paying attention, potentially missing a critical true positive."
@@ -8461,10 +8461,10 @@ export const newUnits = {
         {
             "q": "What is 'Behavioral Analysis'?",
             "options": [
-                "Analyzing the code of a virus",
+                "Decompiling and analyzing the source code of a suspected virus",
                 "Monitoring user or entity behavior to detect malicious actions (UEBA)",
-                "Checking firewall rules",
-                "Scanning for open ports"
+                "Auditing firewall rules to ensure compliance with security policies",
+                "Scanning the network for open ports and vulnerable services"
             ],
             "answer": 1,
             "explanation": "Behavioral analysis (often UEBA) focuses on what users and entities *do*, detecting malicious intent through actions rather than signatures."
@@ -8472,10 +8472,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'OVAL' definitions?",
             "options": [
-                "To define the shape of the network",
-                "To specify exactly how to check for a vulnerability or configuration state on a system",
-                "To list all employees",
-                "To define the password policy"
+                "To define the physical topology and shape of the local area network",
+                "To list all employees authorized to access the secure facility",
+                "To define the organization's password complexity and rotation policy",
+                "To specify exactly how to check for a vulnerability or configuration state on a system"
             ],
             "answer": 1,
             "explanation": "OVAL definitions provide the technical details (registry keys, file versions) that a scanner needs to check to determine if a system is vulnerable."
@@ -8494,10 +8494,10 @@ export const newUnits = {
         {
             "q": "What is 'Rsyslog'?",
             "options": [
-                "A malicious software program that replicates itself to spread to other computers",
-                "An enhanced version of the syslog protocol/daemon for Linux",
-                "A router command",
-                "A Windows log format"
+                "A malicious self-replicating program that spreads across Linux servers",
+                "A command used to configure routing tables on Cisco devices",
+                "A proprietary Windows log format used by Event Viewer",
+                "An enhanced version of the syslog protocol/daemon for Linux"
             ],
             "answer": 1,
             "explanation": "Rsyslog is a powerful, secure, and high-performance log processing system for Linux, an evolution of the standard syslog."
@@ -8505,10 +8505,10 @@ export const newUnits = {
         {
             "q": "What is the primary goal of 'Continuous Security Monitoring'?",
             "options": [
-                "To spy on employees",
-                "To maintain ongoing awareness of information security, vulnerabilities, and threats",
-                "To record all phone calls",
-                "To block all websites"
+                "To secretly monitor employee productivity and break times",
+                "To record all telephonic communications for quality assurance",
+                "To indiscriminately block all access to external websites",
+                "To maintain ongoing awareness of information security, vulnerabilities, and threats"
             ],
             "answer": 1,
             "explanation": "Continuous monitoring provides real-time or near real-time visibility into the security posture, allowing for immediate reaction to new threats."
@@ -8528,9 +8528,9 @@ export const newUnits = {
             "q": "Which of the following is a 'Flow Collector'?",
             "options": [
                 "A device that receives and stores NetFlow data",
-                "A water pipe",
-                "A firewall",
-                "A switch"
+                "A specialized cooling pipe for liquid-cooled server racks",
+                "A firewall rule that collects dropped packet statistics",
+                "A core switch that aggregates traffic from access layers"
             ],
             "answer": 0,
             "explanation": "A flow collector is the server or appliance that receives the NetFlow records exported by routers and switches."
@@ -8539,9 +8539,9 @@ export const newUnits = {
             "q": "What is the difference between 'In-band' and 'Out-of-band' management?",
             "options": [
                 "In-band uses the regular network; Out-of-band uses a dedicated management channel",
-                "In-band is wireless; Out-of-band is wired",
-                "In-band is faster",
-                "There is no difference"
+                "In-band refers to wireless communication; Out-of-band refers to wired connections",
+                "In-band is significantly faster due to higher bandwidth availability",
+                "There is no functional difference; the terms are used interchangeably"
             ],
             "answer": 0,
             "explanation": "In-band management travels over the same network as user traffic. Out-of-band management uses a separate, dedicated network interface/path for higher security and reliability."
@@ -8549,10 +8549,10 @@ export const newUnits = {
         {
             "q": "What is 'Egress Filtering'?",
             "options": [
-                "Filtering traffic entering the network",
-                "Filtering traffic leaving the network",
-                "Filtering email spam",
-                "Filtering water"
+                "Filtering traffic attempting to enter the network boundary",
+                "Filtering unsolicited email spam and phishing attempts",
+                "Filtering cooling water in the data center HVAC system",
+                "Filtering traffic leaving the network"
             ],
             "answer": 1,
             "explanation": "Egress filtering monitors and restricts traffic leaving the network, which helps prevent data exfiltration and command-and-control communication."
@@ -8560,10 +8560,10 @@ export const newUnits = {
         {
             "q": "What is a 'False Negative' in an IDS?",
             "options": [
-                "The IDS alerts on normal traffic",
-                "The IDS fails to alert on malicious traffic",
-                "The IDS blocks the traffic",
-                "The IDS crashes"
+                "The IDS generates an alert for completely normal, benign traffic",
+                "The IDS actively blocks the traffic instead of just logging it",
+                "The IDS software crashes due to high traffic volume",
+                "The IDS fails to alert on malicious traffic"
             ],
             "answer": 1,
             "explanation": "A false negative is the most dangerous error, where an attack occurs but the system fails to detect or alert on it."
@@ -8571,10 +8571,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'Log Retention Policies'?",
             "options": [
-                "To delete logs immediately",
-                "To define how long logs must be kept for compliance and investigation purposes",
-                "To print all logs",
-                "To share logs with the public"
+                "To ensure logs are deleted immediately to save disk space",
+                "To print all system logs for physical archiving in a vault",
+                "To make all system logs publicly available for transparency",
+                "To define how long logs must be kept for compliance and investigation purposes"
             ],
             "answer": 1,
             "explanation": "Retention policies dictate how long data must be stored to meet legal, regulatory, and business requirements (e.g., keep firewall logs for 1 year)."
