@@ -10347,5 +10347,535 @@ export const newUnits = {
             "answer": 0,
             "explanation": "Voice phishing."
         }
+    ],
+    "unit-ports": [
+        {
+            "q": "BYOD stands for _______.",
+            "options": [
+                "Bring Your Own Device",
+                "Buy Your Own Data",
+                "Build Your Own Database",
+                "Bring Your Own Desk"
+            ],
+            "answer": 0,
+            "explanation": "Employees use personal devices for work."
+        },
+        {
+            "q": "MDM stands for _______.",
+            "options": [
+                "Mobile Device Management",
+                "Master Data Management",
+                "Modern Disk Mirroring",
+                "Mobile Data Metering"
+            ],
+            "answer": 0,
+            "explanation": "MDM software manages mobile assets."
+        },
+        {
+            "q": "What does 'CVE' stand for?",
+            "options": [
+                "Common Vulnerabilities and Exposures",
+                "Computer Virus Elimination",
+                "Centralized Vulnerability Engine",
+                "Cyber Validation Entity"
+            ],
+            "answer": 0,
+            "explanation": "CVE is a list of publicly disclosed cybersecurity vulnerabilities."
+        },
+        {
+            "q": "Which protocol is used for secure web browsing and operates on port 443?",
+            "options": [
+                "HTTP",
+                "FTP",
+                "HTTPS",
+                "SMTP"
+            ],
+            "answer": 2,
+            "explanation": "HTTPS (Hypertext Transfer Protocol Secure) uses port 443 to encrypt web traffic."
+        },
+        {
+            "q": "Which port does the Remote Desktop Protocol (RDP) use by default?",
+            "options": [
+                "3389",
+                "1433",
+                "445",
+                "22"
+            ],
+            "answer": 0,
+            "explanation": "Microsoft's RDP uses port 3389 for remote desktop connections."
+        },
+        {
+            "q": "Which protocol is used for sending emails and operates on port 25?",
+            "options": [
+                "POP3",
+                "IMAP",
+                "SMTP",
+                "SNMP"
+            ],
+            "answer": 2,
+            "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending emails and typically uses port 25."
+        },
+        {
+            "q": "Which port is used by LDAP (Lightweight Directory Access Protocol)?",
+            "options": [
+                "389",
+                "636",
+                "443",
+                "80"
+            ],
+            "answer": 0,
+            "explanation": "LDAP uses port 389 for directory service queries."
+        },
+        {
+            "q": "Which secure file transfer protocol uses SSH and operates on port 22?",
+            "options": [
+                "FTPS",
+                "TFTP",
+                "SFTP",
+                "FTP"
+            ],
+            "answer": 2,
+            "explanation": "SFTP (SSH File Transfer Protocol) uses the SSH tunnel (port 22) to transfer files securely."
+        },
+        {
+            "q": "Which port is used for secure LDAP (LDAPS)?",
+            "options": [
+                "389",
+                "636",
+                "993",
+                "995"
+            ],
+            "answer": 1,
+            "explanation": "LDAPS (LDAP over SSL) uses port 636."
+        },
+        {
+            "q": "Which protocol is used to retrieve email and leaves a copy on the server, allowing sync across multiple devices?",
+            "options": [
+                "POP3",
+                "SMTP",
+                "IMAP",
+                "SNMP"
+            ],
+            "answer": 2,
+            "explanation": "IMAP (Internet Message Access Protocol) allows users to view email on the server, supporting multiple device synchronization."
+        },
+        {
+            "q": "Which port is used by the SMB (Server Message Block) protocol for file sharing?",
+            "options": [
+                "445",
+                "139",
+                "137",
+                "21"
+            ],
+            "answer": 0,
+            "explanation": "Modern SMB uses port 445 (Direct TCP) for file and printer sharing."
+        },
+        {
+            "q": "Which port is used by Telnet, an insecure remote access protocol?",
+            "options": [
+                "21",
+                "22",
+                "23",
+                "25"
+            ],
+            "answer": 2,
+            "explanation": "Telnet uses port 23 and sends data in cleartext, making it insecure."
+        },
+        {
+            "q": "Which protocol uses ports 161 and 162 to manage network devices?",
+            "options": [
+                "SMTP",
+                "SNMP",
+                "SSH",
+                "SIP"
+            ],
+            "answer": 1,
+            "explanation": "SNMP (Simple Network Management Protocol) uses port 161 for queries and 162 for traps."
+        },
+        {
+            "q": "Which port is used by SQL Server (Microsoft)?",
+            "options": [
+                "3306",
+                "1433",
+                "5432",
+                "1521"
+            ],
+            "answer": 1,
+            "explanation": "Microsoft SQL Server listens on port 1433 by default."
+        },
+        {
+            "q": "Which protocol is used for time synchronization across a network?",
+            "options": [
+                "NTP",
+                "FTP",
+                "HTTP",
+                "SSH"
+            ],
+            "answer": 0,
+            "explanation": "NTP (Network Time Protocol) uses port 123 to synchronize clocks on network devices."
+        },
+        {
+            "q": "Which port is used by POP3 for unencrypted email retrieval?",
+            "options": [
+                "110",
+                "143",
+                "995",
+                "25"
+            ],
+            "answer": 0,
+            "explanation": "POP3 uses port 110 for unencrypted connections."
+        },
+        {
+            "q": "Which port is used by TFTP (Trivial File Transfer Protocol)?",
+            "options": [
+                "21",
+                "69",
+                "22",
+                "80"
+            ],
+            "answer": 1,
+            "explanation": "TFTP uses port 69 (UDP) and is often used for booting diskless workstations."
+        },
+        {
+            "q": "Which protocol is used for secure remote access VPNs and web traffic?",
+            "options": [
+                "TLS/SSL",
+                "PPTP",
+                "L2TP",
+                "WEP"
+            ],
+            "answer": 0,
+            "explanation": "TLS (Transport Layer Security) is the standard for securing web traffic (HTTPS) and many VPNs."
+        },
+        {
+            "q": "Which port is used by NetBIOS Session Service?",
+            "options": [
+                "137",
+                "138",
+                "139",
+                "445"
+            ],
+            "answer": 2,
+            "explanation": "NetBIOS Session Service uses port 139."
+        },
+        {
+            "q": "Which protocol uses port 5060/5061 for Voice over IP (VoIP) signaling?",
+            "options": [
+                "RTP",
+                "SIP",
+                "H.323",
+                "MGCP"
+            ],
+            "answer": 1,
+            "explanation": "SIP (Session Initiation Protocol) uses ports 5060 (unencrypted) and 5061 (encrypted/TLS) for signaling."
+        },
+        {
+            "q": "Which port is used by FTPS (FTP over SSL)?",
+            "options": [
+                "21",
+                "22",
+                "990",
+                "443"
+            ],
+            "answer": 2,
+            "explanation": "Implicit FTPS typically uses port 990, while explicit FTPS uses port 21."
+        },
+        {
+            "q": "Which protocol is commonly used for Federation and SSO?",
+            "options": [
+                "SAML",
+                "FTP",
+                "SMTP",
+                "SNMP"
+            ],
+            "answer": 0,
+            "explanation": "SAML (Security Assertion Markup Language) is an XML-based standard for exchanging authentication and authorization data for SSO."
+        },
+        {
+            "q": "Which protocol is used by Windows for authentication in a domain environment?",
+            "options": [
+                "Kerberos",
+                "RADIUS",
+                "TACACS+",
+                "SSH"
+            ],
+            "answer": 0,
+            "explanation": "Kerberos is the default authentication protocol for Active Directory, using tickets to prevent replay attacks."
+        },
+        {
+            "q": "Which protocol is vulnerable to 'directory traversal' if input is not validated?",
+            "options": [
+                "HTTP",
+                "SSH",
+                "IPsec",
+                "WPA3"
+            ],
+            "answer": 0,
+            "explanation": "Directory traversal (or path traversal) is a web vulnerability (HTTP) that allows attackers to access files outside the web root directory."
+        },
+        {
+            "q": "What does 'FDE' stand for in the context of data security?",
+            "options": [
+                "File Data Encryption",
+                "Full Disk Encryption",
+                "Fast Data Exchange",
+                "Firmware Decryption Engine"
+            ],
+            "answer": 1,
+            "explanation": "Full Disk Encryption (FDE) encrypts the entire storage drive, protecting all data at rest."
+        },
+        {
+            "q": "Which protocol should be used for secure file transfers?",
+            "options": [
+                "FTP",
+                "TFTP",
+                "SFTP",
+                "HTTP"
+            ],
+            "answer": 2,
+            "explanation": "SFTP (SSH File Transfer Protocol) encrypts the data and commands, unlike FTP and TFTP which are plaintext."
+        },
+        {
+            "q": "What does 'NAC' stand for?",
+            "options": [
+                "Network Address Configuration",
+                "Network Access Control",
+                "New Access Card",
+                "Network Admin Console"
+            ],
+            "answer": 1,
+            "explanation": "Network Access Control (NAC) governs access to a network, checking device health and user credentials before granting entry."
+        },
+        {
+            "q": "Which protocol is the secure version of HTTP?",
+            "options": [
+                "SFTP",
+                "HTTPS",
+                "SSH",
+                "TLS"
+            ],
+            "answer": 1,
+            "explanation": "HTTPS (HTTP Secure) uses TLS/SSL to encrypt web traffic."
+        },
+        {
+            "q": "Which port does HTTPS use by default?",
+            "options": [
+                "80",
+                "21",
+                "443",
+                "25"
+            ],
+            "answer": 2,
+            "explanation": "Port 443 is the standard port for HTTPS traffic."
+        },
+        {
+            "q": "Which protocol is the secure replacement for Telnet?",
+            "options": [
+                "RDP",
+                "SSH",
+                "VNC",
+                "FTP"
+            ],
+            "answer": 1,
+            "explanation": "SSH (Secure Shell) encrypts remote command-line sessions, replacing the insecure, plaintext Telnet."
+        },
+        {
+            "q": "Which protocol is used for secure file transfer over SSH?",
+            "options": [
+                "FTPS",
+                "SFTP",
+                "TFTP",
+                "SCP"
+            ],
+            "answer": 1,
+            "explanation": "SFTP (SSH File Transfer Protocol) runs over SSH, providing secure file manipulation and transfer."
+        },
+        {
+            "q": "Which port is used by SSH?",
+            "options": [
+                "21",
+                "22",
+                "23",
+                "25"
+            ],
+            "answer": 1,
+            "explanation": "Port 22 is the standard port for Secure Shell (SSH)."
+        },
+        {
+            "q": "Which port is used by RDP (Remote Desktop Protocol)?",
+            "options": [
+                "3389",
+                "443",
+                "8080",
+                "22"
+            ],
+            "answer": 0,
+            "explanation": "Port 3389 is the default port for Microsoft's RDP."
+        },
+        {
+            "q": "What is the default port used to access the Nessus web interface?",
+            "options": [
+                "8080",
+                "443",
+                "8834",
+                "9000"
+            ],
+            "answer": 2,
+            "explanation": "Nessus runs a web server that is typically accessed via port 8834 (e.g., https://localhost:8834)."
+        },
+        {
+            "q": "What does 'SCAP' stand for?",
+            "options": [
+                "Secure Content Access Protocol",
+                "Security Content Automation Protocol",
+                "System Configuration and Protection",
+                "Standardized Cyber Assessment Program"
+            ],
+            "answer": 1,
+            "explanation": "SCAP stands for Security Content Automation Protocol, a method for using specific standards to enable automated vulnerability management, measurement, and policy compliance evaluation."
+        },
+        {
+            "q": "What does 'CPE' stand for in the context of SCAP?",
+            "options": [
+                "Common Platform Enumeration",
+                "Central Processing Entity",
+                "Critical Protection Element",
+                "Cyber Policy Enforcement"
+            ],
+            "answer": 0,
+            "explanation": "CPE (Common Platform Enumeration) is a standardized method of naming software applications, operating systems, and hardware platforms."
+        },
+        {
+            "q": "What does 'SIEM' stand for?",
+            "options": [
+                "System Integrity and Event Monitoring Protocol",
+                "Security Information and Event Management",
+                "Secure Internet Email Mechanism for Anti-Phishing",
+                "Server Infrastructure and Error Management Console"
+            ],
+            "answer": 1,
+            "explanation": "SIEM stands for Security Information and Event Management, a solution that aggregates and analyzes log data from various sources."
+        },
+        {
+            "q": "Which protocol is the open standard version of NetFlow?",
+            "options": [
+                "sFlow",
+                "IPFIX (IP Flow Information Export)",
+                "J-Flow",
+                "NetStream"
+            ],
+            "answer": 1,
+            "explanation": "IPFIX is the IETF standard based on Cisco's NetFlow v9, designed to be a vendor-neutral protocol for exporting flow information."
+        },
+        {
+            "q": "What does 'CPE' stand for?",
+            "options": [
+                "Common Platform Enumeration",
+                "Common Policy Enforcement",
+                "Central Processing Engine",
+                "Critical Patch Evaluation"
+            ],
+            "answer": 0,
+            "explanation": "CPE (Common Platform Enumeration) is a structured naming scheme for information technology systems, software, and packages."
+        },
+        {
+            "q": "Which protocol is commonly used to send logs to a central server?",
+            "options": [
+                "HTTP",
+                "Syslog",
+                "FTP",
+                "SMTP"
+            ],
+            "answer": 1,
+            "explanation": "Syslog is the standard protocol for message logging and sending event messages to a logging server."
+        },
+        {
+            "q": "What does 'SOAR' stand for?",
+            "options": [
+                "Security Orchestration, Automation, and Response",
+                "System Operations and Recovery",
+                "Secure Online Access Router",
+                "Simple Object Access Request"
+            ],
+            "answer": 0,
+            "explanation": "SOAR platforms integrate with SIEMs to automate incident response workflows (e.g., automatically blocking an IP on the firewall when an alert is triggered)."
+        },
+        {
+            "q": "What does 'dd' stand for in the context of Linux imaging?",
+            "options": [
+                "Disk Destroyer",
+                "Data Duplicator (or similar, historically 'Convert and Copy')",
+                "Digital Defense",
+                "Daily Driver"
+            ],
+            "answer": 1,
+            "explanation": "The 'dd' command is a command-line utility for Unix and Unix-like operating systems whose primary purpose is to convert and copy files, often used for disk imaging."
+        },
+        {
+            "q": "What does SIEM stand for?",
+            "options": [
+                "Security Incident and Event Management",
+                "System Information and Event Monitoring",
+                "Security Information and Event Management",
+                "Secure Integrated Event Module for firewall logs"
+            ],
+            "answer": 2,
+            "explanation": "SIEM stands for Security Information and Event Management."
+        },
+        {
+            "q": "Which protocol is used to synchronize time across systems for log correlation?",
+            "options": [
+                "HTTP",
+                "DNS",
+                "NTP",
+                "FTP"
+            ],
+            "answer": 2,
+            "explanation": "NTP (Network Time Protocol) is used to synchronize time, which is crucial for correlating logs."
+        },
+        {
+            "q": "What does SOAR stand for?",
+            "options": [
+                "Security Operations and Response",
+                "Security Orchestration, Automation, and Response",
+                "System Orchestration and Recovery",
+                "Secure Online Automated Response"
+            ],
+            "answer": 1,
+            "explanation": "SOAR stands for Security Orchestration, Automation, and Response."
+        },
+        {
+            "q": "What does CI/CD stand for?",
+            "options": [
+                "Continuous Integration / Continuous Deployment (or Delivery)",
+                "Computer Integration / Computer Design and Engineering",
+                "Code Integration / Code Delivery System",
+                "Cyber Intelligence / Cyber Defense Strategy"
+            ],
+            "answer": 0,
+            "explanation": "CI/CD stands for Continuous Integration and Continuous Deployment (or Delivery)."
+        },
+        {
+            "q": "Which protocol is commonly used by APIs and relies on standard HTTP methods?",
+            "options": [
+                "SOAP",
+                "REST",
+                "FTP",
+                "SMTP"
+            ],
+            "answer": 1,
+            "explanation": "REST (Representational State Transfer) uses standard HTTP methods."
+        },
+        {
+            "q": "Which protocol uses XML and is known for strict standards and security?",
+            "options": [
+                "REST",
+                "SOAP",
+                "JSON",
+                "HTML"
+            ],
+            "answer": 1,
+            "explanation": "SOAP (Simple Object Access Protocol) uses XML and has strict standards."
+        }
     ]
 };

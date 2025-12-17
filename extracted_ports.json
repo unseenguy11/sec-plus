@@ -1,0 +1,1123 @@
+[
+    {
+        "q": "Destroying data at the end of its lifecycle is important because:",
+        "options": [
+            "Storing unnecessary data increases risk and liability",
+            "It speeds up Wi-Fi",
+            "It improves user training",
+            "Preventing hardware overheating by removing old data"
+        ],
+        "answer": 0
+    },
+    {
+        "q": "A downgrade attack forces _______.",
+        "options": [
+            "Use of weaker crypto standards",
+            "More expensive hardware",
+            "Faster hashing",
+            "Shorter salt lengths"
+        ],
+        "answer": 0,
+        "explanation": "Attackers weaken protocols to break them easier."
+    },
+    {
+        "q": "Continuous monitoring is important because _______.",
+        "options": [
+            "Risk levels change over time",
+            "It replaces audits entirely",
+            "It eliminates all vulnerabilities",
+            "It avoids the need for documentation"
+        ],
+        "answer": 0,
+        "explanation": "Threats evolve; monitoring keeps risk posture updated."
+    },
+    {
+        "q": "Reporting risk to leadership should include _______.",
+        "options": [
+            "Risk severity, likelihood, business impact, and recommended action",
+            "Focusing exclusively on technical software vulnerabilities",
+            "All event logs in raw format",
+            "Firewall rule sets"
+        ],
+        "answer": 0,
+        "explanation": "Executives need business-aligned summaries."
+    },
+    {
+        "q": "Feedback loops between vendor and organization help _______.",
+        "options": [
+            "Improve processes and strengthen collaboration",
+            "Remove vendor responsibilities",
+            "Eliminate SLAs entirely",
+            "Avoid contract renewals"
+        ],
+        "answer": 0,
+        "explanation": "Feedback loops support continuous improvement."
+    },
+    {
+        "q": "Which component is NOT part of the GRC triad?",
+        "options": [
+            "Recovery",
+            "Governance",
+            "Risk",
+            "Compliance"
+        ],
+        "answer": 0,
+        "explanation": "GRC stands for Governance, Risk, and Compliance."
+    },
+    {
+        "q": "Standards differ from policies because they are _______.",
+        "options": [
+            "Specific mandatory rules",
+            "High-level guidelines",
+            "Optional suggestions",
+            "Strategic visions"
+        ],
+        "answer": 0,
+        "explanation": "Standards are mandatory rules that support policies."
+    },
+    {
+        "q": "Internal compliance reporting is typically conducted by _______.",
+        "options": [
+            "Internal audit teams",
+            "External regulators",
+            "Government agencies",
+            "Customers"
+        ],
+        "answer": 0,
+        "explanation": "Internal audits verify adherence to internal policies."
+    },
+    {
+        "q": "Automated compliance systems help by _______.",
+        "options": [
+            "Providing real-time monitoring",
+            "Replacing all humans",
+            "Writing laws",
+            "Ignoring errors"
+        ],
+        "answer": 0,
+        "explanation": "Automation streamlines monitoring and reporting."
+    },
+    {
+        "q": "SOX (Sarbanes-Oxley) applies to _______.",
+        "options": [
+            "Publicly traded companies",
+            "Non-profits",
+            "Private individuals",
+            "Military"
+        ],
+        "answer": 0,
+        "explanation": "SOX regulates financial reporting for public companies."
+    },
+    {
+        "q": "BYOD stands for _______.",
+        "options": [
+            "Bring Your Own Device",
+            "Buy Your Own Data",
+            "Build Your Own Database",
+            "Bring Your Own Desk"
+        ],
+        "answer": 0,
+        "explanation": "Employees use personal devices for work."
+    },
+    {
+        "q": "CYOD (Choose Your Own Device) allows employees to _______.",
+        "options": [
+            "Pick from a pre-approved list",
+            "Buy any phone they want",
+            "Build their own phone",
+            "Share phones"
+        ],
+        "answer": 0,
+        "explanation": "Employees choose from a supported list."
+    },
+    {
+        "q": "MDM stands for _______.",
+        "options": [
+            "Mobile Device Management",
+            "Master Data Management",
+            "Modern Disk Mirroring",
+            "Mobile Data Metering"
+        ],
+        "answer": 0,
+        "explanation": "MDM software manages mobile assets."
+    },
+    {
+        "q": "Why is \"Vision\" important in change management?",
+        "options": [
+            "To align everyone on the goal",
+            "To look good",
+            "To predict the future",
+            "To save money"
+        ],
+        "answer": 0,
+        "explanation": "It explains the \"why\" and \"where\" of the change."
+    },
+    {
+        "q": "What is a 'Bug Bounty' program?",
+        "options": [
+            "A reward offered to individuals for finding and reporting bugs",
+            "A penalty for writing bad code",
+            "A software for tracking insects",
+            "Applying for a government grant for agricultural pest control"
+        ],
+        "answer": 0,
+        "explanation": "Bug bounties incentivize ethical hackers to report vulnerabilities."
+    },
+    {
+        "q": "What is the purpose of a 'Business Impact Analysis' (BIA)?",
+        "options": [
+            "To identify critical functions and the impact of their disruption",
+            "To analyze competitors",
+            "To audit finances",
+            "To develop a comprehensive marketing strategy for new products"
+        ],
+        "answer": 0,
+        "explanation": "BIA determines what is most important to keep the business running."
+    },
+    {
+        "q": "What is 'After Action Report' (AAR)?",
+        "options": [
+            "A review of an incident/exercise to identify lessons learned",
+            "A weather report",
+            "A detailed financial statement reporting quarterly earnings",
+            "A disciplinary form"
+        ],
+        "answer": 0,
+        "explanation": "AARs help improve processes for next time."
+    },
+    {
+        "q": "Which port is used by the Secure Shell (SSH) protocol for secure remote terminal access?",
+        "options": [
+            "Port 21",
+            "Port 22",
+            "Port 23",
+            "Port 25"
+        ],
+        "answer": 1,
+        "explanation": "SSH uses port 22 to provide secure remote terminal access and file transfer capabilities."
+    },
+    {
+        "q": "Which port is associated with the Domain Name System (DNS)?",
+        "options": [
+            "Port 53",
+            "Port 67",
+            "Port 80",
+            "Port 110"
+        ],
+        "answer": 0,
+        "explanation": "DNS uses port 53 (UDP and TCP) to translate domain names into IP addresses."
+    },
+    {
+        "q": "What is the main disadvantage of using a Packet Filtering Firewall?",
+        "options": [
+            "It is very slow and resource-intensive",
+            "It cannot prevent IP spoofing or complex attacks",
+            "It requires a high-end server to run",
+            "It blocks all traffic by default"
+        ],
+        "answer": 1,
+        "explanation": "Packet filtering firewalls only inspect headers (IP/port) and cannot detect payload-based attacks or IP spoofing."
+    },
+    {
+        "q": "Which protocol is used for secure web browsing and operates on port 443?",
+        "options": [
+            "HTTP",
+            "FTP",
+            "HTTPS",
+            "SMTP"
+        ],
+        "answer": 2,
+        "explanation": "HTTPS (Hypertext Transfer Protocol Secure) uses port 443 to encrypt web traffic."
+    },
+    {
+        "q": "Which port does the Remote Desktop Protocol (RDP) use by default?",
+        "options": [
+            "3389",
+            "1433",
+            "445",
+            "22"
+        ],
+        "answer": 0,
+        "explanation": "Microsoft's RDP uses port 3389 for remote desktop connections."
+    },
+    {
+        "q": "What is the difference between an inbound and an outbound port?",
+        "options": [
+            "Inbound ports are for sending data, outbound are for receiving",
+            "Inbound ports listen for connections, outbound ports are opened to initiate connections",
+            "Inbound ports are always encrypted, outbound are not",
+            "There is no difference"
+        ],
+        "answer": 1,
+        "explanation": "Servers keep inbound ports open to listen for requests, while clients open random outbound ports to initiate communication."
+    },
+    {
+        "q": "Which protocol is used for sending emails and operates on port 25?",
+        "options": [
+            "POP3",
+            "IMAP",
+            "SMTP",
+            "SNMP"
+        ],
+        "answer": 2,
+        "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending emails and typically uses port 25."
+    },
+    {
+        "q": "Which port is used by LDAP (Lightweight Directory Access Protocol)?",
+        "options": [
+            "389",
+            "636",
+            "443",
+            "80"
+        ],
+        "answer": 0,
+        "explanation": "LDAP uses port 389 for directory service queries."
+    },
+    {
+        "q": "Which secure file transfer protocol uses SSH and operates on port 22?",
+        "options": [
+            "FTPS",
+            "TFTP",
+            "SFTP",
+            "FTP"
+        ],
+        "answer": 2,
+        "explanation": "SFTP (SSH File Transfer Protocol) uses the SSH tunnel (port 22) to transfer files securely."
+    },
+    {
+        "q": "Which port is used for secure LDAP (LDAPS)?",
+        "options": [
+            "389",
+            "636",
+            "993",
+            "995"
+        ],
+        "answer": 1,
+        "explanation": "LDAPS (LDAP over SSL) uses port 636."
+    },
+    {
+        "q": "Which protocol is used to retrieve email and leaves a copy on the server, allowing sync across multiple devices?",
+        "options": [
+            "POP3",
+            "SMTP",
+            "IMAP",
+            "SNMP"
+        ],
+        "answer": 2,
+        "explanation": "IMAP (Internet Message Access Protocol) allows users to view email on the server, supporting multiple device synchronization."
+    },
+    {
+        "q": "Which port is used by the SMB (Server Message Block) protocol for file sharing?",
+        "options": [
+            "445",
+            "139",
+            "137",
+            "21"
+        ],
+        "answer": 0,
+        "explanation": "Modern SMB uses port 445 (Direct TCP) for file and printer sharing."
+    },
+    {
+        "q": "Which port is used by Telnet, an insecure remote access protocol?",
+        "options": [
+            "21",
+            "22",
+            "23",
+            "25"
+        ],
+        "answer": 2,
+        "explanation": "Telnet uses port 23 and sends data in cleartext, making it insecure."
+    },
+    {
+        "q": "Which protocol uses ports 161 and 162 to manage network devices?",
+        "options": [
+            "SMTP",
+            "SNMP",
+            "SSH",
+            "SIP"
+        ],
+        "answer": 1,
+        "explanation": "SNMP (Simple Network Management Protocol) uses port 161 for queries and 162 for traps."
+    },
+    {
+        "q": "Which port is used by SQL Server (Microsoft)?",
+        "options": [
+            "3306",
+            "1433",
+            "5432",
+            "1521"
+        ],
+        "answer": 1,
+        "explanation": "Microsoft SQL Server listens on port 1433 by default."
+    },
+    {
+        "q": "Which protocol is used for time synchronization across a network?",
+        "options": [
+            "NTP",
+            "FTP",
+            "HTTP",
+            "SSH"
+        ],
+        "answer": 0,
+        "explanation": "NTP (Network Time Protocol) uses port 123 to synchronize clocks on network devices."
+    },
+    {
+        "q": "Which port is used by POP3 for unencrypted email retrieval?",
+        "options": [
+            "110",
+            "143",
+            "995",
+            "25"
+        ],
+        "answer": 0,
+        "explanation": "POP3 uses port 110 for unencrypted connections."
+    },
+    {
+        "q": "Which port is used by TFTP (Trivial File Transfer Protocol)?",
+        "options": [
+            "21",
+            "69",
+            "22",
+            "80"
+        ],
+        "answer": 1,
+        "explanation": "TFTP uses port 69 (UDP) and is often used for booting diskless workstations."
+    },
+    {
+        "q": "What is the primary security risk of using FTP (File Transfer Protocol)?",
+        "options": [
+            "It is too slow",
+            "It transmits credentials and data in cleartext",
+            "It only works on Linux",
+            "It cannot transfer large files"
+        ],
+        "answer": 1,
+        "explanation": "Standard FTP (port 21) sends usernames, passwords, and data unencrypted."
+    },
+    {
+        "q": "Which protocol is used for secure remote access VPNs and web traffic?",
+        "options": [
+            "TLS/SSL",
+            "PPTP",
+            "L2TP",
+            "WEP"
+        ],
+        "answer": 0,
+        "explanation": "TLS (Transport Layer Security) is the standard for securing web traffic (HTTPS) and many VPNs."
+    },
+    {
+        "q": "What is the purpose of Port Security on a switch?",
+        "options": [
+            "To physically lock the switch ports",
+            "To restrict access to a port based on MAC addresses",
+            "To encrypt traffic on the port",
+            "To speed up the port"
+        ],
+        "answer": 1,
+        "explanation": "Port security allows an administrator to specify which MAC addresses are allowed to connect to a specific switch port."
+    },
+    {
+        "q": "Which port is used by NetBIOS Session Service?",
+        "options": [
+            "137",
+            "138",
+            "139",
+            "445"
+        ],
+        "answer": 2,
+        "explanation": "NetBIOS Session Service uses port 139."
+    },
+    {
+        "q": "Which protocol uses port 5060/5061 for Voice over IP (VoIP) signaling?",
+        "options": [
+            "RTP",
+            "SIP",
+            "H.323",
+            "MGCP"
+        ],
+        "answer": 1,
+        "explanation": "SIP (Session Initiation Protocol) uses ports 5060 (unencrypted) and 5061 (encrypted/TLS) for signaling."
+    },
+    {
+        "q": "Which port is used by FTPS (FTP over SSL)?",
+        "options": [
+            "21",
+            "22",
+            "990",
+            "443"
+        ],
+        "answer": 2,
+        "explanation": "Implicit FTPS typically uses port 990, while explicit FTPS uses port 21."
+    },
+    {
+        "q": "Which protocol is commonly used for Federation and SSO?",
+        "options": [
+            "SAML",
+            "FTP",
+            "SMTP",
+            "SNMP"
+        ],
+        "answer": 0,
+        "explanation": "SAML (Security Assertion Markup Language) is an XML-based standard for exchanging authentication and authorization data for SSO."
+    },
+    {
+        "q": "What is 'Identity Proofing'?",
+        "options": [
+            "Verifying a user's identity before issuing credentials (e.g., checking ID)",
+            "The process of logging into an application with credentials",
+            "The process of resetting a forgotten password via email",
+            "The process of deleting an account after departure"
+        ],
+        "answer": 0,
+        "explanation": "Identity proofing is the initial validation of a person's identity (e.g., showing a passport) before giving them an account."
+    },
+    {
+        "q": "Which protocol is used by Windows for authentication in a domain environment?",
+        "options": [
+            "Kerberos",
+            "RADIUS",
+            "TACACS+",
+            "SSH"
+        ],
+        "answer": 0,
+        "explanation": "Kerberos is the default authentication protocol for Active Directory, using tickets to prevent replay attacks."
+    },
+    {
+        "q": "What is 'Pass-the-Hash'?",
+        "options": [
+            "Passing a physical object, like a security token, to another person",
+            "An attack where an attacker uses a captured password hash to authenticate without knowing the plaintext password",
+            "Sharing passwords securely via encrypted email communications",
+            "Hashing a file using MD5 to verify its data integrity"
+        ],
+        "answer": 1,
+        "explanation": "Pass-the-hash exploits authentication protocols (like NTLM) that accept the hash directly."
+    },
+    {
+        "q": "What is 'MAC Flooding'?",
+        "options": [
+            "Spilling water on a Mac",
+            "Flooding a switch's CAM table with fake MAC addresses to force it into fail-open (hub) mode",
+            "Blocking MAC addresses",
+            "Filtering MAC addresses"
+        ],
+        "answer": 1,
+        "explanation": "MAC flooding exhausts the switch's memory, causing it to broadcast traffic to all ports, allowing sniffing."
+    },
+    {
+        "q": "What is a 'downgrade attack'?",
+        "options": [
+            "Forcing a system to reboot into safe mode",
+            "Forcing a client and server to abandon a higher security mode for a lower, less secure one",
+            "Reducing the network bandwidth available to a server",
+            "Downgrading the user's privileges from administrator to standard user"
+        ],
+        "answer": 1,
+        "explanation": "A downgrade attack forces the communication to fall back to an older, weaker protocol (e.g., from TLS 1.3 to SSL 2.0) that the attacker can exploit."
+    },
+    {
+        "q": "Which type of injection attack involves modifying LDAP statements to execute arbitrary commands or query unauthorized information?",
+        "options": [
+            "SQL Injection",
+            "XML Injection",
+            "LDAP Injection",
+            "Command Injection"
+        ],
+        "answer": 2,
+        "explanation": "LDAP injection targets the Lightweight Directory Access Protocol by inserting malicious input to alter the LDAP query logic."
+    },
+    {
+        "q": "Which protocol is vulnerable to 'directory traversal' if input is not validated?",
+        "options": [
+            "HTTP",
+            "SSH",
+            "IPsec",
+            "WPA3"
+        ],
+        "answer": 0,
+        "explanation": "Directory traversal (or path traversal) is a web vulnerability (HTTP) that allows attackers to access files outside the web root directory."
+    },
+    {
+        "q": "What is the primary purpose of 'hardening' a system?",
+        "options": [
+            "To increase the system's processing speed",
+            "To reduce the attack surface by securing configurations and removing unnecessary services",
+            "To make the system easier to use",
+            "To physically reinforce the hardware"
+        ],
+        "answer": 1,
+        "explanation": "Hardening involves securing a system by reducing its vulnerabilities, such as disabling unused services, closing ports, and applying secure configurations."
+    },
+    {
+        "q": "Which of the following is a key step in hardening an operating system?",
+        "options": [
+            "Enabling all available services",
+            "Using default passwords for ease of access",
+            "Disabling unnecessary services and ports",
+            "Granting administrator rights to all users"
+        ],
+        "answer": 2,
+        "explanation": "Disabling unnecessary services and ports reduces the number of entry points an attacker can exploit."
+    },
+    {
+        "q": "Why is it important to test patches before deploying them to production?",
+        "options": [
+            "To see if they look good",
+            "To ensure they don't introduce new bugs or break existing functionality",
+            "To make the download faster",
+            "To check the file size"
+        ],
+        "answer": 1,
+        "explanation": "Patches can sometimes cause compatibility issues or system instability, so testing in a lab environment is crucial before wide deployment."
+    },
+    {
+        "q": "What is the risk of 'End-of-Life' (EOL) software?",
+        "options": [
+            "It is too expensive",
+            "It no longer receives security updates from the vendor, making it vulnerable to new exploits",
+            "It runs too fast",
+            "It uses too much memory"
+        ],
+        "answer": 1,
+        "explanation": "EOL software is unsupported and unpatched. If a new vulnerability is discovered, the vendor will not fix it, leaving the system exposed."
+    },
+    {
+        "q": "Which protocol should be used for secure file transfers?",
+        "options": [
+            "FTP",
+            "TFTP",
+            "SFTP",
+            "HTTP"
+        ],
+        "answer": 2,
+        "explanation": "SFTP (SSH File Transfer Protocol) encrypts the data and commands, unlike FTP and TFTP which are plaintext."
+    },
+    {
+        "q": "What is 'port security' on a switch?",
+        "options": [
+            "Locking the switch in a cabinet",
+            "Restricting access to a switch port based on MAC addresses",
+            "Closing all ports",
+            "Using only port 80"
+        ],
+        "answer": 1,
+        "explanation": "Port security allows an admin to specify which MAC addresses are allowed to connect to a specific switch port."
+    },
+    {
+        "q": "What is the benefit of 'disabling unused interfaces' on a router or switch?",
+        "options": [
+            "It saves electricity",
+            "It prevents unauthorized physical connections to the network",
+            "It makes the device lighter",
+            "It improves Wi-Fi signal"
+        ],
+        "answer": 1,
+        "explanation": "Turning off unused ports prevents an attacker from simply plugging into a wall jack or switch and gaining network access."
+    },
+    {
+        "q": "Which wireless security protocol is currently considered the most secure?",
+        "options": [
+            "WEP",
+            "WPA",
+            "WPA2",
+            "WPA3"
+        ],
+        "answer": 3,
+        "explanation": "WPA3 is the latest standard, offering stronger encryption (SAE) and protection against brute-force attacks compared to WPA2."
+    },
+    {
+        "q": "Which email security protocol uses digital signatures to verify that an email was actually sent by the claimed domain?",
+        "options": [
+            "SPF",
+            "DKIM",
+            "DMARC",
+            "POP3"
+        ],
+        "answer": 1,
+        "explanation": "DomainKeys Identified Mail (DKIM) adds a cryptographic signature to the email header, which the receiver verifies against the domain's public key."
+    },
+    {
+        "q": "What is 'DMARC'?",
+        "options": [
+            "A protocol that unifies SPF and DKIM and provides instructions on how to handle failed emails",
+            "A new email client designed for enhanced user productivity",
+            "A spam filter that uses machine learning to detect phishing",
+            "An encryption standard for securing email bodies and attachments"
+        ],
+        "answer": 0,
+        "explanation": "DMARC (Domain-based Message Authentication, Reporting, and Conformance) uses SPF and DKIM results to determine if a message is legitimate and tells the receiver what to do (reject, quarantine) if it fails."
+    },
+    {
+        "q": "Which protocol is the secure version of HTTP?",
+        "options": [
+            "SFTP",
+            "HTTPS",
+            "SSH",
+            "TLS"
+        ],
+        "answer": 1,
+        "explanation": "HTTPS (HTTP Secure) uses TLS/SSL to encrypt web traffic."
+    },
+    {
+        "q": "Which port does HTTPS use by default?",
+        "options": [
+            "80",
+            "21",
+            "443",
+            "25"
+        ],
+        "answer": 2,
+        "explanation": "Port 443 is the standard port for HTTPS traffic."
+    },
+    {
+        "q": "Which protocol is the secure replacement for Telnet?",
+        "options": [
+            "RDP",
+            "SSH",
+            "VNC",
+            "FTP"
+        ],
+        "answer": 1,
+        "explanation": "SSH (Secure Shell) encrypts remote command-line sessions, replacing the insecure, plaintext Telnet."
+    },
+    {
+        "q": "Which protocol is used for secure file transfer over SSH?",
+        "options": [
+            "FTPS",
+            "SFTP",
+            "TFTP",
+            "SCP"
+        ],
+        "answer": 1,
+        "explanation": "SFTP (SSH File Transfer Protocol) runs over SSH, providing secure file manipulation and transfer."
+    },
+    {
+        "q": "What is the difference between TCP and UDP?",
+        "options": [
+            "TCP is connectionless; UDP is connection-oriented.",
+            "TCP guarantees delivery (reliable); UDP does not (fast/unreliable).",
+            "TCP is for video; UDP is for email.",
+            "There is no difference."
+        ],
+        "answer": 1,
+        "explanation": "TCP is reliable and connection-oriented (handshake, acks). UDP is connectionless and 'fire-and-forget', used for speed (streaming)."
+    },
+    {
+        "q": "Which secure protocol is used for retrieving email?",
+        "options": [
+            "SMTP",
+            "IMAPS",
+            "SNMP",
+            "LDAP"
+        ],
+        "answer": 1,
+        "explanation": "IMAPS (IMAP over SSL/TLS) is used to securely retrieve email from a server."
+    },
+    {
+        "q": "What is the purpose of a 'captive portal'?",
+        "options": [
+            "To trap hackers",
+            "A web page that requires user interaction (login, accept terms) before granting network access",
+            "A secure VPN tunnel",
+            "A firewall rule"
+        ],
+        "answer": 1,
+        "explanation": "Captive portals are common on guest Wi-Fi, forcing users to authenticate or accept terms before accessing the internet."
+    },
+    {
+        "q": "Which of the following is a secure version of SNMP (Simple Network Management Protocol)?",
+        "options": [
+            "SNMPv1",
+            "SNMPv2c",
+            "SNMPv3",
+            "SNMP-S"
+        ],
+        "answer": 2,
+        "explanation": "SNMPv3 adds authentication and encryption, unlike v1 and v2c which send community strings (passwords) in cleartext."
+    },
+    {
+        "q": "Which port is used by SSH?",
+        "options": [
+            "21",
+            "22",
+            "23",
+            "25"
+        ],
+        "answer": 1,
+        "explanation": "Port 22 is the standard port for Secure Shell (SSH)."
+    },
+    {
+        "q": "Which port is used by RDP (Remote Desktop Protocol)?",
+        "options": [
+            "3389",
+            "443",
+            "8080",
+            "22"
+        ],
+        "answer": 0,
+        "explanation": "Port 3389 is the default port for Microsoft's RDP."
+    },
+    {
+        "q": "In the context of vulnerability scanning, what is a 'False Positive'?",
+        "options": [
+            "The scanner fails to identify a vulnerability that actually exists on the target",
+            "The scanner correctly identifies a vulnerability that exists",
+            "The scanner identifies a vulnerability that does not actually exist",
+            "The scanner correctly identifies that a system is secure and patch-compliant"
+        ],
+        "answer": 2,
+        "explanation": "A false positive occurs when a vulnerability scanner reports a vulnerability that is not actually present on the system."
+    },
+    {
+        "q": "What is the default port used to access the Nessus web interface?",
+        "options": [
+            "8080",
+            "443",
+            "8834",
+            "9000"
+        ],
+        "answer": 2,
+        "explanation": "Nessus runs a web server that is typically accessed via port 8834 (e.g., https://localhost:8834)."
+    },
+    {
+        "q": "Why is it important to update the vulnerability scanner's plugins/feeds?",
+        "options": [
+            "To make the UI look better",
+            "To ensure it can detect the latest known vulnerabilities",
+            "To increase the scanning speed",
+            "To reduce the license cost"
+        ],
+        "answer": 1,
+        "explanation": "Vulnerability databases change daily. Updating plugins ensures the scanner knows about the latest threats and how to detect them."
+    },
+    {
+        "q": "What is the benefit of 'Agent-based' scanning?",
+        "options": [
+            "It requires no installation on the target",
+            "It can scan devices that are not always connected to the network (e.g., laptops)",
+            "It is completely invisible to the user",
+            "It is always free"
+        ],
+        "answer": 1,
+        "explanation": "Agents installed on endpoints can report vulnerabilities back to the central server even when the device is off the corporate network or behind a firewall that might block a network scan."
+    },
+    {
+        "q": "What does 'SCAP' stand for?",
+        "options": [
+            "Secure Content Access Protocol",
+            "Security Content Automation Protocol",
+            "System Configuration and Protection",
+            "Standardized Cyber Assessment Program"
+        ],
+        "answer": 1,
+        "explanation": "SCAP stands for Security Content Automation Protocol, a method for using specific standards to enable automated vulnerability management, measurement, and policy compliance evaluation."
+    },
+    {
+        "q": "Why is 'Continuous Monitoring' important in vulnerability management?",
+        "options": [
+            "Because hackers only work on weekends",
+            "Because new vulnerabilities are discovered daily and configurations change",
+            "To use up the budget",
+            "To slow down the network"
+        ],
+        "answer": 1,
+        "explanation": "Security is not a point-in-time state. Continuous monitoring ensures that new threats are detected as soon as they emerge or when systems drift from their secure baseline."
+    },
+    {
+        "q": "Which report format is commonly used to share vulnerability data between different security tools?",
+        "options": [
+            "PDF",
+            "Word Doc",
+            "XML/JSON (often SCAP compliant)",
+            "JPEG"
+        ],
+        "answer": 2,
+        "explanation": "Structured formats like XML or JSON (especially those following SCAP standards) allow different security tools to ingest and process vulnerability data automatically."
+    },
+    {
+        "q": "What does 'SIEM' stand for?",
+        "options": [
+            "System Integrity and Event Monitoring Protocol",
+            "Security Information and Event Management",
+            "Secure Internet Email Mechanism for Anti-Phishing",
+            "Server Infrastructure and Error Management Console"
+        ],
+        "answer": 1,
+        "explanation": "SIEM stands for Security Information and Event Management, a solution that aggregates and analyzes log data from various sources."
+    },
+    {
+        "q": "Which protocol is the open standard version of NetFlow?",
+        "options": [
+            "sFlow",
+            "IPFIX (IP Flow Information Export)",
+            "J-Flow",
+            "NetStream"
+        ],
+        "answer": 1,
+        "explanation": "IPFIX is the IETF standard based on Cisco's NetFlow v9, designed to be a vendor-neutral protocol for exporting flow information."
+    },
+    {
+        "q": "What is the purpose of 'MRTG' (Multi Router Traffic Grapher)?",
+        "options": [
+            "To hack routers",
+            "To visualize traffic load on network links over time",
+            "To configure router ACLs",
+            "To encrypt router traffic"
+        ],
+        "answer": 1,
+        "explanation": "MRTG is a tool used to monitor the traffic load on network links and generate graphical reports (usually via SNMP)."
+    },
+    {
+        "q": "Which of the following is an example of 'Metadata' in network traffic?",
+        "options": [
+            "The text of an email body",
+            "The source IP address and destination port",
+            "The image attached to an email",
+            "The password sent in a login form"
+        ],
+        "answer": 1,
+        "explanation": "Metadata is 'data about data'. Source IP, destination port, timestamp, and protocol are metadata. The email body and attachments are the actual data payload."
+    },
+    {
+        "q": "Which protocol is commonly used to send logs to a central server?",
+        "options": [
+            "HTTP",
+            "Syslog",
+            "FTP",
+            "SMTP"
+        ],
+        "answer": 1,
+        "explanation": "Syslog is the standard protocol for message logging and sending event messages to a logging server."
+    },
+    {
+        "q": "What is 'Port Mirroring' or 'SPAN' used for?",
+        "options": [
+            "To copy network traffic from one port to another for analysis (e.g., by an IDS)",
+            "To block ports",
+            "To double the network speed",
+            "To connect two switches"
+        ],
+        "answer": 0,
+        "explanation": "Port mirroring copies all traffic passing through a switch port to another port where a sensor (like an IDS or sniffer) is attached to analyze it."
+    },
+    {
+        "q": "Which of the following is a 'Flow Collector'?",
+        "options": [
+            "A device that receives and stores NetFlow data",
+            "A water pipe",
+            "A firewall",
+            "A switch"
+        ],
+        "answer": 0,
+        "explanation": "A flow collector is the server or appliance that receives the NetFlow records exported by routers and switches."
+    },
+    {
+        "q": "What is the purpose of 'Lessons Learned' or 'After Action Report'?",
+        "options": [
+            "To assign blame",
+            "To document what went wrong and how to improve the process for next time",
+            "To celebrate",
+            "To archive emails"
+        ],
+        "answer": 1,
+        "explanation": "The lessons learned phase is critical for continuous improvement, identifying gaps in the response plan and fixing them."
+    },
+    {
+        "q": "Why is 'Time Offset' important in forensics?",
+        "options": [
+            "To know when to eat lunch",
+            "To convert timestamps from UTC to local time (or vice versa) for accurate timeline reconstruction",
+            "It isn't important",
+            "To speed up the CPU"
+        ],
+        "answer": 1,
+        "explanation": "Systems often record logs in UTC. Analysts must account for time zone differences (offsets) to build an accurate chronological timeline of events."
+    },
+    {
+        "q": "What does SIEM stand for?",
+        "options": [
+            "Security Incident and Event Management",
+            "System Information and Event Monitoring",
+            "Security Information and Event Management",
+            "Secure Integrated Event Module for firewall logs"
+        ],
+        "answer": 2,
+        "explanation": "SIEM stands for Security Information and Event Management."
+    },
+    {
+        "q": "In a vulnerability scan report, what does a CVSS score of 9.1 indicate?",
+        "options": [
+            "Low severity",
+            "Medium severity",
+            "High/Critical severity",
+            "Informational"
+        ],
+        "answer": 2,
+        "explanation": "A CVSS score of 9.1 is considered critical or very high severity."
+    },
+    {
+        "q": "What is a 'false positive' in vulnerability scanning?",
+        "options": [
+            "A vulnerability that exists on the target but is not detected by the scanner",
+            "A vulnerability that is detected but does not exist",
+            "A vulnerability that is correctly identified and confirmed by manual verification",
+            "A vulnerability that is automatically patched by the scanning tool upon detection"
+        ],
+        "answer": 1,
+        "explanation": "A false positive occurs when a scanner reports a vulnerability that does not actually exist on the system."
+    },
+    {
+        "q": "Which protocol is used to synchronize time across systems for log correlation?",
+        "options": [
+            "HTTP",
+            "DNS",
+            "NTP",
+            "FTP"
+        ],
+        "answer": 2,
+        "explanation": "NTP (Network Time Protocol) is used to synchronize time, which is crucial for correlating logs."
+    },
+    {
+        "q": "What is 'vishing'?",
+        "options": [
+            "Video phishing",
+            "Voice phishing (over the phone)",
+            "Virtual phishing",
+            "Visual phishing"
+        ],
+        "answer": 1,
+        "explanation": "Vishing stands for Voice Phishing, conducted over the phone."
+    },
+    {
+        "q": "What is 'smishing'?",
+        "options": [
+            "Smart phishing",
+            "SMS phishing (text messages)",
+            "Small phishing",
+            "Social media phishing"
+        ],
+        "answer": 1,
+        "explanation": "Smishing stands for SMS Phishing, conducted via text messages."
+    },
+    {
+        "q": "What does SOAR stand for?",
+        "options": [
+            "Security Operations and Response",
+            "Security Orchestration, Automation, and Response",
+            "System Orchestration and Recovery",
+            "Secure Online Automated Response"
+        ],
+        "answer": 1,
+        "explanation": "SOAR stands for Security Orchestration, Automation, and Response."
+    },
+    {
+        "q": "What does CI/CD stand for?",
+        "options": [
+            "Continuous Integration / Continuous Deployment (or Delivery)",
+            "Computer Integration / Computer Design and Engineering",
+            "Code Integration / Code Delivery System",
+            "Cyber Intelligence / Cyber Defense Strategy"
+        ],
+        "answer": 0,
+        "explanation": "CI/CD stands for Continuous Integration and Continuous Deployment (or Delivery)."
+    },
+    {
+        "q": "What is an API?",
+        "options": [
+            "Automated Program Instruction Set",
+            "Application Programming Interface",
+            "Advanced Protocol Integration Standard",
+            "Apple Program Installer Utility"
+        ],
+        "answer": 1,
+        "explanation": "API stands for Application Programming Interface."
+    },
+    {
+        "q": "Which protocol is commonly used by APIs and relies on standard HTTP methods?",
+        "options": [
+            "SOAP",
+            "REST",
+            "FTP",
+            "SMTP"
+        ],
+        "answer": 1,
+        "explanation": "REST (Representational State Transfer) uses standard HTTP methods."
+    },
+    {
+        "q": "Which protocol uses XML and is known for strict standards and security?",
+        "options": [
+            "REST",
+            "SOAP",
+            "JSON",
+            "HTML"
+        ],
+        "answer": 1,
+        "explanation": "SOAP (Simple Object Access Protocol) uses XML and has strict standards."
+    },
+    {
+        "q": "Why is 'idempotency' important in automation?",
+        "options": [
+            "It ensures a script runs only once",
+            "It ensures that running a script multiple times produces the same result",
+            "It makes scripts run faster",
+            "It encrypts the script"
+        ],
+        "answer": 1,
+        "explanation": "Idempotency means that an operation can be applied multiple times without changing the result beyond the initial application."
+    },
+    {
+        "q": "What is 'JSON'?",
+        "options": [
+            "Java Source Object Network",
+            "JavaScript Object Notation",
+            "Just Some Other Name",
+            "Joint Security Operation Network"
+        ],
+        "answer": 1,
+        "explanation": "JSON stands for JavaScript Object Notation."
+    },
+    {
+        "q": "What is 'XML'?",
+        "options": [
+            "Extensible Markup Language",
+            "Extra Modern Language",
+            "X-ray Machine Learning",
+            "Xylophone Music Library"
+        ],
+        "answer": 0,
+        "explanation": "XML stands for Extensible Markup Language."
+    },
+    {
+        "q": "What is 'BYOD'?",
+        "options": [
+            "Bring Your Own Dinner",
+            "Bring Your Own Device",
+            "Buy Your Own Data",
+            "Build Your Own Database"
+        ],
+        "answer": 1,
+        "explanation": "BYOD stands for Bring Your Own Device, allowing employees to use personal devices for work."
+    },
+    {
+        "q": "What is 'organizational change management' (OCM)?",
+        "options": [
+            "Changing the organization's name",
+            "Managing the human side of change to achieve a desired outcome",
+            "Changing office furniture",
+            "Managing computer updates"
+        ],
+        "answer": 1,
+        "explanation": "OCM focuses on the human side of change, ensuring employees adapt to and support new initiatives like security cultures."
+    },
+    {
+        "q": "What should you do if you receive a suspicious email?",
+        "options": [
+            "Click the link to check it",
+            "Reply to the sender",
+            "Report it to the security team/IT",
+            "Delete it and forget it"
+        ],
+        "answer": 2,
+        "explanation": "You should report suspicious emails to your security or IT team so they can investigate."
+    }
+]

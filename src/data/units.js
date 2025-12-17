@@ -26,5 +26,6 @@ export const units = [
     { id: 'unit-24', title: 'Unit 24: Incident Response', icon: Siren, color: 'text-red-500', bg: 'bg-red-500/10', border: 'group-hover:border-red-500/50', desc: 'Forensics, Chain of Custody, E-Discovery' },
     { id: 'unit-25', title: 'Unit 25: Investigating an Incident', icon: Search, color: 'text-blue-500', bg: 'bg-blue-500/10', border: 'group-hover:border-blue-500/50', desc: 'Investigation Process, Evidence Collection, Interviews' },
     { id: 'unit-26', title: 'Unit 26: Automation & Orchestration', icon: Bot, color: 'text-purple-500', bg: 'bg-purple-500/10', border: 'group-hover:border-purple-500/50', desc: 'SOAR, Playbooks, Runbooks, Scripting' },
-    { id: 'unit-27', title: 'Unit 27: Security Awareness', icon: GraduationCap, color: 'text-green-500', bg: 'bg-green-500/10', border: 'group-hover:border-green-500/50', desc: 'Phishing, Social Engineering, Training, Culture' }
+    { id: 'unit-27', title: 'Unit 27: Security Awareness', icon: GraduationCap, color: 'text-green-500', bg: 'bg-green-500/10', border: 'group-hover:border-green-500/50', desc: 'Phishing, Social Engineering, Training, Culture' },
+    { id: 'unit-ports', title: 'Ports & Protocols', icon: Network, color: 'text-pink-500', bg: 'bg-pink-500/10', border: 'group-hover:border-pink-500/50', desc: 'Common Ports, Methodologies, and Protocol Acronyms' }
 ];
