@@ -8584,10 +8584,10 @@ export const newUnits = {
         {
             "q": "What is the primary goal of 'Incident Response'?",
             "options": [
-                "To punish the attacker by launching a counter-offensive strike",
+                "To punish the attacker by launching a coordinated counter-offensive strike",
                 "To restore normal operations as quickly as possible while minimizing impact",
-                "To delete all logs to prevent the attacker from seeing what was monitored",
-                "To buy new hardware to replace the possibly infected systems immediately"
+                "To permanently delete all affected logs to prevent future forensic analysis",
+                "To immediately purchase and deploy new hardware infrastructure to replace infected systems"
             ],
             "answer": 1,
             "explanation": "The main objective of incident response is to handle the situation in a way that limits damage and reduces recovery time and costs."
@@ -8595,10 +8595,10 @@ export const newUnits = {
         {
             "q": "Which of the following is an example of a 'Tabletop Exercise'?",
             "options": [
-                "A full-scale simulation with red and blue teams",
+                "A fully simulated red team vs blue team live-fire exercise",
                 "A discussion-based session where team members talk through their roles in a hypothetical scenario",
-                "A penetration test",
-                "A software update"
+                "A comprehensive external penetration test of the entire network perimeter",
+                "A scheduled software update and patch management procedure"
             ],
             "answer": 1,
             "explanation": "A tabletop exercise (TTX) is a discussion-based drill where team members meet to discuss their roles and responses to a specific emergency situation."
@@ -8606,10 +8606,10 @@ export const newUnits = {
         {
             "q": "What is the 'Order of Volatility'?",
             "options": [
-                "The order in which employees should be fired",
+                "The hierarchical order in which employees should be terminated after a breach",
                 "The sequence in which evidence should be collected based on how easily it can be lost or changed",
-                "The ranking of most volatile chemicals",
-                "The order of booting up servers"
+                "The scientific ranking of chemical volatility used in hazardous material handling",
+                "The sequential order for powering on servers after a complete blackout"
             ],
             "answer": 1,
             "explanation": "Order of volatility dictates that you must collect the most fleeting data (like CPU cache and RAM) first, before it is lost when the system is powered down."
@@ -8617,10 +8617,10 @@ export const newUnits = {
         {
             "q": "Which component is considered the most volatile?",
             "options": [
-                "Hard Drive",
+                "Archival Magnetic Tape Storage",
                 "CPU Cache / Registers",
-                "RAM",
-                "Backup Tapes"
+                "Mechanical Hard Disk Drive (HDD)",
+                "Solid State Drive (SSD)"
             ],
             "answer": 1,
             "explanation": "CPU cache and registers are the most volatile storage, changing nanosecond by nanosecond, followed by RAM."
@@ -8628,10 +8628,10 @@ export const newUnits = {
         {
             "q": "What is 'Chain of Custody'?",
             "options": [
-                "A type of physical lock",
+                "A physical locking mechanism used to secure server racks in a data center",
                 "A document tracking the chronological history of evidence handling (who collected it, who held it, etc.)",
-                "A set of rules governing the exchange of data between devices on a network",
-                "A backup strategy"
+                "A network protocol governing the secure exchange of data packets between routers",
+                "A comprehensive data backup strategy involving offsite storage"
             ],
             "answer": 1,
             "explanation": "Chain of custody is a legal document that tracks evidence from collection to court, ensuring it hasn't been tampered with."
@@ -8639,10 +8639,10 @@ export const newUnits = {
         {
             "q": "What is a 'Legal Hold'?",
             "options": [
-                "A wrestling move",
+                "A specific grappling technique used in professional wrestling",
                 "A directive to preserve all relevant data when litigation is anticipated",
-                "A type of firewall rule",
-                "A software license"
+                "A firewall rule that halts all incoming network traffic during an attack",
+                "A software license agreement that restricts usage rights"
             ],
             "answer": 1,
             "explanation": "A legal hold requires an organization to preserve all forms of relevant information when a lawsuit is reasonably anticipated."
@@ -8651,9 +8651,9 @@ export const newUnits = {
             "q": "What is the purpose of a 'Write Blocker' in digital forensics?",
             "options": [
                 "To prevent data from being written to the evidence drive during acquisition",
-                "To block email traffic from entering the network during an incident",
-                "To stop malware from spreading by blocking write access to the registry",
-                "To encrypt the drive contents before analysis begins to ensure privacy"
+                "To block incoming email traffic containing malicious attachments",
+                "To prevent malware from writing to the Windows Registry during execution",
+                "To encrypt the contents of the hard drive before forensic analysis begins"
             ],
             "answer": 0,
             "explanation": "A write blocker is a hardware or software tool that prevents any data from being written to the source drive, ensuring the evidence remains unaltered."
@@ -8661,10 +8661,10 @@ export const newUnits = {
         {
             "q": "What is 'E-Discovery'?",
             "options": [
-                "Finding new planets",
+                "The astronomical discovery of new planetary bodies",
                 "The process of identifying, collecting, and producing electronically stored information (ESI) for legal proceedings",
-                "Installing new software",
-                "Scanning for viruses"
+                "The automated installation of new software updates across a network",
+                "The scanning of a hard drive for known virus signatures"
             ],
             "answer": 1,
             "explanation": "Electronic discovery (e-discovery) refers to discovery in legal proceedings such as litigation or government investigations where the information sought is in electronic format."
@@ -8673,9 +8673,9 @@ export const newUnits = {
             "q": "Which phase of digital forensics involves ensuring the scene is safe and securing evidence?",
             "options": [
                 "Identification",
-                "Analysis",
-                "Reporting",
-                "Collection"
+                "Post-Incident Analysis",
+                "Executive Reporting",
+                "Evidence Containment"
             ],
             "answer": 0,
             "explanation": "The identification phase involves recognizing the incident, securing the scene, and identifying what evidence needs to be collected."
@@ -8683,10 +8683,10 @@ export const newUnits = {
         {
             "q": "What is the difference between a 'Red Team' and a 'Blue Team'?",
             "options": [
-                "Red Team defends; Blue Team attacks",
+                "Red Team writes the defense policy; Blue Team audits the policy",
                 "Red Team attacks (simulates adversary); Blue Team defends",
-                "Red Team manages the project; Blue Team writes the code",
-                "There is no difference"
+                "Red Team manages the project timeline; Blue Team writes the software code",
+                "There is no functional difference; the terms are synonymous"
             ],
             "answer": 1,
             "explanation": "In a simulation or exercise, the Red Team acts as the attacker/adversary, while the Blue Team acts as the internal security staff defending the network."
@@ -8694,10 +8694,10 @@ export const newUnits = {
         {
             "q": "What is 'Disk Imaging'?",
             "options": [
-                "Taking a high-resolution photo of the hard drive label for chain of custody",
+                "Capturing a high-resolution photograph of the physical drive label",
                 "Creating a bit-for-bit copy of a storage device",
-                "Formatting the disk to prepare it for a fresh operating system install",
-                "Defragmenting the disk to improve read/write performance during analysis"
+                "Formatting the storage media to prepare for a fresh OS installation",
+                "Defragmenting the file system to optimize read/write performance"
             ],
             "answer": 1,
             "explanation": "Disk imaging creates an exact, bit-by-bit replica of the drive, including deleted files and unallocated space, which is crucial for forensic analysis."
@@ -8705,10 +8705,10 @@ export const newUnits = {
         {
             "q": "Why should you hash the evidence after collection?",
             "options": [
-                "To encrypt it",
-                "To compress it",
+                "To encrypt the data for secure transport",
+                "To compress the image file to save storage space",
                 "To verify its integrity and prove it hasn't changed",
-                "To make it faster to read"
+                "To index the file contents for faster searching"
             ],
             "answer": 2,
             "explanation": "Hashing generates a unique digital fingerprint. If the hash of the copy matches the hash of the original, it proves the evidence is identical and unaltered."
@@ -8716,10 +8716,10 @@ export const newUnits = {
         {
             "q": "What is 'File Carving'?",
             "options": [
-                "Physically cutting a hard drive",
+                "The physical destruction of a hard drive platter",
                 "Recovering files from raw disk data based on headers/footers, without file system metadata",
-                "Deleting files securely",
-                "Copying files to a USB"
+                "Securely deleting files using multiple overwrites",
+                "Copying files to an external USB storage device"
             ],
             "answer": 1,
             "explanation": "File carving allows forensics analysts to recover deleted files or data from damaged media by looking for file signatures (headers/footers) in the raw data stream."
@@ -8727,10 +8727,10 @@ export const newUnits = {
         {
             "q": "What is the first step you should take when you arrive at a digital crime scene?",
             "options": [
-                "Start typing commands",
+                "Immediately begin typing commands to stop the attack",
                 "Secure the scene and ensure safety",
-                "Turn off all computers",
-                "Take a coffee break"
+                "Power down all computer systems to preserve state",
+                "Take a scheduled break before beginning analysis"
             ],
             "answer": 1,
             "explanation": "Safety first. You must secure the physical scene and ensure no one is in danger before worrying about the digital evidence."
@@ -8738,10 +8738,10 @@ export const newUnits = {
         {
             "q": "Which tool is commonly used for creating forensic images (as mentioned in the text)?",
             "options": [
-                "Paint",
+                "Microsoft Paint",
                 "FTK Imager",
-                "Word",
-                "Excel"
+                "Microsoft Word",
+                "Microsoft Excel"
             ],
             "answer": 1,
             "explanation": "FTK Imager is a widely used forensic tool for creating bit-by-bit images of hard drives and other media."
@@ -8749,10 +8749,10 @@ export const newUnits = {
         {
             "q": "What is 'Slack Space'?",
             "options": [
-                "Time off allocated for employees to recover from incident response fatigue",
+                "Rest periods allocated for incident responders to prevent burnout",
                 "The unused space between the end of a file and the end of the disk cluster",
-                "The physical space available on a desk for organizing forensic equipment",
-                "A secure chat application used by the incident response team"
+                "The physical desk space used for organizing forensic hardware",
+                "A secure messaging platform used by the SOC team"
             ],
             "answer": 1,
             "explanation": "File slack is the wasted space at the end of a cluster. It can contain data from previous files (residual data) and is a goldmine for forensic analysts."
@@ -8760,10 +8760,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'Lessons Learned' or 'After Action Report'?",
             "options": [
-                "To assign blame",
+                "To assign blame to specific individuals for the breach",
                 "To document what went wrong and how to improve the process for next time",
-                "To celebrate",
-                "To archive emails"
+                "To celebrate the successful conclusion of the incident",
+                "To archive all email communications for legal retention"
             ],
             "answer": 1,
             "explanation": "The lessons learned phase is critical for continuous improvement, identifying gaps in the response plan and fixing them."
@@ -8771,10 +8771,10 @@ export const newUnits = {
         {
             "q": "What is a 'Simulation' exercise?",
             "options": [
-                "A video game",
+                "A multiplayer video game tailored for team building",
                 "A realistic, hands-on drill that mimics a real incident",
-                "A written test",
-                "A lecture"
+                "A multiple-choice written examination",
+                "A classroom-style lecture on security theory"
             ],
             "answer": 1,
             "explanation": "Simulations go beyond tabletops by involving actual hands-on actions in a controlled environment to test the team's technical response."
@@ -8782,10 +8782,10 @@ export const newUnits = {
         {
             "q": "Why is 'Time Offset' important in forensics?",
             "options": [
-                "To know when to eat lunch",
+                "To determine the appropriate time for team meal breaks",
                 "To convert timestamps from UTC to local time (or vice versa) for accurate timeline reconstruction",
-                "It isn't important",
-                "To speed up the CPU"
+                "It has no relevance to forensic investigations",
+                "To increase the clock speed of the analysis workstation"
             ],
             "answer": 1,
             "explanation": "Systems often record logs in UTC. Analysts must account for time zone differences (offsets) to build an accurate chronological timeline of events."
@@ -8793,10 +8793,10 @@ export const newUnits = {
         {
             "q": "What is the 'Registry' in Windows forensics?",
             "options": [
-                "A list of users",
+                "A comprehensive list of authorized system users",
                 "A database storing configuration settings for the OS and applications",
-                "A folder for documents",
-                "A malicious software program that replicates itself to spread to other computers"
+                "A directory folder for storing user documents",
+                "A form of malicious software resembling a worm"
             ],
             "answer": 1,
             "explanation": "The Windows Registry contains a wealth of forensic information, including user activity, installed software, and connected devices (like USBs)."
@@ -8804,10 +8804,10 @@ export const newUnits = {
         {
             "q": "What does 'dd' stand for in the context of Linux imaging?",
             "options": [
-                "Disk Destroyer",
+                "Disk Destroyer Utility",
                 "Data Duplicator (or similar, historically 'Convert and Copy')",
-                "Digital Defense",
-                "Daily Driver"
+                "Digital Defense Protocol",
+                "Daily Driver Application"
             ],
             "answer": 1,
             "explanation": "The 'dd' command is a command-line utility for Unix and Unix-like operating systems whose primary purpose is to convert and copy files, often used for disk imaging."
@@ -8815,10 +8815,10 @@ export const newUnits = {
         {
             "q": "What is 'Provenance' in digital forensics?",
             "options": [
-                "The price of the software",
+                "The retail price of the forensic software suite",
                 "The origin and history of a piece of data",
-                "The speed of the network",
-                "The name of the judge"
+                "The maximum transmission speed of the network link",
+                "The full name of the presiding judge"
             ],
             "answer": 1,
             "explanation": "Provenance refers to the chronology of the ownership, custody, or location of a historical object (in this case, data)."
@@ -8829,7 +8829,7 @@ export const newUnits = {
                 "Preparation",
                 "Detection and Analysis",
                 "Containment, Eradication, and Recovery",
-                "Marketing"
+                "Strategic Marketing and Public Relations"
             ],
             "answer": 3,
             "explanation": "Marketing is not part of incident response. The phases are Preparation, Detection/Analysis, Containment/Eradication/Recovery, and Post-Incident Activity."
@@ -8837,10 +8837,10 @@ export const newUnits = {
         {
             "q": "What is 'Containment'?",
             "options": [
-                "Deleting the virus",
+                "Permanently deleting the identified malware strain",
                 "Isolating the infected systems to prevent the spread of the attack",
-                "Restoring from backup",
-                "Calling the police"
+                "Restoring system data from a clean backup",
+                "Contacting law enforcement agencies"
             ],
             "answer": 1,
             "explanation": "Containment is the immediate action taken to stop the bleeding—disconnecting the infected host from the network to stop the malware from spreading."
@@ -8848,10 +8848,10 @@ export const newUnits = {
         {
             "q": "What is 'Eradication'?",
             "options": [
-                "Finding the attacker",
+                "Identifying the identity of the attacker",
                 "Removing the root cause of the incident (e.g., deleting malware, patching vulnerability)",
-                "Restoring data",
-                "Writing the report"
+                "Restoring the system to full operational status",
+                "Drafting the final incident report"
             ],
             "answer": 1,
             "explanation": "Eradication involves eliminating the components of the incident, such as deleting malicious files and disabling breached accounts."
@@ -8860,9 +8860,9 @@ export const newUnits = {
             "q": "What is 'Recovery'?",
             "options": [
                 "Restoring systems to normal operation and monitoring for reinfection",
-                "Paying the ransom",
-                "Firing the admin",
-                "Buying insurance"
+                "Paying the demanded ransom to decrypt files",
+                "Terminating the employment of the system administrator",
+                "Purchasing cyber insurance coverage"
             ],
             "answer": 0,
             "explanation": "Recovery is the process of restoring systems to full functionality (e.g., from clean backups) and validating that they are clean."
@@ -8870,10 +8870,10 @@ export const newUnits = {
         {
             "q": "What is a 'Playbook' or 'Runbook'?",
             "options": [
-                "A sports strategy",
+                "A strategy guide for company sports teams",
                 "A set of predefined procedures for handling specific types of incidents",
-                "A novel",
-                "A list of passwords"
+                "A fictional novel about cybersecurity",
+                "A list of compromised user passwords"
             ],
             "answer": 1,
             "explanation": "Playbooks provide step-by-step guides for analysts to follow when specific incidents occur (e.g., 'Phishing Playbook', 'Ransomware Playbook')."
@@ -8881,10 +8881,10 @@ export const newUnits = {
         {
             "q": "Why is 'Documentation' critical during an incident?",
             "options": [
-                "To look busy",
+                "To create the appearance of productivity",
                 "To ensure actions are repeatable and defensible in court",
-                "To use up paper",
-                "To slow down the response"
+                "To consume excess office supplies",
+                "To deliberately delay the incident response process"
             ],
             "answer": 1,
             "explanation": "Every action taken must be documented. If it isn't written down, in the eyes of the court, it didn't happen."
@@ -8892,10 +8892,10 @@ export const newUnits = {
         {
             "q": "What is 'Root Cause Analysis'?",
             "options": [
-                "Finding the admin password",
+                "Recovering the lost administrative password",
                 "Determining the underlying reason why the incident occurred to prevent recurrence",
-                "Scanning for viruses",
-                "Checking disk space"
+                "Scanning the network for active virus infections",
+                "Verifying available disk space on servers"
             ],
             "answer": 1,
             "explanation": "Root cause analysis goes beyond fixing the symptom to find out *why* it happened (e.g., 'we got hacked because we forgot to patch the server')."
@@ -8903,10 +8903,10 @@ export const newUnits = {
         {
             "q": "What is the risk of shutting down a compromised computer immediately?",
             "options": [
-                "It saves electricity",
+                "It reduces overall power consumption",
                 "You lose all volatile evidence in RAM (encryption keys, active connections)",
-                "It stops the attack instantly",
-                "It fixes the problem"
+                "It instantly halts the attack progression",
+                "It immediately resolves the underlying security issue"
             ],
             "answer": 1,
             "explanation": "Pulling the plug destroys evidence in RAM. If the disk is encrypted, you might lose the only copy of the decryption key stored in memory."
@@ -8914,10 +8914,10 @@ export const newUnits = {
         {
             "q": "What is 'Steganography'?",
             "options": [
-                "A dinosaur",
+                "A type of prehistoric reptile",
                 "Hiding data within other data (e.g., a text file inside an image)",
-                "Encrypting a drive",
-                "Deleting logs"
+                "The process of full disk encryption",
+                "Securely deleting system log files"
             ],
             "answer": 1,
             "explanation": "Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video."
@@ -8925,10 +8925,10 @@ export const newUnits = {
         {
             "q": "What is a 'Hash Collision'?",
             "options": [
-                "Two cars crashing",
+                "A physical traffic accident involving two vehicles",
                 "Two different inputs producing the same hash output",
-                "A failed download",
-                "A virus"
+                "A corrupted file download from the internet",
+                "A type of computer virus payload"
             ],
             "answer": 1,
             "explanation": "A hash collision occurs when two distinct pieces of data generate the exact same hash value (which is theoretically possible but should be computationally infeasible)."
@@ -8939,7 +8939,7 @@ export const newUnits = {
                 "SHA-256",
                 "MD5",
                 "SHA-3",
-                "AES"
+                "AES-256"
             ],
             "answer": 1,
             "explanation": "MD5 is considered cryptographically broken and should not be used for security-critical functions due to collision vulnerabilities."
@@ -8948,9 +8948,9 @@ export const newUnits = {
             "q": "What is 'Live Forensics'?",
             "options": [
                 "Analyzing a system while it is still running",
-                "Analyzing a dead body",
-                "Analyzing a backup tape",
-                "Analyzing a powered-off drive"
+                "Performing an autopsy on a deceased individual",
+                "Analyzing data from an archived backup tape",
+                "Analyzing a forensic image of a powered-off drive"
             ],
             "answer": 0,
             "explanation": "Live forensics involves analyzing a running system to capture volatile data that would be lost if the system were powered down."
@@ -8958,10 +8958,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of a 'Forensic Write Blocker'?",
             "options": [
-                "To stop people from writing emails",
+                "To prevent employees from sending unauthorized emails",
                 "To ensure the evidence drive is read-only so it cannot be altered",
-                "To block viruses",
-                "To encrypt data"
+                "To block incoming computer viruses",
+                "To encrypt data at rest"
             ],
             "answer": 1,
             "explanation": "A write blocker intercepts write commands from the OS and prevents them from reaching the drive, ensuring the evidence remains pristine."
@@ -8969,10 +8969,10 @@ export const newUnits = {
         {
             "q": "What is 'Metadata' in a file system?",
             "options": [
-                "The file content",
+                "The actual binary content of the file",
                 "Data about the file (creation time, author, permissions)",
-                "The filename only",
-                "The file icon"
+                "The alphanumeric filename",
+                "The graphical icon representing the file type"
             ],
             "answer": 1,
             "explanation": "Metadata includes timestamps (MAC times - Modified, Accessed, Created), permissions, and ownership information."
@@ -8980,10 +8980,10 @@ export const newUnits = {
         {
             "q": "What is 'Anti-Forensics'?",
             "options": [
-                "Forensics against ants",
+                "Forensic analysis of insect colonies",
                 "Techniques used to hide evidence or make forensic analysis difficult (e.g., wiping, encryption)",
-                "A type of antivirus",
-                "A legal term"
+                "A specialized form of antivirus software",
+                "A legal term regarding evidence admissibility"
             ],
             "answer": 1,
             "explanation": "Anti-forensics are methods used by attackers to thwart investigation, such as securely deleting files, modifying timestamps, or using encryption."
@@ -8991,10 +8991,10 @@ export const newUnits = {
         {
             "q": "What is the 'Golden Image'?",
             "options": [
-                "A picture of gold",
+                "A digital photograph of a gold bar",
                 "A pre-configured, secure template for deploying new servers/workstations",
-                "A backup of the CEO's laptop",
-                "A virus"
+                "A dedicated backup of the CEO's personal laptop",
+                "A specific type of boot sector virus"
             ],
             "answer": 1,
             "explanation": "A golden image is a master copy of a properly configured and secured operating system used to deploy new systems quickly and consistently."
@@ -9002,10 +9002,10 @@ export const newUnits = {
         {
             "q": "What is 'Data Sanitization'?",
             "options": [
-                "Cleaning the screen",
+                "Physically cleaning the monitor screen",
                 "The process of deliberately, permanently, and irreversibly removing or destroying data from storage media",
-                "Organizing files",
-                "Compressing files"
+                "Organizing file directory structures",
+                "Compressing files for archival"
             ],
             "answer": 1,
             "explanation": "Sanitization ensures that data cannot be recovered from media that is being discarded or reused."
@@ -9013,10 +9013,10 @@ export const newUnits = {
         {
             "q": "What is the role of 'HR' (Human Resources) in incident response?",
             "options": [
-                "To fix the server",
+                "To perform hardware maintenance on servers",
                 "To handle personnel issues (e.g., disciplinary action, termination) resulting from the incident",
-                "To write the code",
-                "To configure the firewall"
+                "To develop the incident response software code",
+                "To configure network firewall rules"
             ],
             "answer": 1,
             "explanation": "HR is involved when an incident involves an employee (insider threat, policy violation) to ensure labor laws and company policies are followed."
@@ -9026,10 +9026,10 @@ export const newUnits = {
         {
             "q": "Which data source provides high-level insights from aggregated data?",
             "options": [
-                "Packet Captures",
-                "Dashboards",
-                "Firewall Logs",
-                "Metadata"
+                "Raw Packet Captures (PCAP)",
+                "Security Information and Event Management (SIEM) Dashboards",
+                "Individual Firewall Access Logs",
+                "File System Metadata"
             ],
             "answer": 1,
             "explanation": "Dashboards provide high-level insights from aggregated data sources."
@@ -9048,10 +9048,10 @@ export const newUnits = {
         {
             "q": "Which log type records events on a specific host or server?",
             "options": [
-                "Network Logs",
-                "System Logs",
-                "DNS Logs",
-                "Proxy Logs"
+                "Aggregated Network Traffic Logs",
+                "System Logs (e.g., Windows Event Logs, Syslog)",
+                "Domain Name System (DNS) Query Logs",
+                "Web Proxy Access Logs"
             ],
             "answer": 1,
             "explanation": "System logs record events on an individual host or server."
@@ -9060,8 +9060,8 @@ export const newUnits = {
             "q": "What is the primary purpose of NetFlow?",
             "options": [
                 "Full packet capture of every single packet traversing the network interface",
-                "Summarizing network traffic flow",
-                "Blocking malicious traffic at the network edge based on signatures",
+                "Collecting and summarizing IP traffic statistics (metadata) for bandwidth monitoring and anomaly detection",
+                "Blocking malicious traffic at the network edge based on predefined signatures",
                 "Decrypting SSL traffic to inspect the encrypted payload for malware"
             ],
             "answer": 1,
@@ -9070,10 +9070,10 @@ export const newUnits = {
         {
             "q": "Which tool is a cross-platform log management tool?",
             "options": [
-                "Rsyslog",
-                "Syslog-ng",
-                "NXLog",
-                "Journalctl"
+                "Rsyslog (standard Linux logging daemon)",
+                "Syslog-ng (enhanced syslog implementation)",
+                "NXLog (Multi-platform log collection and forwarding tool)",
+                "Journalctl (systemd journal query tool)"
             ],
             "answer": 2,
             "explanation": "NXLog is a multi-platform log management tool that works on Windows, Linux, and Unix."
@@ -9081,10 +9081,10 @@ export const newUnits = {
         {
             "q": "What does 'metadata' refer to?",
             "options": [
-                "Data about data",
-                "Encrypted data storage",
-                "Deleted data recovery",
-                "Raw packet data payloads"
+                "Information that describes the properties of other data (e.g., file size, author, timestamp)",
+                "Cryptographically secured storage for sensitive information",
+                "Techniques for recovering deleted files from unallocated disk space",
+                "The raw binary payload contained within a network packet"
             ],
             "answer": 0,
             "explanation": "Metadata is data that describes other data, such as file size, creation date, or sender."
@@ -9092,10 +9092,10 @@ export const newUnits = {
         {
             "q": "In a vulnerability scan report, what does a CVSS score of 9.1 indicate?",
             "options": [
-                "Low severity",
-                "Medium severity",
-                "High/Critical severity",
-                "Informational"
+                "Low severity (minimal risk)",
+                "Medium severity (moderate risk)",
+                "High/Critical severity (immediate action required)",
+                "Informational (no security risk)"
             ],
             "answer": 2,
             "explanation": "A CVSS score of 9.1 is considered critical or very high severity."
@@ -9103,10 +9103,10 @@ export const newUnits = {
         {
             "q": "What is a 'false positive' in vulnerability scanning?",
             "options": [
-                "A vulnerability that exists on the target but is not detected by the scanner",
-                "A vulnerability that is detected but does not exist",
-                "A vulnerability that is correctly identified and confirmed by manual verification",
-                "A vulnerability that is automatically patched by the scanning tool upon detection"
+                "A valid vulnerability that exists on the target but is initially missed by the scanner",
+                "A reported vulnerability that does not actually exist on the system (a false alarm)",
+                "A vulnerability that is correctly identified and verified by a security analyst",
+                "A zero-day vulnerability that is automatically patched during the scan"
             ],
             "answer": 1,
             "explanation": "A false positive occurs when a scanner reports a vulnerability that does not actually exist on the system."
@@ -9148,9 +9148,9 @@ export const newUnits = {
             "q": "What is the purpose of a 'playbook' in incident response?",
             "options": [
                 "A list of key employee phone numbers and emergency contacts",
-                "A checklist of actions to detect and respond to incidents",
-                "A manual detailing the steps for configuring firewall rulesets",
-                "A comprehensive log of past incidents used for statistical analysis"
+                "A standardized checklist of actions to perform to detect, respond to, and mitigate specific incidents",
+                "A technical manual detailing the steps for configuring firewall rulesets",
+                "A comprehensive log of past incidents used for post-incident statistical analysis"
             ],
             "answer": 1,
             "explanation": "A playbook is a checklist of actions to perform to detect and respond to specific incidents."
@@ -9158,10 +9158,10 @@ export const newUnits = {
         {
             "q": "Which tool allows for the 'orchestration' of security tools?",
             "options": [
-                "SIEM",
-                "SOAR",
-                "IDS",
-                "Firewall"
+                "Security Information and Event Management (SIEM)",
+                "Security Orchestration, Automation, and Response (SOAR)",
+                "Intrusion Detection System (IDS)",
+                "Next-Generation Firewall (NGFW)"
             ],
             "answer": 1,
             "explanation": "SOAR (Security Orchestration, Automation, and Response) tools allow for orchestration."
@@ -9169,10 +9169,10 @@ export const newUnits = {
         {
             "q": "What does 'single pane of glass' refer to?",
             "options": [
-                "A transparent monitor overlay used for presentations",
-                "A unified dashboard for viewing all security data",
-                "A type of firewall rule allowing all traffic",
-                "A physical security barrier made of reinforced glass"
+                "A transparent monitor overlay used for presentations in a security operations center",
+                "A unified management dashboard that consolidates data from multiple security tools into one view",
+                "A permissive firewall rule allowing all traffic to pass through the network perimeter",
+                "A physical security barrier made of reinforced glass to protect server racks"
             ],
             "answer": 1,
             "explanation": "Single pane of glass refers to a unified dashboard that allows analysts to see data from multiple systems in one view."
@@ -9180,10 +9180,10 @@ export const newUnits = {
         {
             "q": "In a firewall log, what does a 'deny' action indicate?",
             "options": [
-                "Traffic was allowed",
-                "Traffic was blocked",
-                "Traffic was encrypted",
-                "Traffic was logged but not stopped"
+                "Traffic was permitted to pass through the firewall",
+                "Traffic was explicitly blocked by a security rule",
+                "Traffic was encrypted before transmission",
+                "Traffic was logged for analysis but not blocked"
             ],
             "answer": 1,
             "explanation": "A 'deny' action indicates that the firewall blocked the traffic."
@@ -9191,10 +9191,10 @@ export const newUnits = {
         {
             "q": "What is 'data exfiltration'?",
             "options": [
-                "Backing up data",
-                "Unauthorized transfer of data out of a network",
-                "Encrypting data at rest",
-                "Deleting data securely"
+                "Creating a secure backup of critical data",
+                "The unauthorized transfer of sensitive data from a secure system to an external recipient",
+                "Encrypting data at rest using strong cryptographic algorithms",
+                "Securely deleting data using a standard overwrite method"
             ],
             "answer": 1,
             "explanation": "Data exfiltration is the unauthorized transfer of data from a computer or other device."
@@ -9213,10 +9213,10 @@ export const newUnits = {
         {
             "q": "What does 'brute force' password attack involve?",
             "options": [
-                "Guessing passwords using common words",
-                "Trying every possible combination of characters",
-                "Stealing the password file",
-                "Asking the user for their password"
+                "Guessing passwords using a list of common words and phrases",
+                "Systematically attempting every possible combination of characters until the correct one is found",
+                "Explussively stealing the hashed password file for offline analysis",
+                "Socially engineering the user to reveal their password via phone or email"
             ],
             "answer": 1,
             "explanation": "Brute force attacks involve trying every possible combination of characters until the correct one is found."
@@ -9224,10 +9224,10 @@ export const newUnits = {
         {
             "q": "What is a 'dictionary attack'?",
             "options": [
-                "Trying every possible character combination",
-                "Using a list of common words or passwords",
-                " exploiting a buffer overflow",
-                "Phishing for credentials"
+                "Systematically attempting every possible character combination to guess a password",
+                "Attempting to guess credentials by cycling through a pre-defined list of common words and passwords",
+                "Exploiting a buffer overflow vulnerability to execute arbitrary code",
+                "Sending phishing emails to harvest user credentials"
             ],
             "answer": 1,
             "explanation": "A dictionary attack uses a pre-defined list of words (dictionary) to guess passwords."
@@ -9235,10 +9235,10 @@ export const newUnits = {
         {
             "q": "What is the difference between IDS and IPS?",
             "options": [
-                "IDS blocks, IPS alerts",
-                "IDS alerts, IPS blocks",
-                "IDS is for email, IPS is for web",
-                "There is no difference"
+                "IDS can only alert on suspicious traffic; IPS can actively block it",
+                "IDS alerts on traffic; IPS blocks traffic",
+                "IDS is primarily for email security; IPS is for web application security",
+                "There is no functional difference; the terms are used interchangeably"
             ],
             "answer": 1,
             "explanation": "IDS (Intrusion Detection System) detects and alerts, while IPS (Intrusion Prevention System) can actively block malicious traffic."
@@ -9257,10 +9257,10 @@ export const newUnits = {
         {
             "q": "What is a 'hash' used for in file analysis?",
             "options": [
-                "Encrypting the file",
-                "Compressing the file",
-                "Uniquely identifying the file (digital fingerprint)",
-                "Deleting the file"
+                "Encrypting the file contents for confidentiality",
+                "Compressing the file to save disk space",
+                "Uniquely identifying the file using a cryptographic algorithm (digital fingerprint)",
+                "Securely deleting the file from the hard drive"
             ],
             "answer": 2,
             "explanation": "Hashes (like MD5, SHA-256) are used as digital fingerprints to uniquely identify files."
@@ -9323,10 +9323,10 @@ export const newUnits = {
         {
             "q": "What is a 'baiting' attack?",
             "options": [
-                "Sending phishing emails",
-                "Leaving infected media (like USB drives) for victims to find",
-                "Calling victims on the phone",
-                "Hacking a website"
+                "Sending phishing emails to a large number of recipients",
+                "Leaving physical media (like infected USB drives) in public areas hoping victims will use them",
+                "Calling victims on the phone to solicit sensitive information",
+                "Compromising a legitimate website to serve malware"
             ],
             "answer": 1,
             "explanation": "Baiting involves leaving physical media, like USB drives, in public places hoping victims will plug them in."
@@ -9334,10 +9334,10 @@ export const newUnits = {
         {
             "q": "What is 'phishing'?",
             "options": [
-                "A network scan",
-                "A social engineering attack using email to trick users",
-                "A denial of service attack",
-                "A physical break-in"
+                "A network mapping scan used to identify active hosts",
+                "A social engineering attack using fraudulent emails to trick users into revealing sensitive information",
+                "A distributed denial of service (DDoS) attack to overwhelm a server",
+                "A physical security breach involving forced entry"
             ],
             "answer": 1,
             "explanation": "Phishing is a social engineering attack that uses email or other messages to trick users into revealing sensitive info."
@@ -9468,10 +9468,10 @@ export const newUnits = {
         {
             "q": "What is the primary difference between automation and orchestration?",
             "options": [
-                "Automation is for single tasks; orchestration coordinates multiple tasks",
-                "Automation is a manual process requiring human intervention; orchestration is fully automatic",
-                "Automation uses Artificial Intelligence to make decisions; orchestration uses simple scripts",
-                "There is no difference between the two terms in a DevOps context"
+                "Automation focuses on individual tasks, while orchestration coordinates multiple automated tasks into a workflow",
+                "Automation is a manual process requiring human intervention, whereas orchestration is fully automatic",
+                "Automation uses Artificial Intelligence to make decisions, while orchestration uses simple static scripts",
+                "There is no practical difference; the terms are synonyms in DevOps"
             ],
             "answer": 0,
             "explanation": "Automation focuses on individual tasks, while orchestration coordinates multiple automated tasks into a workflow."
@@ -9490,10 +9490,10 @@ export const newUnits = {
         {
             "q": "What is a 'playbook' in the context of SOAR?",
             "options": [
-                "A list of employee phone numbers",
-                "A checklist of actions to detect and respond to incidents",
-                "A manual for configuring firewalls",
-                "A log of past incidents"
+                "A directory of key employee phone numbers and contact details",
+                "A standardized checklist of actions to perform to detect, respond to, and mitigate specific incidents",
+                "A technical manual detailing the steps for configuring firewall rulesets",
+                "A comprehensive log of past incidents used for statistical analysis"
             ],
             "answer": 1,
             "explanation": "A playbook is a checklist of actions to perform to detect and respond to specific incidents."
@@ -9501,10 +9501,10 @@ export const newUnits = {
         {
             "q": "What is a 'runbook'?",
             "options": [
-                "A physical book of codes used for authenticating users via phone",
-                "An automated version of a playbook, often with defined interaction points",
-                "A log of all currently running processes on a server",
-                "A training manual for new employees joining the security team"
+                "A physical book of cryptographic codes used for two-factor authentication",
+                "An automated version of a playbook, often with defined machine-to-machine interaction points",
+                "A real-time log of all currently running processes on a dedicated server",
+                "A printed training manual for new employees joining the security team"
             ],
             "answer": 1,
             "explanation": "A runbook is an automated version of a playbook, often with defined interaction points."
@@ -9523,10 +9523,10 @@ export const newUnits = {
         {
             "q": "How does automation act as a 'workforce multiplier'?",
             "options": [
-                "It hires more people",
-                "It allows a smaller team to manage a larger infrastructure",
-                "It increases the workload",
-                "It reduces the need for computers"
+                "It mandates hiring more staff to manage the automation tools",
+                "It allows a smaller team to manage a larger, more complex infrastructure",
+                "It significantly increases the workload due to script maintenance",
+                "It reduces the need for computing hardware by compressing data"
             ],
             "answer": 1,
             "explanation": "It augments the capabilities of existing staff, allowing them to do more with less."
@@ -9534,10 +9534,10 @@ export const newUnits = {
         {
             "q": "What is 'user provisioning'?",
             "options": [
-                "Buying computers for users",
-                "Creating and managing user accounts and access rights",
-                "Training users",
-                "Monitoring user activity"
+                "Procuring physical computer hardware for new employees",
+                "The process of creating, managing, and maintaining user accounts and access rights",
+                "Conducting mandatory security awareness training for users",
+                "Monitoring user activity for policy violations"
             ],
             "answer": 1,
             "explanation": "User provisioning involves creating and managing user accounts and their access rights."
@@ -9545,10 +9545,10 @@ export const newUnits = {
         {
             "q": "What is 'resource provisioning'?",
             "options": [
-                "Allocating physical and digital resources like workstations and licenses to users",
-                "Recycling old hardware to reduce e-waste and save money",
-                "Hiring new staff members to expand the IT support team",
-                "Scheduling recurring meetings for project updates"
+                "Ensuring the timely allocation and configuration of resources like workstations and software licenses",
+                "Recycling old hardware components to reduce electronic waste and costs",
+                "Recruiting and hiring new staff members to expand the IT support team",
+                "The scheduling of recurring project management meetings"
             ],
             "answer": 0,
             "explanation": "Resource provisioning ensures timely allocation of resources like workstations and software."
@@ -9556,10 +9556,10 @@ export const newUnits = {
         {
             "q": "What are 'guardrails' in security automation?",
             "options": [
-                "Physical barriers in a server room",
-                "Automated safety controls to prevent insecure configurations",
-                "Firewall rules",
-                "Antivirus software"
+                "Physical barriers installed in a server room to restrict access",
+                "Automated safety controls and policy checks to prevent insecure configurations",
+                "Standard network firewall rules blocking port 80",
+                "Endpoint antivirus software scanning for signatures"
             ],
             "answer": 1,
             "explanation": "Guardrails are automated controls that protect against insecure infrastructure configurations."
@@ -9567,10 +9567,10 @@ export const newUnits = {
         {
             "q": "What is the purpose of 'security groups' in cloud computing?",
             "options": [
-                "To group employees by department",
-                "To act as a virtual firewall for server instances",
-                "To organize files",
-                "To manage passwords"
+                "To categorize employees based on their internal department code",
+                "To act as a stateful virtual firewall controlling traffic for server instances",
+                "To organize shared files and folders on a file server",
+                "To manage complex password rotation policies"
             ],
             "answer": 1,
             "explanation": "Security groups act as virtual firewalls, controlling inbound and outbound traffic for instances."
@@ -9600,10 +9600,10 @@ export const newUnits = {
         {
             "q": "What is the main difference between Continuous Delivery and Continuous Deployment?",
             "options": [
-                "Delivery is faster",
-                "Deployment is manual",
-                "Delivery requires manual approval for production; Deployment is automatic",
-                "There is no difference"
+                "Delivery is significantly faster than deployment",
+                "Deployment requires manual intervention, whereas delivery is automatic",
+                "Delivery stops at the staging area requiring approval; Deployment automates the release to production",
+                "There is no difference; they are synonymous terms"
             ],
             "answer": 2,
             "explanation": "Continuous Delivery stops short of automatic production deployment, requiring manual approval, whereas Continuous Deployment automates it."
@@ -9666,10 +9666,10 @@ export const newUnits = {
         {
             "q": "What is 'technical debt'?",
             "options": [
-                "Money owed to external technology vendors and consultants",
+                "Financial debt owed to external technology vendors and consultants",
                 "The implied cost of additional rework caused by choosing an easy solution now instead of a better one",
-                "Calculating the total financial cost of acquiring new hardware",
-                "A loan taken from a bank to fund software development projects"
+                "Calculating the total depreciation of aging hardware assets",
+                "A loan taken from a financial institution to fund software development"
             ],
             "answer": 1,
             "explanation": "Technical debt refers to the future cost of reworking a solution that was implemented quickly but sub-optimally."
@@ -9688,10 +9688,10 @@ export const newUnits = {
         {
             "q": "What is 'infrastructure as code' (IaC)?",
             "options": [
-                "Writing code on servers",
+                "Writing executable code directly onto production servers",
                 "Managing and provisioning infrastructure through machine-readable definition files",
-                "Building data centers",
-                "Coding network protocols"
+                "Physically constructing data centers and laying cables",
+                "Developing complex network protocols from scratch"
             ],
             "answer": 1,
             "explanation": "IaC is the process of managing infrastructure using code and definition files rather than manual configuration."
@@ -9699,10 +9699,10 @@ export const newUnits = {
         {
             "q": "What is a 'single point of failure'?",
             "options": [
-                "A bug in the code",
-                "A part of a system that, if it fails, will stop the entire system from working",
-                "A failed login attempt",
-                "A broken cable"
+                "A minor bug in the code that causes a display error",
+                "A critical component whose failure results in the failure of the entire system",
+                "A single failed login attempt by a user",
+                "A damaged ethernet cable causing slow speeds"
             ],
             "answer": 1,
             "explanation": "A single point of failure is a component whose failure will cause the entire system to fail."
@@ -9710,10 +9710,10 @@ export const newUnits = {
         {
             "q": "What is 'scalability'?",
             "options": [
-                "The ability to weigh hardware",
-                "The capability of a system to handle a growing amount of work",
-                "The speed of the network",
-                "The security of the system"
+                "The ability to physically weigh heavy hardware components",
+                "The capability of a system to handle a growing amount of work by adding resources",
+                "The maximum transmission speed of the network bandwidth",
+                "The overall physical security posture of the system"
             ],
             "answer": 1,
             "explanation": "Scalability is the property of a system to handle a growing amount of work by adding resources."
@@ -9721,10 +9721,10 @@ export const newUnits = {
         {
             "q": "What is 'elasticity' in cloud computing?",
             "options": [
-                "The ability to stretch cables",
-                "The ability to automatically provision and de-provision resources as needed",
-                "The cost of the cloud",
-                "The type of storage used"
+                "The physical flexibility of network cables",
+                "The ability to automatically provision and de-provision resources to match demand",
+                "The variable cost structure of cloud services",
+                "The type of magnetic storage used in hard drives"
             ],
             "answer": 1,
             "explanation": "Elasticity is the ability to automatically scale resources up and down based on demand."
@@ -9732,10 +9732,10 @@ export const newUnits = {
         {
             "q": "What is 'role-based access control' (RBAC)?",
             "options": [
-                "Access based on user's height",
-                "Access restricted based on a person's role within the organization",
-                "Access based on IP address",
-                "Access based on time of day"
+                "Access privileges granted based on physical location",
+                "Access restricted based on a person's role and responsibilities within the organization",
+                "Access granted based on the user's specific IP address",
+                "Access permitted only during specific business hours"
             ],
             "answer": 1,
             "explanation": "RBAC restricts network access based on the roles of individual users within an enterprise."
@@ -9743,10 +9743,10 @@ export const newUnits = {
         {
             "q": "What is a 'webhook'?",
             "options": [
-                "A type of fishing lure",
-                "A method for an app to provide real-time information to other apps",
-                "A web browser",
-                "A security vulnerability"
+                "A type of phishing lure used in social engineering",
+                "A mechanism for an app to provide real-time information to other applications",
+                "A specialized web browser for developers",
+                "A critical security vulnerability in web servers"
             ],
             "answer": 1,
             "explanation": "A webhook is a way for an app to provide other applications with real-time information."
@@ -9798,10 +9798,10 @@ export const newUnits = {
         {
             "q": "What is 'branching' in version control?",
             "options": [
-                "Planting trees",
-                "Creating a separate line of development",
-                "Breaking the code",
-                "Deleting files"
+                "Planting trees to offset carbon emissions",
+                "Creating a separate line of development to work on features in isolation",
+                "Intentionally breaking the code to test error handling",
+                "Permanently deleting files from the repository"
             ],
             "answer": 1,
             "explanation": "Branching allows developers to diverge from the main line of development and continue work without messing up the main line."
@@ -9809,10 +9809,10 @@ export const newUnits = {
         {
             "q": "What is 'merging' in version control?",
             "options": [
-                "Combining two companies",
-                "Integrating changes from one branch into another",
-                "Deleting a branch",
-                "Copying files"
+                "The legal consolidation of two technology companies",
+                "The process of integrating changes from one branch into another",
+                "Permanently deleting a feature branch",
+                "Duplicating files across multiple servers"
             ],
             "answer": 1,
             "explanation": "Merging is the process of taking the contents of a source branch and integrating them into a target branch."
@@ -9831,10 +9831,10 @@ export const newUnits = {
         {
             "q": "What is 'regression testing'?",
             "options": [
-                "Testing older software",
-                "Verifying that software previously developed and tested still performs correctly after changes",
-                "Testing for bugs",
-                "Testing the user interface"
+                "Testing legacy software on obsolete hardware",
+                "Verifying that recent code changes haven't adversely affected existing features",
+                "Scanning the code for known security vulnerabilities",
+                "Manually testing the user interface for design flaws"
             ],
             "answer": 1,
             "explanation": "Regression testing ensures that recent code changes haven't adversely affected existing features."
@@ -9842,10 +9842,10 @@ export const newUnits = {
         {
             "q": "What is 'blue-green deployment'?",
             "options": [
-                "Painting servers blue and green",
+                "Physically painting server racks boolean blue and green",
                 "A deployment technique that reduces downtime and risk by running two identical production environments",
-                "Deploying to the ocean and forest",
-                "A malicious software program designed to disrupt, damage, or gain unauthorized access"
+                "Deploying data centers in both ocean and forest environments",
+                "A specific type of malware designed to disrupt color-coded systems"
             ],
             "answer": 1,
             "explanation": "Blue-green deployment uses two identical environments (Blue and Green) to reduce downtime and risk."
@@ -9853,10 +9853,10 @@ export const newUnits = {
         {
             "q": "What is 'canary deployment'?",
             "options": [
-                "Using birds to test air quality",
-                "Rolling out updates to a small subset of users before a full rollout",
-                "Deploying to the Canary Islands",
-                "A type of yellow software"
+                "Releasing biological canaries to test air quality in the server room",
+                "Rolling out updates to a small subset of users to test stability before a full rollout",
+                "Deploying servers exclusively to the Canary Islands region",
+                "Highlighting deprecated code in yellow within the editor"
             ],
             "answer": 1,
             "explanation": "Canary deployment involves rolling out changes to a small subset of users to test for issues before a full rollout."
@@ -9864,10 +9864,10 @@ export const newUnits = {
         {
             "q": "What is 'immutable infrastructure'?",
             "options": [
-                "Infrastructure that cannot be moved",
-                "Infrastructure that is never modified after deployment; it is replaced instead",
-                "Infrastructure that is very strong",
-                "Infrastructure that is expensive"
+                "Physical infrastructure that is bolted to the floor",
+                "Infrastructure that is never modified after deployment; it is replaced with new instances",
+                "Infrastructure reinforced with hardened steel",
+                "Infrastructure that is prohibitively expensive to replace"
             ],
             "answer": 1,
             "explanation": "Immutable infrastructure is never modified after deployment; if updates are needed, new instances are built and deployed."
@@ -9875,10 +9875,10 @@ export const newUnits = {
         {
             "q": "What is 'serverless' computing?",
             "options": [
-                "Computing without servers",
-                "A cloud execution model where the cloud provider runs the server, and dynamically manages the allocation of machine resources",
-                "Using old servers",
-                "Using personal computers"
+                "Computing that takes place without any physical servers",
+                "A cloud execution model where the provider dynamically manages the allocation of machine resources",
+                "Using obsolete servers that are no longer supported",
+                "Using personal computers instead of enterprise servers"
             ],
             "answer": 1,
             "explanation": "Serverless computing allows developers to build and run applications without managing servers."
@@ -9886,10 +9886,10 @@ export const newUnits = {
         {
             "q": "What is a 'microservice'?",
             "options": [
-                "A very small computer",
+                "A miniature personal computer",
                 "An architectural style that structures an application as a collection of loosely coupled services",
-                "A small service fee",
-                "A type of microscope"
+                "A small subscription fee for services",
+                "A high-powered digital microscope"
             ],
             "answer": 1,
             "explanation": "Microservices architecture structures an application as a collection of small, autonomous services."
@@ -9897,10 +9897,10 @@ export const newUnits = {
         {
             "q": "What is 'containerization'?",
             "options": [
-                "Putting servers in shipping containers",
-                "Packaging software code with just the OS libraries and dependencies required to run the code",
-                "Storing data in containers",
-                "A shipping method"
+                "Placing physical servers inside shipping containers",
+                "Packaging software code with its dependencies to ensure consistent execution across environments",
+                "Storing data in plastic containers",
+                "A logistics method for shipping hardware"
             ],
             "answer": 1,
             "explanation": "Containerization involves packaging software code with all its necessary components like libraries and other dependencies."
