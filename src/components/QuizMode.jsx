@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { questionsData } from '../data/questions'
 import { Card } from './ui/card'
 import { Button } from './ui/button'
-import { Timer, RefreshCw, AlertCircle, CheckCircle, XCircle, ArrowRight } from 'lucide-react'
+import { Timer, RefreshCw, AlertCircle, CheckCircle, XCircle, ArrowRight, Trophy, Flame } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { saveProgress } from '../utils/progress'
+import { saveProgress, updateQuestionStats, getQuestionStats } from '../utils/progress'
 
 function SimpleSwitch({ checked, onCheckedChange }) {
     return (
@@ -37,6 +37,7 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
     const [timeLeft, setTimeLeft] = useState(0)
     const [missedQuestions, setMissedQuestions] = useState([])
     const [isReviewMode, setIsReviewMode] = useState(false)
+    const [questionStats, setQuestionStats] = useState(null)
 
     useEffect(() => {
         if (customQuestions && customQuestions.length > 0) {
@@ -45,6 +46,14 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
             resetQuiz(questionsData[unitId], false)
         }
     }, [unitId, customQuestions])
+
+    useEffect(() => {
+        if (questions.length > 0) {
+            const currentQ = questions[currentIndex]
+            const stats = getQuestionStats(currentQ._unitId || unitId, currentQ._uIdx)
+            setQuestionStats(stats)
+        }
+    }, [currentIndex, questions, unitId])
 
     useEffect(() => {
         if (showResult && !isReviewMode && questions.length > 0 && !customQuestions) {
@@ -79,7 +88,7 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
 
     const resetQuiz = (baseQuestions = questionsData[unitId], randomize = isRandomized) => {
         // Deep copy and shuffle options for each question
-        let qs = baseQuestions.map(q => {
+        let qs = baseQuestions.map((q, i) => {
             // Create array of objects with original index to track answer
             const optionsWithIndex = q.options.map((opt, i) => ({ opt, originalIndex: i }))
 
@@ -89,6 +98,8 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
             // Reconstruct question with shuffled options and updated answer index
             return {
                 ...q,
+                _unitId: q._unitId || unitId,
+                _uIdx: q._uIdx !== undefined ? q._uIdx : i,
                 options: shuffledOptionsWithIndex.map(o => o.opt),
                 answer: shuffledOptionsWithIndex.findIndex(o => o.originalIndex === q.answer)
             }
@@ -113,8 +124,13 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
     const handleAnswer = (optionIndex) => {
         setSelectedOption(optionIndex)
         const currentQ = questions[currentIndex]
+        const isCorrect = optionIndex === currentQ.answer
 
-        if (optionIndex === currentQ.answer) {
+        // Update Mastery Stats
+        const stats = updateQuestionStats(currentQ._unitId, currentQ._uIdx, isCorrect)
+        setQuestionStats(stats)
+
+        if (isCorrect) {
             setScore(s => s + 1)
         } else {
             if (!isReviewMode) {
@@ -253,10 +269,38 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -10 }}
                             transition={{ duration: 0.2 }}
-                            className="lg:h-full"
+                            className="lg:h-full relative"
                         >
-                            <Card className="lg:h-full h-auto p-6 md:p-8 border-white/10 bg-slate-900/80 backdrop-blur-md flex flex-col justify-center lg:overflow-y-auto custom-scrollbar">
-                                <h3 className="text-xl md:text-3xl font-medium leading-relaxed text-slate-100">
+                            <Card className="lg:h-full h-auto p-6 md:p-8 border-white/10 bg-slate-900/80 backdrop-blur-md flex flex-col justify-center lg:overflow-y-auto custom-scrollbar relative overflow-hidden">
+                                {questionStats && questionStats.streak >= 3 && (
+                                    <div className="absolute top-0 right-0 p-3 bg-yellow-500/10 rounded-bl-xl border-l border-b border-yellow-500/20 flex items-center gap-2">
+                                        <Trophy className="w-4 h-4 text-yellow-500" />
+                                        <span className="text-xs font-bold text-yellow-500 uppercase tracking-wider">Mastered</span>
+                                    </div>
+                                )}
+                                {questionStats && questionStats.streak <= -2 && (
+                                    <div className="absolute top-0 right-0 p-3 bg-red-500/10 rounded-bl-xl border-l border-b border-red-500/20 flex items-center gap-2">
+                                        <Flame className="w-4 h-4 text-red-500" />
+                                        <span className="text-xs font-bold text-red-500 uppercase tracking-wider">Struggling</span>
+                                    </div>
+                                )}
+                                {questionStats && questionStats.streak > 0 && questionStats.streak < 3 && (
+                                    <div className="absolute top-0 right-0 p-3">
+                                        <div className="flex gap-1">
+                                            {[...Array(3)].map((_, i) => (
+                                                <div
+                                                    key={i}
+                                                    className={cn(
+                                                        "w-1.5 h-1.5 rounded-full transition-all",
+                                                        i < questionStats.streak ? "bg-cyan-500 shadow-[0_0_8px_rgba(6,182,212,0.6)]" : "bg-slate-800"
+                                                    )}
+                                                />
+                                            ))}
+                                        </div>
+                                    </div>
+                                )}
+
+                                <h3 className="text-xl md:text-3xl font-medium leading-relaxed text-slate-100 mt-6 lg:mt-0">
                                     {currentQ.q}
                                 </h3>
                             </Card>
@@ -332,6 +376,24 @@ export default function QuizMode({ unitId, customQuestions, onComplete }) {
                                         <span className={cn("font-bold", selectedOption === currentQ.answer ? "text-emerald-400" : "text-red-400")}>
                                             {selectedOption === currentQ.answer ? "Correct" : "Incorrect"}
                                         </span>
+                                        {questionStats && selectedOption === currentQ.answer && questionStats.streak === 3 && (
+                                            <motion.span
+                                                initial={{ scale: 0 }}
+                                                animate={{ scale: 1 }}
+                                                className="ml-auto text-xs font-bold text-yellow-500 flex items-center gap-1 bg-yellow-500/10 px-2 py-0.5 rounded-full border border-yellow-500/20"
+                                            >
+                                                <Trophy size={12} /> MASTERED!
+                                            </motion.span>
+                                        )}
+                                        {questionStats && selectedOption !== currentQ.answer && questionStats.streak === -2 && (
+                                            <motion.span
+                                                initial={{ scale: 0 }}
+                                                animate={{ scale: 1 }}
+                                                className="ml-auto text-xs font-bold text-red-400 flex items-center gap-1 bg-red-500/10 px-2 py-0.5 rounded-full border border-red-500/20"
+                                            >
+                                                <Flame size={12} /> STRUGGLING
+                                            </motion.span>
+                                        )}
                                     </div>
 
                                     <div className="flex-1 overflow-y-auto custom-scrollbar mb-3">

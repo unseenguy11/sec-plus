@@ -44,7 +44,12 @@ export default function ReviewSetup({ onStart, onCancel }) {
         let pool = []
         selectedUnits.forEach(unitId => {
             if (questionsData[unitId]) {
-                pool = [...pool, ...questionsData[unitId]]
+                const questionsWithMeta = questionsData[unitId].map((q, idx) => ({
+                    ...q,
+                    _unitId: unitId,
+                    _uIdx: idx
+                }))
+                pool = [...pool, ...questionsWithMeta]
             }
         })
 
@@ -96,8 +101,8 @@ export default function ReviewSetup({ onStart, onCancel }) {
                                                 key={count}
                                                 onClick={() => setQuestionCount(count)}
                                                 className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${questionCount === count
-                                                        ? 'bg-cyan-500 text-white'
-                                                        : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+                                                    ? 'bg-cyan-500 text-white'
+                                                    : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
                                                     }`}
                                             >
                                                 {count}

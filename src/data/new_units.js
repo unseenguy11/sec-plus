@@ -8565,7 +8565,7 @@ export const newUnits = {
                 "The IDS software crashes due to high traffic volume",
                 "The IDS fails to alert on malicious traffic"
             ],
-            "answer": 1,
+            "answer": 3,
             "explanation": "A false negative is the most dangerous error, where an attack occurs but the system fails to detect or alert on it."
         },
         {
