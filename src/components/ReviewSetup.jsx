@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Card } from './ui/card'
 import { Button } from './ui/button'
-import { CheckCircle, AlertCircle, Play, Check, X } from 'lucide-react'
+import { CheckCircle, AlertCircle, Play, Check, X, Trophy, Flame, BarChart3 } from 'lucide-react'
 import { units } from '../data/units'
-import { getProgress } from '../utils/progress'
+import { getProgress, getMasteryProgress } from '../utils/progress'
 import { questionsData } from '../data/questions'
 
 export default function ReviewSetup({ onStart, onCancel }) {
@@ -12,6 +12,8 @@ export default function ReviewSetup({ onStart, onCancel }) {
     const [selectedUnits, setSelectedUnits] = useState([])
     const [questionCount, setQuestionCount] = useState(20)
     const [error, setError] = useState(null)
+
+    const [masteryStats, setMasteryStats] = useState({ mastered: 0, struggling: 0, total: 0 })
 
     useEffect(() => {
         const progress = getProgress()
@@ -23,7 +25,35 @@ export default function ReviewSetup({ onStart, onCancel }) {
         setCompletedUnits(completed)
         // Auto-select all completed units by default
         setSelectedUnits(completed)
+
+        // Calculate Mastery Stats
+        if (completed.length > 0) {
+            const masteryData = getMasteryProgress()
+            let mastered = 0
+            let struggling = 0
+            let totalQuestions = 0
+
+            completed.forEach(unitId => {
+                const unitQuestions = questionsData[unitId] || []
+                totalQuestions += unitQuestions.length
+
+                const unitMastery = masteryData[unitId] || {}
+
+                unitQuestions.forEach((_, idx) => {
+                    const stats = unitMastery[idx]
+                    if (stats) {
+                        if (stats.streak >= 3) mastered++
+                        if (stats.streak <= -2) struggling++
+                    }
+                })
+            })
+
+            setMasteryStats({ mastered, struggling, total: totalQuestions })
+        }
     }, [])
+
+
+
 
     const toggleUnit = (unitId) => {
         setSelectedUnits(prev =>
@@ -85,6 +115,55 @@ export default function ReviewSetup({ onStart, onCancel }) {
                         <X className="mr-2 h-4 w-4" /> Cancel
                     </Button>
                 </div>
+
+                {/* Mastery Overview */}
+                {completedUnits.length > 0 && (
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <Card className="p-4 bg-amber-500/10 border-amber-500/20 flex items-center gap-4">
+                            <div className="p-3 bg-amber-500/20 rounded-full text-amber-500">
+                                <Trophy className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <p className="text-sm text-amber-200/70 font-medium">Mastered</p>
+                                <p className="text-2xl font-bold text-amber-500">{masteryStats.mastered}</p>
+                            </div>
+                        </Card>
+
+                        <Card className="p-4 bg-red-500/10 border-red-500/20 flex items-center gap-4">
+                            <div className="p-3 bg-red-500/20 rounded-full text-red-500">
+                                <Flame className="w-6 h-6" />
+                            </div>
+                            <div>
+                                <p className="text-sm text-red-200/70 font-medium">Struggling</p>
+                                <p className="text-2xl font-bold text-red-500">{masteryStats.struggling}</p>
+                            </div>
+                        </Card>
+
+                        <Card className="p-4 bg-blue-500/10 border-blue-500/20 flex items-center gap-4">
+                            <div className="p-3 bg-blue-500/20 rounded-full text-blue-500">
+                                <BarChart3 className="w-6 h-6" />
+                            </div>
+                            <div className="flex-1">
+                                <p className="text-sm text-blue-200/70 font-medium mb-1">Total Progress</p>
+                                <div className="h-2 bg-blue-950 rounded-full overflow-hidden flex">
+                                    <div
+                                        className="h-full bg-amber-500"
+                                        style={{ width: `${(masteryStats.mastered / masteryStats.total) * 100}%` }}
+                                    />
+                                    <div
+                                        className="h-full bg-blue-500"
+                                        style={{ width: `${((masteryStats.total - masteryStats.mastered - masteryStats.struggling) / masteryStats.total) * 100}%` }}
+                                    />
+                                    <div
+                                        className="h-full bg-red-500"
+                                        style={{ width: `${(masteryStats.struggling / masteryStats.total) * 100}%` }}
+                                    />
+                                </div>
+                                <p className="text-xs text-blue-400 mt-1 text-right">{masteryStats.total} Questions</p>
+                            </div>
+                        </Card>
+                    </div>
+                )}
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Left Col: Settings */}
