@@ -12,6 +12,7 @@ export default function ReviewSetup({ onStart, onCancel }) {
     const [selectedUnits, setSelectedUnits] = useState([])
     const [questionCount, setQuestionCount] = useState(20)
     const [error, setError] = useState(null)
+    const [filterStruggling, setFilterStruggling] = useState(false)
 
     const [masteryStats, setMasteryStats] = useState({ mastered: 0, struggling: 0, total: 0 })
 
@@ -72,6 +73,8 @@ export default function ReviewSetup({ onStart, onCancel }) {
 
         // Aggregate questions
         let pool = []
+        const masteryData = getMasteryProgress() // Get latest data
+
         selectedUnits.forEach(unitId => {
             if (questionsData[unitId]) {
                 const questionsWithMeta = questionsData[unitId].map((q, idx) => ({
@@ -79,7 +82,17 @@ export default function ReviewSetup({ onStart, onCancel }) {
                     _unitId: unitId,
                     _uIdx: idx
                 }))
-                pool = [...pool, ...questionsWithMeta]
+
+                // Filter if "Struggling Only" is enabled
+                const unitMastery = masteryData[unitId] || {}
+
+                const filteredQuestions = questionsWithMeta.filter(q => {
+                    if (!filterStruggling) return true
+                    const stats = unitMastery[q._uIdx]
+                    return stats && stats.streak <= -2
+                })
+
+                pool = [...pool, ...filteredQuestions]
             }
         })
 
@@ -188,6 +201,26 @@ export default function ReviewSetup({ onStart, onCancel }) {
                                             </button>
                                         ))}
                                     </div>
+                                </div>
+
+                                <div className="space-y-3">
+                                    <button
+                                        onClick={() => setFilterStruggling(!filterStruggling)}
+                                        disabled={masteryStats.struggling === 0}
+                                        className={`w-full flex items-center justify-between px-3 py-2 rounded-lg text-sm border transition-colors
+                                            ${filterStruggling
+                                                ? 'bg-red-500/20 border-red-500 text-red-200'
+                                                : 'bg-slate-800 border-white/5 text-slate-400 hover:bg-slate-700'
+                                            }
+                                            ${masteryStats.struggling === 0 ? 'opacity-50 cursor-not-allowed' : ''}
+                                        `}
+                                    >
+                                        <div className="flex items-center gap-2">
+                                            <Flame className={`w-4 h-4 ${filterStruggling ? 'text-red-500' : 'text-slate-500'}`} />
+                                            <span>Focus on Struggling</span>
+                                        </div>
+                                        {filterStruggling && <Check className="w-4 h-4 text-red-500" />}
+                                    </button>
                                 </div>
 
                                 <div className="pt-4 border-t border-white/5">
