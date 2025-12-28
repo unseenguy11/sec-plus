@@ -94,6 +94,35 @@ export default function UnitSelector({ onSelect }) {
                     </div>
                 </Card>
             </motion.div>
+
+            {/* Udemy Quiz Card */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: units.length * 0.1 + 0.1 }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+            >
+                <a href="/udemy_quiz.html" target="_self">
+                    <Card className="group h-full border border-white/5 bg-slate-900/50 hover:bg-slate-800/80 transition-all duration-300 relative overflow-hidden cursor-pointer">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-purple-500/20" />
+
+                        <div className="p-6 flex items-start gap-6">
+                            <div className="p-4 rounded-xl bg-purple-500/10 text-purple-400 ring-1 ring-purple-500/20 relative group-hover:bg-purple-500/20 transition-colors">
+                                <Bot size={32} />
+                            </div>
+                            <div className="flex-1">
+                                <div className="flex items-start justify-between mb-2">
+                                    <h3 className="text-xl font-bold text-slate-100 group-hover:text-white transition-colors">Udemy Quiz (Offline)</h3>
+                                </div>
+                                <p className="text-slate-400 group-hover:text-slate-300 transition-colors leading-relaxed">
+                                    Launch the offline retake quiz. Full simulation with original questions.
+                                </p>
+                            </div>
+                        </div>
+                    </Card>
+                </a>
+            </motion.div>
         </div>
     )
 }
