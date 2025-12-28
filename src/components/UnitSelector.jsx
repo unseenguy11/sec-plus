@@ -103,7 +103,7 @@ export default function UnitSelector({ onSelect }) {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
             >
-                <a href="/udemy_quiz.html" target="_self">
+                <a href="/sec-plus/udemy_quiz.html" target="_self">
                     <Card className="group h-full border border-white/5 bg-slate-900/50 hover:bg-slate-800/80 transition-all duration-300 relative overflow-hidden cursor-pointer">
                         <div className="absolute top-0 right-0 w-24 h-24 bg-purple-500/10 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-purple-500/20" />
 
