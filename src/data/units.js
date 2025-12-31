@@ -1,4 +1,4 @@
-import { Shield, Users, Lock, Network, Bug, Database, Key, AlertTriangle, Truck, Scale, RefreshCw, ClipboardCheck, Server, BrickWall, UserCheck, Zap, Activity, ShieldCheck, Wifi, Scan, Bell, Siren, Search, Bot, GraduationCap } from 'lucide-react';
+import { Shield, Users, Lock, Network, Bug, Database, Key, AlertTriangle, Truck, Scale, RefreshCw, ClipboardCheck, Server, BrickWall, UserCheck, Zap, Activity, ShieldCheck, Wifi, Scan, Bell, Siren, Search, Bot, GraduationCap, Book } from 'lucide-react';
 
 export const units = [
     { id: 'unit-2', title: 'Unit 2: Security Fundamentals', icon: Shield, color: 'text-blue-400', bg: 'bg-blue-500/10', border: 'group-hover:border-blue-500/50', desc: 'CIA Triad, Risk Management, AAA' },
@@ -27,5 +27,6 @@ export const units = [
     { id: 'unit-25', title: 'Unit 25: Investigating an Incident', icon: Search, color: 'text-blue-500', bg: 'bg-blue-500/10', border: 'group-hover:border-blue-500/50', desc: 'Investigation Process, Evidence Collection, Interviews' },
     { id: 'unit-26', title: 'Unit 26: Automation & Orchestration', icon: Bot, color: 'text-purple-500', bg: 'bg-purple-500/10', border: 'group-hover:border-purple-500/50', desc: 'SOAR, Playbooks, Runbooks, Scripting' },
     { id: 'unit-27', title: 'Unit 27: Security Awareness', icon: GraduationCap, color: 'text-green-500', bg: 'bg-green-500/10', border: 'group-hover:border-green-500/50', desc: 'Phishing, Social Engineering, Training, Culture' },
-    { id: 'unit-ports', title: 'Ports & Protocols', icon: Network, color: 'text-pink-500', bg: 'bg-pink-500/10', border: 'group-hover:border-pink-500/50', desc: 'Common Ports, Methodologies, and Protocol Acronyms' }
+    { id: 'unit-ports', title: 'Ports & Protocols', icon: Network, color: 'text-pink-500', bg: 'bg-pink-500/10', border: 'group-hover:border-pink-500/50', desc: 'Common Ports, Methodologies, and Protocol Acronyms' },
+    { id: 'unit-acronyms', title: 'Unit 28: Acronyms', icon: Book, color: 'text-cyan-500', bg: 'bg-cyan-500/10', border: 'group-hover:border-cyan-500/50', desc: 'Comprehensive list of Security+ Acronyms' }
 ];

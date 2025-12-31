@@ -1,6 +1,8 @@
 import { newUnits } from './new_units.js';
+import { acronymsData } from './acronyms_data.js';
 
 export const questionsData = {
+    "unit-acronyms": acronymsData,
     "unit-2": [
         { q: 'What is the primary trade-off usually observed when increasing security measures?', options: ['Increased convenience', 'Decreased usability', 'Lower cost', 'Faster performance'], answer: 1, explanation: 'There is typically an inverse relationship between security and usability/convenience.' },
         { q: 'Which term refers to protecting data from unauthorized access, modification, and destruction?', options: ['Information Security', 'Information System Security', 'Network Security', 'Physical Security'], answer: 0, explanation: 'Information Security focuses on protecting the data itself.' },
